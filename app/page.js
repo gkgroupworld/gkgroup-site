@@ -191,4 +191,7 @@ export default function Home() {
 >
   WhatsApp
 </a>
-    </main>
+
+</main>
+  );
+}
