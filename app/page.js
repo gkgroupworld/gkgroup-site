@@ -43,20 +43,29 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl text-lg font-semibold">
-              Explore Services
-            </button>
 
-            <button className="border border-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-blue-900 transition">
-              Contact Us
-            </button>
-          </div>
+  <a
+    href="#services"
+    className="bg-orange-500 hover:bg-orange-600 transition px-8 py-4 rounded-2xl text-lg font-semibold"
+  >
+    Explore Services
+  </a>
 
-        </div>
-      </motion.section>
+  <a
+    href="mailto:info@gkgroup.app"
+    className="border border-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-blue-900 transition"
+  >
+    Contact Us
+  </a>
+
+</div>
+
+</div>
+</motion.section>
 
       {/* SERVICES */}
-      <section className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gray-50">
+🚀
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
