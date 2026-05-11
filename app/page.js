@@ -67,7 +67,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600 mb-4">
-                Technology & IT Solutions
+                IT Solutions • Networking • Software • CCTV • Digital Services
               </p>
 
               <p className="text-sm text-orange-500 font-semibold">
@@ -81,7 +81,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600 mb-4">
-                Travel & Visa Assistance
+                Visa Assistance • Flight Booking • Travel Consulting
               </p>
 
               <p className="text-sm text-orange-500 font-semibold">
@@ -95,7 +95,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600 mb-4">
-                Import • Export • Trade
+                Import • Export • European Trade Operations
               </p>
 
               <p className="text-sm text-orange-500 font-semibold">
@@ -109,7 +109,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-600 mb-4">
-                Balkan Trade Operations
+                Balkan Business Development • Logistics • Partnerships
               </p>
 
               <p className="text-sm text-orange-500 font-semibold">
