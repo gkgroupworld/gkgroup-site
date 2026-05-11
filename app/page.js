@@ -1,9 +1,19 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Home() {
+    
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
+      <motion.section
+  initial={{ opacity: 0, y: 80 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="bg-gradient-to-r from-blue-950 to-blue-800 text-white"
+>
         <div className="max-w-7xl mx-auto px-6 py-20">
 <div className="flex items-center gap-4 mb-10">
 
@@ -43,7 +53,7 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </motion.section>
 
       {/* SERVICES */}
       <section className="py-20 bg-gray-50">
