@@ -5,13 +5,20 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="bg-gradient-to-r from-blue-950 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-6 py-20">
+<div className="flex items-center gap-4 mb-10">
 
-          <div className="flex items-center gap-4 mb-10">
-            <div className="text-5xl font-black">
-              <span className="text-white">GK</span>
-              <span className="text-orange-400"> GROUP</span>
-            </div>
-          </div>
+  <img
+    src="/logo.png"
+    alt="GK GROUP Logo"
+    className="w-20 h-20 object-contain"
+  />
+
+  <div className="text-5xl font-black">
+    <span className="text-white">GK</span>
+    <span className="text-orange-400"> GROUP</span>
+  </div>
+
+</div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             Global Business
