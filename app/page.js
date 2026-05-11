@@ -120,7 +120,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* WHY CHOOSE US */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
 
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold mb-4">
+        Why Choose GK GROUP
+      </h2>
+
+      <p className="text-gray-600 text-lg">
+        International expertise with reliable business solutions.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-blue-50 p-8 rounded-3xl shadow-lg text-center">
+        <div className="text-5xl mb-4">🌍</div>
+
+        <h3 className="text-2xl font-bold text-blue-900 mb-4">
+          Global Network
+        </h3>
+
+        <p className="text-gray-600">
+          Operations across Africa and Europe.
+        </p>
+      </div>
+
+      <div className="bg-blue-50 p-8 rounded-3xl shadow-lg text-center">
+        <div className="text-5xl mb-4">⚡</div>
+
+        <h3 className="text-2xl font-bold text-blue-900 mb-4">
+          Fast Processing
+        </h3>
+
+        <p className="text-gray-600">
+          Quick and efficient service delivery.
+        </p>
+      </div>
+
+      <div className="bg-blue-50 p-8 rounded-3xl shadow-lg text-center">
+        <div className="text-5xl mb-4">🤝</div>
+
+        <h3 className="text-2xl font-bold text-blue-900 mb-4">
+          Trusted Partners
+        </h3>
+
+        <p className="text-gray-600">
+          Reliable international collaborations.
+        </p>
+      </div>
+
+      <div className="bg-blue-50 p-8 rounded-3xl shadow-lg text-center">
+        <div className="text-5xl mb-4">🚀</div>
+
+        <h3 className="text-2xl font-bold text-blue-900 mb-4">
+          Business Growth
+        </h3>
+
+        <p className="text-gray-600">
+          Helping businesses expand globally.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ABOUT */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
