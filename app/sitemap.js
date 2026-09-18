@@ -1,0 +1,1 @@
+export default function sitemap() { const paths = ["", "/about", "/architecture", "/activities", "/entities", "/gk-nexus", "/news", "/contact"]; return paths.map((path) => ({ url: `https://www.gkgroup.app${path}`, lastModified: new Date(), changeFrequency: "monthly", priority: path === "" ? 1 : 0.8 })); }

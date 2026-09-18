@@ -1,0 +1,26 @@
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { CTA } from "@/components/ui/CTA";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+import { ABOUT_CONTENT, ACTIVITIES } from "@/content/site";
+import { withLocale } from "@/lib/locale";
+
+export function AboutPage({ locale }) {
+  const copy = ABOUT_CONTENT[locale];
+
+  return <><Header locale={locale} /><main>
+    <section className="bg-[#061b46] text-white"><div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20"><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.hero.eyebrow}</p><div className="mt-5 h-px w-12 bg-[#e87512]" /><h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-tight sm:text-6xl">{copy.hero.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.hero.description}</p><p className="mt-8 text-lg font-bold text-white">{copy.hero.motto}</p><p className="mt-2 text-sm font-bold tracking-wide text-[#f5a24e]">{copy.hero.signature}</p></div></section>
+
+    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.15fr_.85fr]"><div><SectionTitle eyebrow={copy.identity.eyebrow} title={copy.identity.title} /><p className="max-w-3xl text-lg leading-8 text-slate-600">{copy.identity.description}</p></div><aside className="border-l-4 border-[#e87512] bg-[#f5f7fa] p-7 sm:p-8"><p className="text-xs font-bold uppercase tracking-[.16em] text-[#061b46]">{copy.identity.currentLabel}</p><ul className="mt-5 grid gap-3 text-sm font-bold text-[#061b46]">{copy.identity.current.map((place) => <li key={place} className="border-b border-slate-200 pb-3">{place}</li>)}</ul><p className="mt-6 text-xs font-bold uppercase tracking-[.16em] text-[#e87512]">{copy.identity.plannedLabel}</p><p className="mt-3 text-sm leading-6 text-slate-600">{copy.identity.planned}</p></aside></div></section>
+
+    <section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.vision.eyebrow} title={copy.vision.title} /><p className="max-w-3xl text-lg leading-8 text-slate-600">{copy.vision.description}</p><ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{copy.vision.pillars.map((pillar) => <li key={pillar} className="border border-slate-200 bg-white px-5 py-4 text-sm font-bold text-[#061b46]">{pillar}</li>)}</ul></div></section>
+
+    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2"><div><SectionTitle eyebrow={copy.mission.eyebrow} title={copy.mission.title} /><ul className="grid gap-4">{copy.mission.items.map((item) => <li key={item} className="border-l-2 border-[#e87512] pl-5 leading-7 text-slate-600">{item}</li>)}</ul></div><div className="bg-[#061b46] p-8 text-white sm:p-10"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#f5a24e]">{copy.model.eyebrow}</p><h2 className="mt-4 text-3xl font-bold tracking-tight">{copy.model.title}</h2><p className="mt-5 leading-7 text-slate-200">{copy.model.description}</p><ul className="mt-7 grid gap-3 text-sm font-bold">{copy.model.principles.map((principle) => <li key={principle} className="border-t border-white/15 pt-3">{principle}</li>)}</ul><div className="mt-8"><CTA href={withLocale("/architecture", locale)} variant="secondary">{copy.model.cta}</CTA></div></div></div></section>
+
+    <section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.timeline.eyebrow} title={copy.timeline.title} /><ol className="grid gap-5 md:grid-cols-3">{copy.timeline.items.map((item, index) => <li key={item.title} className="border-t-2 border-[#e87512] bg-white p-6"><p className="text-xs font-bold text-slate-400">0{index + 1}</p><h3 className="mt-4 text-xl font-bold text-[#061b46]">{item.title}</h3><p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p></li>)}</ol></div></section>
+
+    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.domains.eyebrow} title={copy.domains.title} /><ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">{ACTIVITIES.map((activity, index) => <li key={activity.id} className="border border-slate-200 bg-white p-6"><p className="text-xs font-bold text-[#e87512]">0{index + 1}</p><p className="mt-5 text-lg font-bold leading-6 text-[#061b46]">{activity[locale]}</p></li>)}</ul><div className="mt-8"><CTA href={withLocale("/activities", locale)}>{copy.domains.cta}</CTA></div></div></section>
+
+    <section className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#f5a24e]">{copy.horizon.eyebrow}</p><h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">{copy.horizon.title}</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.horizon.description}</p></div></section>
+  </main><Footer locale={locale} /></>;
+}
