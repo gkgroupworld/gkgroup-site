@@ -5,7 +5,7 @@ export const CONTACT = {
   whatsapp: "+228 90 55 98 88", whatsappHref: "https://wa.me/22890559888",
   generalEmail: "info@gkgroup.app", generalEmailHref: "mailto:info@gkgroup.app",
   email: "gk.contactus@gkgroup.app", emailHref: "mailto:gk.contactus@gkgroup.app",
-  website: "www.gkgroup.app",
+  website: "gkgroup.app",
 };
 
 export const SITE_COPY = {

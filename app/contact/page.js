@@ -1,10 +1,11 @@
 import { ContactPage } from "@/components/pages/ContactPage";
 import { getLocale } from "@/lib/locale";
+import { getPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ searchParams }) {
   const locale = getLocale(await searchParams);
   const fr = locale === "fr";
-  return { title: fr ? "Contact & Partenariats" : "Contact & Partnerships", description: fr ? "Contactez GK GROUP pour une demande professionnelle ou une opportunité de partenariat." : "Contact GK GROUP for a professional inquiry or partnership opportunity." };
+  return getPageMetadata("/contact", locale, { title: fr ? "Contact & Partenariats" : "Contact & Partnerships", description: fr ? "Contactez GK GROUP pour une demande professionnelle ou une opportunité de partenariat." : "Contact GK GROUP for a professional inquiry or partnership opportunity." });
 }
 
 export default async function Page({ searchParams }) {
