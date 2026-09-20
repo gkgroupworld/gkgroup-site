@@ -12,7 +12,7 @@ export const SITE_COPY = {
   fr: {
     navigation: { home: "Accueil", about: "À propos", architecture: "Notre architecture", activities: "Nos activités", entities: "Nos entités", nexus: "GK NEXUS", news: "Actualités / Opportunités", contact: "Contact" },
     labels: { discover: "Découvrir", contact: "Nous contacter", language: "Langue" },
-    hero: { eyebrow: "Architecture institutionnelle internationale", title: "Global Business Without Borders", description: "GK GROUP relie les opportunités, les expertises et les marchés entre l’Afrique, l’Europe et les Balkans.", supporting: "Building Trust. Connecting Opportunities." },
+    hero: { eyebrow: "Architecture institutionnelle internationale", title: "Global Business Without Borders", description: "GK GROUP relie les opportunités, les expertises et les marchés entre l’Afrique, l’Europe, l’Asie, les Amériques et le reste du monde.", supporting: "Building Trust. Connecting Opportunities." },
     activities: { eyebrow: "Nos domaines d’activité", title: "Des expertises connectées à l’international" },
     entities: { eyebrow: "Notre écosystème", title: "Une architecture claire, des rôles distincts" },
     contact: { eyebrow: "Parlons de vos opportunités", title: "Connectez-vous à GK GROUP" },
@@ -21,7 +21,7 @@ export const SITE_COPY = {
   en: {
     navigation: { home: "Home", about: "About", architecture: "Our architecture", activities: "Our activities", entities: "Our entities", nexus: "GK NEXUS", news: "News / Opportunities", contact: "Contact" },
     labels: { discover: "Discover", contact: "Contact us", language: "Language" },
-    hero: { eyebrow: "International institutional architecture", title: "Global Business Without Borders", description: "GK GROUP connects opportunities, expertise and markets across Africa, Europe and the Balkans.", supporting: "Building Trust. Connecting Opportunities." },
+    hero: { eyebrow: "International institutional architecture", title: "Global Business Without Borders", description: "GK GROUP connects opportunities, expertise and markets across Africa, Europe, Asia, the Americas and the rest of the world.", supporting: "Building Trust. Connecting Opportunities." },
     activities: { eyebrow: "Our areas of activity", title: "Expertise connected internationally" },
     entities: { eyebrow: "Our ecosystem", title: "A clear architecture with distinct roles" },
     contact: { eyebrow: "Let us discuss your opportunities", title: "Connect with GK GROUP" },
