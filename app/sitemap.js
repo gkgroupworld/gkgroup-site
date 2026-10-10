@@ -1,7 +1,7 @@
 import { getLanguageAlternates } from "@/lib/seo";
 
 export default function sitemap() {
-  const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-nexus", "/news", "/contact"];
+  const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-mobility", "/gk-nexus", "/news", "/contact"];
   const lastModified = new Date();
   return paths.flatMap((path) => {
     const languages = getLanguageAlternates(path);
