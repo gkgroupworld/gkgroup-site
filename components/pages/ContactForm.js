@@ -2,10 +2,10 @@
 
 import { useRef } from "react";
 
-export function ContactForm({ copy, partnership, locale }) {
+export function ContactForm({ copy, partnership, locale, defaultArea = "" }) {
   const formRef = useRef(null);
   const fields = copy.form.fields;
-  const partnershipValue = partnership ? copy.form.options[5] : "";
+  const partnershipValue = partnership ? copy.form.options[5] : defaultArea;
   const fr = locale === "fr";
   const inputClass = "mt-2 w-full border border-slate-300 bg-white px-3 py-3 text-sm text-[#15213b]";
   const labelClass = "block text-sm font-bold text-[#061b46]";
