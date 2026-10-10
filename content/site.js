@@ -43,7 +43,7 @@ export const ACTIVITY_CONTENT = {
     domains: { eyebrow: "Cinq domaines d’activité", title: "Des expertises complémentaires, une même ambition", items: [
       { title: "Technology & Digital Solutions", description: "Des solutions technologiques conçues pour accompagner les organisations dans leurs besoins opérationnels et leur évolution digitale.", services: ["Solutions informatiques", "Maintenance et services IT", "Infrastructures et réseaux", "Équipements technologiques", "Solutions digitales", "Accompagnement technologique des organisations"], structures: "Structure principalement liée : GKGT — GK GLOBAL TECHNOLOGY." },
       { title: "International Mobility", description: "Un accompagnement structuré des projets de mobilité internationale, adapté aux parcours académiques, professionnels et institutionnels.", services: ["Mobilité internationale", "Accompagnement des projets de mobilité", "Mobilité professionnelle", "Études à l’étranger", "Missions professionnelles et conférences", "Assistance documentaire et installation internationale"], structures: "Structure principalement liée : GKGM — GK GLOBAL MOBILITY." },
-      { title: "International Trade & Import-Export", description: "Des activités dédiées au commerce international, au sourcing et au rapprochement entre marchés européens, africains et internationaux.", services: ["Commerce international et import-export", "Sourcing et recherche de fournisseurs", "Développement des échanges commerciaux", "Mise en relation de marchés", "Partenariats commerciaux", "Échanges Europe–Afrique et internationaux"], structures: "Structures principalement associées : UAB GK EstTrade et, dans le cadre du développement international du groupe, le projet GK Danube Trading DOO en cours de constitution en Serbie ainsi que GK NEXUS selon les projets." },
+      { title: "International Trade & Import-Export", description: "Des activités dédiées au commerce international, au sourcing et au rapprochement entre marchés européens, africains et internationaux.", services: ["Commerce international et import-export", "Sourcing et recherche de fournisseurs", "Développement des échanges commerciaux", "Mise en relation de marchés", "Partenariats commerciaux", "Échanges Europe–Afrique et internationaux"], structures: "Structures principalement associées : UAB GK EstTrade et, dans le cadre du développement international du groupe, le projet GK Danube Trading DOO en cours de constitution en Serbie ainsi que le projet GK NEXUS Sh.p.k., sous réserve de son immatriculation, selon les projets." },
       { title: "Business Development", description: "Une approche de développement destinée à identifier, structurer et accompagner des opportunités sur des marchés complémentaires.", services: ["Identification d’opportunités", "Développement de marchés", "Structuration de projets", "Recherche et développement de partenariats", "Accompagnement de l’expansion internationale", "Mise en relation économique et commerciale"], structures: "Mise en œuvre par les structures compétentes du groupe selon les projets et les marchés." },
       { title: "Strategic Consulting", description: "Un accompagnement stratégique pour analyser, structurer et faire progresser les projets internationaux et les partenariats.", services: ["Analyse et structuration de projets", "Conseil en développement international", "Accompagnement stratégique", "Organisation et optimisation des projets", "Appui à la prise de décision", "Développement de partenariats stratégiques"], structures: "Mise en œuvre par les structures compétentes du groupe selon les projets et les marchés." },
     ] },
@@ -57,7 +57,7 @@ export const ACTIVITY_CONTENT = {
     domains: { eyebrow: "Five areas of activity", title: "Complementary expertise, one shared ambition", items: [
       { title: "Technology & Digital Solutions", description: "Technology solutions designed to support organisations in their operational needs and digital evolution.", services: ["IT solutions", "IT maintenance and services", "Infrastructure and networks", "Technology equipment", "Digital solutions", "Technology support for organisations"], structures: "Mainly linked structure: GKGT — GK GLOBAL TECHNOLOGY." },
       { title: "International Mobility", description: "Structured support for international mobility projects, adapted to academic, professional and institutional paths.", services: ["International mobility", "Mobility project support", "Professional mobility", "Study abroad", "Professional assignments and conferences", "Documentary assistance and international settlement support"], structures: "Mainly linked structure: GKGM — GK GLOBAL MOBILITY." },
-      { title: "International Trade & Import-Export", description: "Activities dedicated to international trade, sourcing and connections between European, African and international markets.", services: ["International trade and import-export", "Sourcing and supplier research", "Trade development", "Market connections", "Commercial partnerships", "Europe–Africa and international exchanges"], structures: "Mainly associated structures: UAB GK EstTrade and, as part of the group’s international development, the GK Danube Trading DOO company formation project in progress in Serbia, as well as GK NEXUS depending on the project." },
+      { title: "International Trade & Import-Export", description: "Activities dedicated to international trade, sourcing and connections between European, African and international markets.", services: ["International trade and import-export", "Sourcing and supplier research", "Trade development", "Market connections", "Commercial partnerships", "Europe–Africa and international exchanges"], structures: "Mainly associated structures: UAB GK EstTrade and, as part of the group’s international development, the GK Danube Trading DOO company formation project in progress in Serbia, as well as the GK NEXUS Sh.p.k. project, subject to registration, depending on the project." },
       { title: "Business Development", description: "A development approach designed to identify, structure and support opportunities across complementary markets.", services: ["Opportunity identification", "Market development", "Project structuring", "Partnership research and development", "International expansion support", "Economic and commercial connections"], structures: "Implemented by the group’s relevant structures according to projects and markets." },
       { title: "Strategic Consulting", description: "Strategic support to analyse, structure and advance international projects and partnerships.", services: ["Project analysis and structuring", "International development consulting", "Strategic support", "Project organisation and optimisation", "Decision-making support", "Strategic partnership development"], structures: "Implemented by the group’s relevant structures according to projects and markets." },
     ] },
@@ -69,28 +69,264 @@ export const ACTIVITY_CONTENT = {
 };
 
 export const NEXUS_CONTENT = {
-  fr: {
-    hero: { eyebrow: "Corporate & International Operations", title: "GK NEXUS", description: "GK NEXUS est une société établie en Albanie qui constitue également une plateforme de gestion et de coordination de GK GROUP, au service de son développement international.", location: "Société établie en Albanie" },
-    vocation: { eyebrow: "Double vocation", title: "Une société, deux dimensions complémentaires", corporate: { title: "Corporate & Group Steering", items: ["Pilotage stratégique", "Coordination du groupe", "Suivi des performances", "Coordination des projets transversaux", "Accompagnement des structures", "Contrôle et suivi des ressources", "Préparation des décisions stratégiques", "Développement international"] }, operations: { title: "Own Business Activities", description: "Dans le cadre de son développement, GK NEXUS peut porter ses propres activités et projets selon les opportunités.", items: ["Technology & Digital Solutions", "International Trade", "International Mobility", "Business Development", "Strategic Projects"] } },
-    role: { eyebrow: "Rôle au sein de GK GROUP", title: "Un point de convergence stratégique", description: "GK NEXUS contribue à assurer la cohérence stratégique du groupe, à faciliter la coordination entre les structures et à préparer le développement international progressif.", items: ["Faciliter la coordination entre les structures", "Identifier et structurer de nouvelles opportunités", "Suivre les projets transversaux", "Soutenir la gouvernance", "Contribuer au contrôle des risques et des ressources", "Préparer de nouvelles implantations et partenariats"], cta: "Voir notre architecture" },
-    albania: { eyebrow: "Albanie", title: "Une implantation stratégique en Europe", description: "GK NEXUS est établie en Albanie, où elle constitue une plateforme de gestion et de coordination de GK GROUP. Cette implantation contribue à renforcer les connexions européennes de l’écosystème.", items: ["Coordination du développement international de GK GROUP", "Identification d’opportunités européennes", "Recherche de partenaires", "Développement de relations commerciales", "Recherche de fournisseurs et d’équipements", "Structuration de projets internationaux", "Soutien aux besoins des différentes structures du groupe"] },
-    diagram: { eyebrow: "Connexion fonctionnelle", title: "Coordonner les compétences du groupe", note: "Ce schéma illustre une logique fonctionnelle de coordination. Il ne remplace pas et ne modifie pas le diagramme institutionnel officiel présenté dans notre architecture." },
-    value: { eyebrow: "Création de valeur", title: "Transformer les opportunités en développement durable", steps: ["GK NEXUS — Pilotage • Coordination • Développement international", "Identification et structuration des opportunités", "Structures du groupe", "Clients • Partenaires • Marchés • Investisseurs", "Création de valeur durable"] },
-    interactions: { eyebrow: "Interactions opérationnelles", title: "Des complémentarités au service des projets", items: [{ name: "GKGM", text: "GK NEXUS peut contribuer à identifier et structurer des opportunités internationales liées à la mobilité et aux besoins professionnels." }, { name: "GKGT", text: "GK NEXUS peut contribuer à identifier des fournisseurs, équipements, partenaires et opportunités technologiques." }, { name: "UAB GK EstTrade", text: "Développement commercial, sourcing, commerce international et connexions Europe–Afrique." }, { name: "GK Danube Trading DOO", text: "Projet de développement de relations commerciales et d’opportunités en Serbie et dans sa région ; constitution de la société en cours." }, { name: "GK GLOBAL GROUP SARLU", text: "Coordination institutionnelle, reporting, mise en œuvre des orientations du groupe et développement depuis le Togo." }] },
-    vision: { eyebrow: "Vision stratégique 2026–2035", title: "Un levier pour le développement international", description: "GK NEXUS est appelé à soutenir la gouvernance, la coordination, l’expansion progressive, le développement de partenariats, l’innovation, l’excellence opérationnelle et la création de valeur durable." },
-    final: { title: "Connecter. Coordonner. Développer.", entities: "Découvrir nos entités", contact: "Nous contacter" },
+  "fr": {
+    "hero": {
+      "eyebrow": "Projet de coordination et de développement international",
+      "title": "GK NEXUS",
+      "description": "GK NEXUS Sh.p.k. est un projet de société en Albanie dont l’immatriculation est en cours. Sous réserve de cette immatriculation, elle est destinée à devenir une plateforme de coordination et de développement international de l’écosystème GK GROUP.",
+      "location": "Albanie · Immatriculation en cours"
+    },
+    "vocation": {
+      "eyebrow": "Vocation envisagée",
+      "title": "Deux dimensions complémentaires pour une future plateforme",
+      "corporate": {
+        "title": "Pilotage et coordination",
+        "items": [
+          "Pilotage stratégique",
+          "Coordination du groupe",
+          "Suivi des performances",
+          "Coordination des projets transversaux",
+          "Accompagnement des structures",
+          "Contrôle et suivi des ressources",
+          "Préparation des décisions stratégiques",
+          "Développement international"
+        ]
+      },
+      "operations": {
+        "title": "Activités et projets envisagés",
+        "description": "Sous réserve de son immatriculation, GK NEXUS pourrait également développer ses propres activités et projets selon les opportunités et les exigences applicables.",
+        "items": [
+          "Technology & Digital Solutions",
+          "International Trade",
+          "International Mobility",
+          "Business Development",
+          "Strategic Projects"
+        ]
+      }
+    },
+    "role": {
+      "eyebrow": "Rôle envisagé au sein de GK GROUP",
+      "title": "Un futur point de convergence stratégique",
+      "description": "Après son immatriculation, GK NEXUS aurait vocation à soutenir la cohérence stratégique de l’écosystème, à faciliter les échanges entre les structures et à préparer le développement international progressif.",
+      "items": [
+        "Faciliter la coordination entre les structures",
+        "Identifier et structurer de nouvelles opportunités",
+        "Suivre les projets transversaux",
+        "Soutenir la gouvernance",
+        "Contribuer au contrôle des risques et des ressources",
+        "Préparer de nouvelles implantations et partenariats"
+      ],
+      "cta": "Voir notre architecture"
+    },
+    "albania": {
+      "eyebrow": "Projet Albanie",
+      "title": "Une future plateforme à vocation européenne",
+      "description": "Le projet GK NEXUS Sh.p.k. vise une implantation en Albanie, sous réserve de son immatriculation. Cette orientation pourrait renforcer les connexions européennes de l’écosystème, sans constituer une présence opérationnelle actuelle.",
+      "items": [
+        "Coordination du développement international de GK GROUP",
+        "Identification d’opportunités européennes",
+        "Recherche de partenaires",
+        "Développement de relations commerciales",
+        "Recherche de fournisseurs et d’équipements",
+        "Structuration de projets internationaux",
+        "Soutien aux besoins des différentes structures du groupe"
+      ]
+    },
+    "diagram": {
+      "eyebrow": "Coordination envisagée",
+      "title": "Relier les expertises, dans le respect des rôles",
+      "note": "Ce schéma présente une logique fonctionnelle envisagée après l’immatriculation de GK NEXUS. Il ne représente ni une structure de détention ni une coordination déjà opérationnelle et ne remplace pas l’architecture institutionnelle du groupe.",
+      "coordination": "Future plateforme de coordination",
+      "brand": "Marque et écosystème international",
+      "pending": "Projet · Immatriculation en cours",
+      "serbia": "Projet · Constitution en cours"
+    },
+    "value": {
+      "eyebrow": "Création de valeur envisagée",
+      "title": "Des opportunités au développement durable",
+      "steps": [
+        "GK NEXUS — Pilotage • Coordination • Développement international",
+        "Identification et structuration des opportunités",
+        "Structures du groupe",
+        "Clients • Partenaires • Marchés • Investisseurs",
+        "Création de valeur durable"
+      ]
+    },
+    "interactions": {
+      "eyebrow": "Complémentarités envisagées",
+      "title": "Des échanges futurs au service des projets",
+      "items": [
+        {
+          "name": "GKGM",
+          "text": "GK NEXUS peut contribuer à identifier et structurer des opportunités internationales liées à la mobilité et aux besoins professionnels."
+        },
+        {
+          "name": "GKGT",
+          "text": "GK NEXUS peut contribuer à identifier des fournisseurs, équipements, partenaires et opportunités technologiques."
+        },
+        {
+          "name": "UAB GK EstTrade",
+          "text": "Développement commercial, sourcing, commerce international et connexions Europe–Afrique."
+        },
+        {
+          "name": "GK Danube Trading DOO",
+          "text": "Projet de développement de relations commerciales et d’opportunités en Serbie et dans sa région ; constitution de la société en cours."
+        },
+        {
+          "name": "GK GLOBAL GROUP SARLU",
+          "text": "Coordination institutionnelle, reporting, mise en œuvre des orientations du groupe et développement depuis le Togo."
+        }
+      ],
+      "description": "Les interactions ci-dessous décrivent des possibilités de coopération après immatriculation. Elles ne constituent ni des partenariats officiellement établis ni des activités actuelles de GK NEXUS."
+    },
+    "vision": {
+      "eyebrow": "Vision stratégique 2026–2035",
+      "title": "Préparer le développement international",
+      "description": "Sous réserve de son immatriculation, GK NEXUS serait appelée à soutenir la gouvernance, la coordination, l’expansion progressive, la recherche de partenariats, l’innovation et la création de valeur durable."
+    },
+    "final": {
+      "title": "Connecter. Coordonner. Développer.",
+      "entities": "Découvrir nos entités",
+      "contact": "Nous contacter",
+      "description": "Pour échanger sur le projet GK NEXUS, utilisez les coordonnées officielles de GK GLOBAL GROUP SARL U au Togo."
+    },
+    "identityTitle": "Un projet, un statut institutionnel clair",
+    "identity": [
+      "GK GROUP est la marque et l’écosystème international, sans personnalité juridique propre.",
+      "GK GLOBAL GROUP SARL U est une société légalement constituée au Togo, avec ses divisions opérationnelles GKGT et GKGM.",
+      "GK NEXUS Sh.p.k. est un projet distinct en Albanie. Sa future mise en œuvre reste soumise à son immatriculation ; elle n’est pas présentée comme une société enregistrée ou opérationnelle."
+    ],
+    "contents": "Explorer le projet GK NEXUS"
   },
-  en: {
-    hero: { eyebrow: "Corporate & International Operations", title: "GK NEXUS", description: "GK NEXUS is a company established in Albania that also serves as a management and coordination platform for GK GROUP, supporting its international development.", location: "Company established in Albania" },
-    vocation: { eyebrow: "Dual purpose", title: "One Company, Two Complementary Dimensions", corporate: { title: "Corporate & Group Steering", items: ["Strategic steering", "Group coordination", "Performance monitoring", "Cross-functional project coordination", "Support for structures", "Resource oversight and monitoring", "Preparation of strategic decisions", "International development"] }, operations: { title: "Own Business Activities", description: "As it develops, GK NEXUS may carry its own activities and projects according to opportunities.", items: ["Technology & Digital Solutions", "International Trade", "International Mobility", "Business Development", "Strategic Projects"] } },
-    role: { eyebrow: "Role within GK GROUP", title: "A strategic point of convergence", description: "GK NEXUS contributes to ensuring the group’s strategic coherence, facilitating coordination between structures and preparing progressive international development.", items: ["Facilitate coordination between structures", "Identify and structure new opportunities", "Monitor cross-functional projects", "Support governance", "Contribute to risk and resource oversight", "Prepare new establishments and partnerships"], cta: "View our architecture" },
-    albania: { eyebrow: "Albania", title: "A Strategic European Base", description: "GK NEXUS is established in Albania, where it serves as a management and coordination platform for GK GROUP. This presence helps strengthen the ecosystem’s European connections.", items: ["Coordination of GK GROUP’s international development", "Identification of European opportunities", "Partner research", "Development of commercial relationships", "Supplier and equipment research", "Structuring of international projects", "Support for the needs of the group’s various structures"] },
-    diagram: { eyebrow: "Functional connection", title: "Coordinating the group’s expertise", note: "This diagram illustrates a functional coordination approach. It does not replace or alter the official institutional diagram presented in our architecture." },
-    value: { eyebrow: "Value creation", title: "Turning opportunities into sustainable development", steps: ["GK NEXUS — Steering • Coordination • International development", "Opportunity identification and structuring", "Group structures", "Clients • Partners • Markets • Investors", "Sustainable value creation"] },
-    interactions: { eyebrow: "Operational interactions", title: "Complementarity in support of projects", items: [{ name: "GKGM", text: "GK NEXUS may contribute to identifying and structuring international opportunities related to mobility and professional needs." }, { name: "GKGT", text: "GK NEXUS may contribute to identifying suppliers, equipment, partners and technology opportunities." }, { name: "UAB GK EstTrade", text: "Commercial development, sourcing, international trade and Europe–Africa connections." }, { name: "GK Danube Trading DOO", text: "Project for developing commercial relationships and opportunities in Serbia and the region; company formation in progress." }, { name: "GK GLOBAL GROUP SARLU", text: "Institutional coordination, reporting, implementation of group directions and development from Togo." }] },
-    vision: { eyebrow: "Strategic Vision 2026–2035", title: "A Platform for International Development", description: "GK NEXUS is intended to support governance, coordination, progressive expansion, partnership development, innovation, operational excellence and sustainable value creation." },
-    final: { title: "Connect. Coordinate. Develop.", entities: "Discover our entities", contact: "Contact us" },
-  },
+  "en": {
+    "hero": {
+      "eyebrow": "International coordination and development project",
+      "title": "GK NEXUS",
+      "description": "GK NEXUS Sh.p.k. is a proposed company in Albania with registration still in progress. Subject to registration, it is intended to become a coordination and international development platform within the GK GROUP ecosystem.",
+      "location": "Albania · Registration in progress"
+    },
+    "vocation": {
+      "eyebrow": "Intended purpose",
+      "title": "Two complementary dimensions for a future platform",
+      "corporate": {
+        "title": "Steering and coordination",
+        "items": [
+          "Strategic steering",
+          "Group coordination",
+          "Performance monitoring",
+          "Cross-functional project coordination",
+          "Support for structures",
+          "Resource oversight and monitoring",
+          "Preparation of strategic decisions",
+          "International development"
+        ]
+      },
+      "operations": {
+        "title": "Potential activities and projects",
+        "description": "Subject to registration, GK NEXUS could also develop its own activities and projects according to opportunities and applicable requirements.",
+        "items": [
+          "Technology & Digital Solutions",
+          "International Trade",
+          "International Mobility",
+          "Business Development",
+          "Strategic Projects"
+        ]
+      }
+    },
+    "role": {
+      "eyebrow": "Intended role within GK GROUP",
+      "title": "A future strategic point of convergence",
+      "description": "Following registration, GK NEXUS would aim to support the ecosystem’s strategic coherence, facilitate exchanges between structures and prepare progressive international development.",
+      "items": [
+        "Facilitate coordination between structures",
+        "Identify and structure new opportunities",
+        "Monitor cross-functional projects",
+        "Support governance",
+        "Contribute to risk and resource oversight",
+        "Prepare new establishments and partnerships"
+      ],
+      "cta": "View our architecture"
+    },
+    "albania": {
+      "eyebrow": "Albania project",
+      "title": "A future platform with a European focus",
+      "description": "The GK NEXUS Sh.p.k. project aims to establish a presence in Albania, subject to registration. This direction could strengthen the ecosystem’s European connections and does not represent a current operational presence.",
+      "items": [
+        "Coordination of GK GROUP’s international development",
+        "Identification of European opportunities",
+        "Partner research",
+        "Development of commercial relationships",
+        "Supplier and equipment research",
+        "Structuring of international projects",
+        "Support for the needs of the group’s various structures"
+      ]
+    },
+    "diagram": {
+      "eyebrow": "Proposed coordination",
+      "title": "Connecting expertise while respecting distinct roles",
+      "note": "This diagram presents a proposed functional approach following GK NEXUS registration. It represents neither an ownership structure nor existing operational coordination and does not replace the group’s institutional architecture.",
+      "coordination": "Future coordination platform",
+      "brand": "International brand and ecosystem",
+      "pending": "Project · Registration in progress",
+      "serbia": "Project · Company formation in progress"
+    },
+    "value": {
+      "eyebrow": "Potential value creation",
+      "title": "From opportunities to sustainable development",
+      "steps": [
+        "GK NEXUS — Steering • Coordination • International development",
+        "Opportunity identification and structuring",
+        "Group structures",
+        "Clients • Partners • Markets • Investors",
+        "Sustainable value creation"
+      ]
+    },
+    "interactions": {
+      "eyebrow": "Potential complementarities",
+      "title": "Future exchanges in support of projects",
+      "items": [
+        {
+          "name": "GKGM",
+          "text": "GK NEXUS may contribute to identifying and structuring international opportunities related to mobility and professional needs."
+        },
+        {
+          "name": "GKGT",
+          "text": "GK NEXUS may contribute to identifying suppliers, equipment, partners and technology opportunities."
+        },
+        {
+          "name": "UAB GK EstTrade",
+          "text": "Commercial development, sourcing, international trade and Europe–Africa connections."
+        },
+        {
+          "name": "GK Danube Trading DOO",
+          "text": "Project for developing commercial relationships and opportunities in Serbia and the region; company formation in progress."
+        },
+        {
+          "name": "GK GLOBAL GROUP SARLU",
+          "text": "Institutional coordination, reporting, implementation of group directions and development from Togo."
+        }
+      ],
+      "description": "The interactions below describe possible cooperation following registration. They represent neither officially established partnerships nor current GK NEXUS operations."
+    },
+    "vision": {
+      "eyebrow": "Strategic Vision 2026–2035",
+      "title": "Preparing international development",
+      "description": "Subject to registration, GK NEXUS would aim to support governance, coordination, progressive expansion, partnership research, innovation and sustainable value creation."
+    },
+    "final": {
+      "title": "Connect. Coordinate. Develop.",
+      "entities": "Discover our entities",
+      "contact": "Contact us",
+      "description": "To discuss the GK NEXUS project, use GK GLOBAL GROUP SARL U’s official contact details in Togo."
+    },
+    "identityTitle": "A project with a clear institutional status",
+    "identity": [
+      "GK GROUP is the international brand and ecosystem, without legal personality of its own.",
+      "GK GLOBAL GROUP SARL U is a legally constituted company in Togo, with its operational divisions GKGT and GKGM.",
+      "GK NEXUS Sh.p.k. is a distinct project in Albania. Its future implementation remains subject to registration; it is not presented as a registered or operational company."
+    ],
+    "contents": "Explore the GK NEXUS project"
+  }
 };
 
 export const CONTACT_CONTENT = {
@@ -98,14 +334,14 @@ export const CONTACT_CONTENT = {
     hero: { title: "Entrons en contact", description: "Une question, un projet ou une opportunité de partenariat ? Échangez avec GK GROUP et identifions ensemble l’interlocuteur adapté à votre demande.", signature: "Building Trust. Connecting Opportunities." },
     details: { eyebrow: "Coordonnées", title: "GK GROUP", generalEmail: "Email général", institutionalEmail: "Contact institutionnel", call: "Appeler", whatsapp: "WhatsApp", whatsappMessage: "Bonjour GK GROUP, je souhaite obtenir des informations concernant vos services." },
     form: { eyebrow: "Votre demande", title: "Parlez-nous de votre projet", intro: "Les champs marqués d’un astérisque sont obligatoires.", fields: { name: "Nom complet", email: "Email", phone: "Téléphone", country: "Pays", organisation: "Société / Organisation", subject: "Objet", area: "Domaine concerné", message: "Message" }, options: ["Technology & Digital Solutions", "Mobilité internationale", "Commerce international & Import-Export", "Business Development", "Strategic Consulting", "Partenariat", "Autre demande"], submit: "Envoyer via WhatsApp", emailAlternative: "Préférer l’email", whatsappInfo: "En choisissant WhatsApp, les informations saisies seront transférées vers WhatsApp afin que vous puissiez envoyer votre demande à GK GROUP.", privacy: "Les informations transmises via ce formulaire sont utilisées uniquement pour traiter votre demande. GK GROUP ne garantit ni visa, ni emploi, ni admission, ni résultat administratif ou commercial." },
-    routing: { eyebrow: "Trouver le bon interlocuteur", title: "Une orientation adaptée à votre demande", items: [{ id: "gkgt", name: "GK GLOBAL TECHNOLOGY (GKGT)", text: "Technology & Digital Solutions" }, { id: "gkgm", name: "GK GLOBAL MOBILITY (GKGM)", text: "International Mobility" }, { id: "uab-gk-esttrade", name: "UAB GK EstTrade", text: "International Trade & Sourcing / échanges Europe–Afrique" }, { id: "gk-danube-trading", name: "GK Danube Trading DOO", text: "International Trade & Development / Projet Serbie en cours de constitution" }, { id: "gk-nexus", name: "GK NEXUS", text: "Coordination corporate, business development et projets stratégiques" }, { id: "gk-global-group-sarlu", name: "GK GLOBAL GROUP SARLU", text: "Questions institutionnelles et corporate au Togo" }] },
+    routing: { eyebrow: "Trouver le bon interlocuteur", title: "Une orientation adaptée à votre demande", items: [{ id: "gkgt", name: "GK GLOBAL TECHNOLOGY (GKGT)", text: "Technology & Digital Solutions" }, { id: "gkgm", name: "GK GLOBAL MOBILITY (GKGM)", text: "International Mobility" }, { id: "uab-gk-esttrade", name: "UAB GK EstTrade", text: "International Trade & Sourcing / échanges Europe–Afrique" }, { id: "gk-danube-trading", name: "GK Danube Trading DOO", text: "International Trade & Development / Projet Serbie en cours de constitution" }, { id: "gk-nexus", name: "GK NEXUS", text: "Projet GK NEXUS Sh.p.k. — immatriculation en cours ; coordination et développement envisagés après immatriculation" }, { id: "gk-global-group-sarlu", name: "GK GLOBAL GROUP SARLU", text: "Questions institutionnelles et corporate au Togo" }] },
     partnership: { title: "Construisons des opportunités ensemble", description: "GK GROUP développe des relations avec des entreprises, institutions, fournisseurs, établissements et partenaires internationaux autour de projets technologiques, de mobilité, de commerce, de développement d’affaires et de coopération stratégique.", cta: "Proposer un partenariat" },
   },
   en: {
     hero: { title: "Let’s Connect", description: "Have a question, a project or a partnership opportunity? Connect with GK GROUP and let us identify the right point of contact for your request.", signature: "Building Trust. Connecting Opportunities." },
     details: { eyebrow: "Contact details", title: "GK GROUP", generalEmail: "General Email", institutionalEmail: "Institutional Contact", call: "Call", whatsapp: "WhatsApp", whatsappMessage: "Hello GK GROUP, I would like to get information about your services." },
     form: { eyebrow: "Your inquiry", title: "Tell us about your project", intro: "Fields marked with an asterisk are required.", fields: { name: "Full name", email: "Email", phone: "Phone", country: "Country", organisation: "Company / Organisation", subject: "Subject", area: "Area of interest", message: "Message" }, options: ["Technology & Digital Solutions", "International Mobility", "International Trade & Import-Export", "Business Development", "Strategic Consulting", "Partnership", "Other inquiry"], submit: "Send via WhatsApp", emailAlternative: "Prefer Email", whatsappInfo: "By choosing WhatsApp, the information entered will be transferred to WhatsApp so you can send your inquiry to GK GROUP.", privacy: "Information submitted through this form is used only to process your inquiry. GK GROUP does not guarantee visas, employment, admission, administrative approvals or commercial outcomes." },
-    routing: { eyebrow: "Find the Right Contact", title: "Guidance adapted to your inquiry", items: [{ id: "gkgt", name: "GK GLOBAL TECHNOLOGY (GKGT)", text: "Technology & Digital Solutions" }, { id: "gkgm", name: "GK GLOBAL MOBILITY (GKGM)", text: "International Mobility" }, { id: "uab-gk-esttrade", name: "UAB GK EstTrade", text: "International Trade & Sourcing / Europe–Africa trade" }, { id: "gk-danube-trading", name: "GK Danube Trading DOO", text: "International Trade & Development / Serbia company formation project" }, { id: "gk-nexus", name: "GK NEXUS", text: "Corporate coordination, business development and strategic projects" }, { id: "gk-global-group-sarlu", name: "GK GLOBAL GROUP SARLU", text: "Institutional and corporate matters in Togo" }] },
+    routing: { eyebrow: "Find the Right Contact", title: "Guidance adapted to your inquiry", items: [{ id: "gkgt", name: "GK GLOBAL TECHNOLOGY (GKGT)", text: "Technology & Digital Solutions" }, { id: "gkgm", name: "GK GLOBAL MOBILITY (GKGM)", text: "International Mobility" }, { id: "uab-gk-esttrade", name: "UAB GK EstTrade", text: "International Trade & Sourcing / Europe–Africa trade" }, { id: "gk-danube-trading", name: "GK Danube Trading DOO", text: "International Trade & Development / Serbia company formation project" }, { id: "gk-nexus", name: "GK NEXUS", text: "GK NEXUS Sh.p.k. project — registration in progress; intended coordination and development following registration" }, { id: "gk-global-group-sarlu", name: "GK GLOBAL GROUP SARLU", text: "Institutional and corporate matters in Togo" }] },
     partnership: { title: "Building Opportunities Together", description: "GK GROUP develops relationships with companies, institutions, suppliers, educational organizations and international partners across technology, mobility, trade, business development and strategic cooperation.", cta: "Partnership Inquiry" },
   },
 };
@@ -137,23 +373,23 @@ export const NEWS_CONTENT = {
 export const ABOUT_CONTENT = {
   fr: {
     hero: { eyebrow: "Architecture institutionnelle internationale", title: "À propos de GK GROUP", description: "GK GROUP est une marque et un écosystème international, sans statut juridique propre à ce jour, réunissant des sociétés, branches et plateformes complémentaires.", motto: "Global Business Without Borders", signature: "Building Trust. Connecting Opportunities." },
-    identity: { eyebrow: "Qui sommes-nous ?", title: "Construire un groupe international durable", description: "GK GROUP vise à relier l’Afrique et l’Europe, puis à développer progressivement sa présence internationale au moyen d’activités complémentaires, d’une gouvernance coordonnée et de partenariats durables.", currentLabel: "Présence actuelle et structures", current: ["Togo", "Lituanie", "Albanie"], plannedLabel: "Développement stratégique", planned: "Serbie — développement engagé à travers le projet GK Danube Trading DOO, dont la constitution est en cours." },
+    identity: { eyebrow: "Qui sommes-nous ?", title: "Construire un groupe international durable", description: "GK GROUP vise à relier l’Afrique et l’Europe, puis à développer progressivement sa présence internationale au moyen d’activités complémentaires, d’une gouvernance coordonnée et de partenariats durables.", currentLabel: "Présence actuelle et structures", current: ["Togo", "Lituanie"], plannedLabel: "Développement stratégique", planned: "Serbie — projet GK Danube Trading DOO, constitution en cours. Albanie — projet GK NEXUS Sh.p.k., immatriculation en cours." },
     vision: { eyebrow: "Vision stratégique 2026–2035", title: "Une organisation conçue pour traverser les générations", description: "Notre ambition est de construire une organisation internationale durable, capable de créer de la valeur avec rigueur, continuité et responsabilité.", pillars: ["Innovation", "Gouvernance", "Développement international", "Création de valeur durable", "Excellence opérationnelle", "Partenariats stratégiques", "Expansion progressive"] },
     founder: { eyebrow: "Mot du fondateur", name: "Edem Yawo Awutey", role: "Fondateur & Directeur Général — GK GROUP", message: ["Notre ambition est de bâtir un écosystème international capable de créer des passerelles entre l’Afrique et le reste du monde. À travers nos activités dans la technologie, la mobilité internationale, le commerce et le développement d’affaires, nous souhaitons connecter les marchés, les entreprises, les talents et les opportunités au-delà des frontières — en Europe, en Asie, dans les Amériques et partout où de nouvelles collaborations peuvent être développées.", "GK GROUP porte ainsi une vision résolument mondiale : construire des relations durables, faciliter les échanges internationaux et créer de nouvelles opportunités entre les continents."], motto: "Global Business Without Borders", emailLabel: "Contact institutionnel", whatsappLabel: "WhatsApp GK GROUP", emailAria: "Contacter GK GROUP par email", whatsappAria: "Contacter GK GROUP via WhatsApp", photoAlt: "Edem Yawo Awutey, Fondateur et Directeur Général de GK GROUP" },
     mission: { eyebrow: "Notre mission", title: "Connecter, structurer et développer", items: ["Connecter les opportunités entre marchés.", "Structurer et développer des activités complémentaires.", "Faciliter les échanges Afrique–Europe.", "Développer des solutions en technologie, mobilité, commerce international, business development et conseil stratégique.", "Construire des partenariats durables."] },
     model: { eyebrow: "Modèle institutionnel", title: "Une coordination claire, des structures autonomes", description: "GK GROUP associe un pilotage coordonné à l’autonomie opérationnelle de ses structures, afin de renforcer leur complémentarité, le suivi des performances et le développement international progressif.", cta: "Découvrir notre architecture", principles: ["Gouvernance et pilotage coordonnés", "Autonomie opérationnelle des structures", "Complémentarité entre les entités", "Contrôle et suivi des performances", "Développement international progressif"] },
-    timeline: { eyebrow: "Notre évolution", title: "Une présence construite par étapes", items: [{ title: "Togo", text: "GK GLOBAL GROUP SARLU, société établie au Togo, développe ses activités à travers ses deux branches opérationnelles, GKGT et GKGM." }, { title: "Lituanie", text: "Présence internationale via UAB GK EstTrade, dédiée au commerce, au sourcing et au développement Europe–Afrique." }, { title: "Serbie", text: "Développement engagé à travers le projet GK Danube Trading DOO, dont la constitution est en cours." }, { title: "Albanie", text: "Société GK NEXUS établie en Albanie, également plateforme de gestion et de coordination de GK GROUP." }] },
+    timeline: { eyebrow: "Notre évolution", title: "Une présence construite par étapes", items: [{ title: "Togo", text: "GK GLOBAL GROUP SARLU, société établie au Togo, développe ses activités à travers ses deux branches opérationnelles, GKGT et GKGM." }, { title: "Lituanie", text: "Présence internationale via UAB GK EstTrade, dédiée au commerce, au sourcing et au développement Europe–Afrique." }, { title: "Serbie", text: "Développement engagé à travers le projet GK Danube Trading DOO, dont la constitution est en cours." }, { title: "Albanie", text: "Projet GK NEXUS Sh.p.k. en Albanie, immatriculation en cours ; future plateforme de coordination et de développement international, sous réserve d’immatriculation." }] },
     domains: { eyebrow: "Nos domaines", title: "Cinq expertises complémentaires", cta: "Découvrir nos activités" },
     horizon: { eyebrow: "Horizon international", title: "Une vision géographique à long terme", description: "Au-delà de sa présence actuelle, GK GROUP envisage un horizon stratégique de long terme entre l’Afrique, l’Europe, les Amériques et l’Asie-Pacifique. Ces régions expriment une ambition de développement, et non des implantations opérationnelles actuelles." },
   },
   en: {
     hero: { eyebrow: "International institutional architecture", title: "About GK GROUP", description: "GK GROUP is an international brand and ecosystem, currently without legal status of its own, bringing together complementary companies, branches and platforms.", motto: "Global Business Without Borders", signature: "Building Trust. Connecting Opportunities." },
-    identity: { eyebrow: "Who we are", title: "Building a sustainable international group", description: "GK GROUP aims to connect Africa and Europe, then progressively develop its international presence through complementary activities, coordinated governance and lasting partnerships.", currentLabel: "Current presence and structures", current: ["Togo", "Lithuania", "Albania"], plannedLabel: "Strategic development", planned: "Serbia — development underway through the GK Danube Trading DOO project, with company formation in progress." },
+    identity: { eyebrow: "Who we are", title: "Building a sustainable international group", description: "GK GROUP aims to connect Africa and Europe, then progressively develop its international presence through complementary activities, coordinated governance and lasting partnerships.", currentLabel: "Current presence and structures", current: ["Togo", "Lithuania"], plannedLabel: "Strategic development", planned: "Serbia — GK Danube Trading DOO project, company formation in progress. Albania — GK NEXUS Sh.p.k. project, registration in progress." },
     vision: { eyebrow: "Strategic Vision 2026–2035", title: "An organisation designed to span generations", description: "Our ambition is to build a sustainable international organisation that creates value with rigour, continuity and responsibility.", pillars: ["Innovation", "Governance", "International development", "Sustainable value creation", "Operational excellence", "Strategic partnerships", "Progressive expansion"] },
     founder: { eyebrow: "Founder’s Message", name: "Edem Yawo Awutey", role: "Founder & Managing Director — GK GROUP", message: ["Our ambition is to build an international ecosystem capable of creating bridges between Africa and the rest of the world. Through our activities in technology, international mobility, trade and business development, we aim to connect markets, businesses, talent and opportunities across borders — in Europe, Asia, the Americas and wherever new international collaborations can be developed.", "GK GROUP therefore embraces a truly global vision: building lasting relationships, facilitating international exchanges and creating new opportunities across continents."], motto: "Global Business Without Borders", emailLabel: "Institutional contact", whatsappLabel: "GK GROUP WhatsApp", emailAria: "Contact GK GROUP by email", whatsappAria: "Contact GK GROUP via WhatsApp", photoAlt: "Edem Yawo Awutey, Founder and Managing Director of GK GROUP" },
     mission: { eyebrow: "Our mission", title: "Connect, structure and develop", items: ["Connect opportunities across markets.", "Structure and develop complementary activities.", "Facilitate Africa–Europe exchanges.", "Develop solutions in technology, mobility, international trade, business development and strategic consulting.", "Build lasting partnerships."] },
     model: { eyebrow: "Institutional model", title: "Clear coordination, autonomous structures", description: "GK GROUP combines coordinated steering with the operational autonomy of its structures to strengthen complementarity, performance oversight and progressive international development.", cta: "Discover our architecture", principles: ["Coordinated governance and steering", "Operational autonomy of structures", "Complementarity between entities", "Performance oversight and monitoring", "Progressive international development"] },
-    timeline: { eyebrow: "Our evolution", title: "A presence built step by step", items: [{ title: "Togo", text: "GK GLOBAL GROUP SARLU, a company established in Togo, develops its activities through its two operational branches, GKGT and GKGM." }, { title: "Lithuania", text: "International presence through UAB GK EstTrade, dedicated to trade, sourcing and Europe–Africa development." }, { title: "Serbia", text: "Development underway through the GK Danube Trading DOO project, with company formation in progress." }, { title: "Albania", text: "GK NEXUS is a company established in Albania and also a management and coordination platform for GK GROUP." }] },
+    timeline: { eyebrow: "Our evolution", title: "A presence built step by step", items: [{ title: "Togo", text: "GK GLOBAL GROUP SARLU, a company established in Togo, develops its activities through its two operational branches, GKGT and GKGM." }, { title: "Lithuania", text: "International presence through UAB GK EstTrade, dedicated to trade, sourcing and Europe–Africa development." }, { title: "Serbia", text: "Development underway through the GK Danube Trading DOO project, with company formation in progress." }, { title: "Albania", text: "GK NEXUS Sh.p.k. is a proposed company in Albania with registration in progress, intended as a future coordination and international development platform subject to registration." }] },
     domains: { eyebrow: "Our areas", title: "Five complementary areas of expertise", cta: "Discover our activities" },
     horizon: { eyebrow: "International horizon", title: "A long-term geographic vision", description: "Beyond its current presence, GK GROUP envisages a long-term strategic horizon across Africa, Europe, the Americas and Asia-Pacific. These regions express a development ambition, not current operational establishments." },
   },
@@ -163,7 +399,7 @@ export const ENTITIES = [
   { id: "gk-global-group-sarlu", name: "GK GLOBAL GROUP SARLU", kind: { fr: "Société établie au Togo, avec deux branches opérationnelles : GKGT et GKGM", en: "Company established in Togo, with two operational branches: GKGT and GKGM" }, location: "Lomé, Togo" },
   { id: "gkgt", name: "GKGT — GK GLOBAL TECHNOLOGY", kind: { fr: "Branche opérationnelle Technology & IT de GK GLOBAL GROUP SARLU", en: "Technology & IT operational branch of GK GLOBAL GROUP SARLU" }, location: "Lomé, Togo" },
   { id: "gkgm", name: "GKGM — GK GLOBAL MOBILITY", kind: { fr: "Branche opérationnelle International Mobility de GK GLOBAL GROUP SARLU", en: "International Mobility operational branch of GK GLOBAL GROUP SARLU" }, location: "Lomé, Togo" },
-  { id: "gk-nexus", name: "GK NEXUS", kind: { fr: "Société établie en Albanie et plateforme de gestion et de coordination de GK GROUP", en: "Company established in Albania and a management and coordination platform for GK GROUP" }, location: null },
+  { id: "gk-nexus", name: "GK NEXUS", kind: { fr: "Projet GK NEXUS Sh.p.k. en Albanie, immatriculation en cours ; future plateforme de coordination sous réserve d’immatriculation", en: "GK NEXUS Sh.p.k. project in Albania, registration in progress; future coordination platform subject to registration" }, location: null },
   { id: "uab-gk-esttrade", name: "UAB GK EstTrade", kind: { fr: "Société de l’écosystème GK GROUP établie en Lituanie : commerce international, sourcing, import-export et relations Europe–Afrique", en: "GK GROUP ecosystem company established in Lithuania: international trade, sourcing, import-export and Europe–Africa relations" }, location: "Lituanie" },
   { id: "gk-danube-trading", name: "GK Danube Trading DOO", kind: { fr: "Projet de société en cours de constitution en Serbie", en: "Company formation project in progress in Serbia" }, location: "Serbie" },
 ];
@@ -181,7 +417,7 @@ export const ENTITY_DETAILS = {
   "gk-global-group-sarlu": { domain: { fr: "Cadre institutionnel et coordination", en: "Institutional framework and coordination" }, role: { fr: "Société établie au Togo, GK GLOBAL GROUP SARLU développe ses activités à travers deux branches opérationnelles : GK GLOBAL TECHNOLOGY (GKGT) et GK GLOBAL MOBILITY (GKGM).", en: "A company established in Togo, GK GLOBAL GROUP SARLU develops its activities through two operational branches: GK GLOBAL TECHNOLOGY (GKGT) and GK GLOBAL MOBILITY (GKGM)." }, legal: { fr: { title: "Informations légales", entries: [{ label: "Forme juridique", value: "SARL U" }, { label: "RCCM", value: "TG-LFW-01-2026-B13-02457" }, { label: "NIF", value: "1002141706" }, { label: "Siège social", value: "Lomé, Togo" }] }, en: { title: "Legal Information", entries: [{ label: "Legal form", value: "SARL U" }, { label: "RCCM", value: "TG-LFW-01-2026-B13-02457" }, { label: "Tax ID (NIF)", value: "1002141706" }, { label: "Registered office", value: "Lomé, Togo" }] } } },
   gkgt: { domain: { fr: "Technology & IT", en: "Technology & IT" }, role: { fr: "Branche opérationnelle de GK GLOBAL GROUP SARLU dédiée aux technologies, aux solutions informatiques, aux réseaux et aux services IT.", en: "Operational branch of GK GLOBAL GROUP SARLU dedicated to technology, IT solutions, networks and IT services." } },
   gkgm: { domain: { fr: "International Mobility", en: "International Mobility" }, role: { fr: "Branche opérationnelle de GK GLOBAL GROUP SARLU dédiée au conseil et à l’accompagnement en mobilité internationale.", en: "Operational branch of GK GLOBAL GROUP SARLU dedicated to international mobility consulting and support." } },
-  "gk-nexus": { domain: { fr: "Corporate & International Operations", en: "Corporate & International Operations" }, role: { fr: "Société établie en Albanie, plateforme de gestion et de coordination de GK GROUP, avec ses propres activités et projets.", en: "Company established in Albania, serving as a management and coordination platform for GK GROUP, with its own activities and projects." }, location: { fr: "Albanie / vocation internationale", en: "Albania / international vocation" } },
+  "gk-nexus": { domain: { fr: "Corporate & International Operations", en: "Corporate & International Operations" }, role: { fr: "Projet de société en Albanie dont l’immatriculation est en cours ; future plateforme de coordination et de développement international, sous réserve d’immatriculation.", en: "Proposed company in Albania with registration in progress; future coordination and international development platform, subject to registration." }, location: { fr: "Projet Albanie / immatriculation en cours", en: "Albania project / registration in progress" } },
   "uab-gk-esttrade": { domain: { fr: "Commerce international, sourcing et développement Europe–Afrique", en: "International trade, sourcing and Europe–Africa development" }, role: { fr: "Commerce international, sourcing, import-export et développement des relations Europe–Afrique au sein de l’écosystème GK GROUP.", en: "International trade, sourcing, import-export and development of Europe–Africa relations within the GK GROUP ecosystem." }, legal: { fr: { title: "Informations légales", entries: [{ label: "Forme juridique", value: "UAB (société à responsabilité limitée)" }, { label: "Code société", value: "306154150" }, { label: "Siège social", value: "Vilnius, Lithuania" }, { label: "Immatriculée", value: "3 octobre 2022" }] }, en: { title: "Legal Information", entries: [{ label: "Legal form", value: "UAB (Private Limited Liability Company)" }, { label: "Company code", value: "306154150" }, { label: "Registered office", value: "Vilnius, Lithuania" }, { label: "Registered", value: "3 October 2022" }] } } },
   "gk-danube-trading": { domain: { fr: "Commerce et développement international", en: "Trade and international development" }, role: { fr: "Développement d’un projet d’implantation en Serbie et dans la région ; constitution de la société en cours, sans implantation juridique opérationnelle à ce stade.", en: "Development of a planned establishment in Serbia and the region; company formation is in progress, with no operational legal establishment at this stage." } },
 };
