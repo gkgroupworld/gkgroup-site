@@ -1,3 +1,4 @@
+import { headers } from "next/headers";
 import "./globals.css";
 import { SITE_STRUCTURED_DATA, SITE_URL } from "@/lib/seo";
 
@@ -11,8 +12,9 @@ export const metadata = {
   robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }) {
-  return <html lang="fr"><body>
+export default async function RootLayout({ children }) {
+  const locale = (await headers()).get("x-gk-locale") === "en" ? "en" : "fr";
+  return <html lang={locale}><body>
     <script
       id="gkgroup-structured-data"
       type="application/ld+json"
