@@ -1,0 +1,30 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+import { PartnershipForm } from "@/components/pages/PartnershipForm";
+import { CONTACT, ENTITY_LOGOS } from "@/content/site";
+import { PARTNERSHIP_CONTENT } from "@/content/partnerships";
+import { withLocale } from "@/lib/locale";
+
+const buttonClass = "inline-flex min-h-11 items-center justify-center border border-[#d59b46] bg-[#061b46] px-5 py-3 text-sm font-bold transition hover:bg-[#0c3269]";
+const cardClass = "border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8";
+
+export function PartnershipsPage({ locale }) {
+  const copy = PARTNERSHIP_CONTENT[locale];
+  return <>
+    <Header locale={locale} />
+    <main lang={locale}>
+      <section className="bg-[#061b46] text-white"><div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center"><div><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.eyebrow}</p><h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{copy.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.intro}</p><p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p><a href="#proposal" className="mt-7 inline-flex min-h-11 items-center border border-[#d59b46] px-5 py-3 text-sm font-bold">{copy.propose}</a></div><div className="border border-[#d59b46] bg-white p-5"><Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} priority className="h-auto w-full object-contain" sizes="(max-width: 1024px) 100vw, 360px" /></div></div></section>
+      <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8"><div className="mx-auto max-w-7xl border-l-4 border-[#e87512] pl-6"><h2 className="text-2xl font-bold text-[#061b46]">{copy.identityTitle}</h2><div className="mt-5 grid gap-3 leading-7 text-slate-600">{copy.identity.map((text) => <p key={text}>{text}</p>)}</div></div></section>
+      <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle title={copy.whyTitle} /><p className="mb-8 max-w-3xl leading-7 text-slate-600">{copy.whyIntro}</p><div className="grid gap-6 md:grid-cols-2">{copy.why.map((item) => <article key={item.title} className={cardClass}><h3 className="text-xl font-bold text-[#061b46]">{item.title}</h3><p className="mt-4 leading-7 text-slate-600">{item.text}</p></article>)}</div></div></section>
+      <section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">{[["mobility", "gkgm", "/gk-global-mobility"], ["technology", "gkgt", "/gk-global-technology"]].map(([key, id, href]) => { const part = copy[key]; const logo = ENTITY_LOGOS[id]; return <article key={key} className={cardClass}><div className="mb-6 flex h-40 items-center border-b border-slate-200 bg-[#d4e1ea] p-4"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-full w-full object-contain" sizes="(max-width: 1024px) 100vw, 480px" /></div><h2 className="text-2xl font-bold text-[#061b46]">{part.title}</h2><p className="mt-4 leading-7 text-slate-600">{part.description}</p><ul className="mt-6 grid gap-4">{part.items.map((item) => <li key={item} className="border-l-2 border-[#e87512] pl-3 text-sm leading-6 text-slate-600">{item}</li>)}</ul><Link href={withLocale(href, locale)} className={`mt-7 ${buttonClass}`} style={{ color: "#ffffff" }}>{part.link}</Link></article>; })}</div></section>
+      <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle title={copy.tradeTitle} /><p className="max-w-3xl leading-7 text-slate-600">{copy.tradeIntro}</p><ul className="mt-7 grid gap-4 md:grid-cols-2">{copy.tradeItems.map((text) => <li key={text} className={cardClass}><p className="text-sm leading-7 text-slate-600">{text}</p></li>)}</ul><Link href={withLocale("/entities", locale)} className={`mt-7 ${buttonClass}`} style={{ color: "#ffffff" }}>{copy.entities}</Link></div></section>
+      <section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle title={copy.methodTitle} /><ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{copy.steps.map((step, index) => <li key={step} className="border-t-2 border-[#e87512] pt-4"><span aria-hidden="true" className="text-sm font-bold text-[#e87512]">0{index + 1}</span><p className="mt-3 leading-7 text-slate-600">{step}</p></li>)}</ol><p className="mt-10 border-l-4 border-[#e87512] bg-white p-5 text-sm leading-7 text-slate-600">{copy.notice}</p></div></section>
+      <section id="proposal" className="scroll-mt-6 px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle title={copy.formTitle} /><p className="mb-8 max-w-3xl leading-7 text-slate-600">{copy.formIntro}</p><PartnershipForm copy={copy.form} /><address className="mt-7 grid gap-2 text-sm not-italic leading-6 text-slate-600"><p>{CONTACT.legalName} · {CONTACT.location}</p><a href={CONTACT.emailHref} className="w-fit underline underline-offset-4">{CONTACT.email}</a><a href={CONTACT.whatsappHref} className="w-fit underline underline-offset-4">WhatsApp {CONTACT.whatsapp}</a></address></div></section>
+      <section className="px-5 pb-16 sm:px-8 sm:pb-20"><div className="mx-auto max-w-7xl border-l-4 border-[#e87512] bg-[#f5f7fa] p-6 sm:p-10"><h2 className="text-3xl font-bold text-[#061b46]">{copy.propose}</h2><div className="mt-7 flex flex-wrap gap-4"><a href="#proposal" className={buttonClass} style={{ color: "#ffffff" }}>{copy.propose}</a><Link href={withLocale("/contact", locale)} className={buttonClass} style={{ color: "#ffffff" }}>{copy.contact}</Link></div></div></section>
+    </main>
+    <Footer locale={locale} />
+  </>;
+}
