@@ -100,6 +100,12 @@ for (const publicUrl of urls) {
     assert.ok(html.includes(locale === "fr" ? "Une société juridiquement distincte" : "A legally distinct company"));
     assert.ok(html.includes(locale === "fr" ? "Distribution informatique" : "IT equipment distribution"));
     assert.ok(html.includes("306154150"));
+    const activities = html.match(/<section\b[^>]*id="activities"[^>]*>(.*?)<\/section>/s)?.[1] || "";
+    assert.equal((activities.match(/<article\b/g) || []).length, 6, "six detailed activity areas");
+    assert.equal((activities.match(/<dl\b/g) || []).length, 6, "clients and value for each activity");
+    assert.ok(activities.includes(locale === "fr" ? "Matériel informatique d’occasion et reconditionné" : "Used and refurbished IT equipment"));
+    assert.ok(activities.includes(locale === "fr" ? "Coordination logistique et commerciale" : "Logistics and commercial coordination"));
+    assert.ok(activities.includes(locale === "fr" ? "sous réserve de confirmation" : "subject to assessment and confirmation"));
     assert.ok(html.includes(`href="/gk-esttrade?lang=${locale === "fr" ? "en" : "fr"}"`));
     for (const path of ["/contact", "/entities", "/partnerships"]) {
       assert.ok(html.includes(`href="${path}?lang=${locale}"`));

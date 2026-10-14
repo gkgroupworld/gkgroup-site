@@ -27,3 +27,17 @@ Production-server integration checks: `node scripts/verify-seo.mjs` with a serve
 on port 3100 (or pass its base URL). Checks cover 24 FR/EN URLs, locale switching,
 canonical/hreflang, sitemap, institutional schema, EstTrade navigation and legal
 wording, and existing partnership form integrity.
+
+## Visual and activity update
+
+The hero uses the same 1.4 / 0.6 column ratio, navy background, title scale and
+spacing as Nexus, Technology and Mobility. The added white logo frame is removed;
+the original logo asset is unchanged and its display width is capped at 320px.
+Six bilingual activity cards describe scope, customers and value. Used/refurbished
+equipment and logistics coordination are explicitly subject to assessment and
+confirmation, without claims of inventory, refurbishment facilities or a logistics
+network. Direct desktop/mobile navigation, canonical URLs and sitemap are retained.
+
+Compared all four page headers at 1440px and 390px. Checked EstTrade activity cards
+in two columns on desktop and one on mobile, with no horizontal overflow. Integration
+checks also assert six activity cards, client/value descriptions and conditional scope.
