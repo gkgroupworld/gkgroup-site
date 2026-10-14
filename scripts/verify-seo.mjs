@@ -82,6 +82,16 @@ for (const publicUrl of urls) {
   for (const node of graph) assert.ok(!node.owns && !node.owner && !node.subOrganization);
   if (canonicalGraph) assert.deepEqual(data, canonicalGraph); else canonicalGraph = data;
   assert.ok(html.includes(`href="/gk-esttrade?lang=${locale}"`), `${publicUrl}: EstTrade navigation`);
+  const header = html.match(/<header\b[^>]*>(.*?)<\/header>/s)?.[1] || "";
+  const navigation = [...header.matchAll(/<nav\b[^>]*>(.*?)<\/nav>/gs)].map(match => match[1]);
+  assert.equal(navigation.length, 2, `${publicUrl}: desktop and mobile menus`);
+  for (const menu of navigation) {
+    assert.ok(!/<(?:details|summary)\b/.test(menu), `${publicUrl}: no nested dropdown`);
+    for (const [path, label] of [["/entities", locale === "fr" ? "Nos entités" : "Our entities"], ["/gk-esttrade", "UAB GK EstTrade"], ["/gk-global-technology", "GKGT"], ["/gk-global-mobility", "GKGM"], ["/gk-nexus", "GK NEXUS"]]) {
+      const anchor = menu.match(new RegExp(`<a\\b[^>]*href="${path}\\?lang=${locale}"[^>]*>(.*?)</a>`));
+      assert.equal(anchor?.[1], label, `${publicUrl}: independent ${path} menu link`);
+    }
+  }
   if (["/gk-esttrade", "/entities"].includes(url.pathname)) {
     assert.ok(!/3 (?:octobre|October) 2022/.test(html), `${publicUrl}: unverified registration date`);
   }
