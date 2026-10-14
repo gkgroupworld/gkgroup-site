@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { CTA } from "@/components/ui/CTA";
 import { ENTITY_DETAILS, ENTITY_LOGOS } from "@/content/site";
+import { TECHNOLOGY_CONTENT } from "@/content/technology";
 import { withLocale } from "@/lib/locale";
 
 const copy = {
@@ -67,14 +68,31 @@ export function EstTradePage({ locale }) {
   const text = copy[locale];
   const logo = ENTITY_LOGOS["uab-gk-esttrade"];
   const legal = ENTITY_DETAILS["uab-gk-esttrade"].legal[locale];
+  const reference = TECHNOLOGY_CONTENT[locale];
   return <><Header locale={locale} /><main lang={locale}>
-    <section className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-20">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.4fr_.6fr]">
-        <div><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{text.eyebrow}</p><h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">UAB GK EstTrade</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{text.intro}</p><p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p><div className="mt-8 flex flex-wrap gap-4"><CTA href={withLocale("/contact", locale)}>{text.contact}</CTA><CTA href={withLocale("/entities", locale)} variant="secondary">{text.entities}</CTA></div></div>
-        <div className="mx-auto w-full max-w-80 lg:justify-self-end"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} preload className="h-auto w-full object-contain" sizes="(max-width: 359px) calc(100vw - 40px), 320px" /></div>
+    <section className="bg-[#061b46] text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center">
+        <div className="grid">
+          {/* Reserve GKGT's text height at every viewport, without fixed heights or clipping. */}
+          <div aria-hidden="true" className="invisible col-start-1 row-start-1 select-none">
+            <p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{reference.eyebrow}</p>
+            <p className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{reference.title}</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{reference.intro}</p>
+            <p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p>
+          </div>
+          <div className="col-start-1 row-start-1">
+          <p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{text.eyebrow}</p>
+          <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">UAB GK EstTrade</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{text.intro}</p>
+          <p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p>
+          </div>
+        </div>
+        <div className="border border-[#d59b46] bg-[#d4e1ea] p-5">
+          <Image src={logo.src} alt={logo.alt} width={1536} height={1024} preload className="h-auto w-full object-contain" sizes="(max-width: 1024px) 100vw, 360px" />
+        </div>
       </div>
     </section>
-    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow="UAB GK EstTrade" title={text.title} /><p className="max-w-4xl leading-8 text-slate-600">{text.description}</p></div></section>
+    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow="UAB GK EstTrade" title={text.title} /><p className="max-w-4xl leading-8 text-slate-600">{text.description}</p><div className="mt-8 flex flex-wrap gap-4"><CTA href={withLocale("/contact", locale)}>{text.contact}</CTA><CTA href={withLocale("/entities", locale)}>{text.entities}</CTA></div></div></section>
     <section id="activities" className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow="UAB GK EstTrade" title={text.activities} /><p className="mb-10 max-w-4xl border-l-2 border-[#d59b46] pl-4 text-sm leading-7 text-slate-600">{text.scope}</p><div className="grid gap-6 lg:grid-cols-2">{text.services.map(([title, description, clients, value], index) => <article key={title} className="border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8"><p aria-hidden="true" className="text-sm font-bold text-[#c7862f]">0{index + 1}</p><h3 className="mt-3 text-2xl font-bold tracking-tight text-[#061b46]">{title}</h3><p className="mt-4 leading-7 text-slate-600">{description}</p><dl className="mt-6 grid gap-5 border-t border-slate-200 pt-5"><div><dt className="text-sm font-bold text-[#061b46]">{text.clients}</dt><dd className="mt-2 text-sm leading-7 text-slate-600">{clients}</dd></div><div className="border-l-2 border-[#d59b46] pl-4"><dt className="text-sm font-bold text-[#061b46]">{text.value}</dt><dd className="mt-2 text-sm leading-7 text-slate-600">{value}</dd></div></dl></article>)}</div></div></section>
     <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2"><div><SectionTitle eyebrow={text.status} title={text.statusTitle} /><p className="leading-8 text-slate-600">{text.statusText}</p></div><div className="border border-slate-200 bg-[#f5f7fa] p-6 sm:p-8"><h2 className="text-2xl font-bold text-[#061b46]">{text.legal}</h2><dl className="mt-6 grid gap-5">{legal.entries.map(({ label, value }) => <div key={label}><dt className="text-sm font-bold text-[#061b46]">{label}</dt><dd className="mt-1 text-slate-600">{value}</dd></div>)}</dl></div></div></section>
     <section className="bg-[#061b46] px-5 py-16 text-white sm:px-8"><div className="mx-auto max-w-7xl"><h2 className="text-3xl font-bold">{text.final}</h2><p className="mt-5 max-w-3xl leading-8 text-slate-200">{text.finalText}</p><div className="mt-8 flex flex-wrap gap-4"><CTA href={withLocale("/contact", locale)}>{text.contact}</CTA><CTA href={withLocale("/partnerships", locale)} variant="secondary">{text.partnerships}</CTA></div></div></section>

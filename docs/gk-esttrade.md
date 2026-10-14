@@ -32,7 +32,10 @@ wording, and existing partnership form integrity.
 
 The hero uses the same 1.4 / 0.6 column ratio, navy background, title scale and
 spacing as Nexus, Technology and Mobility. The added white logo frame is removed;
-the original logo asset is unchanged and its display width is capped at 320px.
+the original logo asset is unchanged. The banner now uses GKGT's exact frame,
+padding and image sizing. An invisible, accessibility-hidden copy of GKGT's text
+layout reserves the reference height responsively, without fixed pixel heights or
+clipping the visible EstTrade content. Banner buttons are retained below the hero.
 Six bilingual activity cards describe scope, customers and value. Used/refurbished
 equipment and logistics coordination are explicitly subject to assessment and
 confirmation, without claims of inventory, refurbishment facilities or a logistics
