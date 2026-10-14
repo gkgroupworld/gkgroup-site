@@ -7,7 +7,7 @@ const { unstable_doesMiddlewareMatch } = testing;
 
 const base = process.argv[2] || "http://localhost:3100";
 const site = "https://gkgroup.app";
-const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gk-nexus", "/partnerships", "/news", "/contact"];
+const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gk-nexus", "/gk-esttrade", "/partnerships", "/news", "/contact"];
 const expectedUrls = paths.flatMap(path => [path === "/" ? site : site + path, site + path + "?lang=en"]);
 const matcher = { matcher: ["/((?!api(?:/|$)|_next(?:/|$)|.*\\.).*)"] };
 // Read the real matcher rather than silently testing a copy of it.
@@ -21,13 +21,13 @@ const xmlResponse = await fetch(base + "/sitemap.xml");
 assert.equal(xmlResponse.status, 200);
 const xml = await xmlResponse.text();
 const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1].replaceAll("&amp;", "&"));
-assert.equal(urls.length, 22);
+assert.equal(urls.length, expectedUrls.length);
 assert.deepEqual(urls, expectedUrls);
-assert.equal(new Set(urls).size, 22);
+assert.equal(new Set(urls).size, expectedUrls.length);
 assert.ok(!xml.includes("<lastmod>"));
-assert.equal((xml.match(/hreflang="fr"/g) || []).length, 22);
-assert.equal((xml.match(/hreflang="en"/g) || []).length, 22);
-assert.equal((xml.match(/hreflang="x-default"/g) || []).length, 22);
+assert.equal((xml.match(/hreflang="fr"/g) || []).length, expectedUrls.length);
+assert.equal((xml.match(/hreflang="en"/g) || []).length, expectedUrls.length);
+assert.equal((xml.match(/hreflang="x-default"/g) || []).length, expectedUrls.length);
 const referenceResponse = await fetch(base + "/__forms.html");
 assert.equal(referenceResponse.status, 200);
 const reference = await referenceResponse.text();
@@ -74,11 +74,27 @@ for (const publicUrl of urls) {
   assert.equal(esttrade["@type"], "Organization");
   assert.equal(esttrade.address.addressCountry, "LT");
   assert.ok(!esttrade.parentOrganization);
+  assert.equal(esttrade.url, site + "/gk-esttrade");
+  assert.ok(!esttrade.foundingDate);
   const nexus = entity("gk-nexus-project");
   assert.equal(nexus["@type"], "Thing");
   assert.match(nexus.description, /registration in progress/);
   for (const node of graph) assert.ok(!node.owns && !node.owner && !node.subOrganization);
   if (canonicalGraph) assert.deepEqual(data, canonicalGraph); else canonicalGraph = data;
+  assert.ok(html.includes(`href="/gk-esttrade?lang=${locale}"`), `${publicUrl}: EstTrade navigation`);
+  if (["/gk-esttrade", "/entities"].includes(url.pathname)) {
+    assert.ok(!/3 (?:octobre|October) 2022/.test(html), `${publicUrl}: unverified registration date`);
+  }
+  if (url.pathname === "/gk-esttrade") {
+    assert.match(html, /<h1[^>]*>UAB GK EstTrade<\/h1>/);
+    assert.ok(html.includes(locale === "fr" ? "Une société juridiquement distincte" : "A legally distinct company"));
+    assert.ok(html.includes(locale === "fr" ? "Distribution informatique" : "IT equipment distribution"));
+    assert.ok(html.includes("306154150"));
+    assert.ok(html.includes(`href="/gk-esttrade?lang=${locale === "fr" ? "en" : "fr"}"`));
+    for (const path of ["/contact", "/entities", "/partnerships"]) {
+      assert.ok(html.includes(`href="${path}?lang=${locale}"`));
+    }
+  }
   if (url.pathname === "/partnerships") {
     const form = html.match(/<form\b[^>]*id="partnership-form".*?<\/form>/s)?.[0];
     assert.ok(form);
@@ -94,4 +110,4 @@ for (const [query, locale] of [["?lang=fr", "fr"], ["?lang=invalid", "fr"], ["?l
   const html = await (await fetch(base + "/" + query, { headers: { "x-gk-locale": locale === "fr" ? "en" : "fr" } })).text();
   assert.match(html, new RegExp(`<html[^>]*lang="${locale}"`));
 }
-console.log("PASS: 22 server-rendered FR/EN URLs, canonical/hreflang, sitemap without fabricated dates, JSON-LD identities/references, language fallback/header override, static asset exclusions, FR/EN partnership form field parity and Netlify reference.");
+console.log("PASS: 24 server-rendered FR/EN URLs, canonical/hreflang, sitemap without fabricated dates, JSON-LD identities/references, language fallback/header override, static asset exclusions, FR/EN partnership form field parity and Netlify reference.");

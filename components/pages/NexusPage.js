@@ -21,7 +21,7 @@ function FunctionalDiagram({ copy, locale }) {
     <div aria-hidden="true" className="mx-auto h-8 w-px border-l border-dashed border-[#e87512]" />
     <div className="grid gap-4 md:grid-cols-3">
       <div className="border border-slate-200 p-5 text-sm font-bold text-[#061b46]">GK GLOBAL GROUP SARL U<div className="mt-4 grid gap-3 border-t border-slate-200 pt-4"><Link href={withLocale("/gk-global-technology", locale)} className="inline-flex min-h-11 items-center justify-center underline underline-offset-4">GKGT</Link><Link href={withLocale("/gk-global-mobility", locale)} className="inline-flex min-h-11 items-center justify-center underline underline-offset-4">GKGM</Link></div></div>
-      <div className="border border-slate-200 p-5 text-sm font-bold text-[#061b46]">UAB GK EstTrade</div>
+      <Link href={withLocale("/gk-esttrade", locale)} className="border border-slate-200 p-5 text-sm font-bold text-[#061b46] underline underline-offset-4">UAB GK EstTrade</Link>
       <div className="border border-dashed border-slate-300 p-5 text-sm text-[#061b46]"><p className="font-bold">GK Danube Trading DOO</p><p className="mt-3 leading-6 text-slate-600">{copy.serbia}</p></div>
     </div>
   </div>;
