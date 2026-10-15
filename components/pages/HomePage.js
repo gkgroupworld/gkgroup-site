@@ -1,11 +1,108 @@
 import Image from "next/image";
-import { ACTIVITIES, ENTITIES, SITE_COPY } from "@/content/site";
+import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { CTA } from "@/components/ui/CTA";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { ActivityCard } from "@/components/ui/ActivityCard";
-import { EntityCard } from "@/components/ui/EntityCard";
+import { ENTITY_LOGOS } from "@/content/site";
+import { ARCHITECTURE_ENTITIES } from "@/content/architecture";
+import { HOME_ACTIVITIES, HOME_COPY } from "@/content/home";
 import { withLocale } from "@/lib/locale";
+import styles from "./Home.module.css";
 
-export function HomePage({ locale }) { const copy = SITE_COPY[locale]; const fr = locale === "fr"; const countries = fr ? ["Togo", "Lituanie", "Serbie", "Albanie"] : ["Togo", "Lithuania", "Serbia", "Albania"]; return <><Header locale={locale} /><main><section className="overflow-hidden bg-[#061b46] text-white"><div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[minmax(0,1.12fr)_minmax(320px,.88fr)] lg:items-center lg:gap-16 lg:py-24"><div className="max-w-2xl"><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.hero.eyebrow}</p><div className="mt-5 h-px w-12 bg-[#e87512]" /><p className="mt-5 text-[2.5rem] font-bold leading-[1.08] tracking-[.04em] text-white sm:text-5xl lg:text-6xl">GK GROUP</p><h1 className="mt-3 max-w-xl text-2xl font-bold leading-[1.08] tracking-tight sm:text-3xl lg:text-4xl">{copy.hero.title}</h1><p className="mt-6 max-w-xl text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">{copy.hero.description}</p><p className="mt-5 text-sm font-bold tracking-wide text-[#f5a24e]">{copy.hero.supporting}</p><div className="mt-9 flex flex-wrap gap-4"><CTA href={withLocale("/activities", locale)}>{fr ? "Nos activités" : "Our activities"}</CTA><CTA href={withLocale("/architecture", locale)} variant="secondary">{fr ? "Notre architecture" : "Our architecture"}</CTA></div></div><div className="mx-auto w-full max-w-md rounded-sm border border-white/20 bg-white p-4 shadow-2xl shadow-black/25 sm:p-6"><Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} priority className="h-auto w-full object-contain" sizes="(max-width: 1024px) calc(100vw - 64px), 448px" /></div></div></section><section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.7fr_1.3fr]"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#e87512]">{fr ? "Le groupe" : "The group"}</p><div><h2 className="text-3xl font-bold text-[#061b46] sm:text-4xl">{fr ? "Une architecture institutionnelle globale, au service d’opportunités sans frontières." : "A global institutional architecture serving opportunities without borders."}</h2><p className="mt-6 max-w-3xl leading-8 text-slate-600">{fr ? "GK GROUP est une marque et un écosystème international, sans statut juridique propre à ce jour. Il fédère des structures aux mandats distincts et complémentaires. Cette organisation relie l’Afrique, l’Europe et, progressivement, de nouveaux marchés avec une ambition de croissance durable." : "GK GROUP is an international brand and ecosystem, currently without legal status of its own. It brings together structures with distinct and complementary mandates. This organisation connects Africa, Europe and, progressively, new markets with an ambition for sustainable growth."}</p></div></div></section><section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.activities.eyebrow} title={copy.activities.title} /><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">{ACTIVITIES.map((activity, index) => <div key={activity.id} className="relative"><span className="absolute right-5 top-4 text-xs font-bold text-[#e87512]">0{index + 1}</span><ActivityCard activity={activity[locale]} /></div>)}</div></div></section><section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={fr ? "Présence internationale" : "International presence"} title={fr ? "Des points d’ancrage pour connecter les marchés" : "Anchors for connecting markets"} /><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{countries.map((country, index) => <article key={country} className="border-l-2 border-[#e87512] bg-[#f5f7fa] p-6"><p className="text-xs font-bold text-slate-400">0{index + 1}</p><h3 className="mt-4 text-xl font-bold text-[#061b46]">{country}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{country === (fr ? "Albanie" : "Albania") ? (fr ? "GK NEXUS Sh.p.k. — projet de société en Albanie, immatriculation en cours ; future plateforme de coordination sous réserve d’immatriculation." : "GK NEXUS Sh.p.k. — proposed company in Albania, registration in progress; future coordination platform subject to registration.") : country === (fr ? "Serbie" : "Serbia") ? (fr ? "GK Danube Trading DOO — Projet de société en cours de constitution en Serbie." : "GK Danube Trading DOO — Company formation project in progress in Serbia.") : (fr ? "Présence liée aux structures et opérations du groupe." : "Presence connected to the group’s structures and operations.")}</p></article>)}</div></div></section><section className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#f5a24e]">{copy.entities.eyebrow}</p><h2 className="mt-3 mb-10 text-3xl font-bold sm:text-4xl">{copy.entities.title}</h2><div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">{ENTITIES.map((entity) => <EntityCard key={entity.id} entity={entity} locale={locale} />)}</div></div></section><section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl border-l-4 border-[#e87512] bg-[#f5f7fa] p-8 sm:p-12"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#e87512]">{fr ? "Vision stratégique 2026–2035" : "Strategic Vision 2026–2035"}</p><h2 className="mt-4 max-w-3xl text-3xl font-bold text-[#061b46] sm:text-4xl">{fr ? "Construire une plateforme internationale de confiance, connectée aux opportunités de demain." : "Building a trusted international platform connected to tomorrow’s opportunities."}</h2></div></section><section className="bg-[#061b46] px-5 py-16 text-white sm:px-8"><div className="mx-auto max-w-7xl"><h2 className="text-3xl font-bold">{copy.hero.supporting}</h2><div className="mt-8 flex flex-wrap gap-4"><CTA href={withLocale("/contact", locale)}>{copy.labels.contact}</CTA><CTA href={withLocale("/architecture", locale)} variant="secondary">{fr ? "Voir notre architecture" : "Explore our architecture"}</CTA></div></div></section></main><Footer locale={locale} /></>; }
+function Action({ href, locale, children, variant = "navy" }) {
+  const tone = variant === "gold"
+    ? "border-[#d59b46] bg-[#d59b46] hover:bg-[#e7ba75]"
+    : variant === "outline" ? "border-white/50 bg-transparent hover:bg-white/10" : "border-[#061b46] bg-[#061b46] hover:bg-[#0c3269]";
+  return <Link href={withLocale(href, locale)} className={`inline-flex min-h-12 items-center justify-center gap-3 border px-5 py-3 text-sm font-bold transition-colors ${tone}`} style={{ color: variant === "gold" ? "#061b46" : "#ffffff" }}>{children}<span aria-hidden="true">→</span></Link>;
+}
+
+export function HomePage({ locale }) {
+  const copy = HOME_COPY[locale];
+  const entities = ARCHITECTURE_ENTITIES.filter(entity => !entity.branch);
+  return <><Header locale={locale} /><main lang={locale}>
+    <section data-home-section="hero" className={`overflow-hidden bg-[#061b46] text-white ${styles.hero}`}>
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.35fr_.65fr] lg:gap-16 lg:py-24">
+        <div className={styles.reveal}>
+          <p className="text-xs font-bold uppercase leading-6 tracking-[.2em] text-[#e7ba75]">{copy.hero.eyebrow}</p>
+          <div aria-hidden="true" className="mt-6 h-px w-16 bg-[#d59b46]" />
+          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.5rem]">{copy.hero.title}</h1>
+          <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">{copy.hero.description}</p>
+          <p className="mt-7 text-xs font-bold leading-6 tracking-[.2em] text-[#e7ba75]">GLOBAL BUSINESS WITHOUT BORDERS</p>
+          <div className="mt-9 flex flex-wrap gap-4"><Action href="/activities" locale={locale} variant="gold">{copy.hero.activities}</Action><Action href="/architecture" locale={locale} variant="outline">{copy.hero.architecture}</Action></div>
+        </div>
+        <div className={`relative mx-auto w-full max-w-sm border border-[#d59b46] bg-white p-5 shadow-xl shadow-black/10 ${styles.reveal}`} style={{ "--reveal-delay": "80ms" }}>
+          <Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} preload className="h-auto w-full object-contain" sizes="(max-width: 440px) calc(100vw - 82px), 340px" />
+        </div>
+      </div>
+    </section>
+
+    <section data-home-section="vision" className="px-5 py-16 sm:px-8 sm:py-24">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
+        <div className={styles.heading}><SectionTitle eyebrow={copy.vision.eyebrow} title={copy.vision.title} /><ul className="flex flex-wrap gap-x-6 gap-y-3">{copy.vision.values.map(value => <li key={value} className="border-l-2 border-[#d59b46] pl-3 text-xs font-bold uppercase leading-6 tracking-wider text-[#061b46]">{value}</li>)}</ul></div>
+        <div><p className="text-lg leading-8 text-slate-600">{copy.vision.description}</p><p className="mt-6 border-l-2 border-[#d59b46] bg-[#f5f7fa] p-5 text-sm leading-7 text-slate-600">{copy.vision.legal}</p><Link href={withLocale("/about", locale)} className="mt-7 inline-flex min-h-12 items-center gap-3 text-sm font-bold text-[#061b46] underline underline-offset-4">{copy.vision.link}<span aria-hidden="true">→</span></Link></div>
+      </div>
+    </section>
+
+    <section id="home-activities" data-home-section="activities" className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-24">
+      <div className="mx-auto max-w-7xl"><div className={styles.heading}><SectionTitle eyebrow={copy.activities.eyebrow} title={copy.activities.title} /></div><p className="-mt-4 mb-10 max-w-3xl leading-8 text-slate-600">{copy.activities.intro}</p>
+        <div className="grid gap-6 lg:grid-cols-2">{HOME_ACTIVITIES.map((activity, index) => {
+          const detail = copy.activities[activity.id];
+          const logo = ENTITY_LOGOS[activity.logo];
+          return <article key={activity.id} data-home-activity={activity.id} aria-labelledby={`home-${activity.id}`} className={`flex flex-col border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8 ${styles.card}`}>
+            <div className="flex items-center justify-between gap-5"><p aria-hidden="true" className="text-sm font-bold tracking-wider text-[#946020]">0{index + 1}</p><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-16 w-28 object-contain" sizes="112px" /></div>
+            <p className="mt-5 text-xs font-bold uppercase leading-6 tracking-wider text-[#946020]">{activity.entity}</p>
+            <h3 id={`home-${activity.id}`} className="mt-3 text-2xl font-bold tracking-tight text-[#061b46]">{detail.title}</h3>
+            <p className="mt-4 leading-7 text-slate-600">{detail.description}</p>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">{detail.items.map(item => <li key={item} className="border-l-2 border-[#d59b46] pl-3 text-sm leading-6 text-slate-600">{item}</li>)}</ul>
+            <p className="mb-6 mt-6 border-t border-slate-200 pt-5 text-xs leading-6 text-slate-500">{detail.note}</p>
+            <div className="mt-auto"><Action href={activity.href} locale={locale}>{copy.activities.discover}<span className="sr-only"> · {detail.title}</span></Action></div>
+          </article>;
+        })}</div>
+      </div>
+    </section>
+
+    <section id="home-ecosystem" data-home-section="ecosystem" className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-24">
+      <div className="mx-auto max-w-7xl"><div className={styles.darkHeading}><SectionTitle eyebrow={copy.ecosystem.eyebrow} title={copy.ecosystem.title} /></div><p className="-mt-4 mb-10 max-w-3xl leading-8 text-slate-200">{copy.ecosystem.intro}</p>
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">{entities.map(entity => {
+          const logo = ENTITY_LOGOS[entity.id];
+          const detail = copy.ecosystem.entities[entity.id];
+          return <article key={entity.id} data-home-entity={entity.id} className={`flex min-w-0 flex-col border border-white/20 border-t-2 border-t-[#d59b46] bg-white p-6 ${styles.card}`}>
+            <p className="text-xs font-bold uppercase tracking-[.15em] text-[#946020]">{entity.country[locale]}</p>
+            <div className="mt-5 flex h-24 items-center justify-center bg-[#f5f7fa] p-3"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-full w-full object-contain" sizes="(max-width: 768px) 240px, 220px" /></div>
+            <h3 className="mt-5 text-xl font-bold leading-7 text-[#061b46]">{entity.platform ? "GK Nexus" : entity.name}</h3>
+            <p className="mt-3 border-l-2 border-[#d59b46] pl-3 text-xs font-bold leading-6 text-[#805217]">{detail.status}</p>
+            <p className="mb-6 mt-4 text-sm leading-7 text-slate-600">{detail.description}</p>
+            <div className="mt-auto border-t border-slate-200 pt-4"><Link href={withLocale(entity.href, locale)} className="inline-flex min-h-12 items-center gap-3 text-sm font-bold" style={{ color: "#061b46" }}>{copy.ecosystem.discover}<span className="sr-only"> · {entity.name}</span><span aria-hidden="true">→</span></Link></div>
+          </article>;
+        })}</div>
+        <div className="mt-10"><Action href="/architecture" locale={locale} variant="outline">{copy.ecosystem.link}</Action></div>
+      </div>
+    </section>
+
+    <section id="home-nexus" data-home-section="nexus" className="px-5 py-16 sm:px-8 sm:py-24">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
+        <div><div className={styles.heading}><SectionTitle eyebrow={copy.nexus.eyebrow} title={copy.nexus.title} /></div><p className="leading-8 text-slate-600">{copy.nexus.intro}</p><div className="mt-8"><Action href="/gk-nexus" locale={locale}>{copy.nexus.link}</Action></div></div>
+        <ol className="divide-y divide-slate-200 border-t-2 border-t-[#d59b46]">{copy.nexus.functions.map((mission, index) => <li key={mission} className="grid grid-cols-[2rem_1fr] gap-4 py-5"><span aria-hidden="true" className="text-sm font-bold leading-7 text-[#946020]">0{index + 1}</span><p className="font-bold leading-7 text-[#061b46]">{mission}</p></li>)}</ol>
+        <p className="border-l-2 border-[#d59b46] bg-[#f5f7fa] p-5 text-sm leading-7 text-slate-600 lg:col-span-2">{copy.nexus.scope}</p>
+      </div>
+    </section>
+
+    <section data-home-section="partnerships" className="border-y border-slate-200 bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-24">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_.8fr] lg:items-center lg:gap-16">
+        <div><div className={styles.heading}><SectionTitle eyebrow={copy.partnerships.eyebrow} title={copy.partnerships.title} /></div><p className="max-w-3xl leading-8 text-slate-600">{copy.partnerships.description}</p><div className="mt-8"><Action href="/partnerships" locale={locale}>{copy.partnerships.link}</Action></div></div>
+        <ul className="grid gap-3">{copy.partnerships.fields.map(field => <li key={field} className="border-l-2 border-[#d59b46] bg-white px-5 py-4 text-sm font-bold text-[#061b46]">{field}</li>)}</ul>
+      </div>
+    </section>
+
+    <section data-home-section="founder" className="px-5 py-16 sm:px-8 sm:py-24">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.7fr_1.3fr] lg:items-center lg:gap-16">
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm border border-[#d59b46] bg-[#f5f7fa]"><Image src="/brand/founder/edem-yawo-awutey-founder.png" alt={copy.founder.photoAlt} fill className="object-contain" sizes="(max-width: 440px) calc(100vw - 40px), 384px" /></div>
+        <figure><h2 className="text-xs font-bold uppercase leading-6 tracking-[.2em] text-[#946020]">{copy.founder.eyebrow}</h2><blockquote className="mt-6 border-l-2 border-[#d59b46] pl-6 text-xl font-medium leading-9 text-[#061b46] sm:text-2xl sm:leading-10">{copy.founder.quote}</blockquote><figcaption className="mt-7 pl-6"><p className="text-lg font-bold text-[#061b46]">{copy.founder.name}</p><p className="mt-2 text-sm text-slate-600">{copy.founder.role}</p></figcaption><p className="mt-7 pl-6 text-sm leading-7 text-slate-600">{copy.founder.reach}</p><Link href={withLocale("/about", locale)} className="mt-5 inline-flex min-h-12 items-center gap-3 pl-6 text-sm font-bold text-[#061b46] underline underline-offset-4">{copy.founder.link}<span aria-hidden="true">→</span></Link></figure>
+      </div>
+    </section>
+
+    <section data-home-section="collaboration" className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-24">
+      <div className="mx-auto max-w-7xl border-l-2 border-[#d59b46] pl-6 sm:pl-10"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#e7ba75]">{copy.final.eyebrow}</p><h2 className="mt-5 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">{copy.final.title}</h2><p className="mt-6 max-w-3xl leading-8 text-slate-200">{copy.final.description}</p><div className="mt-9 flex flex-wrap gap-4"><Action href="/contact" locale={locale} variant="gold">{copy.final.contact}</Action><Action href="/partnerships" locale={locale} variant="outline">{copy.final.partnerships}</Action></div></div>
+    </section>
+  </main><Footer locale={locale} /></>;
+}

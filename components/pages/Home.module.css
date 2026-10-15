@@ -1,0 +1,36 @@
+.hero { position: relative; isolation: isolate; }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 95% 15%, rgb(213 155 70 / 10%), transparent 55%);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  width: min(42vw, 580px);
+  aspect-ratio: 1;
+  z-index: -1;
+  pointer-events: none;
+  border: 1px solid rgb(213 155 70 / 16%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 55px rgb(213 155 70 / 4%), 0 0 0 110px rgb(213 155 70 / 3%);
+}
+.heading p { color: #946020; }
+.darkHeading p { color: #e7ba75; }
+.darkHeading h2 { color: white; }
+.card { transition: border-color 180ms ease, box-shadow 180ms ease; }
+.card:hover, .card:focus-within { border-color: #bd873b; box-shadow: 0 12px 32px rgb(6 27 70 / 7%); }
+.reveal { animation: appear 500ms ease-out both; animation-delay: var(--reveal-delay, 0ms); }
+@keyframes appear {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { animation: none; }
+  .card { transition: none; }
+}
