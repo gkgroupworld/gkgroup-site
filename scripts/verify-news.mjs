@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { get as httpGet } from "node:http";
 
 // Load the real pure data/model modules without changing package.json's module mode.
 const dataSource = await readFile(new URL("../content/site.js", import.meta.url), "utf8");
@@ -9,7 +10,14 @@ const modelSource = (await readFile(new URL("../lib/news.js", import.meta.url), 
 const model = await import(`data:text/javascript;base64,${Buffer.from(modelSource).toString("base64")}`);
 const { NEWS_CATEGORIES, NEWS_ITEMS } = await import(dataUrl);
 const { getPublishedNews, filterNewsByCategory, getPublishedArticle, getOpportunityStatus, getEventStatus, getNewsSitemapPaths, getNewsImage, parseNewsDate, getArticleStructuredData, formatNewsDate } = model;
-assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
+assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgt-it-expertise", "esttrade-international-trade", "gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
+const drafts = NEWS_ITEMS.filter(item => item.status === "draft");
+assert.equal(drafts.length, 2);
+for (const draft of drafts) {
+  assert.equal(draft.publicationApproved, false);
+  assert.equal(draft.date, null);
+  for (const lang of ["fr", "en"]) assert.ok(draft.content[lang].body.length >= 8);
+}
 assert.deepEqual(getPublishedNews().map(item => item.id), ["gkgm-international-mobility", "gkgroup-international-ecosystem", "gk-nexus-international-coordination"]);
 assert.equal(createHash("sha256").update(JSON.stringify(NEWS_ITEMS.find(item => item.id === "gkgroup-international-ecosystem"))).digest("hex"), "fbe30c2a848fe575ab675fc6df04325724bb538590be5f1104d2c0b7a7642ea5", "First approved article remains identical");
 const gkgm = NEWS_ITEMS.find(item => item.id === "gkgm-international-mobility");
@@ -80,6 +88,7 @@ const base = process.argv[2] || "http://localhost:3100";
 const sitemap = await (await fetch(base + "/sitemap.xml")).text();
 assert.ok(!sitemap.includes("/news/test"));
 assert.ok(!sitemap.includes("/preview/"), "Preview routes excluded from sitemap");
+for (const draft of drafts) assert.ok(!sitemap.includes(draft.slug));
 for (const lang of ["fr", "en"]) {
   for (const category of ["all", ...NEWS_CATEGORIES.map(item => item.id), "invalid"]) {
     const response = await fetch(`${base}/news?lang=${lang}&category=${category}`);
@@ -92,6 +101,7 @@ for (const lang of ["fr", "en"]) {
     assert.equal(main.includes("data-news-empty"), expected.length === 0);
     assert.equal((main.match(/data-news-card/g) || []).length, expected.length);
     for (const item of expected) assert.ok(main.includes(`/news/${item.slug}?lang=${lang}`));
+    for (const draft of drafts) assert.ok(!main.includes(draft.slug), "Draft excluded from every filter");
     assert.equal((main.match(/aria-current="page"/g) || []).length, 1);
     const selected = model.normalizeNewsCategory(category);
     const active = main.match(/<a\b[^>]*aria-current="page"[^>]*>/)?.[0];
@@ -126,7 +136,26 @@ for (const lang of ["fr", "en"]) {
     assert.ok(!previewHtml.includes(gkgm.content[lang].title));
     assert.ok(!previewHtml.includes('id="news-article-structured-data"'));
   }
-  for (const slug of ["inexistant", "exemple-brouillon", "test"]) {
+  for (const draft of drafts) {
+    const preview = await fetch(`${base}/preview/news/${draft.slug}?lang=${lang}`);
+    if (process.env.TEST_LOCAL_NEWS_PREVIEW === "1") {
+      assert.equal(preview.status, 200);
+      const html = await preview.text();
+      assert.match(html, /name="robots" content="noindex, nofollow"/);
+      assert.ok(!html.includes('id="news-article-structured-data"'));
+      assert.ok(!html.includes("<time"));
+      assert.ok(html.includes(draft.content[lang].title.replaceAll("'", "&#x27;")));
+      assert.ok(html.includes(`${draft.relatedEntity.href}?lang=${lang}`));
+      for (const p of draft.content[lang].body) assert.ok(html.includes(p.replaceAll("'", "&#x27;")));
+      const remoteStatus = await new Promise((resolve, reject) => {
+        httpGet(`${base}/preview/news/${draft.slug}?lang=${lang}`, { headers: { host: "example.com" } }, response => {
+          response.resume(); resolve(response.statusCode);
+        }).on("error", reject);
+      });
+      assert.equal(remoteStatus, 404);
+    } else assert.equal(preview.status, 404, "No production preview access");
+  }
+  for (const slug of ["inexistant", "exemple-brouillon", "test", ...drafts.map(item => item.slug)]) {
     const missing = await fetch(`${base}/news/${slug}?lang=${lang}`);
     assert.equal(missing.status, 404, slug);
     const html = await missing.text();

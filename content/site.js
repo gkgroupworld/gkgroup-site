@@ -357,6 +357,98 @@ export const NEWS_CATEGORIES = [
 // Model, approval rules and bilingual examples: docs/publications-guide.md.
 export const NEWS_ITEMS = [
   {
+    "id": "gkgt-it-expertise",
+    "slug": "gk-global-technology-expertise-solutions-numeriques",
+    "category": "group",
+    "status": "draft",
+    "publicationApproved": false,
+    "date": null,
+    "relatedEntity": {
+      "href": "/gk-global-technology",
+      "label": {
+        "fr": "Découvrir GK Global Technology",
+        "en": "Discover GK Global Technology"
+      }
+    },
+    "content": {
+      "fr": {
+        "title": "GK Global Technology : l'expertise informatique au service des entreprises et des organisations",
+        "summary": "Découvrez les activités de GK Global Technology dans la maintenance informatique, les réseaux, les équipements et les solutions numériques destinées aux professionnels.",
+        "body": [
+          "À l'heure où les technologies numériques occupent une place essentielle dans le fonctionnement des entreprises et des organisations, la fiabilité des équipements et des infrastructures informatiques représente un enjeu majeur.",
+          "GK Global Technology (GKGT), branche de GK GLOBAL GROUP SARL U au Togo, développe ses activités autour de l'assistance technique, de la maintenance informatique et des solutions adaptées aux besoins des professionnels.",
+          "Son expertise couvre notamment le diagnostic et la réparation des équipements informatiques, l'installation et la maintenance des logiciels, la configuration des réseaux ainsi que l'accompagnement technique des utilisateurs.",
+          "GKGT intervient également dans la fourniture d'équipements et d'accessoires informatiques, avec une attention particulière portée à la qualité, à la fonctionnalité et à l'adéquation des solutions proposées.",
+          "L'activité s'inscrit dans une démarche visant à prolonger la durée d'utilisation des équipements lorsque leur reconditionnement est techniquement approprié, tout en contribuant à une gestion plus responsable des ressources informatiques.",
+          "À travers son approche, GK Global Technology cherche à accompagner les entreprises, les établissements et les organisations dans l'amélioration de leur environnement technologique.",
+          "Au sein de l'écosystème GK GROUP, cette expertise constitue un domaine complémentaire aux activités de commerce international, de mobilité et de coordination des projets.",
+          "GK Global Technology — Des solutions informatiques adaptées aux besoins professionnels."
+        ]
+      },
+      "en": {
+        "title": "GK Global Technology: IT Expertise Supporting Businesses and Organizations",
+        "summary": "Discover GK Global Technology's activities in IT maintenance, networking, equipment and digital solutions for professional users.",
+        "body": [
+          "As digital technologies become increasingly essential to the daily operations of businesses and organizations, reliable IT equipment and infrastructure are more important than ever.",
+          "GK Global Technology (GKGT), a branch of GK GLOBAL GROUP SARL U in Togo, develops its activities around technical assistance, IT maintenance and solutions tailored to professional needs.",
+          "Its expertise includes computer diagnostics and repairs, software installation and maintenance, network configuration and technical support for users.",
+          "GKGT also provides IT equipment and accessories, with particular attention to quality, functionality and the suitability of proposed solutions.",
+          "Its activities include extending the useful life of equipment through refurbishment where technically appropriate, contributing to a more responsible approach to IT resources.",
+          "Through its services, GK Global Technology aims to support companies, institutions and organizations in improving their technological environments.",
+          "Within the GK GROUP ecosystem, this expertise complements international trade, mobility and project coordination activities.",
+          "GK Global Technology — IT Solutions Designed for Professional Needs."
+        ]
+      }
+    }
+  },
+  {
+    "id": "esttrade-international-trade",
+    "slug": "uab-gk-esttrade-commerce-international-lituanie",
+    "category": "group",
+    "status": "draft",
+    "publicationApproved": false,
+    "date": null,
+    "relatedEntity": {
+      "href": "/gk-esttrade",
+      "label": {
+        "fr": "Découvrir UAB GK EstTrade",
+        "en": "Discover UAB GK EstTrade"
+      }
+    },
+    "content": {
+      "fr": {
+        "title": "UAB GK EstTrade : développer les échanges commerciaux internationaux depuis la Lituanie",
+        "summary": "Présentation de UAB GK EstTrade, société établie en Lituanie, et de son orientation vers le commerce international, le sourcing B2B et les activités d'import-export.",
+        "body": [
+          "Dans un environnement économique où les chaînes d'approvisionnement et les relations commerciales dépassent les frontières nationales, les entreprises recherchent des solutions favorisant l'identification de fournisseurs et le développement de nouveaux marchés.",
+          "UAB GK EstTrade est une société légalement constituée en Lituanie, associée à l'écosystème international GK GROUP.",
+          "Son orientation commerciale repose sur le développement des échanges internationaux, notamment dans les domaines de l'import-export, du sourcing B2B et de la commercialisation d'équipements et de produits adaptés aux besoins des marchés ciblés.",
+          "Le secteur des équipements informatiques constitue un domaine d'intérêt particulier, en lien avec l'expérience technologique développée au sein de l'écosystème GK GROUP.",
+          "La société entend favoriser l'identification d'opportunités commerciales, les relations entre fournisseurs et acheteurs professionnels, ainsi que la préparation de projets d'approvisionnement transfrontaliers.",
+          "Cette démarche repose sur l'analyse des besoins, la recherche de partenaires commerciaux appropriés et le respect des exigences réglementaires applicables aux opérations envisagées.",
+          "À travers son implantation en Lituanie, UAB GK EstTrade contribue à la dimension européenne de la stratégie de développement international de GK GROUP.",
+          "Son activité s'inscrit dans une vision de coopération économique durable, fondée sur la transparence, la qualité des relations professionnelles et la création de valeur entre marchés.",
+          "UAB GK EstTrade — Connecting Markets Through International Trade."
+        ]
+      },
+      "en": {
+        "title": "UAB GK EstTrade: Developing International Trade Connections from Lithuania",
+        "summary": "An introduction to UAB GK EstTrade, a company established in Lithuania, focusing on international trade, B2B sourcing and import-export activities.",
+        "body": [
+          "In an economic environment where supply chains and commercial relationships extend beyond national borders, businesses increasingly seek solutions to identify suppliers and explore new markets.",
+          "UAB GK EstTrade is a legally incorporated company in Lithuania and part of the international GK GROUP ecosystem.",
+          "Its commercial direction focuses on developing international trade activities, particularly import-export, B2B sourcing and the commercialization of equipment and products suited to target markets.",
+          "IT equipment represents an area of particular interest, reflecting the technological experience developed within the GK GROUP ecosystem.",
+          "The company aims to support the identification of commercial opportunities, relationships between suppliers and professional buyers, and the preparation of cross-border sourcing projects.",
+          "This approach is based on needs assessment, identifying suitable commercial partners and complying with applicable regulatory requirements.",
+          "Through its establishment in Lithuania, UAB GK EstTrade contributes to the European dimension of GK GROUP's international development strategy.",
+          "Its activities reflect a vision of sustainable economic cooperation built on transparency, professional relationships and value creation between markets.",
+          "UAB GK EstTrade — Connecting Markets Through International Trade."
+        ]
+      }
+    }
+  },
+  {
     id: "gk-nexus-international-coordination",
     slug: "gk-nexus-coordination-internationale",
     category: "group",
