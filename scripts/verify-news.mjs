@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { get as httpGet } from "node:http";
 
 // Load the real pure data/model modules without changing package.json's module mode.
 const dataSource = await readFile(new URL("../content/site.js", import.meta.url), "utf8");
@@ -12,14 +11,22 @@ const { NEWS_CATEGORIES, NEWS_ITEMS } = await import(dataUrl);
 const { getPublishedNews, filterNewsByCategory, getPublishedArticle, getOpportunityStatus, getEventStatus, getNewsSitemapPaths, getNewsImage, parseNewsDate, getArticleStructuredData, formatNewsDate } = model;
 assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgroup-international-perspectives", "gkgt-it-expertise", "esttrade-international-trade", "gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
 const drafts = NEWS_ITEMS.filter(item => item.status === "draft");
-assert.equal(drafts.length, 3);
-assert.deepEqual(drafts[0].relatedLinks.map(link => link.href), ["/architecture", "/entities"]);
-for (const draft of drafts) {
-  assert.equal(draft.publicationApproved, false);
-  assert.equal(draft.date, null);
-  for (const lang of ["fr", "en"]) assert.ok(draft.content[lang].body.length >= 8);
+assert.equal(drafts.length, 0, "No unapproved article is published");
+const approvedBatchHashes = {
+  "gkgroup-international-perspectives": "30595df3b46c3d7f2376b6e5c9ce437ebf0b8d027a6ba41b396d928504c23bda",
+  "gkgt-it-expertise": "b6089b370f97952232563a98d2a038506b25f46401926c9b5c4114619651fe4b",
+  "esttrade-international-trade": "e5c4e00a53e31a60f22042238216ce6c6d6555e78e8af85c87626b48ce2761db"
+};
+for (const [id, hash] of Object.entries(approvedBatchHashes)) {
+  const item = NEWS_ITEMS.find(entry => entry.id === id);
+  assert.equal(item.status, "published");
+  assert.equal(item.publicationApproved, true);
+  assert.equal(item.date, "2026-10-15");
+  assert.equal(item.category, "group");
+  const { status: _status, publicationApproved: _approval, date: _date, ...content } = item;
+  assert.equal(createHash("sha256").update(JSON.stringify(content)).digest("hex"), hash, "Approved bilingual text and links unchanged");
 }
-assert.deepEqual(getPublishedNews().map(item => item.id), ["gkgm-international-mobility", "gkgroup-international-ecosystem", "gk-nexus-international-coordination"]);
+assert.deepEqual(getPublishedNews().map(item => item.id).sort(), NEWS_ITEMS.map(item => item.id).sort());
 assert.equal(createHash("sha256").update(JSON.stringify(NEWS_ITEMS.find(item => item.id === "gkgroup-international-ecosystem"))).digest("hex"), "fbe30c2a848fe575ab675fc6df04325724bb538590be5f1104d2c0b7a7642ea5", "First approved article remains identical");
 const gkgm = NEWS_ITEMS.find(item => item.id === "gkgm-international-mobility");
 assert.equal(gkgm.status, "published");
@@ -126,35 +133,16 @@ for (const lang of ["fr", "en"]) {
     assert.ok(html.includes(`<title>${item.content[lang].title.replaceAll("'", "&#x27;")} | GK GROUP</title>`));
     assert.ok(html.includes(`name="description" content="${item.content[lang].summary.replaceAll("'", "&#x27;")}"`));
     assert.ok(!html.includes("Brouillon —") && !html.includes("Draft —"));
-    if (item.relatedEntity) assert.ok(html.includes(`href="${item.relatedEntity.href}?lang=${lang}"`));
+    for (const link of item.relatedLinks || (item.relatedEntity ? [item.relatedEntity] : [])) assert.ok(html.includes(`href="${link.href}?lang=${lang}"`));
     assert.ok(!html.includes('name="robots" content="noindex"'));
     for (const paragraph of item.content[lang].body) assert.ok(html.includes(paragraph.replaceAll("'", "&#x27;")), paragraph);
   }
-  for (const slug of [nexus.slug, gkgm.slug, "exemple-brouillon"]) {
+  for (const slug of [...NEWS_ITEMS.map(item => item.slug), "exemple-brouillon"]) {
     const preview = await fetch(`${base}/preview/news/${slug}?lang=${lang}`);
     assert.equal(preview.status, 404, "No public preview access");
     const previewHtml = await preview.text();
     assert.ok(!previewHtml.includes(gkgm.content[lang].title));
     assert.ok(!previewHtml.includes('id="news-article-structured-data"'));
-  }
-  for (const draft of drafts) {
-    const preview = await fetch(`${base}/preview/news/${draft.slug}?lang=${lang}`);
-    if (process.env.TEST_LOCAL_NEWS_PREVIEW === "1") {
-      assert.equal(preview.status, 200);
-      const html = await preview.text();
-      assert.match(html, /name="robots" content="noindex, nofollow"/);
-      assert.ok(!html.includes('id="news-article-structured-data"'));
-      assert.ok(!html.includes("<time"));
-      assert.ok(html.includes(draft.content[lang].title.replaceAll("'", "&#x27;")));
-      for (const link of draft.relatedLinks || [draft.relatedEntity]) assert.ok(html.includes(`href="${link.href}?lang=${lang}"`));
-      for (const p of draft.content[lang].body) assert.ok(html.includes(p.replaceAll("'", "&#x27;")));
-      const remoteStatus = await new Promise((resolve, reject) => {
-        httpGet(`${base}/preview/news/${draft.slug}?lang=${lang}`, { headers: { host: "example.com" } }, response => {
-          response.resume(); resolve(response.statusCode);
-        }).on("error", reject);
-      });
-      assert.equal(remoteStatus, 404);
-    } else assert.equal(preview.status, 404, "No production preview access");
   }
   for (const slug of ["inexistant", "exemple-brouillon", "test", ...drafts.map(item => item.slug)]) {
     const missing = await fetch(`${base}/news/${slug}?lang=${lang}`);

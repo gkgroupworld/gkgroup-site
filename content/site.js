@@ -360,9 +360,9 @@ export const NEWS_ITEMS = [
     "id": "gkgroup-international-perspectives",
     "slug": "gk-group-perspectives-developpement-international",
     "category": "group",
-    "status": "draft",
-    "publicationApproved": false,
-    "date": null,
+    "status": "published",
+    "publicationApproved": true,
+    "date": "2026-10-15",
     "relatedLinks": [
       {
         "href": "/architecture",
@@ -420,9 +420,9 @@ export const NEWS_ITEMS = [
     "id": "gkgt-it-expertise",
     "slug": "gk-global-technology-expertise-solutions-numeriques",
     "category": "group",
-    "status": "draft",
-    "publicationApproved": false,
-    "date": null,
+    "status": "published",
+    "publicationApproved": true,
+    "date": "2026-10-15",
     "relatedEntity": {
       "href": "/gk-global-technology",
       "label": {
@@ -465,9 +465,9 @@ export const NEWS_ITEMS = [
     "id": "esttrade-international-trade",
     "slug": "uab-gk-esttrade-commerce-international-lituanie",
     "category": "group",
-    "status": "draft",
-    "publicationApproved": false,
-    "date": null,
+    "status": "published",
+    "publicationApproved": true,
+    "date": "2026-10-15",
     "relatedEntity": {
       "href": "/gk-esttrade",
       "label": {
