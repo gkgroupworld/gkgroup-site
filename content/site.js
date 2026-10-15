@@ -357,6 +357,48 @@ export const NEWS_CATEGORIES = [
 // Model, approval rules and bilingual examples: docs/publications-guide.md.
 export const NEWS_ITEMS = [
   {
+    id: "gk-nexus-international-coordination",
+    slug: "gk-nexus-coordination-internationale",
+    category: "group",
+    status: "draft",
+    publicationApproved: false,
+    date: null,
+    relatedEntity: {
+      href: "/gk-nexus",
+      label: { fr: "Découvrir GK Nexus", en: "Discover GK Nexus" },
+    },
+    content: {
+      fr: {
+        title: "GK Nexus : une plateforme de coordination au cœur de la vision internationale de GK GROUP",
+        summary: "Découvrez comment GK Nexus contribue à la coordination des projets, au développement des partenariats et à la coopération internationale au sein de l'écosystème GK GROUP.",
+        body: [
+          "Le développement d'activités dans plusieurs pays nécessite une vision commune, une organisation structurée et une coordination efficace des projets.",
+          "C'est dans cette perspective que GK Nexus occupe une place stratégique dans l'écosystème GK GROUP, en tant que plateforme internationale de gestion et de coordination.",
+          "Associée au projet de développement de GK GROUP en Albanie, cette plateforme a vocation à faciliter la coopération entre les différentes activités de l'écosystème, tout en respectant l'autonomie juridique des sociétés concernées.",
+          "Ses principaux domaines d'intervention sont la coordination des activités internationales, la gestion et le suivi des projets, le développement des partenariats, l'organisation des échanges et l'appui au développement commercial.",
+          "GK Nexus vise également à favoriser une meilleure circulation de l'information entre les initiatives technologiques, commerciales et professionnelles de GK GROUP.",
+          "Cette approche s'inscrit dans une ambition plus large : construire un réseau entrepreneurial capable de développer des collaborations durables entre plusieurs régions du monde.",
+          "GK Nexus représente ainsi une fonction de coordination et de développement stratégique. Son rôle ne doit pas être confondu avec une relation de propriété juridique sur les autres sociétés de l'écosystème.",
+          "GK Nexus — Connecting Businesses, Projects and Opportunities.",
+        ],
+      },
+      en: {
+        title: "GK Nexus: An International Coordination Platform Supporting GK GROUP's Global Vision",
+        summary: "Discover how GK Nexus supports project coordination, partnership development and international cooperation across the GK GROUP ecosystem.",
+        body: [
+          "Developing activities across multiple countries requires a shared vision, structured organization, and effective project coordination.",
+          "Within this framework, GK Nexus holds a strategic role in the GK GROUP ecosystem as an international management and coordination platform.",
+          "Associated with GK GROUP's development project in Albania, the platform is intended to facilitate cooperation across the ecosystem while respecting the separate legal identities of the companies involved.",
+          "Its main functions include international activity coordination, project management and monitoring, partnership development, communication between entities, and business development support.",
+          "GK Nexus also aims to improve information sharing across GK GROUP's technology, commercial, and professional initiatives.",
+          "This approach reflects a broader ambition: building an entrepreneurial network capable of fostering lasting cooperation between different regions of the world.",
+          "GK Nexus therefore represents a coordination and strategic development function. Its role should not be interpreted as legal ownership of the other companies within the ecosystem.",
+          "GK Nexus — Connecting Businesses, Projects and Opportunities.",
+        ],
+      },
+    },
+  },
+  {
     id: "gkgm-international-mobility",
     slug: "gk-global-mobility-accompagnement-international",
     category: "group",

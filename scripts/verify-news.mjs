@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { get as httpGet } from "node:http";
 
 // Load the real pure data/model modules without changing package.json's module mode.
 const dataSource = await readFile(new URL("../content/site.js", import.meta.url), "utf8");
@@ -9,7 +10,7 @@ const modelSource = (await readFile(new URL("../lib/news.js", import.meta.url), 
 const model = await import(`data:text/javascript;base64,${Buffer.from(modelSource).toString("base64")}`);
 const { NEWS_CATEGORIES, NEWS_ITEMS } = await import(dataUrl);
 const { getPublishedNews, filterNewsByCategory, getPublishedArticle, getOpportunityStatus, getEventStatus, getNewsSitemapPaths, getNewsImage, parseNewsDate, getArticleStructuredData, formatNewsDate } = model;
-assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
+assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
 assert.deepEqual(getPublishedNews().map(item => item.id), ["gkgm-international-mobility", "gkgroup-international-ecosystem"]);
 assert.equal(createHash("sha256").update(JSON.stringify(NEWS_ITEMS.find(item => item.id === "gkgroup-international-ecosystem"))).digest("hex"), "fbe30c2a848fe575ab675fc6df04325724bb538590be5f1104d2c0b7a7642ea5", "First approved article remains identical");
 const gkgm = NEWS_ITEMS.find(item => item.id === "gkgm-international-mobility");
@@ -20,6 +21,11 @@ assert.equal(gkgm.relatedEntity.href, "/gk-global-mobility");
 const { status: _status, publicationApproved: _approval, date: _date, ...approvedGkgm } = gkgm;
 assert.equal(createHash("sha256").update(JSON.stringify(approvedGkgm)).digest("hex"), "0e1724400b1373f43e514aa6f61916c3496abf7cd18b4338fd1ab43920811239", "Validated GKGM content and link remain identical");
 assert.equal(NEWS_CATEGORIES.length, 4);
+const draft = NEWS_ITEMS.find(item => item.id === "gk-nexus-international-coordination");
+assert.equal(draft.status, "draft");
+assert.equal(draft.publicationApproved, false);
+assert.equal(draft.date, null);
+assert.equal(draft.relatedEntity.href, "/gk-nexus");
 const now = Date.parse("2030-06-15T12:00:00Z");
 const content = { fr: { title: "Test FR", summary: "Résumé test", body: ["Paragraphe test."] }, en: { title: "Test EN", summary: "Test summary", body: "Test paragraph." } };
 const article = { id: "test", slug: "test", category: "group", status: "published", publicationApproved: true, date: "2030-06-01", content };
@@ -73,6 +79,7 @@ const base = process.argv[2] || "http://localhost:3100";
 const sitemap = await (await fetch(base + "/sitemap.xml")).text();
 assert.ok(!sitemap.includes("/news/test"));
 assert.ok(!sitemap.includes("/preview/"), "Preview routes excluded from sitemap");
+assert.ok(!sitemap.includes(draft.slug), "Nexus draft excluded from sitemap");
 for (const lang of ["fr", "en"]) {
   for (const category of ["all", ...NEWS_CATEGORIES.map(item => item.id), "invalid"]) {
     const response = await fetch(`${base}/news?lang=${lang}&category=${category}`);
@@ -85,6 +92,7 @@ for (const lang of ["fr", "en"]) {
     assert.equal(main.includes("data-news-empty"), expected.length === 0);
     assert.equal((main.match(/data-news-card/g) || []).length, expected.length);
     for (const item of expected) assert.ok(main.includes(`/news/${item.slug}?lang=${lang}`));
+    assert.ok(!main.includes(draft.slug), "Nexus draft excluded from every public filter");
     assert.equal((main.match(/aria-current="page"/g) || []).length, 1);
     const selected = model.normalizeNewsCategory(category);
     const active = main.match(/<a\b[^>]*aria-current="page"[^>]*>/)?.[0];
@@ -112,6 +120,25 @@ for (const lang of ["fr", "en"]) {
     assert.ok(!html.includes('name="robots" content="noindex"'));
     for (const paragraph of item.content[lang].body) assert.ok(html.includes(paragraph.replaceAll("'", "&#x27;")), paragraph);
   }
+  if (process.env.TEST_LOCAL_NEWS_PREVIEW === "1") {
+    const preview = await fetch(`${base}/preview/news/${draft.slug}?lang=${lang}`);
+    assert.equal(preview.status, 200);
+    const html = await preview.text();
+    assert.match(html, /name="robots" content="noindex, nofollow"/);
+    assert.ok(!html.includes('id="news-article-structured-data"'));
+    assert.ok(html.includes(draft.content[lang].title.replaceAll("'", "&#x27;")));
+    assert.ok(html.includes(`/gk-nexus?lang=${lang}`));
+    assert.ok(!html.includes("<time"));
+    for (const paragraph of draft.content[lang].body) assert.ok(html.includes(paragraph.replaceAll("'", "&#x27;")));
+    const remoteStatus = await new Promise((resolve, reject) => {
+      httpGet(`${base}/preview/news/${draft.slug}?lang=${lang}`, { headers: { host: "example.com" } }, response => {
+        response.resume(); resolve(response.statusCode);
+      }).on("error", reject);
+    });
+    assert.equal(remoteStatus, 404, "Preview rejects non-local hosts");
+  } else {
+    assert.equal((await fetch(`${base}/preview/news/${draft.slug}?lang=${lang}`)).status, 404, "No production access to Nexus draft preview");
+  }
   for (const slug of [gkgm.slug, "exemple-brouillon"]) {
     const preview = await fetch(`${base}/preview/news/${slug}?lang=${lang}`);
     assert.equal(preview.status, 404, "No public preview access");
@@ -119,7 +146,7 @@ for (const lang of ["fr", "en"]) {
     assert.ok(!previewHtml.includes(gkgm.content[lang].title));
     assert.ok(!previewHtml.includes('id="news-article-structured-data"'));
   }
-  for (const slug of ["inexistant", "exemple-brouillon", "test"]) {
+  for (const slug of ["inexistant", "exemple-brouillon", "test", draft.slug]) {
     const missing = await fetch(`${base}/news/${slug}?lang=${lang}`);
     assert.equal(missing.status, 404, slug);
     const html = await missing.text();
