@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 
 const base = process.argv[2] || "http://localhost:3100";
-const national = ["gk-global-group-sarlu", "uab-gk-esttrade", "gk-nexus", "gk-danube-trading"];
+const national = ["gk-global-group-sarlu", "uab-gk-esttrade", "gk-danube-trading"];
 const branches = ["gkgt", "gkgm"];
 for (const locale of ["fr", "en"]) {
   const response = await fetch(`${base}/architecture?lang=${locale}`);
@@ -16,9 +16,18 @@ for (const locale of ["fr", "en"]) {
   assert.ok(main.includes(locale === "fr" ? "Immatriculation en cours" : "Registration in progress"));
   assert.ok(main.includes(locale === "fr" ? "sans relation de détention juridique" : "no legal ownership relationship"));
   assert.ok(main.includes(locale === "fr" ? "au Togo uniquement" : "in Togo only"));
+  assert.equal((main.match(/data-architecture-platform="gk-nexus"/g) || []).length, 1);
+  assert.ok(main.indexOf('data-architecture-platform="gk-nexus"') < main.indexOf('data-architecture-entity='));
+  assert.ok(main.includes(locale === "fr" ? "Plateforme internationale de gestion et de coordination de l’écosystème GK GROUP" : "International management and coordination platform for the GK GROUP ecosystem"));
+  assert.ok(main.includes(locale === "fr" ? "Tirets dorés" : "Gold dashes"));
+  assert.ok(main.includes(locale === "fr" ? "Points gris" : "Grey dots"));
+  assert.ok(main.includes(locale === "fr" ? "ne signifient pas que toutes sont déjà opérationnelles" : "do not imply that all are already operational"));
+  const nexusProfile = main.match(/<article\b[^>]*id="profile-gk-nexus"[^>]*>(.*?)<\/article>/s)?.[1] || "";
+  assert.equal((nexusProfile.match(/<li\b/g) || []).length, 5, "five platform functions");
+  assert.ok(nexusProfile.includes("GK Nexus Sh.p.k."));
   assert.deepEqual([...main.matchAll(/data-architecture-entity="([^"]+)"/g)].map(match => match[1]), national);
   assert.deepEqual([...main.matchAll(/data-architecture-branch="([^"]+)"/g)].map(match => match[1]), branches);
-  for (const id of [...national, ...branches]) {
+  for (const id of ["gk-nexus", ...national, ...branches]) {
     assert.ok(main.includes(`id="profile-${id}"`));
     assert.ok(main.includes(`href="#profile-${id}"`));
   }
@@ -32,4 +41,4 @@ for (const locale of ["fr", "en"]) {
     assert.equal((await fetch(base + href)).status, 200, href);
   }
 }
-console.log("PASS architecture FR/EN: four national peers, two divisions, six profiles, cautious project statuses, brand/operational legend, valid anchors and existing bilingual routes.");
+console.log("PASS architecture FR/EN: central Nexus platform, three coordinated entities, two Togo divisions, six profiles, five platform functions, cautious legal status, three relationship types and existing bilingual links.");

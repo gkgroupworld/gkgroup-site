@@ -19,20 +19,31 @@ project with registration in progress; coordination and development are future
 roles subject to registration. Danube remains a formation project and its
 activities are explicitly planned. No registration number or date is added.
 
-The chart has four national peers under the GK GROUP brand. Only the Togolese
-company contains the GKGT/GKGM branches. Dashed brand associations and solid
-operational links have a bilingual legend, without asserting legal ownership.
+The revised chart distinguishes GK NEXUS, the international management and
+coordination platform, from GK Nexus Sh.p.k., the proposed Albanian company
+intended to carry it. Repository information still reports registration in
+progress. A targeted search of the official QKB domain did not surface a
+confirmatory document; this is not proof of non-registration. No completed
+registration is asserted without an extract or other supporting evidence.
+
+GK GROUP is above a central navy/gold GK NEXUS platform block, followed by the
+Togo, Lithuania and Serbia entities. Only the Togolese company contains GKGT/GKGM.
+Grey dotted brand links, gold dashed functional coordination links and solid
+operational links have a bilingual legend. No ownership or equity is asserted.
+The Nexus profile leads the detailed profiles and lists five platform functions,
+explicitly without claiming that all are already operational.
 
 ## Validation
 
 - `npm run build`: passed.
 - `npm run lint`: passed.
-- `node scripts/verify-architecture.mjs`: passed for FR/EN, national entities,
-  branches, six profiles, statuses, anchors and all five existing destination routes.
+- `node scripts/verify-architecture.mjs`: passed for FR/EN, the central platform,
+  three coordinated entities, two branches, six profiles, five platform functions,
+  statuses, three relationship types, anchors and existing destination routes.
 - `node scripts/verify-seo.mjs`: passed for all 24 FR/EN URLs, canonical/hreflang,
   sitemap, institutional schema and existing form checks.
 - Browser checks at 1440px, 834px and 390px in both languages: no horizontal
-  overflow; four/two/one chart columns; six profiles; both branches nested only
+  overflow; three/one/one operational chart columns; six profiles; both branches nested only
   within the Togo entity; no failed logo images observed.
 - CSS animations are scoped to this page, with staggered card entry, hover/focus
   relation highlighting and an explicit `prefers-reduced-motion` override.

@@ -11,14 +11,14 @@
   border-color: #d59b46;
   background: #fffaf1;
 }
-@media (min-width: 80rem) {
+@media (min-width: 64rem) {
   .nationalGrid::before {
     content: "";
     position: absolute;
     top: 0;
-    /* Half a column at each end, accounting for the three 20px grid gaps. */
-    left: calc((100% - 60px) / 8);
-    right: calc((100% - 60px) / 8);
+    /* Half a column at each end, accounting for the two 20px grid gaps. */
+    left: calc((100% - 40px) / 6);
+    right: calc((100% - 40px) / 6);
     border-top: 1px dashed #d59b46;
   }
 }

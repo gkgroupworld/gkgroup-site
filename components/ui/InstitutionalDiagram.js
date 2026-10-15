@@ -6,7 +6,8 @@ import styles from "@/components/pages/Architecture.module.css";
 
 export function InstitutionalDiagram({ locale }) {
   const copy = ARCHITECTURE_COPY[locale];
-  const companies = ARCHITECTURE_ENTITIES.filter(entity => !entity.branch);
+  const companies = ARCHITECTURE_ENTITIES.filter(entity => !entity.branch && !entity.platform);
+  const nexusLogo = ENTITY_LOGOS["gk-nexus"];
   return <figure aria-label={copy.diagramLabel} aria-describedby="architecture-legend">
     <div className="border border-slate-200 bg-[#f5f7fa] p-4 sm:p-8">
       <div className="mx-auto max-w-xl border-t-2 border-[#d59b46] bg-[#061b46] px-6 py-7 text-center text-white">
@@ -15,12 +16,23 @@ export function InstitutionalDiagram({ locale }) {
         <p className="mt-3 text-sm text-slate-200">Global Business Without Borders</p>
         <p className="mt-4 text-sm leading-6 text-slate-200">{copy.brandStatus}</p>
       </div>
-      <div aria-hidden="true" className="mx-auto hidden h-10 w-px border-l border-dashed border-[#d59b46] xl:block" />
-      <ul className={`relative mt-6 grid gap-6 md:grid-cols-2 xl:mt-0 xl:grid-cols-4 xl:gap-5 ${styles.nationalGrid}`}>
+      <div aria-hidden="true" className="mx-auto h-8 w-px border-l-2 border-dotted border-slate-400" />
+      <div data-architecture-platform="gk-nexus" className={`mx-auto max-w-3xl border-2 border-[#d59b46] bg-[#061b46] p-6 text-white sm:p-8 ${styles.card}`}>
+        <div className="grid items-center gap-6 sm:grid-cols-[112px_1fr]">
+          <div className="mx-auto flex h-24 w-28 items-center border border-[#d59b46] bg-[#d4e1ea] p-2"><Image src={nexusLogo.src} alt={nexusLogo.alt} width={1536} height={1024} className="h-full w-full object-contain" sizes="112px" /></div>
+          <div><h3 className="text-3xl font-bold tracking-wide text-[#f5a24e]">GK NEXUS</h3><p className="mt-3 text-lg font-bold leading-7">{copy.platformRole}</p></div>
+        </div>
+        <p className="mt-6 border-t border-white/20 pt-5 text-sm leading-6 text-slate-200">{copy.platformLegal}</p>
+        <Link href="#profile-gk-nexus" className="mt-4 inline-flex min-h-11 items-center text-sm font-bold underline underline-offset-4">{copy.detailLink}<span className="sr-only"> · GK NEXUS</span><span aria-hidden="true" className="ml-2">↓</span></Link>
+      </div>
+      <div aria-hidden="true" className="mx-auto h-6 w-px border-l border-dashed border-[#d59b46]" />
+      <p className="text-center text-xs font-bold uppercase tracking-[.16em] text-[#805217]">{copy.coordination}</p>
+      <div aria-hidden="true" className="mx-auto h-6 w-px border-l border-dashed border-[#d59b46]" />
+      <ul className={`relative grid gap-6 lg:grid-cols-3 lg:gap-5 ${styles.nationalGrid}`}>
         {companies.map((entity, index) => {
           const logo = ENTITY_LOGOS[entity.id];
-          return <li key={entity.id} data-architecture-entity={entity.id} className={`relative min-w-0 xl:pt-8 ${styles.entityGroup} ${styles.reveal}`} style={{ "--reveal-delay": `${index * 65}ms` }}>
-            <div aria-hidden="true" className="absolute left-1/2 top-0 hidden h-8 border-l border-dashed border-[#d59b46] xl:block" />
+          return <li key={entity.id} data-architecture-entity={entity.id} className={`relative min-w-0 lg:pt-8 ${styles.entityGroup} ${styles.reveal}`} style={{ "--reveal-delay": `${index * 65}ms` }}>
+            <div aria-hidden="true" className="absolute left-1/2 top-0 hidden h-8 border-l border-dashed border-[#d59b46] lg:block" />
             <div className={`border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-5 ${styles.card}`}>
               <p className="text-xs font-bold uppercase tracking-[.18em] text-[#9b651f]">{entity.country[locale]}</p>
               <div className="mt-4 flex h-20 items-center justify-center bg-[#f5f7fa] p-2"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-full w-full object-contain" sizes="(max-width: 768px) 240px, 200px" /></div>
@@ -44,8 +56,10 @@ export function InstitutionalDiagram({ locale }) {
       </ul>
     </div>
     <figcaption id="architecture-legend" className="mt-6 grid gap-3 text-sm leading-6 text-slate-600">
-      <p className="flex items-start gap-3"><span aria-hidden="true" className="mt-3 w-8 shrink-0 border-t border-dashed border-[#b58032]" />{copy.legendBrand}</p>
+      <p className="flex items-start gap-3"><span aria-hidden="true" className="mt-3 w-8 shrink-0 border-t-2 border-dotted border-slate-400" />{copy.legendBrand}</p>
+      <p className="flex items-start gap-3"><span aria-hidden="true" className="mt-3 w-8 shrink-0 border-t border-dashed border-[#b58032]" />{copy.legendCoordination}</p>
       <p className="flex items-start gap-3"><span aria-hidden="true" className="mt-3 w-8 shrink-0 border-t-2 border-[#b58032]" />{copy.legendBranch}</p>
+      <p className="mt-2 border-l-2 border-[#d59b46] pl-4">{copy.platformScope}</p>
     </figcaption>
   </figure>;
 }
