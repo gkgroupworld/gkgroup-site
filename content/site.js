@@ -360,9 +360,9 @@ export const NEWS_ITEMS = [
     id: "gkgm-international-mobility",
     slug: "gk-global-mobility-accompagnement-international",
     category: "group",
-    status: "draft",
-    publicationApproved: false,
-    date: null, // Set the actual publication date only after editorial approval.
+    status: "published",
+    publicationApproved: true,
+    date: "2026-10-15",
     relatedEntity: {
       href: "/gk-global-mobility",
       label: { fr: "Découvrir GK Global Mobility", en: "Discover GK Global Mobility" },
