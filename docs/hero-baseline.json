@@ -208,7 +208,7 @@
     ]
   },
   "/news?lang=fr": {
-    "below": "464cf22a88dea1fd68edc2249270745cca878d1230d0df054db327e593f4b373",
+    "below": "66cd9febf6fb9acd9d9bb6788c89a99ac7586e8e6025a42a973e6f81e3b9ae9d",
     "header": "74de73332f98ba910598ae32d5d752d01446fcbe5d7883c79ff0810c7ad680fa",
     "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
     "seo": "23c4e94a611f79e5e91202a76937ab200e5bf145ee8195d62e3c9aa206b78baa",
@@ -217,7 +217,7 @@
     "buttons": []
   },
   "/news?lang=en": {
-    "below": "555a74071288a97b74d034f620320489131c6a36ef44f6f77e56ddff1438c44f",
+    "below": "8eb53618bd35b82081c403c73193e5512c4cd8ce8d6ed3d82e679c7293bbd0e0",
     "header": "209d84af13a7503f0f79eb20b416dcef3bea6f9efa194633254f250359cccd7c",
     "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
     "seo": "489c9822b5ce398660beb5bad4e34d36aaa63ed5e86ea2c1e99e88efdabf3b9d",

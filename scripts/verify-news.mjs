@@ -8,7 +8,8 @@ const modelSource = (await readFile(new URL("../lib/news.js", import.meta.url), 
 const model = await import(`data:text/javascript;base64,${Buffer.from(modelSource).toString("base64")}`);
 const { NEWS_CATEGORIES, NEWS_ITEMS } = await import(dataUrl);
 const { getPublishedNews, filterNewsByCategory, getPublishedArticle, getOpportunityStatus, getEventStatus, getNewsSitemapPaths, getNewsImage, parseNewsDate, getArticleStructuredData, formatNewsDate } = model;
-assert.deepEqual(NEWS_ITEMS, [], "No invented publication may be introduced");
+assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgroup-international-ecosystem"], "Only explicitly approved publications may be introduced");
+assert.equal(getPublishedNews().length, NEWS_ITEMS.length);
 assert.equal(NEWS_CATEGORIES.length, 4);
 const now = Date.parse("2030-06-15T12:00:00Z");
 const content = { fr: { title: "Test FR", summary: "Résumé test", body: ["Paragraphe test."] }, en: { title: "Test EN", summary: "Test summary", body: "Test paragraph." } };
@@ -70,8 +71,10 @@ for (const lang of ["fr", "en"]) {
     const main = html.match(/<main\b[^>]*>(.*?)<\/main>/s)?.[1] || "";
     assert.match(html, new RegExp(`<html[^>]*lang="${lang}"`));
     assert.equal((main.match(/<h1\b/g) || []).length, 1);
-    assert.ok(main.includes("data-news-empty"));
-    assert.ok(!main.includes("data-news-card"));
+    const expected = filterNewsByCategory(getPublishedNews(), category);
+    assert.equal(main.includes("data-news-empty"), expected.length === 0);
+    assert.equal((main.match(/data-news-card/g) || []).length, expected.length);
+    for (const item of expected) assert.ok(main.includes(`/news/${item.slug}?lang=${lang}`));
     assert.equal((main.match(/aria-current="page"/g) || []).length, 1);
     const selected = model.normalizeNewsCategory(category);
     const active = main.match(/<a\b[^>]*aria-current="page"[^>]*>/)?.[0];
@@ -79,6 +82,21 @@ for (const lang of ["fr", "en"]) {
     assert.ok(active?.includes(selected === "all" ? `/news?lang=${lang}#publications` : `category=${selected}#publications`));
     for (const item of NEWS_CATEGORIES) assert.ok(main.includes(item.label[lang]));
     assert.ok(html.includes(`rel="canonical" href="https://gkgroup.app/news${lang === "en" ? "?lang=en" : ""}"`));
+  }
+  for (const item of getPublishedNews()) {
+    const path = `/news/${item.slug}`;
+    const response = await fetch(`${base}${path}?lang=${lang}`);
+    assert.equal(response.status, 200);
+    const html = await response.text();
+    const schema = JSON.parse(html.match(/<script[^>]*id="news-article-structured-data"[^>]*>(.*?)<\/script>/s)[1]);
+    assert.equal(schema.headline, item.content[lang].title);
+    assert.equal(schema.inLanguage, lang);
+    assert.equal(schema.datePublished, item.date);
+    assert.equal(schema["@type"], "NewsArticle");
+    assert.ok(sitemap.includes(`https://gkgroup.app${path}${lang === "en" ? "?lang=en" : ""}</loc>`));
+    assert.ok(html.includes(item.content[lang].title));
+    assert.ok(!html.includes('name="robots" content="noindex"'));
+    for (const paragraph of item.content[lang].body) assert.ok(html.includes(paragraph.replaceAll("'", "&#x27;")), paragraph);
   }
   for (const slug of ["inexistant", "exemple-brouillon", "test"]) {
     const missing = await fetch(`${base}/news/${slug}?lang=${lang}`);

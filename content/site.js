@@ -353,9 +353,46 @@ export const NEWS_CATEGORIES = [
   { id: "announcements", label: { fr: "Annonces officielles", en: "Official announcements" }, description: { fr: "Communiqués, informations importantes, mises à jour des services et avis aux partenaires et clients.", en: "Statements, important information, service updates and notices for partners and clients." } },
 ];
 
-// Single publication source. Keep empty until content is explicitly approved.
+// Single publication source. Add content only after explicit editorial approval.
 // Model, approval rules and bilingual examples: docs/publications-guide.md.
-export const NEWS_ITEMS = [];
+export const NEWS_ITEMS = [
+  {
+    id: "gkgroup-international-ecosystem",
+    slug: "gk-group-ecosysteme-entrepreneurial-international",
+    category: "group",
+    status: "published",
+    publicationApproved: true,
+    date: "2026-10-15",
+    content: {
+      fr: {
+        title: "GK GROUP : un écosystème entrepreneurial international au service des opportunités sans frontières",
+        summary: "Technologies, mobilité internationale, commerce et coordination de projets : GK GROUP développe un écosystème fondé sur la coopération et les complémentarités.",
+        body: [
+          "GK GROUP poursuit le développement de sa vision entrepreneuriale internationale, fondée sur la coopération, l'innovation et la création de passerelles entre les marchés, les entreprises et les talents.",
+          "Porté par le fondateur Edem Yawo Awutey, cet écosystème réunit des activités complémentaires dans les technologies, la mobilité internationale, le commerce et la coordination des projets.",
+          "Au Togo, GK GLOBAL GROUP SARL U constitue une société légalement établie, avec deux branches : GK Global Technology (GKGT), spécialisée dans les services informatiques et les solutions numériques, et GK Global Mobility (GKGM), dédiée au conseil et à l'accompagnement en mobilité internationale.",
+          "En Lituanie, UAB GK EstTrade contribue au développement de la dimension commerciale internationale de l'écosystème, notamment à travers l'import-export, le sourcing et les relations B2B.",
+          "GK Nexus représente la plateforme de coordination internationale de GK GROUP, avec une orientation vers la gestion de projets, les partenariats et le développement des affaires. L'écosystème comprend également le projet GK Danube Trading DOO en Serbie, actuellement en constitution.",
+          "À travers cette organisation, GK GROUP ambitionne de développer des relations économiques et professionnelles durables entre l'Afrique, l'Europe, l'Asie, les Amériques et d'autres marchés internationaux.",
+          "GK GROUP — Global Business Without Borders.",
+        ],
+      },
+      en: {
+        title: "GK GROUP: an international entrepreneurial ecosystem creating opportunities without borders",
+        summary: "Technology, international mobility, trade and project coordination: GK GROUP is developing an ecosystem built on cooperation and complementary expertise.",
+        body: [
+          "GK GROUP continues to develop its international entrepreneurial vision, built on cooperation, innovation and connections between markets, businesses and talent.",
+          "Led by founder Edem Yawo Awutey, this ecosystem brings together complementary activities in technology, international mobility, trade and project coordination.",
+          "In Togo, GK GLOBAL GROUP SARL U is a legally established company with two branches: GK Global Technology (GKGT), specialising in IT services and digital solutions, and GK Global Mobility (GKGM), dedicated to advisory services and support for international mobility.",
+          "In Lithuania, UAB GK EstTrade contributes to the ecosystem’s international commercial development, particularly through import-export, sourcing and B2B relationships.",
+          "GK Nexus serves as GK GROUP’s international coordination platform, with a focus on project management, partnerships and business development. The ecosystem also includes the GK Danube Trading DOO project in Serbia, currently in the process of incorporation.",
+          "Through this organisation, GK GROUP aims to develop lasting economic and professional relationships between Africa, Europe, Asia, the Americas and other international markets.",
+          "GK GROUP — Global Business Without Borders.",
+        ],
+      },
+    },
+  },
+];
 
 export const NEWS_CONTENT = {
   fr: {
