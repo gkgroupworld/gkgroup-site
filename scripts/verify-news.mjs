@@ -10,9 +10,10 @@ const modelSource = (await readFile(new URL("../lib/news.js", import.meta.url), 
 const model = await import(`data:text/javascript;base64,${Buffer.from(modelSource).toString("base64")}`);
 const { NEWS_CATEGORIES, NEWS_ITEMS } = await import(dataUrl);
 const { getPublishedNews, filterNewsByCategory, getPublishedArticle, getOpportunityStatus, getEventStatus, getNewsSitemapPaths, getNewsImage, parseNewsDate, getArticleStructuredData, formatNewsDate } = model;
-assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgt-it-expertise", "esttrade-international-trade", "gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
+assert.deepEqual(NEWS_ITEMS.map(item => item.id), ["gkgroup-international-perspectives", "gkgt-it-expertise", "esttrade-international-trade", "gk-nexus-international-coordination", "gkgm-international-mobility", "gkgroup-international-ecosystem"], "Only prepared editorial content may be introduced");
 const drafts = NEWS_ITEMS.filter(item => item.status === "draft");
-assert.equal(drafts.length, 2);
+assert.equal(drafts.length, 3);
+assert.deepEqual(drafts[0].relatedLinks.map(link => link.href), ["/architecture", "/entities"]);
 for (const draft of drafts) {
   assert.equal(draft.publicationApproved, false);
   assert.equal(draft.date, null);
@@ -145,7 +146,7 @@ for (const lang of ["fr", "en"]) {
       assert.ok(!html.includes('id="news-article-structured-data"'));
       assert.ok(!html.includes("<time"));
       assert.ok(html.includes(draft.content[lang].title.replaceAll("'", "&#x27;")));
-      assert.ok(html.includes(`${draft.relatedEntity.href}?lang=${lang}`));
+      for (const link of draft.relatedLinks || [draft.relatedEntity]) assert.ok(html.includes(`href="${link.href}?lang=${lang}"`));
       for (const p of draft.content[lang].body) assert.ok(html.includes(p.replaceAll("'", "&#x27;")));
       const remoteStatus = await new Promise((resolve, reject) => {
         httpGet(`${base}/preview/news/${draft.slug}?lang=${lang}`, { headers: { host: "example.com" } }, response => {

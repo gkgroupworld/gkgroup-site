@@ -357,6 +357,66 @@ export const NEWS_CATEGORIES = [
 // Model, approval rules and bilingual examples: docs/publications-guide.md.
 export const NEWS_ITEMS = [
   {
+    "id": "gkgroup-international-perspectives",
+    "slug": "gk-group-perspectives-developpement-international",
+    "category": "group",
+    "status": "draft",
+    "publicationApproved": false,
+    "date": null,
+    "relatedLinks": [
+      {
+        "href": "/architecture",
+        "label": {
+          "fr": "Notre architecture",
+          "en": "Our architecture"
+        }
+      },
+      {
+        "href": "/entities",
+        "label": {
+          "fr": "Nos entités",
+          "en": "Our entities"
+        }
+      }
+    ],
+    "content": {
+      "fr": {
+        "title": "GK GROUP : construire des perspectives de développement entre les marchés internationaux",
+        "summary": "GK GROUP présente sa vision de développement international, fondée sur la coopération économique, les technologies, la mobilité et les partenariats entre plusieurs régions du monde.",
+        "body": [
+          "Dans un monde où les échanges économiques, les compétences et les innovations circulent au-delà des frontières, le développement international repose de plus en plus sur la coopération et la complémentarité des expertises.",
+          "GK GROUP poursuit une vision entrepreneuriale destinée à créer des connexions entre les entreprises, les marchés, les talents et les opportunités professionnelles.",
+          "Cette ambition s'appuie sur plusieurs domaines complémentaires : les technologies et services informatiques, le commerce international, le conseil en mobilité et la coordination des projets.",
+          "Au Togo, GK GLOBAL GROUP SARL U constitue une société légalement établie, avec ses branches GK Global Technology et GK Global Mobility.",
+          "En Lituanie, UAB GK EstTrade contribue au développement de la dimension commerciale internationale de l'écosystème.",
+          "GK Nexus représente une plateforme de coordination internationale associée au projet albanais, tandis que GK Danube Trading DOO demeure un projet de société en constitution en Serbie.",
+          "Cette organisation reflète une volonté de développer progressivement des activités et des collaborations entre l'Afrique et l'Europe, tout en explorant les possibilités offertes par l'Asie, les Amériques et d'autres régions du monde.",
+          "Les prochaines étapes reposent sur le renforcement des activités existantes, l'identification de partenaires appropriés, la structuration des projets et l'exploration de nouveaux marchés.",
+          "GK GROUP privilégie une approche progressive, fondée sur la transparence, le respect des réglementations et la construction de relations professionnelles durables.",
+          "Au-delà des frontières géographiques, l'ambition est de contribuer à un environnement dans lequel les compétences, les entreprises et les initiatives entrepreneuriales peuvent trouver de nouvelles perspectives de coopération.",
+          "GK GROUP — Global Business Without Borders."
+        ]
+      },
+      "en": {
+        "title": "GK GROUP: Building International Development Opportunities Across Markets",
+        "summary": "GK GROUP outlines its international development vision, connecting economic cooperation, technology, mobility and partnerships across world regions.",
+        "body": [
+          "In a world where economic exchanges, professional skills and innovation extend beyond borders, international development increasingly depends on cooperation and complementary expertise.",
+          "GK GROUP pursues an entrepreneurial vision aimed at connecting businesses, markets, talent and professional opportunities.",
+          "This ambition brings together several complementary fields: technology and IT services, international trade, mobility advisory services and project coordination.",
+          "In Togo, GK GLOBAL GROUP SARL U is a legally established company operating through GK Global Technology and GK Global Mobility.",
+          "In Lithuania, UAB GK EstTrade contributes to the international commercial dimension of the ecosystem.",
+          "GK Nexus represents an international coordination platform associated with the Albanian development project, while GK Danube Trading DOO remains a company formation project in Serbia.",
+          "This structure reflects an ambition to progressively develop activities and cooperation between Africa and Europe while exploring opportunities across Asia, the Americas and other world regions.",
+          "Future priorities include strengthening existing activities, identifying suitable partners, structuring projects and exploring additional markets.",
+          "GK GROUP favors a progressive approach based on transparency, regulatory compliance and the development of lasting professional relationships.",
+          "Beyond geographical borders, the objective is to contribute to an environment where skills, businesses and entrepreneurial initiatives can discover new opportunities for cooperation.",
+          "GK GROUP — Global Business Without Borders."
+        ]
+      }
+    }
+  },
+  {
     "id": "gkgt-it-expertise",
     "slug": "gk-global-technology-expertise-solutions-numeriques",
     "category": "group",

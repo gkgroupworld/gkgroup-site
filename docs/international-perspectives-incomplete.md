@@ -1,6 +1,6 @@
 # Article 6 — extrait incomplet fourni
 
-En attente de la suite française et de la version anglaise. Aucun ajout au catalogue public ni texte inventé.
+Archive du premier envoi tronqué. Remplacé par le texte intégral FR/EN reçu et intégré en brouillon dans NEWS_ITEMS ; voir institutional-news-drafts-review.md.
 
 GK GROUP : PERSPECTIVES INTERNATIONALES
 
