@@ -357,6 +357,48 @@ export const NEWS_CATEGORIES = [
 // Model, approval rules and bilingual examples: docs/publications-guide.md.
 export const NEWS_ITEMS = [
   {
+    id: "gkgm-international-mobility",
+    slug: "gk-global-mobility-accompagnement-international",
+    category: "group",
+    status: "draft",
+    publicationApproved: false,
+    date: null, // Set the actual publication date only after editorial approval.
+    relatedEntity: {
+      href: "/gk-global-mobility",
+      label: { fr: "Découvrir GK Global Mobility", en: "Discover GK Global Mobility" },
+    },
+    content: {
+      fr: {
+        title: "GK Global Mobility : accompagner les talents et les entrepreneurs vers de nouvelles perspectives internationales",
+        summary: "GK Global Mobility accompagne les étudiants, les professionnels et les entrepreneurs dans la préparation de leurs projets de mobilité internationale, grâce à une approche personnalisée et structurée.",
+        body: [
+          "Dans un environnement où les études, les compétences et les activités économiques dépassent de plus en plus les frontières, GK Global Mobility (GKGM) développe une approche personnalisée du conseil en mobilité internationale.",
+          "Branche de GK GLOBAL GROUP SARL U, établie au Togo, GKGM accompagne les étudiants, les professionnels et les entrepreneurs dans la préparation et l'organisation de leurs projets internationaux.",
+          "Ses domaines d'intervention comprennent notamment l'orientation vers les études à l'étranger, l'accompagnement documentaire, la coordination avec les partenaires spécialisés et le conseil relatif aux projets de mobilité professionnelle.",
+          "GKGM s'intéresse également à la mobilité entrepreneuriale, en orientant les porteurs de projets vers les informations et les interlocuteurs pertinents pour leurs démarches d'implantation internationale.",
+          "L'approche repose sur l'analyse des besoins, la préparation des dossiers, la transparence et le suivi des démarches, dans le respect des réglementations applicables.",
+          "GK Global Mobility ne délivre pas de visas et ne garantit ni admission, ni emploi, ni autorisation de séjour. Les décisions relèvent exclusivement des établissements, employeurs et autorités compétents.",
+          "À travers ses activités, GKGM entend faciliter l'accès à une information structurée et contribuer à une mobilité internationale mieux préparée.",
+          "GK Global Mobility — Une branche de GK GLOBAL GROUP SARL U.",
+        ],
+      },
+      en: {
+        title: "GK Global Mobility: Supporting Talent and Entrepreneurs in Their International Ambitions",
+        summary: "GK Global Mobility supports students, professionals and entrepreneurs in preparing their international mobility projects through a personalized and structured approach.",
+        body: [
+          "As education, professional skills, and business activities increasingly cross borders, GK Global Mobility (GKGM) is developing a personalized approach to international mobility advisory services.",
+          "As a branch of GK GLOBAL GROUP SARL U in Togo, GKGM supports students, professionals, and entrepreneurs in preparing and organizing their international projects.",
+          "Its services include international education guidance, document preparation support, coordination with specialized partners, and advice related to professional mobility projects.",
+          "GKGM also addresses entrepreneurial mobility by helping project holders identify relevant information and qualified contacts for international business establishment procedures.",
+          "Its approach emphasizes needs assessment, document preparation, transparency, and procedural guidance in accordance with applicable regulations.",
+          "GK Global Mobility does not issue visas or guarantee admission, employment, or residence authorization. Decisions remain the responsibility of the relevant institutions, employers, and authorities.",
+          "Through its services, GKGM aims to make international mobility information more accessible and help individuals prepare their projects more effectively.",
+          "GK Global Mobility — A branch of GK GLOBAL GROUP SARL U.",
+        ],
+      },
+    },
+  },
+  {
     id: "gkgroup-international-ecosystem",
     slug: "gk-group-ecosysteme-entrepreneurial-international",
     category: "group",
