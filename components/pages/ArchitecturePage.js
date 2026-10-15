@@ -1,9 +1,53 @@
+import Image from "next/image";
+import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { InstitutionalDiagram } from "@/components/ui/InstitutionalDiagram";
+import { ENTITY_LOGOS } from "@/content/site";
+import { ARCHITECTURE_COPY, ARCHITECTURE_ENTITIES } from "@/content/architecture";
+import { withLocale } from "@/lib/locale";
+import styles from "./Architecture.module.css";
 
 export function ArchitecturePage({ locale }) {
-  const fr = locale === "fr";
-  return <><Header locale={locale} /><main><section className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#f5a24e]">GK GROUP</p><h1 className="mt-4 text-4xl font-bold sm:text-5xl">{fr ? "Notre architecture" : "Our architecture"}</h1><p className="mt-5 max-w-3xl text-lg leading-8 text-slate-200">{fr ? "Une structure institutionnelle claire, conçue pour coordonner des expertises distinctes tout en soutenant le développement international." : "A clear institutional structure designed to coordinate distinct expertise while supporting international development."}</p></div></section><section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={fr ? "Structure institutionnelle" : "Institutional structure"} title={fr ? "Un groupe, des structures aux rôles distincts" : "One group, structures with distinct roles"} /><InstitutionalDiagram locale={locale} /><p className="mt-8 max-w-4xl text-base leading-8 text-slate-600">{fr ? "GK GROUP est une marque et un écosystème international, sans statut juridique propre à ce jour. GK GLOBAL GROUP SARLU est une société établie au Togo qui développe ses activités à travers deux branches opérationnelles : GK GLOBAL TECHNOLOGY (GKGT), dédiée aux technologies, aux solutions informatiques, aux réseaux et aux services IT, et GK GLOBAL MOBILITY (GKGM), dédiée au conseil et à l’accompagnement en mobilité internationale. UAB GK EstTrade est une société de l’écosystème établie en Lituanie, spécialisée notamment dans le commerce international, le sourcing, l’import-export et les relations Europe–Afrique. GK NEXUS Sh.p.k. est un projet de société en Albanie dont l’immatriculation est en cours, destiné à devenir une plateforme de coordination et de développement international sous réserve d’immatriculation. GK Danube Trading DOO — Projet de société en cours de constitution en Serbie — s’inscrit dans cette stratégie de développement." : "GK GROUP is an international brand and ecosystem, currently without legal status of its own. GK GLOBAL GROUP SARLU is a company established in Togo that develops its activities through two operational branches: GK GLOBAL TECHNOLOGY (GKGT), dedicated to technology, IT solutions, networks and IT services, and GK GLOBAL MOBILITY (GKGM), dedicated to international mobility consulting and support. UAB GK EstTrade is an ecosystem company established in Lithuania, specialising notably in international trade, sourcing, import-export and Europe–Africa relations. GK NEXUS Sh.p.k. is a proposed company in Albania with registration in progress, intended as a future coordination and international development platform subject to registration. GK Danube Trading DOO — Company formation project in progress in Serbia — is part of this development strategy."}</p></div></section><section className="bg-[#f5f7fa] px-5 py-16 sm:px-8"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={fr ? "Comment elle fonctionne" : "How it works"} title={fr ? "Gouvernance, autonomie et coordination" : "Governance, autonomy and coordination"} /><div className="grid gap-4 md:grid-cols-3">{(fr ? [["Gouvernance", "Une référence institutionnelle claire pour les activités au Togo."], ["Autonomie opérationnelle", "Chaque société distincte conserve son rôle et son périmètre propres."], ["Développement international", "Les structures se complètent pour connecter des opportunités entre marchés."]] : [["Governance", "A clear institutional reference for activities in Togo."], ["Operational autonomy", "Each distinct company retains its own role and scope."], ["International development", "The structures complement one another to connect opportunities between markets."]]).map(([title, text]) => <article key={title} className="bg-white p-6"><h3 className="font-bold text-[#061b46]">{title}</h3><p className="mt-3 text-sm leading-6 text-slate-600">{text}</p></article>)}</div></div></section></main><Footer locale={locale} /></>;
+  const copy = ARCHITECTURE_COPY[locale];
+  return <><Header locale={locale} /><main lang={locale}>
+    <section className="bg-[#061b46] text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">GK GROUP · Global Business Without Borders</p>
+          <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{copy.title}</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.subtitle}</p>
+          <p className="mt-8 border-l-2 border-[#d59b46] pl-4 text-sm leading-6 text-[#f5a24e]">{copy.brandStatus}</p>
+        </div>
+        <div className="mx-auto w-full max-w-sm border border-[#d59b46] bg-white p-5">
+          <Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} preload className="h-auto w-full object-contain" sizes="(max-width: 640px) calc(100vw - 82px), 340px" />
+        </div>
+      </div>
+    </section>
+    <section id="ecosystem" className="px-5 py-16 sm:px-8 sm:py-20">
+      <div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.eyebrow} title={copy.diagramTitle} /><p className="mb-10 max-w-3xl leading-8 text-slate-600">{copy.diagramIntro}</p><InstitutionalDiagram locale={locale} /></div>
+    </section>
+    <section id="entity-profiles" className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20">
+      <div className="mx-auto max-w-7xl"><SectionTitle eyebrow="GK GROUP" title={copy.detailsTitle} /><p className="mb-10 max-w-4xl leading-8 text-slate-600">{copy.detailsIntro}</p>
+        <div className="grid gap-6 lg:grid-cols-2">
+          {ARCHITECTURE_ENTITIES.map((entity, index) => {
+            const logo = ENTITY_LOGOS[entity.id];
+            return <article key={entity.id} id={`profile-${entity.id}`} aria-labelledby={`title-${entity.id}`} className={`flex scroll-mt-6 flex-col border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8 ${styles.card} ${styles.reveal}`} style={{ "--reveal-delay": `${Math.min(index, 3) * 65}ms` }}>
+              <div className="flex flex-wrap items-center justify-between gap-4"><p className="text-xs font-bold uppercase tracking-[.18em] text-[#9b651f]">{entity.country[locale]}</p><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-20 w-32 object-contain" sizes="128px" /></div>
+              <h3 id={`title-${entity.id}`} className="mt-6 text-2xl font-bold tracking-tight text-[#061b46]">{entity.name}</h3>
+              <p className="mt-3 border-l-2 border-[#d59b46] pl-3 text-sm font-bold leading-6 text-[#805217]">{entity.status[locale]}</p>
+              {entity.branch && <p className="mt-2 text-xs leading-6 text-slate-600">{copy.branchOf}</p>}
+              <p className="mt-5 leading-7 text-slate-600">{entity.description[locale]}</p>
+              <h4 className="mt-6 text-sm font-bold text-[#061b46]">{entity.project ? copy.planned : copy.activities}</h4>
+              <ul className="mb-7 mt-4 grid gap-3">{entity.activities[locale].map(activity => <li key={activity} className="border-l-2 border-[#d59b46] pl-3 text-sm leading-6 text-slate-600">{activity}</li>)}</ul>
+              {entity.branches && <div className="mb-7 flex flex-wrap gap-3">{entity.branches.map(id => <Link key={id} href={`#profile-${id}`} className="inline-flex min-h-11 items-center border border-slate-200 px-4 text-sm font-bold text-[#061b46] hover:border-[#d59b46]">{id.toUpperCase()}<span aria-hidden="true" className="ml-2">↓</span></Link>)}</div>}
+              <div className="mt-auto border-t border-slate-200 pt-6"><Link href={withLocale(entity.href, locale)} className="inline-flex min-h-11 items-center justify-center border border-[#d59b46] bg-[#061b46] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0c3269]" style={{ color: "#ffffff" }}>{entity.href === "/entities" ? copy.directory : copy.discover}<span className="sr-only"> · {entity.name}</span><span aria-hidden="true" className="ml-3">→</span></Link></div>
+            </article>;
+          })}
+        </div>
+      </div>
+    </section>
+    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow="GK GROUP" title={copy.principlesTitle} /><div className="grid gap-6 md:grid-cols-3">{copy.principles.map(([title, description]) => <article key={title} className="border-t-2 border-[#d59b46] pt-6"><h3 className="text-xl font-bold text-[#061b46]">{title}</h3><p className="mt-4 text-sm leading-7 text-slate-600">{description}</p></article>)}</div></div></section>
+  </main><Footer locale={locale} /></>;
 }
