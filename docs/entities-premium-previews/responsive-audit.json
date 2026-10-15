@@ -1,0 +1,994 @@
+[
+  {
+    "lang": "fr",
+    "width": 1440,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Nos entités"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème ouvert sur le monde."
+      },
+      {
+        "tag": "H2",
+        "text": "Une société, deux expertises opérationnelles."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, un rôle stratégique au service de l’écosystème."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème, des expertises complémentaires."
+      },
+      {
+        "tag": "H2",
+        "text": "Développons ensemble de nouvelles opportunités internationales."
+      }
+    ],
+    "height": 6375,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 267,
+        "width": 332
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 501,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 416,
+        "id": "ecosystem",
+        "top": 582
+      },
+      {
+        "height": 1416,
+        "id": "togo",
+        "top": 998
+      },
+      {
+        "height": 876,
+        "id": "lithuania",
+        "top": 2414
+      },
+      {
+        "height": 1111,
+        "id": "nexus",
+        "top": 3290
+      },
+      {
+        "height": 479,
+        "id": "serbia",
+        "top": 4401
+      },
+      {
+        "height": 759,
+        "id": "complementary-expertise",
+        "top": 4880
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 5639
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 1440,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Our Entities"
+      },
+      {
+        "tag": "H2",
+        "text": "An ecosystem with a global outlook."
+      },
+      {
+        "tag": "H2",
+        "text": "One company, two areas of operational expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, a strategic role supporting the ecosystem."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "One ecosystem, complementary expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "Let’s develop new international opportunities together."
+      }
+    ],
+    "height": 6235,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 267,
+        "width": 332
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 501,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 396,
+        "id": "ecosystem",
+        "top": 582
+      },
+      {
+        "height": 1424,
+        "id": "togo",
+        "top": 978
+      },
+      {
+        "height": 848,
+        "id": "lithuania",
+        "top": 2402
+      },
+      {
+        "height": 1111,
+        "id": "nexus",
+        "top": 3250
+      },
+      {
+        "height": 447,
+        "id": "serbia",
+        "top": 4361
+      },
+      {
+        "height": 691,
+        "id": "complementary-expertise",
+        "top": 4808
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 5499
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 834,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Nos entités"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème ouvert sur le monde."
+      },
+      {
+        "tag": "H2",
+        "text": "Une société, deux expertises opérationnelles."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, un rôle stratégique au service de l’écosystème."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème, des expertises complémentaires."
+      },
+      {
+        "tag": "H2",
+        "text": "Développons ensemble de nouvelles opportunités internationales."
+      }
+    ],
+    "height": 8440,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 274,
+        "width": 342
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 742,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 588,
+        "id": "ecosystem",
+        "top": 823
+      },
+      {
+        "height": 1975,
+        "id": "togo",
+        "top": 1411
+      },
+      {
+        "height": 1196,
+        "id": "lithuania",
+        "top": 3386
+      },
+      {
+        "height": 1629,
+        "id": "nexus",
+        "top": 4582
+      },
+      {
+        "height": 619,
+        "id": "serbia",
+        "top": 6211
+      },
+      {
+        "height": 874,
+        "id": "complementary-expertise",
+        "top": 6830
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 7704
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 834,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Our Entities"
+      },
+      {
+        "tag": "H2",
+        "text": "An ecosystem with a global outlook."
+      },
+      {
+        "tag": "H2",
+        "text": "One company, two areas of operational expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, a strategic role supporting the ecosystem."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "One ecosystem, complementary expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "Let’s develop new international opportunities together."
+      }
+    ],
+    "height": 8288,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 274,
+        "width": 342
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 102,
+        "width": 166
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 742,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 556,
+        "id": "ecosystem",
+        "top": 823
+      },
+      {
+        "height": 2015,
+        "id": "togo",
+        "top": 1379
+      },
+      {
+        "height": 1136,
+        "id": "lithuania",
+        "top": 3394
+      },
+      {
+        "height": 1601,
+        "id": "nexus",
+        "top": 4530
+      },
+      {
+        "height": 587,
+        "id": "serbia",
+        "top": 6131
+      },
+      {
+        "height": 834,
+        "id": "complementary-expertise",
+        "top": 6718
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 7552
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Nos entités"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème ouvert sur le monde."
+      },
+      {
+        "tag": "H2",
+        "text": "Une société, deux expertises opérationnelles."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, un rôle stratégique au service de l’écosystème."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème, des expertises complémentaires."
+      },
+      {
+        "tag": "H2",
+        "text": "Développons ensemble de nouvelles opportunités internationales."
+      }
+    ],
+    "height": 11155,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 235,
+        "width": 293
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 658,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 844,
+        "id": "ecosystem",
+        "top": 739
+      },
+      {
+        "height": 2701,
+        "id": "togo",
+        "top": 1583
+      },
+      {
+        "height": 1508,
+        "id": "lithuania",
+        "top": 4284
+      },
+      {
+        "height": 2259,
+        "id": "nexus",
+        "top": 5792
+      },
+      {
+        "height": 708,
+        "id": "serbia",
+        "top": 8051
+      },
+      {
+        "height": 1332,
+        "id": "complementary-expertise",
+        "top": 8759
+      },
+      {
+        "height": 648,
+        "id": "",
+        "top": 10091
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Our Entities"
+      },
+      {
+        "tag": "H2",
+        "text": "An ecosystem with a global outlook."
+      },
+      {
+        "tag": "H2",
+        "text": "One company, two areas of operational expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, a strategic role supporting the ecosystem."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "One ecosystem, complementary expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "Let’s develop new international opportunities together."
+      }
+    ],
+    "height": 10783,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 235,
+        "width": 293
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 658,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 716,
+        "id": "ecosystem",
+        "top": 739
+      },
+      {
+        "height": 2573,
+        "id": "togo",
+        "top": 1455
+      },
+      {
+        "height": 1452,
+        "id": "lithuania",
+        "top": 4028
+      },
+      {
+        "height": 2239,
+        "id": "nexus",
+        "top": 5480
+      },
+      {
+        "height": 732,
+        "id": "serbia",
+        "top": 7719
+      },
+      {
+        "height": 1304,
+        "id": "complementary-expertise",
+        "top": 8451
+      },
+      {
+        "height": 612,
+        "id": "",
+        "top": 9755
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "width": 320,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Nos entités"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème ouvert sur le monde."
+      },
+      {
+        "tag": "H2",
+        "text": "Une société, deux expertises opérationnelles."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, un rôle stratégique au service de l’écosystème."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "Un écosystème, des expertises complémentaires."
+      },
+      {
+        "tag": "H2",
+        "text": "Développons ensemble de nouvelles opportunités internationales."
+      }
+    ],
+    "height": 12802,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 179,
+        "width": 223
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 86,
+        "width": 139
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 86,
+        "width": 139
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 633,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1008,
+        "id": "ecosystem",
+        "top": 714
+      },
+      {
+        "height": 3085,
+        "id": "togo",
+        "top": 1722
+      },
+      {
+        "height": 1702,
+        "id": "lithuania",
+        "top": 4807
+      },
+      {
+        "height": 2763,
+        "id": "nexus",
+        "top": 6509
+      },
+      {
+        "height": 884,
+        "id": "serbia",
+        "top": 9272
+      },
+      {
+        "height": 1510,
+        "id": "complementary-expertise",
+        "top": 10156
+      },
+      {
+        "height": 696,
+        "id": "",
+        "top": 11666
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Our Entities"
+      },
+      {
+        "tag": "H2",
+        "text": "An ecosystem with a global outlook."
+      },
+      {
+        "tag": "H2",
+        "text": "One company, two areas of operational expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "GK GLOBAL GROUP SARL U"
+      },
+      {
+        "tag": "H2",
+        "text": "UAB GK EstTrade"
+      },
+      {
+        "tag": "H2",
+        "text": "GK Nexus, a strategic role supporting the ecosystem."
+      },
+      {
+        "tag": "H2",
+        "text": "GK Danube Trading DOO"
+      },
+      {
+        "tag": "H2",
+        "text": "One ecosystem, complementary expertise."
+      },
+      {
+        "tag": "H2",
+        "text": "Let’s develop new international opportunities together."
+      }
+    ],
+    "height": 12256,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain",
+        "height": 179,
+        "width": 223
+      },
+      {
+        "alt": "Logo GK GLOBAL GROUP SARLU",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK GLOBAL TECHNOLOGY (GKGT)",
+        "fit": "contain",
+        "height": 86,
+        "width": 139
+      },
+      {
+        "alt": "Logo GK GLOBAL MOBILITY (GKGM)",
+        "fit": "contain",
+        "height": 86,
+        "width": 139
+      },
+      {
+        "alt": "Logo UAB GK EstTrade",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      },
+      {
+        "alt": "Logo GK NEXUS",
+        "fit": "contain",
+        "height": 86,
+        "width": 150
+      }
+    ],
+    "overflow": false,
+    "sections": [
+      {
+        "height": 633,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 876,
+        "id": "ecosystem",
+        "top": 714
+      },
+      {
+        "height": 2965,
+        "id": "togo",
+        "top": 1590
+      },
+      {
+        "height": 1674,
+        "id": "lithuania",
+        "top": 4555
+      },
+      {
+        "height": 2671,
+        "id": "nexus",
+        "top": 6229
+      },
+      {
+        "height": 820,
+        "id": "serbia",
+        "top": 8900
+      },
+      {
+        "height": 1436,
+        "id": "complementary-expertise",
+        "top": 9720
+      },
+      {
+        "height": 660,
+        "id": "",
+        "top": 11156
+      }
+    ]
+  }
+]
