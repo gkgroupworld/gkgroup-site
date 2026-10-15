@@ -1,0 +1,938 @@
+[
+  {
+    "width": 1440,
+    "lang": "fr",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Entreprise ou organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Pays *",
+        "name": "country"
+      },
+      {
+        "label": "Nom de l’interlocuteur *",
+        "name": "name"
+      },
+      {
+        "label": "Fonction de l’interlocuteur *",
+        "name": "role"
+      },
+      {
+        "label": "Adresse email professionnelle *",
+        "name": "email"
+      },
+      {
+        "label": "Téléphone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Site internet de l’organisation (facultatif)",
+        "name": "website"
+      },
+      {
+        "label": "Type de collaboration proposée *",
+        "name": "type"
+      },
+      {
+        "label": "Domaine de partenariat *—GKGM — Mobilité internationaleGKGT — TechnologieCommerce internationalConseilAutre",
+        "name": "area"
+      },
+      {
+        "label": "Description détaillée de la proposition *",
+        "name": "description"
+      },
+      {
+        "label": "J’accepte le traitement des informations communiquées afin d’examiner ma proposition et de répondre à ma demande. *",
+        "name": "consent"
+      }
+    ],
+    "height": 7505,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "fr",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 616,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 743,
+        "id": "our-approach",
+        "top": 697
+      },
+      {
+        "height": 1521,
+        "id": "partnership-domains",
+        "top": 1440
+      },
+      {
+        "height": 863,
+        "id": "collaborations",
+        "top": 2961
+      },
+      {
+        "height": 558,
+        "id": "become-a-partner",
+        "top": 3824
+      },
+      {
+        "height": 806,
+        "id": "collaboration-method",
+        "top": 4382
+      },
+      {
+        "height": 1581,
+        "id": "proposal",
+        "top": 5188
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 6769
+      }
+    ],
+    "title": "Nos partenariats internationaux",
+    "values": 5
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Company or organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Country *",
+        "name": "country"
+      },
+      {
+        "label": "Contact name *",
+        "name": "name"
+      },
+      {
+        "label": "Contact role *",
+        "name": "role"
+      },
+      {
+        "label": "Professional email address *",
+        "name": "email"
+      },
+      {
+        "label": "Phone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Organisation website (optional)",
+        "name": "website"
+      },
+      {
+        "label": "Type of proposed cooperation *",
+        "name": "type"
+      },
+      {
+        "label": "Partnership area *—GKGM — International mobilityGKGT — TechnologyInternational tradeConsultingOther",
+        "name": "area"
+      },
+      {
+        "label": "Detailed proposal description *",
+        "name": "description"
+      },
+      {
+        "label": "I consent to the processing of the information provided to review my proposal and respond to my inquiry. *",
+        "name": "consent"
+      }
+    ],
+    "height": 7413,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "en",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 616,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 743,
+        "id": "our-approach",
+        "top": 697
+      },
+      {
+        "height": 1489,
+        "id": "partnership-domains",
+        "top": 1440
+      },
+      {
+        "height": 863,
+        "id": "collaborations",
+        "top": 2929
+      },
+      {
+        "height": 558,
+        "id": "become-a-partner",
+        "top": 3792
+      },
+      {
+        "height": 838,
+        "id": "collaboration-method",
+        "top": 4350
+      },
+      {
+        "height": 1529,
+        "id": "proposal",
+        "top": 5188
+      },
+      {
+        "height": 444,
+        "id": "",
+        "top": 6717
+      }
+    ],
+    "title": "Our International Partnerships",
+    "values": 5
+  },
+  {
+    "width": 834,
+    "lang": "fr",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Entreprise ou organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Pays *",
+        "name": "country"
+      },
+      {
+        "label": "Nom de l’interlocuteur *",
+        "name": "name"
+      },
+      {
+        "label": "Fonction de l’interlocuteur *",
+        "name": "role"
+      },
+      {
+        "label": "Adresse email professionnelle *",
+        "name": "email"
+      },
+      {
+        "label": "Téléphone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Site internet de l’organisation (facultatif)",
+        "name": "website"
+      },
+      {
+        "label": "Type de collaboration proposée *",
+        "name": "type"
+      },
+      {
+        "label": "Domaine de partenariat *—GKGM — Mobilité internationaleGKGT — TechnologieCommerce internationalConseilAutre",
+        "name": "area"
+      },
+      {
+        "label": "Description détaillée de la proposition *",
+        "name": "description"
+      },
+      {
+        "label": "J’accepte le traitement des informations communiquées afin d’examiner ma proposition et de répondre à ma demande. *",
+        "name": "consent"
+      }
+    ],
+    "height": 9801,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "fr",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 931,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1097,
+        "id": "our-approach",
+        "top": 1012
+      },
+      {
+        "height": 2191,
+        "id": "partnership-domains",
+        "top": 2109
+      },
+      {
+        "height": 1150,
+        "id": "collaborations",
+        "top": 4300
+      },
+      {
+        "height": 922,
+        "id": "become-a-partner",
+        "top": 5450
+      },
+      {
+        "height": 1044,
+        "id": "collaboration-method",
+        "top": 6372
+      },
+      {
+        "height": 1649,
+        "id": "proposal",
+        "top": 7416
+      },
+      {
+        "height": 484,
+        "id": "",
+        "top": 9065
+      }
+    ],
+    "title": "Nos partenariats internationaux",
+    "values": 5
+  },
+  {
+    "width": 834,
+    "lang": "en",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Company or organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Country *",
+        "name": "country"
+      },
+      {
+        "label": "Contact name *",
+        "name": "name"
+      },
+      {
+        "label": "Contact role *",
+        "name": "role"
+      },
+      {
+        "label": "Professional email address *",
+        "name": "email"
+      },
+      {
+        "label": "Phone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Organisation website (optional)",
+        "name": "website"
+      },
+      {
+        "label": "Type of proposed cooperation *",
+        "name": "type"
+      },
+      {
+        "label": "Partnership area *—GKGM — International mobilityGKGT — TechnologyInternational tradeConsultingOther",
+        "name": "area"
+      },
+      {
+        "label": "Detailed proposal description *",
+        "name": "description"
+      },
+      {
+        "label": "I consent to the processing of the information provided to review my proposal and respond to my inquiry. *",
+        "name": "consent"
+      }
+    ],
+    "height": 9504,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "en",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 878,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1065,
+        "id": "our-approach",
+        "top": 959
+      },
+      {
+        "height": 2191,
+        "id": "partnership-domains",
+        "top": 2024
+      },
+      {
+        "height": 1118,
+        "id": "collaborations",
+        "top": 4215
+      },
+      {
+        "height": 850,
+        "id": "become-a-partner",
+        "top": 5333
+      },
+      {
+        "height": 1044,
+        "id": "collaboration-method",
+        "top": 6183
+      },
+      {
+        "height": 1581,
+        "id": "proposal",
+        "top": 7227
+      },
+      {
+        "height": 444,
+        "id": "",
+        "top": 8808
+      }
+    ],
+    "title": "Our International Partnerships",
+    "values": 5
+  },
+  {
+    "width": 390,
+    "lang": "fr",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Entreprise ou organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Pays *",
+        "name": "country"
+      },
+      {
+        "label": "Nom de l’interlocuteur *",
+        "name": "name"
+      },
+      {
+        "label": "Fonction de l’interlocuteur *",
+        "name": "role"
+      },
+      {
+        "label": "Adresse email professionnelle *",
+        "name": "email"
+      },
+      {
+        "label": "Téléphone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Site internet de l’organisation (facultatif)",
+        "name": "website"
+      },
+      {
+        "label": "Type de collaboration proposée *",
+        "name": "type"
+      },
+      {
+        "label": "Domaine de partenariat *—GKGM — Mobilité internationaleGKGT — TechnologieCommerce internationalConseilAutre",
+        "name": "area"
+      },
+      {
+        "label": "Description détaillée de la proposition *",
+        "name": "description"
+      },
+      {
+        "label": "J’accepte le traitement des informations communiquées afin d’examiner ma proposition et de répondre à ma demande. *",
+        "name": "consent"
+      }
+    ],
+    "height": 12939,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "fr",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 913,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1619,
+        "id": "our-approach",
+        "top": 994
+      },
+      {
+        "height": 2779,
+        "id": "partnership-domains",
+        "top": 2613
+      },
+      {
+        "height": 1666,
+        "id": "collaborations",
+        "top": 5392
+      },
+      {
+        "height": 1046,
+        "id": "become-a-partner",
+        "top": 7058
+      },
+      {
+        "height": 1538,
+        "id": "collaboration-method",
+        "top": 8104
+      },
+      {
+        "height": 2305,
+        "id": "proposal",
+        "top": 9642
+      },
+      {
+        "height": 576,
+        "id": "",
+        "top": 11947
+      }
+    ],
+    "title": "Nos partenariats internationaux",
+    "values": 5
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Company or organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Country *",
+        "name": "country"
+      },
+      {
+        "label": "Contact name *",
+        "name": "name"
+      },
+      {
+        "label": "Contact role *",
+        "name": "role"
+      },
+      {
+        "label": "Professional email address *",
+        "name": "email"
+      },
+      {
+        "label": "Phone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Organisation website (optional)",
+        "name": "website"
+      },
+      {
+        "label": "Type of proposed cooperation *",
+        "name": "type"
+      },
+      {
+        "label": "Partnership area *—GKGM — International mobilityGKGT — TechnologyInternational tradeConsultingOther",
+        "name": "area"
+      },
+      {
+        "label": "Detailed proposal description *",
+        "name": "description"
+      },
+      {
+        "label": "I consent to the processing of the information provided to review my proposal and respond to my inquiry. *",
+        "name": "consent"
+      }
+    ],
+    "height": 12351,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "en",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 913,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1531,
+        "id": "our-approach",
+        "top": 994
+      },
+      {
+        "height": 2615,
+        "id": "partnership-domains",
+        "top": 2525
+      },
+      {
+        "height": 1546,
+        "id": "collaborations",
+        "top": 5140
+      },
+      {
+        "height": 978,
+        "id": "become-a-partner",
+        "top": 6686
+      },
+      {
+        "height": 1586,
+        "id": "collaboration-method",
+        "top": 7664
+      },
+      {
+        "height": 2177,
+        "id": "proposal",
+        "top": 9250
+      },
+      {
+        "height": 508,
+        "id": "",
+        "top": 11427
+      }
+    ],
+    "title": "Our International Partnerships",
+    "values": 5
+  },
+  {
+    "width": 320,
+    "lang": "fr",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Entreprise ou organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Pays *",
+        "name": "country"
+      },
+      {
+        "label": "Nom de l’interlocuteur *",
+        "name": "name"
+      },
+      {
+        "label": "Fonction de l’interlocuteur *",
+        "name": "role"
+      },
+      {
+        "label": "Adresse email professionnelle *",
+        "name": "email"
+      },
+      {
+        "label": "Téléphone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Site internet de l’organisation (facultatif)",
+        "name": "website"
+      },
+      {
+        "label": "Type de collaboration proposée *",
+        "name": "type"
+      },
+      {
+        "label": "Domaine de partenariat *—GKGM — Mobilité internationaleGKGT — TechnologieCommerce internationalConseilAutre",
+        "name": "area"
+      },
+      {
+        "label": "Description détaillée de la proposition *",
+        "name": "description"
+      },
+      {
+        "label": "J’accepte le traitement des informations communiquées afin d’examiner ma proposition et de répondre à ma demande. *",
+        "name": "consent"
+      }
+    ],
+    "height": 14919,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "fr",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 953,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 2003,
+        "id": "our-approach",
+        "top": 1034
+      },
+      {
+        "height": 3369,
+        "id": "partnership-domains",
+        "top": 3037
+      },
+      {
+        "height": 2042,
+        "id": "collaborations",
+        "top": 6406
+      },
+      {
+        "height": 1210,
+        "id": "become-a-partner",
+        "top": 8448
+      },
+      {
+        "height": 1678,
+        "id": "collaboration-method",
+        "top": 9658
+      },
+      {
+        "height": 2499,
+        "id": "proposal",
+        "top": 11336
+      },
+      {
+        "height": 644,
+        "id": "",
+        "top": 13835
+      }
+    ],
+    "title": "Nos partenariats internationaux",
+    "values": 5
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "domains": 5,
+    "formFields": [
+      {
+        "label": null,
+        "name": "form-name"
+      },
+      {
+        "label": null,
+        "name": "locale"
+      },
+      {
+        "label": "Fax",
+        "name": "fax"
+      },
+      {
+        "label": "Company or organisation *",
+        "name": "organisation"
+      },
+      {
+        "label": "Country *",
+        "name": "country"
+      },
+      {
+        "label": "Contact name *",
+        "name": "name"
+      },
+      {
+        "label": "Contact role *",
+        "name": "role"
+      },
+      {
+        "label": "Professional email address *",
+        "name": "email"
+      },
+      {
+        "label": "Phone / WhatsApp *",
+        "name": "phone"
+      },
+      {
+        "label": "Organisation website (optional)",
+        "name": "website"
+      },
+      {
+        "label": "Type of proposed cooperation *",
+        "name": "type"
+      },
+      {
+        "label": "Partnership area *—GKGM — International mobilityGKGT — TechnologyInternational tradeConsultingOther",
+        "name": "area"
+      },
+      {
+        "label": "Detailed proposal description *",
+        "name": "description"
+      },
+      {
+        "label": "I consent to the processing of the information provided to review my proposal and respond to my inquiry. *",
+        "name": "consent"
+      }
+    ],
+    "height": 13871,
+    "images": [
+      {
+        "alt": "GK GROUP — Global Business Without Borders",
+        "fit": "contain"
+      }
+    ],
+    "locale": "en",
+    "overflow": false,
+    "partners": 0,
+    "sections": [
+      {
+        "height": 897,
+        "id": "",
+        "top": 81
+      },
+      {
+        "height": 1887,
+        "id": "our-approach",
+        "top": 978
+      },
+      {
+        "height": 3035,
+        "id": "partnership-domains",
+        "top": 2865
+      },
+      {
+        "height": 1918,
+        "id": "collaborations",
+        "top": 5900
+      },
+      {
+        "height": 1078,
+        "id": "become-a-partner",
+        "top": 7818
+      },
+      {
+        "height": 1678,
+        "id": "collaboration-method",
+        "top": 8896
+      },
+      {
+        "height": 2281,
+        "id": "proposal",
+        "top": 10574
+      },
+      {
+        "height": 576,
+        "id": "",
+        "top": 12855
+      }
+    ],
+    "title": "Our International Partnerships",
+    "values": 5
+  }
+]
