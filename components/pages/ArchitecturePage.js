@@ -1,3 +1,4 @@
+import { InstitutionalBanner } from "@/components/ui/InstitutionalBanner";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -13,19 +14,7 @@ export function ArchitecturePage({ locale }) {
   const copy = ARCHITECTURE_COPY[locale];
   const profiles = [...ARCHITECTURE_ENTITIES.filter(entity => entity.platform), ...ARCHITECTURE_ENTITIES.filter(entity => !entity.platform)];
   return <><Header locale={locale} /><main lang={locale}>
-    <section className="bg-[#061b46] text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center">
-        <div>
-          <p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">GK GROUP · Global Business Without Borders</p>
-          <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{copy.title}</h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.subtitle}</p>
-          <p className="mt-8 border-l-2 border-[#d59b46] pl-4 text-sm leading-6 text-[#f5a24e]">{copy.brandStatus}</p>
-        </div>
-        <div className="mx-auto w-full max-w-sm border border-[#d59b46] bg-white p-5">
-          <Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} preload className="h-auto w-full object-contain" sizes="(max-width: 640px) calc(100vw - 82px), 340px" />
-        </div>
-      </div>
-    </section>
+    <InstitutionalBanner eyebrow="GK GROUP · Global Business Without Borders" title={copy.title} description={copy.subtitle} note={copy.brandStatus} />
     <section id="ecosystem" className="px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.eyebrow} title={copy.diagramTitle} /><p className="mb-10 max-w-3xl leading-8 text-slate-600">{copy.diagramIntro}</p><InstitutionalDiagram locale={locale} /></div>
     </section>

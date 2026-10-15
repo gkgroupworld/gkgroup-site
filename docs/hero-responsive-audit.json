@@ -1,0 +1,2328 @@
+{
+  "before": [
+    {
+      "font": "56px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 710,
+      "lang": "fr",
+      "logo": [
+        374,
+        309
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 478,
+      "lang": "fr",
+      "logo": [
+        346,
+        286
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 451,
+      "lang": "fr",
+      "logo": [
+        353,
+        291
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 478,
+      "lang": "fr",
+      "logo": [
+        346,
+        286
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 324,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "80px",
+      "path": "/entities",
+      "titleX": 73,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 416,
+      "lang": "fr",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 409,
+      "lang": "fr",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 460,
+      "lang": "fr",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 416,
+      "lang": "fr",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 490,
+      "lang": "fr",
+      "logo": [
+        353,
+        291
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "56px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 648,
+      "lang": "en",
+      "logo": [
+        374,
+        308
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 477,
+      "lang": "en",
+      "logo": [
+        346,
+        285
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 451,
+      "lang": "en",
+      "logo": [
+        353,
+        291
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 477,
+      "lang": "en",
+      "logo": [
+        346,
+        285
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 324,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "80px",
+      "path": "/entities",
+      "titleX": 73,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 416,
+      "lang": "en",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 409,
+      "lang": "en",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 460,
+      "lang": "en",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 416,
+      "lang": "en",
+      "logo": [
+        353,
+        249
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 490,
+      "lang": "en",
+      "logo": [
+        353,
+        291
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 105,
+      "width": 1440
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 963,
+      "lang": "fr",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 790,
+      "lang": "fr",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 744,
+      "lang": "fr",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 790,
+      "lang": "fr",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 324,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "80px",
+      "path": "/entities",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1021,
+      "lang": "fr",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 941,
+      "lang": "fr",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1017,
+      "lang": "fr",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1021,
+      "lang": "fr",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1143,
+      "lang": "fr",
+      "logo": [
+        755,
+        613
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 963,
+      "lang": "en",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 790,
+      "lang": "en",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 744,
+      "lang": "en",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 758,
+      "lang": "en",
+      "logo": [
+        384,
+        316
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 324,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "80px",
+      "path": "/entities",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1021,
+      "lang": "en",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 941,
+      "lang": "en",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1017,
+      "lang": "en",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1021,
+      "lang": "en",
+      "logo": [
+        755,
+        517
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "48px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1143,
+      "lang": "en",
+      "logo": [
+        755,
+        613
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "60px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 417,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 32,
+      "width": 834
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1025,
+      "lang": "fr",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 801,
+      "lang": "fr",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 785,
+      "lang": "fr",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 801,
+      "lang": "fr",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 316,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "64px",
+      "path": "/entities",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 893,
+      "lang": "fr",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 773,
+      "lang": "fr",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 841,
+      "lang": "fr",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 893,
+      "lang": "fr",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 951,
+      "lang": "fr",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 469,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 429,
+      "lang": "fr",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 1025,
+      "lang": "en",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 761,
+      "lang": "en",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/about",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 753,
+      "lang": "en",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/architecture",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 801,
+      "lang": "en",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/activities",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 316,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "64px",
+      "path": "/entities",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 813,
+      "lang": "en",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-technology",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 773,
+      "lang": "en",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-global-mobility",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 809,
+      "lang": "en",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-nexus",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 813,
+      "lang": "en",
+      "logo": [
+        335,
+        237
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/gk-esttrade",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 919,
+      "lang": "en",
+      "logo": [
+        335,
+        277
+      ],
+      "overflow": false,
+      "padding": "0px",
+      "path": "/partnerships",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 397,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/news",
+      "titleX": 20,
+      "width": 390
+    },
+    {
+      "font": "36px",
+      "gapNav": 0,
+      "gapNext": 0,
+      "height": 429,
+      "lang": "en",
+      "logo": null,
+      "overflow": false,
+      "padding": "0px",
+      "path": "/contact",
+      "titleX": 20,
+      "width": 390
+    }
+  ],
+  "after": [
+    {
+      "path": "/",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 576,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/about",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/architecture",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/activities",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/entities",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 528,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 443,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 523,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/partnerships",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 523,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/news",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/contact",
+      "lang": "fr",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 544,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/about",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/architecture",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/activities",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/entities",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 496,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 491,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/partnerships",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 523,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/news",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/contact",
+      "lang": "en",
+      "width": 1440,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 416,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 105
+    },
+    {
+      "path": "/",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 832,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/about",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/architecture",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/activities",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/entities",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 619,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 784,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 699,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 779,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/partnerships",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 779,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/news",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/contact",
+      "lang": "fr",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 800,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/about",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/architecture",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/activities",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 635,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/entities",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 619,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 752,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 747,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/partnerships",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 779,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/news",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/contact",
+      "lang": "en",
+      "width": 834,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "48px",
+      "height": 667,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 32
+    },
+    {
+      "path": "/",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 966,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/about",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 717,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/architecture",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 749,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/activities",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 717,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/entities",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 607,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 907,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 781,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 852,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 687,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/partnerships",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 925,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/news",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 728,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/contact",
+      "lang": "fr",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 687,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 913,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/about",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 676,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/architecture",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 717,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/activities",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 696,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/entities",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 607,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-global-technology",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 822,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-global-mobility",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 781,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-nexus",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 820,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/gk-esttrade",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 655,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/partnerships",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 893,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/news",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 655,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    },
+    {
+      "path": "/contact",
+      "lang": "en",
+      "width": 390,
+      "background": "rgb(6, 27, 70)",
+      "fit": "contain",
+      "font": "36px",
+      "height": 687,
+      "loaded": true,
+      "logo": [
+        320,
+        256
+      ],
+      "navGap": 0,
+      "overflow": false,
+      "titleX": 20
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { InstitutionalBanner } from "@/components/ui/InstitutionalBanner";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -19,19 +20,7 @@ export function TechnologyPage({ locale }) {
   return <>
     <Header locale={locale} />
     <main lang={locale}>
-      <section className="bg-[#061b46] text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.eyebrow}</p>
-            <h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{copy.title}</h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.intro}</p>
-            <p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p>
-          </div>
-          <div className="border border-[#d59b46] bg-[#d4e1ea] p-5">
-            <Image src={logo.src} alt={logo.alt} width={1536} height={1024} priority className="h-auto w-full object-contain" sizes="(max-width: 1024px) 100vw, 360px" />
-          </div>
-        </div>
-      </section>
+      <InstitutionalBanner eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} logo={logo} signature="Building Trust. Connecting Opportunities." />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
         <div className="mx-auto max-w-7xl border-l-4 border-[#e87512] pl-6">

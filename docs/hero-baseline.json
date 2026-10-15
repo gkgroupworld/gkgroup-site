@@ -1,0 +1,246 @@
+{
+  "/?lang=fr": {
+    "below": "d0aac4a09b340ed816efb54146adeae60eff215a2278cf4e0a35e1db6029b841",
+    "header": "6b93f9286835b58e7332815f009a601c07815e9ac815d745062cecc7e80fb596",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "1981f29ebfcf758ca9329c68fbb2962f4aacd5fd4ed4ef5b9f23cf111f40634b",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP — ÉCOSYSTÈME INTERNATIONAL Connecter les marchés, les talents et les opportunités. GK GROUP rassemble un écosystème entrepreneurial international engagé dans les technologies, la mobilité internationale, le commerce et le développement des affaires. GLOBAL BUSINESS WITHOUT BORDERS Découvrir nos activités → Explorer notre écosystème →",
+    "buttons": [
+      [
+        "/activities?lang=fr",
+        "Découvrir nos activités →"
+      ],
+      [
+        "/architecture?lang=fr",
+        "Explorer notre écosystème →"
+      ]
+    ]
+  },
+  "/?lang=en": {
+    "below": "a4997243b67b7456621594a18e40801ec954fe3b8f1ce32e86e88aa749492e1c",
+    "header": "2dc580602e10a9d03e309841fe209c9315f8e3fad12e7b7828352dee9dd0038b",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "b193ff172476960faa558a98f34385be39a5eb37209f082efac92df508a50edc",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP — INTERNATIONAL ECOSYSTEM Connecting Markets, Talent and Opportunities. GK GROUP brings together an international entrepreneurial ecosystem focused on technology, international mobility, trade and business development. GLOBAL BUSINESS WITHOUT BORDERS Explore Our Activities → Discover Our Ecosystem →",
+    "buttons": [
+      [
+        "/activities?lang=en",
+        "Explore Our Activities →"
+      ],
+      [
+        "/architecture?lang=en",
+        "Discover Our Ecosystem →"
+      ]
+    ]
+  },
+  "/about?lang=fr": {
+    "below": "fb925f875dc4dd3cd087ce32250d36bf36637ce837da1f9aa71584f29fe4da7d",
+    "header": "dcd7176e8995376ba8e859c62c2abdb756438057084e7d69d9551dbbacf841fe",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "f14287cb9b04b5a952eadbe1a6a88af41ec8521f0af588117dcc8390ee64dcb5",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Entrepreneuriat et coopération À propos de GK GROUP Une vision internationale fondée sur l&#x27;entrepreneuriat, la coopération et le développement des opportunités. GLOBAL BUSINESS WITHOUT BORDERS",
+    "buttons": []
+  },
+  "/about?lang=en": {
+    "below": "e222b17d398640acc0494f27750f6db184a0bf9cc5fecf56d9eae0bbba55829e",
+    "header": "193be356b35a17093a0fdec501926697256b2d52e026d98fcc8d79a1e03185f8",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "676afcaa7dbe617f7ec857146b63b33951cb994d474e6006a27d5432e2ccc317",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Entrepreneurship and cooperation About GK GROUP An international vision built on entrepreneurship, cooperation and the development of opportunities. GLOBAL BUSINESS WITHOUT BORDERS",
+    "buttons": []
+  },
+  "/architecture?lang=fr": {
+    "below": "4b1d0093954dc22290e4606294bb85039b78ae48cf78e2d6686a20f6d315742c",
+    "header": "3737605dedb8f8fef29193b0293ad78f08a6e0dfc4399ca0c9b74d4348e1b6b2",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "85bcaeef09b78cd73cd16bb1f4767d081e27e345b13f213d5a4a1a315595f3e8",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Global Business Without Borders Notre architecture internationale Un écosystème entrepreneurial structuré pour connecter les marchés, les compétences et les opportunités à travers le monde. Sans personnalité juridique propre à ce jour",
+    "buttons": []
+  },
+  "/architecture?lang=en": {
+    "below": "8371fbf966bcef887585795edee0c2f791071c9663b5cb9e73ebef470723a4b0",
+    "header": "d434da9f2140625dcf64445b5769930bed0a17ffe8771b02b3a278b2af9ecd5a",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "85c6a7b4d54c1323333f7bf9f0d205af7bd94f7b7f89d6ee3abee27e7ab5030e",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Global Business Without Borders Our International Structure An entrepreneurial ecosystem designed to connect markets, expertise and opportunities worldwide. Currently without legal personality of its own",
+    "buttons": []
+  },
+  "/activities?lang=fr": {
+    "below": "bb1d42eb56554accedfd0e6a8dea78a1765697a4a8e7eb2ca1732d2da033a919",
+    "header": "cfe6e8f010202d337fff363fdb62f7634aa99ddcd1418fd6eb2998ddbb310784",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "e1ca9c9ab7ea35cab9fc5ca2f8a6a55406fbcbdb0771a910acf6c01c3cdcb355",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Des expertises complémentaires Nos domaines d&#x27;activité Des expertises complémentaires au service des entreprises, des talents et des échanges internationaux. GLOBAL BUSINESS WITHOUT BORDERS",
+    "buttons": []
+  },
+  "/activities?lang=en": {
+    "below": "479b375448f80f9f044bc5cf7d319b52b2f5ff22483766809ec7270f87a3470a",
+    "header": "9dd41ab1589622dc4388bf572c7c3ffc8b7140f6136692352a74559edba40d76",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "b65d8dfbccd666ef00bb98f494821b95053f67b6c439a2b7ecaffc7fb50734f7",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP · Complementary expertise Our Business Activities Complementary expertise serving businesses, talent and international exchanges. GLOBAL BUSINESS WITHOUT BORDERS",
+    "buttons": []
+  },
+  "/entities?lang=fr": {
+    "below": "2b6a38b33d0e308c1e770ec3dcd12b5f2bcc1a1b29ddb22dca1e98ede6d5ed11",
+    "header": "ceac439332fc7a157c8fd1f2377740b8fa2b31be7444417a1c7fc48d6dbebff1",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "4cb8bc519e31c034e70c79692770c345b8288ca0ff2ad761ac988be3e04631b1",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP Nos entités Six structures institutionnelles aux rôles complémentaires, au service d’une présence internationale structurée.",
+    "buttons": []
+  },
+  "/entities?lang=en": {
+    "below": "6adf538347bfe99c1075fbeb0809e5f653aea3ed8ca8cc72ca0c7e1d1e743153",
+    "header": "2932efa0dd670f0f9c761417e9fde71425e4cd79e7e3ae81314d45f7d787a46c",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "73575eca13e890a20ce130c83437bed2dc4f3c039324d8d7a11e1c6f3f995856",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP Our entities Six institutional structures with complementary roles, serving a structured international presence.",
+    "buttons": []
+  },
+  "/gk-global-technology?lang=fr": {
+    "below": "426775630ed8ac26af4638074f9dd179b35829caaaf7de89bac3880d2a0081a2",
+    "header": "3b72d8c1b3434ef95b07e6ecca188069799bc6d8b86298bebb975dc56fe38369",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "81001b5bd528a686d8918272f928d3deaf66fb4a868d47601d74295e10e50006",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Technologies et solutions numériques · Division opérationnelle GK GLOBAL TECHNOLOGY — GKGT Des services informatiques pour maintenir vos équipements, connecter vos équipes et accompagner vos usages numériques. GKGT intervient auprès des particuliers, entreprises, établissements scolaires, institutions et organisations selon leurs besoins. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-global-technology?lang=en": {
+    "below": "89ce73a7e073d7e65b41243b5312e66c8cfd6103055c9d984ed25fa0604e1bd6",
+    "header": "eb6f83aaf008b47ffad37688e965e8729a56fc9427830b2a860aebe9feb57a44",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "3ceb808abf4e8bb4da7541d23e5b53f82dfdc987d6c05fa479bdfffa1a50566c",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Technology and digital solutions · Operational division GK GLOBAL TECHNOLOGY — GKGT IT services to maintain your equipment, connect your teams and support your digital tools. GKGT supports individuals, businesses, schools, institutions and organisations according to their needs. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-global-mobility?lang=fr": {
+    "below": "ae5687a96801a16a50d7196ab8eee01d4134203405fd101a1899fb2997309a59",
+    "header": "4848f31100d1f9406a868f9fc3fe6b6e8d982927c09c0d34058a2af58fc2000e",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "fa21f4aaa967c29afb24cf77be84921917a7c0b6a171d68c5b7204c37fc5bb84",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Mobilité internationale · Branche opérationnelle GK GLOBAL MOBILITY — GKGM Études, carrières et projets au-delà des frontières. GKGM accompagne la préparation de projets de mobilité internationale avec méthode, clarté et transparence. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-global-mobility?lang=en": {
+    "below": "0aa0545f74ee83b69014f45c2c4609a26718e077e78cb7c867bb789dd1b49c98",
+    "header": "e6e6b5d35c6849643eb78c856a241ea6d09049ad4dbb70fe16ba8bb07723da3e",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "54e662c610659c21de336671002962b5b38eb0602f89596b207152ce271598c7",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "International mobility · Operational branch GK GLOBAL MOBILITY — GKGM International study, career and business projects. GKGM supports the preparation of international mobility projects through a structured, clear and transparent approach. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-nexus?lang=fr": {
+    "below": "a2ffb2d36dfd6246d8026f516b55510ae3d0feff91db218c7bfc52fa1c2c1a2d",
+    "header": "471aa76c958c79c442eba1bf50d66294784136a3ee93916f9d03bd7ebdfcd317",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "7024fd31dea244ae6fb8672e4b02ba83fd3ce2b91d1e6a6d0de65580eba51957",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Projet de coordination et de développement international GK NEXUS GK NEXUS Sh.p.k. est un projet de société en Albanie dont l’immatriculation est en cours. Sous réserve de cette immatriculation, elle est destinée à devenir une plateforme de coordination et de développement international de l’écosystème GK GROUP. Albanie · Immatriculation en cours Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-nexus?lang=en": {
+    "below": "61002f5c73915a24817c2c28d4397d2a6aaef7a9e2f2cbb1c9998092e946dcf5",
+    "header": "4f76cb894e58aaa3157b6c4a814aa61d204e427329a0fdd675f7c25b168a8ee3",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "894a840caad2768de44c9d9b5334b07f9213d82efd26e18da614a6e0a68b8591",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "International coordination and development project GK NEXUS GK NEXUS Sh.p.k. is a proposed company in Albania with registration still in progress. Subject to registration, it is intended to become a coordination and international development platform within the GK GROUP ecosystem. Albania · Registration in progress Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-esttrade?lang=fr": {
+    "below": "9b824cae2729b7ca10e9d9ffdd8036539af0fb9c53eb3e6afb73d3efd74b5580",
+    "header": "6cf01f27ce1293f819732cdb1297b32c75adb40f649c2cfc7d190d7231e3df8c",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "fe7170c8d0da69dfe0490eb3132679f120ca867481c698077026a85bbbca3d5f",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Lituanie · Écosystème GK GROUP UAB GK EstTrade Une société lituanienne dédiée au commerce international, à l’import-export, au négoce et à la distribution de matériel informatique. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/gk-esttrade?lang=en": {
+    "below": "ef65da8d36703c679f1ad2314d4f346c805a74be0324d2a258abc8174d4819e6",
+    "header": "25d66e625f0787beab40d6f2324baf4185e56f7113f644febdcb23a7edf96d63",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "0f88a765c1151d29a6ccdd8d8081422b7f8d5db233109fd34d5cee4979bd4aba",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Lithuania · GK GROUP ecosystem UAB GK EstTrade A Lithuanian company dedicated to international trade, import-export, trading and IT equipment distribution. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/partnerships?lang=fr": {
+    "below": "99d387d92d38e47fb4ad0bd40a160304550da0b9ded835ce26708d10a14251b0",
+    "header": "121d62978646e9770df64c96a7565aeb48f601aabf951d31d3995b8420661ea0",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "c40d786a232436229e54d97892a249ab980c1b1e79c362f0362062d2cb594673",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Coopération professionnelle · Écosystème GK GROUP Partenariats internationaux GK GROUP souhaite développer des collaborations professionnelles durables entre l’Afrique, l’Europe, l’Asie, les Amériques et d’autres marchés internationaux, selon les besoins des projets et les compétences des structures concernées. Building Trust. Connecting Opportunities. Proposer une collaboration",
+    "buttons": [
+      [
+        "#proposal",
+        "Proposer une collaboration"
+      ]
+    ]
+  },
+  "/partnerships?lang=en": {
+    "below": "a22bfa0c03067ce488d1f8f8c10f2e3e9263f41180496a8c6497aa22fff5fe12",
+    "header": "8c7e7cf403ce08f3db53f698c3d63c7ae02407f752283d0de3ca1cb6b58b8185",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "5ba529f978ebedacd66db1cb4608b6b6517b0f2d8ec09da1835898161b4eba13",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "Professional cooperation · GK GROUP ecosystem International Partnerships GK GROUP seeks to develop lasting professional cooperation across Africa, Europe, Asia, the Americas and other international markets, according to project needs and the expertise of the relevant structures. Building Trust. Connecting Opportunities. Propose cooperation",
+    "buttons": [
+      [
+        "#proposal",
+        "Propose cooperation"
+      ]
+    ]
+  },
+  "/news?lang=fr": {
+    "below": "de71ded00f7ebef542a2a79634b685339b3be621dfab3f7c201ccd0a99cd7fd4",
+    "header": "74de73332f98ba910598ae32d5d752d01446fcbe5d7883c79ff0810c7ad680fa",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "23c4e94a611f79e5e91202a76937ab200e5bf145ee8195d62e3c9aa206b78baa",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP Actualités &amp; Perspectives Retrouvez les actualités, initiatives, partenariats et développements stratégiques de GK GROUP et de ses structures. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/news?lang=en": {
+    "below": "5162dd5531896d17d6e88ff52a6ff331b1da11bfdf361a19ac4af68a2bde3a1c",
+    "header": "209d84af13a7503f0f79eb20b416dcef3bea6f9efa194633254f250359cccd7c",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "489c9822b5ce398660beb5bad4e34d36aaa63ed5e86ea2c1e99e88efdabf3b9d",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP News &amp; Insights Discover news, initiatives, partnerships and strategic developments from GK GROUP and its structures. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/contact?lang=fr": {
+    "below": "b75ca1cd30aaffa9c6406b870e5d10bf0f4577fcefd73ba866a0c7ddf0241ff4",
+    "header": "ac2821fd298119eb7511d8f16ededdf5c6934d364a156084a7e70ca83e9aff1b",
+    "footer": "59e749f992875470e3d971406dd27f88eb5231df7886a543c4516f731b8dd957",
+    "seo": "da2ce94018e578913154ef436c446ee3057bd96b2cd4536c059dc8246f61c4c5",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP Entrons en contact Une question, un projet ou une opportunité de partenariat ? Échangez avec GK GROUP et identifions ensemble l’interlocuteur adapté à votre demande. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  },
+  "/contact?lang=en": {
+    "below": "3632fc751dd647aec76d654bc772e63b8795740862a6fa4473a9e3710ad82b3e",
+    "header": "6a11ace773e62abca8df339f162d226c3ab22aeb727ea274e70f60f8e0faeb3c",
+    "footer": "0ff0737612274d40bb259d7c355c985041a78f81fa258ac3a7b4cc50a8c21642",
+    "seo": "a392b2ab49ea0fbbc4b9675b74247c53d17248bfd5f5767bb8ee01504b495e04",
+    "schema": "5969a1949594e895fdf3003d8a29d8d8be160d08696c1c45c9b953a67c4785c4",
+    "text": "GK GROUP Let’s Connect Have a question, a project or a partnership opportunity? Connect with GK GROUP and let us identify the right point of contact for your request. Building Trust. Connecting Opportunities.",
+    "buttons": []
+  }
+}

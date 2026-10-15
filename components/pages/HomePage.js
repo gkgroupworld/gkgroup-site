@@ -1,3 +1,4 @@
+import { InstitutionalBanner } from "@/components/ui/InstitutionalBanner";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -20,21 +21,7 @@ export function HomePage({ locale }) {
   const copy = HOME_COPY[locale];
   const entities = ARCHITECTURE_ENTITIES.filter(entity => !entity.branch);
   return <><Header locale={locale} /><main lang={locale}>
-    <section data-home-section="hero" className={`overflow-hidden bg-[#061b46] text-white ${styles.hero}`}>
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.35fr_.65fr] lg:gap-16 lg:py-24">
-        <div className={styles.reveal}>
-          <p className="text-xs font-bold uppercase leading-6 tracking-[.2em] text-[#e7ba75]">{copy.hero.eyebrow}</p>
-          <div aria-hidden="true" className="mt-6 h-px w-16 bg-[#d59b46]" />
-          <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.5rem]">{copy.hero.title}</h1>
-          <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">{copy.hero.description}</p>
-          <p className="mt-7 text-xs font-bold leading-6 tracking-[.2em] text-[#e7ba75]">GLOBAL BUSINESS WITHOUT BORDERS</p>
-          <div className="mt-9 flex flex-wrap gap-4"><Action href="/activities" locale={locale} variant="gold">{copy.hero.activities}</Action><Action href="/architecture" locale={locale} variant="outline">{copy.hero.architecture}</Action></div>
-        </div>
-        <div className={`relative mx-auto w-full max-w-sm border border-[#d59b46] bg-white p-5 shadow-xl shadow-black/10 ${styles.reveal}`} style={{ "--reveal-delay": "80ms" }}>
-          <Image src="/brand/gk-group-official-logo.png" alt="GK GROUP — Global Business Without Borders" width={951} height={762} preload className="h-auto w-full object-contain" sizes="(max-width: 440px) calc(100vw - 82px), 340px" />
-        </div>
-      </div>
-    </section>
+    <InstitutionalBanner data-home-section="hero" eyebrow={copy.hero.eyebrow} title={copy.hero.title} description={copy.hero.description} signature="GLOBAL BUSINESS WITHOUT BORDERS" actions={<><Action href="/activities" locale={locale} variant="gold">{copy.hero.activities}</Action><Action href="/architecture" locale={locale} variant="outline">{copy.hero.architecture}</Action></>} />
 
     <section data-home-section="vision" className="px-5 py-16 sm:px-8 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">

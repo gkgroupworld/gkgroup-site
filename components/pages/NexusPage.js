@@ -1,3 +1,4 @@
+import { InstitutionalBanner } from "@/components/ui/InstitutionalBanner";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -34,12 +35,7 @@ export function NexusPage({ locale }) {
   return <>
     <Header locale={locale} />
     <main lang={locale}>
-      <section className="bg-[#061b46] text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_.6fr] lg:items-center">
-          <div><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.hero.eyebrow}</p><h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">{copy.hero.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.hero.description}</p><p className="mt-6 border-l-2 border-[#d59b46] pl-4 text-sm font-bold text-[#f5a24e]">{copy.hero.location}</p><p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">Building Trust. Connecting Opportunities.</p></div>
-          <div className="border border-[#d59b46] bg-[#d4e1ea] p-5"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} priority className="h-auto w-full object-contain" sizes="(max-width: 1024px) 100vw, 360px" /></div>
-        </div>
-      </section>
+      <InstitutionalBanner eyebrow={copy.hero.eyebrow} title={copy.hero.title} description={copy.hero.description} logo={logo} note={copy.hero.location} signature="Building Trust. Connecting Opportunities." />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8"><div className="mx-auto max-w-7xl border-l-4 border-[#e87512] pl-6"><h2 className="text-2xl font-bold text-[#061b46]">{copy.identityTitle}</h2><div className="mt-5 grid gap-3 text-base leading-7 text-slate-600">{copy.identity.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></div></section>
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8"><div className="mx-auto max-w-7xl"><p className="font-bold text-[#061b46]">{copy.contents}</p><ul className="mt-4 flex flex-wrap gap-3">{sections.map(([id, title]) => <li key={id}><a href={`#${id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100">{title}</a></li>)}</ul></div></nav>
