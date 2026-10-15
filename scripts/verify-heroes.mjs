@@ -31,7 +31,7 @@ for (const path of paths) for (const lang of ["fr", "en"]) {
   if (record) baseline[key] = snapshot;
   else {
     assert.deepEqual(snapshot, baseline[key], `${key}: content below hero, navigation, SEO, schema, visible hero text and buttons unchanged`);
-    assert.equal((main.match(/data-institutional-hero/g) || []).length, 1, key);
+    assert.equal((main.match(path === "/" ? /data-home-section="hero"/g : /data-institutional-hero/g) || []).length, 1, key);
     assert.equal((hero.match(/<h1\b/g) || []).length, 1, key);
     const expectedLogo = { "/gk-global-technology": "gk-global-technology.png", "/gk-global-mobility": "gk-global-mobility.png", "/gk-nexus": "gk-nexus.png", "/gk-esttrade": "uab-gk-esttrade.png" }[path] || "gk-group-official-logo.png";
     assert.ok(hero.includes(expectedLogo), key);
