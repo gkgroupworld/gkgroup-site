@@ -1,25 +1,32 @@
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { CTA } from "@/components/ui/CTA";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import { ACTIVITY_CONTENT } from "@/content/site";
-import { withLocale } from "@/lib/locale";
+import Image from "next/image";
+import Link from "next/link";
+import { ENTITY_LOGOS } from "@/content/site";
+import { PREMIUM_ACTIVITIES } from "@/content/activities";
+import { InstitutionalFrame, InstitutionalHero, InstitutionalHeading, InstitutionalAction, InstitutionalClosing, institutionalStyles as styles } from "@/components/ui/InstitutionalPage";
 
 export function ActivitiesPage({ locale }) {
-  const copy = ACTIVITY_CONTENT[locale];
-  const partnershipLabel = locale === "fr" ? "Proposer un partenariat international" : "Propose an international partnership";
-
-  return <><Header locale={locale} /><main>
-    <section className="bg-[#061b46] text-white"><div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20"><p className="text-xs font-bold uppercase tracking-[.22em] text-[#f5a24e]">{copy.hero.eyebrow}</p><div className="mt-5 h-px w-12 bg-[#e87512]" /><h1 className="mt-5 text-4xl font-bold tracking-tight sm:text-6xl">{copy.hero.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.hero.description}</p><p className="mt-8 text-sm font-bold tracking-wide text-[#f5a24e]">{copy.hero.motto}</p></div></section>
-
-    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.domains.eyebrow} title={copy.domains.title} /><div className="grid gap-5 lg:grid-cols-2">{copy.domains.items.map((domain, index) => <article key={domain.title} className={`border border-slate-200 bg-white p-7 sm:p-8 ${index === 4 ? "lg:col-span-2" : ""}`}><div className="flex items-start gap-5"><p className="text-sm font-bold text-[#e87512]">0{index + 1}</p><div><h2 className="text-2xl font-bold tracking-tight text-[#061b46]">{domain.title}</h2><p className="mt-4 leading-7 text-slate-600">{domain.description}</p></div></div><ul className="mt-7 grid gap-3 border-t border-slate-200 pt-6 sm:grid-cols-2">{domain.services.map((service) => <li key={service} className="border-l-2 border-[#e87512] pl-3 text-sm leading-6 text-slate-600">{service}</li>)}</ul><p className="mt-7 text-sm font-bold leading-6 text-[#061b46]">{domain.structures}</p>{domain.title === "Technology & Digital Solutions" && <div className="mt-6"><CTA href={withLocale("/gk-global-technology", locale)}>{locale === "fr" ? "Découvrir les accompagnements GKGT" : "Explore GKGT support"}</CTA></div>}{domain.title === "International Mobility" && <div className="mt-6"><CTA href={withLocale("/gk-global-mobility", locale)}>{locale === "fr" ? "Découvrir les accompagnements GKGM" : "Explore GKGM support"}</CTA></div>}</article>)}</div></div></section>
-
-    <section className="bg-[#f5f7fa] px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.complementarity.eyebrow} title={copy.complementarity.title} /><p className="max-w-3xl text-lg leading-8 text-slate-600">{copy.complementarity.description}</p><div className="mt-10 border border-slate-200 bg-white p-6 sm:p-10"><div className="grid gap-3 text-center sm:grid-cols-[1fr_auto_1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr]">{copy.domains.items.map((domain, index) => <div key={domain.title} className="contents"><p className="border-t-2 border-[#e87512] px-3 py-4 text-sm font-bold text-[#061b46]">{domain.title}</p>{index < copy.domains.items.length - 1 && <p aria-hidden="true" className="hidden self-center text-xl font-bold text-[#e87512] lg:block">+</p>}</div>)}</div><div className="mx-auto mt-7 h-8 w-px bg-[#e87512]" /><p aria-hidden="true" className="text-center text-xl font-bold text-[#e87512]">↓</p><p className="mx-auto mt-4 max-w-2xl bg-[#061b46] px-6 py-5 text-center text-sm font-bold text-white">{copy.complementarity.result}</p></div></div></section>
-
-    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_.9fr]"><div><SectionTitle eyebrow={copy.structures.eyebrow} title={copy.structures.title} /><p className="max-w-3xl text-lg leading-8 text-slate-600">{copy.structures.description}</p></div><div className="border-l-4 border-[#e87512] bg-[#f5f7fa] p-7 sm:p-8"><nav aria-label={copy.structures.title} className="grid gap-3"><CTA href={withLocale("/partnerships", locale)}>{partnershipLabel}</CTA>{copy.structures.links.map((link) => <CTA key={link.href} href={withLocale(link.href, locale)}>{link.label}</CTA>)}</nav></div></div></section>
-
-    <section className="bg-[#061b46] px-5 py-16 text-white sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl"><p className="text-xs font-bold uppercase tracking-[.2em] text-[#f5a24e]">{copy.international.eyebrow}</p><h2 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">{copy.international.title}</h2><p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">{copy.international.description}</p></div></section>
-
-    <section className="px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl border-l-4 border-[#e87512] bg-[#f5f7fa] p-8 sm:flex sm:items-center sm:justify-between sm:gap-8 sm:p-12"><h2 className="max-w-xl text-3xl font-bold tracking-tight text-[#061b46] sm:text-4xl">{copy.final.title}</h2><div className="mt-8 flex flex-wrap gap-4 sm:mt-0"><CTA href={withLocale("/entities", locale)}>{copy.final.entities}</CTA><CTA href={withLocale("/contact", locale)}>{copy.final.contact}</CTA></div></div></section>
-  </main><Footer locale={locale} /></>;
+  const copy = PREMIUM_ACTIVITIES[locale];
+  return <InstitutionalFrame locale={locale}>
+    <InstitutionalHero {...copy.hero} />
+    <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-7 sm:px-8"><div className="mx-auto max-w-7xl"><p className="text-sm font-bold text-[#061b46]">{copy.contents}</p><ul className="mt-4 flex flex-wrap gap-3">{copy.domains.map(domain => <li key={domain.id}><Link href={`#activity-${domain.id}`} className="inline-flex min-h-12 items-center border border-slate-200 px-4 py-2 text-sm font-bold text-[#061b46] transition-colors hover:border-[#d59b46] hover:bg-[#f5f7fa]">{domain.entity}</Link></li>)}</ul></div></nav>
+    {copy.domains.map((domain, index) => {
+      const dark = index % 2 === 1;
+      const logo = ENTITY_LOGOS[domain.logo];
+      return <section key={domain.id} id={`activity-${domain.id}`} data-business-domain={domain.id} className={`scroll-mt-6 px-5 py-16 sm:px-8 sm:py-24 ${dark ? "bg-[#061b46] text-white" : "bg-white"}`}>
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-[1.4fr_.6fr] lg:items-center lg:gap-16">
+            <div><InstitutionalHeading eyebrow={domain.entity} title={domain.title} dark={dark} /><p className={`max-w-3xl text-lg leading-8 ${dark ? "text-slate-200" : "text-slate-600"}`}>{domain.description}</p></div>
+            <div className="mx-auto flex h-44 w-full max-w-xs items-center justify-center border border-[#d59b46] bg-[#f5f7fa] p-5"><Image src={logo.src} alt={logo.alt} width={1536} height={1024} className="h-full w-full object-contain" sizes="280px" /></div>
+          </div>
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">{domain.groups.map((group, groupIndex) => <article key={group.title} data-activity-group className={`border border-t-2 border-t-[#d59b46] p-6 sm:p-8 ${dark ? "border-white/20 bg-white/5" : "border-slate-200 bg-[#f5f7fa]"} ${domain.groups.length % 2 === 1 && groupIndex === domain.groups.length - 1 ? "lg:col-span-2" : ""} ${styles.card}`}>
+            <h3 className={`text-xl font-bold leading-7 ${dark ? "text-white" : "text-[#061b46]"}`}>{group.title}</h3><p className={`mt-4 leading-7 ${dark ? "text-slate-200" : "text-slate-600"}`}>{group.description}</p>
+            {group.items && <ul className="mt-6 grid gap-3 sm:grid-cols-2">{group.items.map(item => <li key={item} className={`border-l-2 border-[#d59b46] pl-3 text-sm leading-6 ${dark ? "text-slate-200" : "text-slate-600"}`}>{item}</li>)}</ul>}
+          </article>)}</div>
+          <div className={`mt-8 border-l-2 border-[#d59b46] p-5 ${dark ? "bg-white/5" : "bg-[#f5f7fa]"}`}><h3 className={`text-sm font-bold ${dark ? "text-[#e7ba75]" : "text-[#946020]"}`}>{copy.scope}</h3><p className={`mt-2 text-sm leading-7 ${dark ? "text-slate-200" : "text-slate-600"}`}>{domain.boundary}</p></div>
+          <div className="mt-8"><InstitutionalAction href={domain.href} locale={locale} variant={dark ? "gold" : "navy"}>{copy.discover}<span className="sr-only"> · {domain.entity}</span></InstitutionalAction></div>
+        </div>
+      </section>;
+    })}
+    <InstitutionalClosing locale={locale} copy={copy.final} />
+  </InstitutionalFrame>;
 }
