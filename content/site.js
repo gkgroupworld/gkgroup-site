@@ -360,9 +360,9 @@ export const NEWS_ITEMS = [
     id: "gk-nexus-international-coordination",
     slug: "gk-nexus-coordination-internationale",
     category: "group",
-    status: "draft",
-    publicationApproved: false,
-    date: null,
+    status: "published",
+    publicationApproved: true,
+    date: "2026-10-15",
     relatedEntity: {
       href: "/gk-nexus",
       label: { fr: "Découvrir GK Nexus", en: "Discover GK Nexus" },
