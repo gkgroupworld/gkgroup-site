@@ -346,13 +346,15 @@ export const CONTACT_CONTENT = {
   },
 };
 
-export const NEWS_CATEGORIES = {
-  fr: ["Actualités du Groupe", "Partenariats", "Développement international", "Technologie", "Mobilité internationale", "Commerce international", "Business & Stratégie"],
-  en: ["Group News", "Partnerships", "International Development", "Technology", "International Mobility", "International Trade", "Business & Strategy"],
-};
+export const NEWS_CATEGORIES = [
+  { id: "group", label: { fr: "Actualités GK GROUP", en: "GK GROUP news" }, description: { fr: "Développements institutionnels, initiatives, projets et évolution des entités.", en: "Institutional developments, initiatives, projects and updates from the entities." } },
+  { id: "opportunities", label: { fr: "Opportunités internationales", en: "International opportunities" }, description: { fr: "Études, mobilité professionnelle, entrepreneuriat et programmes de coopération, selon les informations vérifiées auprès des sources officielles.", en: "Education, professional mobility, entrepreneurship and cooperation programmes, based on information checked against official sources." } },
+  { id: "events", label: { fr: "Événements et conférences", en: "Events and conferences" }, description: { fr: "Conférences, forums économiques, salons professionnels et rencontres institutionnelles.", en: "Conferences, economic forums, trade shows and institutional events." } },
+  { id: "announcements", label: { fr: "Annonces officielles", en: "Official announcements" }, description: { fr: "Communiqués, informations importantes, mises à jour des services et avis aux partenaires et clients.", en: "Statements, important information, service updates and notices for partners and clients." } },
+];
 
-// Add only validated publications. Each item uses: id, slug, status, date, image,
-// structure, category, and a `content` object containing fr/en title, summary and body.
+// Single publication source. Keep empty until content is explicitly approved.
+// Model, approval rules and bilingual examples: docs/publications-guide.md.
 export const NEWS_ITEMS = [];
 
 export const NEWS_CONTENT = {
@@ -360,12 +362,20 @@ export const NEWS_CONTENT = {
     hero: { title: "Actualités & Perspectives", description: "Retrouvez les actualités, initiatives, partenariats et développements stratégiques de GK GROUP et de ses structures.", signature: "Building Trust. Connecting Opportunities." },
     state: { eyebrow: "Communication corporate", title: "Nos actualités arrivent bientôt", description: "Cette section présentera les annonces, initiatives, partenariats et développements de GK GROUP et de ses structures." },
     latest: { eyebrow: "Actualités", title: "Dernières publications", readMore: "Lire la suite", structure: "Structure concernée" },
+    intro: "Communications institutionnelles, perspectives et informations internationales : consultez les publications validées de GK GROUP et leurs sources, lorsqu’elles sont nécessaires.",
+    filters: { label: "Filtrer les publications par catégorie", all: "Toutes les publications", results: "publication(s)", emptyTitle: "Aucune publication dans cette catégorie", emptyDescription: "Aucune publication validée n’est actuellement disponible pour cette catégorie. Vous pouvez consulter l’ensemble des publications ou nous contacter." },
+    article: { back: "Retour aux actualités", published: "Publié le", archived: "Publication archivée", source: "Source officielle", region: "Pays ou région", type: "Type d’opportunité", organisation: "Organisme ou source", deadline: "Date limite", eligibility: "Conditions d’éligibilité", verified: "Informations vérifiées le", unknown: "Non communiquée", event: "Événement", country: "Pays", city: "Ville", dates: "Dates", organiser: "Organisateur", registration: "Conditions d’inscription", opportunityNotice: "Consultez la source officielle pour confirmer les conditions et la disponibilité avant toute démarche. Aucun visa, recrutement ou admission n’est garanti.", eventNotice: "Les modalités de participation et toute éventuelle invitation doivent être confirmées auprès de l’organisateur." },
+    statuses: { open: "Ouverte · disponibilité vérifiée", expired: "Expirée", archived: "Archivée", unverified: "Disponibilité à revérifier", scheduled: "Programmé", cancelled: "Annulé", postponed: "Reporté", past: "Date passée" },
     stayInformed: { title: "Restez informé", description: "Suivez les développements de GK GROUP et découvrez nos initiatives à travers nos différents domaines d’activité.", cta: "Nous contacter" },
   },
   en: {
     hero: { title: "News & Insights", description: "Discover news, initiatives, partnerships and strategic developments from GK GROUP and its structures.", signature: "Building Trust. Connecting Opportunities." },
     state: { eyebrow: "Corporate communication", title: "Our latest news is coming soon", description: "This section will feature announcements, initiatives, partnerships and developments from GK GROUP and its structures." },
     latest: { eyebrow: "News", title: "Latest publications", readMore: "Read more", structure: "Related structure" },
+    intro: "Institutional communications, insights and international information: explore GK GROUP’s approved publications and their sources where relevant.",
+    filters: { label: "Filter publications by category", all: "All publications", results: "publication(s)", emptyTitle: "No publications in this category", emptyDescription: "No approved publications are currently available in this category. Browse all publications or contact us." },
+    article: { back: "Back to news", published: "Published on", archived: "Archived publication", source: "Official source", region: "Country or region", type: "Opportunity type", organisation: "Organisation or source", deadline: "Deadline", eligibility: "Eligibility requirements", verified: "Information checked on", unknown: "Not provided", event: "Event", country: "Country", city: "City", dates: "Dates", organiser: "Organiser", registration: "Registration requirements", opportunityNotice: "Check the official source to confirm conditions and availability before taking action. No visa, recruitment or admission outcome is guaranteed.", eventNotice: "Participation arrangements and any invitation must be confirmed directly with the organiser." },
+    statuses: { open: "Open · availability verified", expired: "Expired", archived: "Archived", unverified: "Availability needs rechecking", scheduled: "Scheduled", cancelled: "Cancelled", postponed: "Postponed", past: "Date passed" },
     stayInformed: { title: "Stay Informed", description: "Follow GK GROUP developments and discover our initiatives across our areas of activity.", cta: "Contact Us" },
   },
 };

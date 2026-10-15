@@ -7,7 +7,11 @@ const { unstable_doesMiddlewareMatch } = testing;
 
 const base = process.argv[2] || "http://localhost:3100";
 const site = "https://gkgroup.app";
-const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gk-nexus", "/gk-esttrade", "/partnerships", "/news", "/contact"];
+const newsData = await readFile(new URL("../content/site.js", import.meta.url), "utf8");
+const newsDataUrl = `data:text/javascript;base64,${Buffer.from(newsData).toString("base64")}`;
+const newsModel = (await readFile(new URL("../lib/news.js", import.meta.url), "utf8")).replace('"../content/site"', JSON.stringify(newsDataUrl));
+const { getNewsSitemapPaths } = await import(`data:text/javascript;base64,${Buffer.from(newsModel).toString("base64")}`);
+const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gk-nexus", "/gk-esttrade", "/partnerships", "/news", "/contact", ...getNewsSitemapPaths()];
 const expectedUrls = paths.flatMap(path => [path === "/" ? site : site + path, site + path + "?lang=en"]);
 const matcher = { matcher: ["/((?!api(?:/|$)|_next(?:/|$)|.*\\.).*)"] };
 // Read the real matcher rather than silently testing a copy of it.
@@ -126,4 +130,4 @@ for (const [query, locale] of [["?lang=fr", "fr"], ["?lang=invalid", "fr"], ["?l
   const html = await (await fetch(base + "/" + query, { headers: { "x-gk-locale": locale === "fr" ? "en" : "fr" } })).text();
   assert.match(html, new RegExp(`<html[^>]*lang="${locale}"`));
 }
-console.log("PASS: 24 server-rendered FR/EN URLs, canonical/hreflang, sitemap without fabricated dates, JSON-LD identities/references, language fallback/header override, static asset exclusions, FR/EN partnership form field parity and Netlify reference.");
+console.log(`PASS: ${urls.length} server-rendered FR/EN URLs, canonical/hreflang, sitemap without fabricated dates, JSON-LD identities/references, language fallback/header override, static asset exclusions, FR/EN partnership form field parity and Netlify reference.`);

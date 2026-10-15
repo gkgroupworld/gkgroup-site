@@ -9,6 +9,7 @@ export async function generateMetadata({ searchParams }) {
 }
 
 export default async function Page({ searchParams }) {
-  const locale = getLocale(await searchParams);
-  return <NewsPage locale={locale} />;
+  const query = await searchParams;
+  const locale = getLocale(query);
+  return <NewsPage locale={locale} category={query.category} />;
 }

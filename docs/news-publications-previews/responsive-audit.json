@@ -1,0 +1,306 @@
+[
+  {
+    "width": 1440,
+    "lang": "fr",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=fr#publications",
+        "text": "Toutes les publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=group#publications",
+        "text": "Actualités GK GROUP"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=opportunities#publications",
+        "text": "Opportunités internationales"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=events#publications",
+        "text": "Événements et conférences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=announcements#publications",
+        "text": "Annonces officielles"
+      }
+    ],
+    "height": 1942,
+    "heroHeight": 501,
+    "locale": "fr",
+    "overflow": false,
+    "title": "Actualités & Perspectives"
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=en#publications",
+        "text": "All publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=group#publications",
+        "text": "GK GROUP news"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=opportunities#publications",
+        "text": "International opportunities"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=events#publications",
+        "text": "Events and conferences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=announcements#publications",
+        "text": "Official announcements"
+      }
+    ],
+    "height": 1914,
+    "heroHeight": 501,
+    "locale": "en",
+    "overflow": false,
+    "title": "News & Insights"
+  },
+  {
+    "width": 834,
+    "lang": "fr",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=fr#publications",
+        "text": "Toutes les publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=group#publications",
+        "text": "Actualités GK GROUP"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=opportunities#publications",
+        "text": "Opportunités internationales"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=events#publications",
+        "text": "Événements et conférences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=announcements#publications",
+        "text": "Annonces officielles"
+      }
+    ],
+    "height": 2295,
+    "heroHeight": 794,
+    "locale": "fr",
+    "overflow": false,
+    "title": "Actualités & Perspectives"
+  },
+  {
+    "width": 834,
+    "lang": "en",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=en#publications",
+        "text": "All publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=group#publications",
+        "text": "GK GROUP news"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=opportunities#publications",
+        "text": "International opportunities"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=events#publications",
+        "text": "Events and conferences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=announcements#publications",
+        "text": "Official announcements"
+      }
+    ],
+    "height": 2295,
+    "heroHeight": 794,
+    "locale": "en",
+    "overflow": false,
+    "title": "News & Insights"
+  },
+  {
+    "width": 390,
+    "lang": "fr",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=fr#publications",
+        "text": "Toutes les publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=group#publications",
+        "text": "Actualités GK GROUP"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=opportunities#publications",
+        "text": "Opportunités internationales"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=events#publications",
+        "text": "Événements et conférences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=announcements#publications",
+        "text": "Annonces officielles"
+      }
+    ],
+    "height": 2898,
+    "heroHeight": 805,
+    "locale": "fr",
+    "overflow": false,
+    "title": "Actualités & Perspectives"
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=en#publications",
+        "text": "All publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=group#publications",
+        "text": "GK GROUP news"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=opportunities#publications",
+        "text": "International opportunities"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=events#publications",
+        "text": "Events and conferences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=announcements#publications",
+        "text": "Official announcements"
+      }
+    ],
+    "height": 2707,
+    "heroHeight": 766,
+    "locale": "en",
+    "overflow": false,
+    "title": "News & Insights"
+  },
+  {
+    "width": 320,
+    "lang": "fr",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=fr#publications",
+        "text": "Toutes les publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=group#publications",
+        "text": "Actualités GK GROUP"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=opportunities#publications",
+        "text": "Opportunités internationales"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=events#publications",
+        "text": "Événements et conférences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=fr&category=announcements#publications",
+        "text": "Annonces officielles"
+      }
+    ],
+    "height": 3078,
+    "heroHeight": 781,
+    "locale": "fr",
+    "overflow": false,
+    "title": "Actualités & Perspectives"
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "cards": 0,
+    "empty": true,
+    "filters": [
+      {
+        "current": "page",
+        "href": "/news?lang=en#publications",
+        "text": "All publications"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=group#publications",
+        "text": "GK GROUP news"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=opportunities#publications",
+        "text": "International opportunities"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=events#publications",
+        "text": "Events and conferences"
+      },
+      {
+        "current": null,
+        "href": "/news?lang=en&category=announcements#publications",
+        "text": "Official announcements"
+      }
+    ],
+    "height": 2906,
+    "heroHeight": 741,
+    "locale": "en",
+    "overflow": false,
+    "title": "News & Insights"
+  }
+]
