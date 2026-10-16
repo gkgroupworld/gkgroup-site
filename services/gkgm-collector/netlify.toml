@@ -1,0 +1,12 @@
+# Dedicated project only. Do not merge these settings into the existing site.
+# No project is provisioned by this file; all runtime gates default to closed.
+[build]
+  command = "npm ci --include=dev --ignore-scripts && npm run check"
+  publish = "public"
+
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
+
+[build.environment]
+  NODE_VERSION = "22"

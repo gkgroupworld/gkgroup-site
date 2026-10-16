@@ -11,7 +11,7 @@ const newsData = await readFile(new URL("../content/site.js", import.meta.url), 
 const newsDataUrl = `data:text/javascript;base64,${Buffer.from(newsData).toString("base64")}`;
 const newsModel = (await readFile(new URL("../lib/news.js", import.meta.url), "utf8")).replace('"../content/site"', JSON.stringify(newsDataUrl));
 const { getNewsSitemapPaths } = await import(`data:text/javascript;base64,${Buffer.from(newsModel).toString("base64")}`);
-const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gk-nexus", "/gk-esttrade", "/partnerships", "/news", "/contact", ...getNewsSitemapPaths()];
+const paths = ["/", "/about", "/architecture", "/activities", "/entities", "/gk-global-technology", "/gk-global-mobility", "/gkgm-project", "/gk-nexus", "/gk-esttrade", "/partnerships", "/news", "/contact", ...getNewsSitemapPaths()];
 const expectedUrls = paths.flatMap(path => [path === "/" ? site : site + path, site + path + "?lang=en"]);
 const matcher = { matcher: ["/((?!api(?:/|$)|_next(?:/|$)|.*\\.).*)"] };
 // Read the real matcher rather than silently testing a copy of it.

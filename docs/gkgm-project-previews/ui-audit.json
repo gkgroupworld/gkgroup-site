@@ -1,0 +1,246 @@
+{
+  "journeys": [
+    {
+      "locale": "fr",
+      "type": "work",
+      "fields": [
+        "occupation",
+        "experience",
+        "qualification",
+        "language",
+        "availability",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "type": "study",
+      "fields": [
+        "qualification",
+        "studyField",
+        "studyLevel",
+        "language",
+        "intake",
+        "budget",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "type": "visit",
+      "fields": [
+        "purpose",
+        "duration",
+        "period",
+        "funding",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "type": "business",
+      "fields": [
+        "role",
+        "sector",
+        "purpose",
+        "invitation",
+        "period",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "type": "company",
+      "fields": [
+        "activity",
+        "businessExperience",
+        "budget",
+        "relocation",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "type": "d2",
+      "fields": [
+        "activity",
+        "businessExperience",
+        "stage",
+        "budget",
+        "relocation",
+        "businessPlan",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "work",
+      "fields": [
+        "occupation",
+        "experience",
+        "qualification",
+        "language",
+        "availability",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "study",
+      "fields": [
+        "qualification",
+        "studyField",
+        "studyLevel",
+        "language",
+        "intake",
+        "budget",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "visit",
+      "fields": [
+        "purpose",
+        "duration",
+        "period",
+        "funding",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "business",
+      "fields": [
+        "role",
+        "sector",
+        "purpose",
+        "invitation",
+        "period",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "company",
+      "fields": [
+        "activity",
+        "businessExperience",
+        "budget",
+        "relocation",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "type": "d2",
+      "fields": [
+        "activity",
+        "businessExperience",
+        "stage",
+        "budget",
+        "relocation",
+        "businessPlan",
+        "description"
+      ],
+      "unchecked": true,
+      "consentError": true,
+      "pending": true,
+      "retained": true,
+      "overflow": false
+    }
+  ],
+  "responsive": [
+    {
+      "locale": "fr",
+      "overflow": false,
+      "title": "Soumettre mon projet international",
+      "width": 1440
+    },
+    {
+      "locale": "en",
+      "overflow": false,
+      "title": "Submit my international project",
+      "width": 1440
+    },
+    {
+      "locale": "fr",
+      "overflow": false,
+      "title": "Soumettre mon projet international",
+      "width": 768
+    },
+    {
+      "locale": "en",
+      "overflow": false,
+      "title": "Submit my international project",
+      "width": 768
+    },
+    {
+      "locale": "fr",
+      "overflow": false,
+      "title": "Soumettre mon projet international",
+      "width": 390
+    },
+    {
+      "locale": "en",
+      "overflow": false,
+      "title": "Submit my international project",
+      "width": 390
+    }
+  ]
+}
