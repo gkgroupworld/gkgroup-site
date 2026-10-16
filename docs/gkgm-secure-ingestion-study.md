@@ -1,5 +1,7 @@
 # GKGM — Phase A : étude de la collecte sécurisée
 
+> Architecture approuvée pour développement et tests locaux/simulés. Voir le [rapport de phase B](gkgm-phase-b-report.md). La création de services, la migration, le déploiement et l’activation restent soumis à autorisation distincte.
+
 16 octobre 2026 · PR #7 · branche `codex/gkgm-project-inquiry`.
 
 **Statut : recommandation à approuver, pas une architecture déployée.** Aucun code de collecte, stockage, variable, compte, abonnement ou service n’est modifié. Aucun POST public ni test de charge n’est réalisé. Cette étude examine le dépôt et la documentation officielle ; elle ne constitue pas un audit des consoles Netlify/Zoho ou des déploiements accessibles.

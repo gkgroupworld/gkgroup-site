@@ -1,6 +1,6 @@
-# GKGM — notice révisée FR/EN
+# GKGM — notice FR/EN proposée pour la collecte privée
 
-Version de préparation finale du 16 octobre 2026, PR #7. Texte affiché à la quatrième étape ; envoi réel toujours désactivé.
+Phase B, 16 octobre 2026. La nouvelle collecte et les prestataires/configurations préparés restent à valider avant activation. L’ancien collecteur natif n’est pas supprimé par cette révision.
 
 ## Français
 
@@ -12,7 +12,7 @@ Vos informations servent uniquement à l’étude préliminaire de votre projet,
 
 Les demandes sans suite sont conservées pendant 12 mois maximum à compter de leur réception initiale, puis supprimées. Un contrôle hebdomadaire des échéances et des suppressions est prévu sous la responsabilité d’Edem Yawo Awutey. Les dossiers devenus des dossiers clients relèvent d’une politique de conservation distincte ; cette notice ne fixe pas leur durée de conservation.
 
-Les prestataires techniques nécessaires interviennent dans le cadre de leurs prestations : Netlify pour l’hébergement, le traitement technique et la collecte du formulaire ; Zoho Mail pour les notifications à gk.contactus@gkgroup.app et les échanges par e-mail. Le DPA Netlify et la liste de ses sous-traitants ont été examinés par la direction. Cet examen ne permet pas, à lui seul, d’affirmer un lieu d’hébergement ou une garantie particulière de transfert.
+Les prestataires techniques nécessaires interviennent dans le cadre de leurs prestations : Netlify pour l’hébergement, l’API et le stockage privé préparés pour ce formulaire ; Cloudflare Turnstile pour la vérification antispam ; Zoho Mail pour des notifications sans le contenu du dossier à gk.contactus@gkgroup.app et les échanges par e-mail. La nouvelle collecte reste désactivée pendant sa préparation. Des identifiants IP/contact pseudonymisés servent aux quotas pendant 48 heures maximum ; une preuve minimale de suppression est prévue pendant 30 jours. Ces durées techniques et les prestataires ajoutés doivent être confirmés avant activation. Le DPA Netlify et la liste de ses sous-traitants ont été examinés par la direction. Cet examen ne permet pas, à lui seul, d’affirmer un lieu d’hébergement ou une garantie particulière de transfert.
 
 Les traitements techniques, les accès et les notifications peuvent impliquer des transferts internationaux, notamment vers les États-Unis selon les services et la configuration effectivement utilisés. Les pays de stockage et d’accès de Netlify, de Zoho Mail et de leurs prestataires, ainsi que les garanties applicables aux flux réels, restent à préciser avant activation. Aucun stockage exclusivement au Togo ou dans l’Union européenne n’est garanti.
 
@@ -20,7 +20,7 @@ Vous pouvez écrire à gk.contactus@gkgroup.app, à l’attention d’Edem Yawo 
 
 Mentions juridiques restant à confirmer avant activation : adresse complète du responsable légal, base juridique et réglementation applicables, modalités et délais d’exercice des droits, autorité de recours compétente et garanties des transferts. La suppression couvre Netlify, Zoho Mail et les éventuelles copies internes. Des délais techniques de récupération ou de sauvegarde peuvent subsister chez les prestataires ; leurs durées effectives et leur compatibilité avec le maximum de 12 mois doivent être vérifiées avant activation. La suppression immédiate de toutes les copies techniques n’est pas garantie à ce stade.
 
-**Case de reconnaissance (non précochée)**
+**Reconnaissance non précochée**
 
 Je reconnais avoir lu la notice de confidentialité concernant l’étude de ma demande et la prise de contact. Cette reconnaissance n’autorise aucun démarchage commercial ni partage de mes données avec des partenaires.
 
@@ -34,7 +34,7 @@ Your information is used only for the preliminary review of your project, prepar
 
 Inquiries that do not proceed are retained for a maximum of 12 months from initial receipt and then deleted. Weekly checks of deadlines and deletions are planned under the responsibility of Edem Yawo Awutey. Inquiries that become client files are subject to a separate retention policy; this notice does not set their retention period.
 
-Necessary technical providers process information as part of their services: Netlify for hosting, technical processing and form collection; Zoho Mail for notifications to gk.contactus@gkgroup.app and email correspondence. Management has reviewed the Netlify DPA and its subprocessor list. This review alone does not establish a hosting location or any particular transfer safeguard.
+Necessary technical providers process information as part of their services: Netlify for the hosting, API and private storage being prepared for this form; Cloudflare Turnstile for spam protection; Zoho Mail for notifications without inquiry content to gk.contactus@gkgroup.app and email correspondence. New collection remains disabled during preparation. Pseudonymised IP/contact identifiers support quotas for up to 48 hours; minimal deletion proof is planned for 30 days. These technical periods and added providers must be confirmed before activation. Management has reviewed the Netlify DPA and its subprocessor list. This review alone does not establish a hosting location or any particular transfer safeguard.
 
 Technical processing, access and notifications may involve international transfers, including to the United States depending on the services and configuration actually used. Storage and access countries for Netlify, Zoho Mail and their providers, and safeguards applicable to the actual flows, remain to be specified before activation. Storage exclusively in Togo or the European Union is not guaranteed.
 
@@ -42,8 +42,8 @@ You can write to gk.contactus@gkgroup.app, for the attention of Edem Yawo Awutey
 
 Legal details still to confirm before activation: full controller address, applicable legal basis and law, procedures and deadlines for exercising rights, competent complaints authority and transfer safeguards. Deletion covers Netlify, Zoho Mail and any internal copies. Providers may retain technical recovery or backup copies for a period; actual periods and their compatibility with the 12-month maximum must be checked before activation. Immediate deletion of every technical copy is not guaranteed at this stage.
 
-**Acknowledgement checkbox (unchecked)**
+**Unchecked acknowledgement**
 
 I acknowledge reading the privacy notice concerning the review of my inquiry and follow-up contact. This acknowledgement does not authorise commercial solicitation or sharing my data with partners.
 
-Voir les [points à confirmer et la procédure de suppression](gkgm-privacy-operations.md) et le [rapport de préparation finale](gkgm-production-readiness.md).
+Voir le [rapport de phase B](gkgm-phase-b-report.md).

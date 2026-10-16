@@ -1,5 +1,7 @@
 # GKGM — confidentialité : décisions et mise en œuvre
 
+> Phase B : le transport applicatif est désormais remplacé dans le code par le service privé préparé, sans activation. Les sections antérieures décrivent les étapes précédentes ; voir le [rapport actuel](gkgm-phase-b-report.md) pour les variables, tests et procédures à appliquer. L’ancien collecteur natif reste intact en attente d’autorisation de migration.
+
 Révision du 16 octobre 2026, PR #7. Les décisions ci-dessous viennent de la direction de GK GLOBAL GROUP SARL U. Le DPA Netlify et la liste des sous-traitants ont été examinés par la direction ; leur contenu exact et les paramètres du compte ne sont pas fournis au dépôt. Aucun contact e-mail avec Netlify n’est nécessaire pour cette préparation et aucun n’a été envoyé. Elles ne constituent pas une autorisation d’activer l’envoi, de fusionner ou de publier en production. `GKGM_PRIVACY_APPROVED` reste inchangé et non activé par cette révision.
 
 ## Règles approuvées

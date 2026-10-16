@@ -1,5 +1,7 @@
 # GKGM — revue finale avant activation (PR #7)
 
+> Phase B : le transport applicatif est désormais remplacé dans le code par le service privé préparé, sans activation. Les sections antérieures décrivent les étapes précédentes ; voir le [rapport actuel](gkgm-phase-b-report.md) pour les variables, tests et procédures à appliquer. L’ancien collecteur natif reste intact en attente d’autorisation de migration.
+
 Préparation du 16 octobre 2026. Responsable légal : **GK GLOBAL GROUP SARL U**. Responsable opérationnel et seul accès interne approuvé : **Edem Yawo Awutey**. Le DPA Netlify et sa liste de sous-traitants ont été examinés par la direction, selon son instruction. Aucun contact Netlify par e-mail, modification de variable distante, envoi réel, suppression de données, fusion ou déploiement n’est exécuté dans cette mission.
 
 ## Notice et droits

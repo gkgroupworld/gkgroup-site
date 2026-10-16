@@ -1,0 +1,21 @@
+{
+  "name": "gkgm-private-collector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "esbuild": "0.28.2"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --import ./tests/test-env.mjs --test --test-concurrency=1 tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs"
+  }
+}

@@ -7,9 +7,9 @@ const report = {
   scope: "current Node process only; not a remote Netlify configuration audit",
   expected: expectEnabled ? "enabled" : "disabled",
   activationFlag: process.env.GKGM_PRIVACY_APPROVED === undefined ? "unset" : process.env.GKGM_PRIVACY_APPROVED === "true" ? "enabled" : "disabled",
-  siteNamePresent: Boolean(process.env.SITE_NAME),
-  siteNameValid: Boolean(config.upstreamOrigin),
-  siteIdPresent: Boolean(process.env.SITE_ID),
+  apiConfigured: Boolean(config.endpoint),
+  publicSitekeyConfigured: Boolean(config.sitekey),
+  frontendFlagEnabled: process.env.GKGM_FRONTEND_ENABLED === "true",
   deliveryEnabled: config.enabled,
 };
 console.log(JSON.stringify(report, null, 2));

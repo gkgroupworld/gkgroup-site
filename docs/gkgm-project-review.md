@@ -1,5 +1,7 @@
 # GKGM — formulaire de projet international
 
+> Phase B : le transport applicatif est désormais remplacé dans le code par le service privé préparé, sans activation. Les sections antérieures décrivent les étapes précédentes ; voir le [rapport actuel](gkgm-phase-b-report.md) pour les variables, tests et procédures à appliquer. L’ancien collecteur natif reste intact en attente d’autorisation de migration.
+
 Branche : `codex/gkgm-project-inquiry` ; base `5e5bf32`.
 
 ## Aperçus
