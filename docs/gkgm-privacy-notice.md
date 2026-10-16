@@ -1,20 +1,24 @@
 # GKGM — notice révisée FR/EN
 
-Version du 16 octobre 2026, PR #7. Texte affiché à la quatrième étape ; envoi réel toujours désactivé.
+Version de préparation finale du 16 octobre 2026, PR #7. Texte affiché à la quatrième étape ; envoi réel toujours désactivé.
 
 ## Français
 
 Règles approuvées — vérifications juridiques et opérationnelles encore nécessaires
 
-GK GLOBAL GROUP SARL U, via sa division GK Global Mobility (GKGM), utilise vos informations uniquement pour l’étude préliminaire de votre projet, la préparation d’une réponse et la prise de contact.
+Responsable légal du traitement : GK GLOBAL GROUP SARL U, via sa division GK Global Mobility (GKGM). Responsable opérationnel et seul accès interne autorisé : Edem Yawo Awutey. Contact : gk.contactus@gkgroup.app.
 
-Règles approuvées par la direction : les demandes de projet sans suite sont conservées pendant 12 mois maximum, puis supprimées. Les dossiers devenus des dossiers clients relèvent d’une politique de conservation distincte ; aucune durée de conservation des dossiers clients n’est fixée par cette notice.
+Vos informations servent uniquement à l’étude préliminaire de votre projet, à la préparation d’une réponse et à la prise de contact. Elles ne sont utilisées pour aucun démarchage commercial et ne sont pas transmises automatiquement aux universités, employeurs, recruteurs ou autres partenaires.
 
-L’accès interne est limité au personnel GKGM expressément habilité. Les prestataires techniques nécessaires, notamment Netlify, peuvent intervenir dans le cadre de leurs prestations. Aucune transmission automatique de vos données aux universités, employeurs, recruteurs ou autres partenaires n’est effectuée. Vos informations ne servent pas au démarchage commercial.
+Les demandes sans suite sont conservées pendant 12 mois maximum à compter de leur réception initiale, puis supprimées. Un contrôle hebdomadaire des échéances et des suppressions est prévu sous la responsabilité d’Edem Yawo Awutey. Les dossiers devenus des dossiers clients relèvent d’une politique de conservation distincte ; cette notice ne fixe pas leur durée de conservation.
 
-Points restant à confirmer avant activation : les mentions complètes du responsable du traitement, la base juridique, les modalités d’exercice des droits et de recours, la liste effective des prestataires, les lieux de traitement, les éventuels transferts internationaux et leurs garanties. Ces lieux dépendent notamment de la configuration réelle de Netlify, de son service Forms et de la messagerie ; aucun hébergement dans un pays déterminé n’est garanti à ce stade.
+Les prestataires techniques nécessaires interviennent dans le cadre de leurs prestations : Netlify pour l’hébergement, le traitement technique et la collecte du formulaire ; Zoho Mail pour les notifications à gk.contactus@gkgroup.app et les échanges par e-mail. Le DPA Netlify et la liste de ses sous-traitants ont été examinés par la direction. Cet examen ne permet pas, à lui seul, d’affirmer un lieu d’hébergement ou une garantie particulière de transfert.
 
-Vous pouvez contacter gk.contactus@gkgroup.app pour demander l’accès, la rectification ou la suppression de vos données et exercer les autres droits prévus par la réglementation applicable. La procédure de suppression doit couvrir Netlify, les notifications e-mail et les éventuelles copies internes ; sa mise en œuvre, les sauvegardes et les habilitations restent à vérifier avant activation.
+Les traitements techniques, les accès et les notifications peuvent impliquer des transferts internationaux, notamment vers les États-Unis selon les services et la configuration effectivement utilisés. Les pays de stockage et d’accès de Netlify, de Zoho Mail et de leurs prestataires, ainsi que les garanties applicables aux flux réels, restent à préciser avant activation. Aucun stockage exclusivement au Togo ou dans l’Union européenne n’est garanti.
+
+Vous pouvez écrire à gk.contactus@gkgroup.app, à l’attention d’Edem Yawo Awutey, pour demander l’accès, la rectification ou la suppression de vos données et exercer les autres droits prévus par la réglementation applicable. Une vérification d’identité proportionnée pourra être nécessaire. La case ci-dessous est une reconnaissance de lecture ; elle ne constitue pas une autorisation de démarchage ou de partage.
+
+Mentions juridiques restant à confirmer avant activation : adresse complète du responsable légal, base juridique et réglementation applicables, modalités et délais d’exercice des droits, autorité de recours compétente et garanties des transferts. La suppression couvre Netlify, Zoho Mail et les éventuelles copies internes. Des délais techniques de récupération ou de sauvegarde peuvent subsister chez les prestataires ; leurs durées effectives et leur compatibilité avec le maximum de 12 mois doivent être vérifiées avant activation. La suppression immédiate de toutes les copies techniques n’est pas garantie à ce stade.
 
 **Case de reconnaissance (non précochée)**
 
@@ -24,18 +28,22 @@ Je reconnais avoir lu la notice de confidentialité concernant l’étude de ma 
 
 Approved rules — legal and operational checks still required
 
-GK GLOBAL GROUP SARL U, through its GK Global Mobility (GKGM) division, uses your information only for the preliminary review of your project, preparation of a response and follow-up contact.
+Legal data controller: GK GLOBAL GROUP SARL U, through its GK Global Mobility (GKGM) division. Operational lead and sole authorised internal user: Edem Yawo Awutey. Contact: gk.contactus@gkgroup.app.
 
-Rules approved by management: project inquiries that do not proceed are retained for a maximum of 12 months and then deleted. Inquiries that become client files are subject to a separate retention policy; this notice does not set a retention period for client files.
+Your information is used only for the preliminary review of your project, preparation of a response and follow-up contact. It is not used for commercial solicitation and is not automatically shared with universities, employers, recruiters or other partners.
 
-Internal access is restricted to expressly authorised GKGM staff. Necessary technical providers, including Netlify, may process information as part of their services. Your data is not automatically shared with universities, employers, recruiters or other partners. Your information is not used for commercial solicitation.
+Inquiries that do not proceed are retained for a maximum of 12 months from initial receipt and then deleted. Weekly checks of deadlines and deletions are planned under the responsibility of Edem Yawo Awutey. Inquiries that become client files are subject to a separate retention policy; this notice does not set their retention period.
 
-Points to confirm before activation: full controller details, legal basis, procedures for exercising rights and lodging complaints, the actual provider list, processing locations, any international transfers and their safeguards. Locations depend in particular on the actual Netlify configuration, its Forms service and email services; hosting in any specific country is not guaranteed at this stage.
+Necessary technical providers process information as part of their services: Netlify for hosting, technical processing and form collection; Zoho Mail for notifications to gk.contactus@gkgroup.app and email correspondence. Management has reviewed the Netlify DPA and its subprocessor list. This review alone does not establish a hosting location or any particular transfer safeguard.
 
-Contact gk.contactus@gkgroup.app to request access, correction or deletion and exercise other rights available under applicable law. The deletion procedure must cover Netlify, email notifications and any internal copies; its implementation, backups and access permissions remain to be checked before activation.
+Technical processing, access and notifications may involve international transfers, including to the United States depending on the services and configuration actually used. Storage and access countries for Netlify, Zoho Mail and their providers, and safeguards applicable to the actual flows, remain to be specified before activation. Storage exclusively in Togo or the European Union is not guaranteed.
+
+You can write to gk.contactus@gkgroup.app, for the attention of Edem Yawo Awutey, to request access, correction or deletion and exercise other rights available under applicable law. Proportionate identity verification may be necessary. The checkbox below acknowledges reading this notice; it does not authorise commercial solicitation or sharing.
+
+Legal details still to confirm before activation: full controller address, applicable legal basis and law, procedures and deadlines for exercising rights, competent complaints authority and transfer safeguards. Deletion covers Netlify, Zoho Mail and any internal copies. Providers may retain technical recovery or backup copies for a period; actual periods and their compatibility with the 12-month maximum must be checked before activation. Immediate deletion of every technical copy is not guaranteed at this stage.
 
 **Acknowledgement checkbox (unchecked)**
 
 I acknowledge reading the privacy notice concerning the review of my inquiry and follow-up contact. This acknowledgement does not authorise commercial solicitation or sharing my data with partners.
 
-Voir les [points à confirmer et la procédure de suppression](gkgm-privacy-operations.md).
+Voir les [points à confirmer et la procédure de suppression](gkgm-privacy-operations.md) et le [rapport de préparation finale](gkgm-production-readiness.md).

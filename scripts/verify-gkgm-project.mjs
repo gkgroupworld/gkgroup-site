@@ -16,6 +16,13 @@ const sample = (type, locale) => {
 assert.equal(PROJECT_TYPES.length, 6);
 assert.equal(projectDeliveryConfig({ NETLIFY: "true", DEPLOY_URL: "https://example.netlify.app" }).enabled, false);
 assert.equal(projectDeliveryConfig({ GKGM_PRIVACY_APPROVED: "true", SITE_NAME: "example", SITE_ID: "test" }).enabled, true);
+for (const env of [
+  { SITE_NAME: "example", SITE_ID: "test" },
+  { GKGM_PRIVACY_APPROVED: "false", SITE_NAME: "example", SITE_ID: "test" },
+  { GKGM_PRIVACY_APPROVED: "TRUE", SITE_NAME: "example", SITE_ID: "test" },
+  { GKGM_PRIVACY_APPROVED: "true", SITE_NAME: "example" },
+  { GKGM_PRIVACY_APPROVED: "true", SITE_ID: "test" },
+]) assert.equal(projectDeliveryConfig(env).enabled, false, "Incomplete/unapproved runtime stays disabled");
 assert.equal(projectDeliveryConfig({ GKGM_PRIVACY_APPROVED: "true", SITE_NAME: "evil.test/path", SITE_ID: "test" }).enabled, false);
 const upstreamOrigin = "https://example.netlify.app";
 for (const project of PROJECT_TYPES) for (const locale of ["fr", "en"]) {
@@ -57,6 +64,14 @@ assert.ok(validateProject({ ...sample("study", "en"), email: "bad" }).email);
 assert.ok(validateProject({ ...sample("d2", "en"), destination: "Other" }).destination);
 assert.equal((await handleProjectRequest(request("x=" + "a".repeat(20001)))).status, 413);
 assert.equal((await handleProjectRequest(request(sample("work", "en"), { "content-type": "application/json" }))).status, 415);
+assert.equal((await handleProjectRequest(request(sample("work", "en"), { "content-type": "application/x-www-form-urlencoded-invalid" }))).status, 415);
+assert.equal((await handleProjectRequest(request(sample("work", "en"), { "content-type": "Application/X-Www-Form-Urlencoded; charset=UTF-8" }))).status, 503);
+const missingOrigin = request(sample("work", "en"));
+missingOrigin.headers.delete("origin");
+assert.equal((await handleProjectRequest(missingOrigin)).status, 403);
+assert.equal((await handleProjectRequest(request(sample("work", "en"), { origin: "null" }))).status, 403);
+assert.equal((await handleProjectRequest(request({ ...sample("work", "fr"), businessPlan: "yes" }))).status, 400);
+assert.equal((await handleProjectRequest(request(sample("work", "en")), { enabled: true, upstreamOrigin, fetcher: async () => Response.redirect("https://example.netlify.app/success", 302) })).status, 502);
 assert.equal((await handleProjectRequest(request(sample("work", "en")), { enabled: true, upstreamOrigin: "https://evil.test" })).status, 503);
 
 const reference = await readFile(new URL("../public/__gkgm-forms.html", import.meta.url), "utf8");
