@@ -6,13 +6,13 @@ Branche : `codex/gkgm-project-inquiry` ; base `5e5bf32`.
 
 - FR : http://127.0.0.1:3111/gkgm-project?lang=fr
 - EN : http://127.0.0.1:3111/gkgm-project?lang=en
-- [Captures ordinateur, tablette, mobile et révision D2](gkgm-project-previews/index.html).
+- [Captures ordinateur, tablette, mobile et révision D2](gkgm-project-previews/index.html) : état initial avant révision de la notice ; la version actuelle fait foi dans `content/gkgm-project.js`.
 
 Page `/gkgm-project`, accessible depuis le bouton de projet de la page GKGM. Quatre étapes, six catégories, champs conditionnels, révision et reconnaissance de la notice non précochée. Destination Portugal imposée pour le D2. Nationalité non collectée à cette étape ; aucune pièce jointe, donnée d’enfant, date de naissance ou pièce d’identité demandée. Budget facultatif. Aucune promesse d’admissibilité, d’emploi, d’admission ou de visa.
 
 ## État avant publication
 
-La notice conserve explicitement « Durées de conservation et destinataires à valider avant publication ». Hypothèses de rédaction non validées (elles ne constituent pas une politique approuvée par GKGM) : 12 mois pour les simples contacts, 5 ans pour les dossiers clients clôturés si une relation client est créée ensuite ; suppression anticipée des pièces d’identité devenues inutiles (aucune pièce n’est collectée ici). Le responsable GKGM doit confirmer la base juridique, les durées, les droits/recours, les prestataires effectifs, les lieux de traitement, les transferts internationaux et garanties, les habilitations et la sécurité.
+La notice FR/EN intègre les six décisions approuvées par la direction le 16 octobre 2026 : demandes sans suite conservées 12 mois maximum puis supprimées, personnel GKGM expressément habilité, prestataires techniques nécessaires dont Netlify, absence de transmission automatique aux partenaires, finalités limitées et politique distincte pour les dossiers clients. L’ancienne hypothèse de cinq ans est retirée. Les points juridiques et opérationnels encore ouverts sont distingués des règles approuvées. Voir [inventaire des lieux de traitement, points à confirmer et procédure de suppression](gkgm-privacy-operations.md).
 
 L’envoi réel est désactivé par défaut côté interface ET API. Aucune collecte locale et aucune conservation dans localStorage/sessionStorage ; les réponses restent uniquement dans l’état du formulaire jusqu’au rechargement/changement de langue ou fermeture de la page. Un changement de catégorie efface les anciennes réponses spécifiques ; un retour d’étape ou un échec d’envoi conserve les réponses du parcours courant.
 
@@ -26,7 +26,7 @@ Le navigateur envoie au POST `/api/gkgm-project`. L’API vérifie origine, enco
 
 Limite : les validations serveur couvrent le point d’entrée de l’application ; le collecteur natif Netlify peut recevoir des POST directs qui contournent cette API. Ne pas considérer toutes les entrées brutes de Netlify comme des demandes validées. Avant mise en production, vérifier les filtres antispam/les règles opérationnelles et les procédures de tri/suppression. Le honeypot et la validation ne remplacent pas une protection anti-abus complète.
 
-La suppression selon les durées proposées n’est pas automatisée par ce changement. Prévoir les procédures couvrant Netlify, les boîtes e-mail et tout éventuel dossier client, à valider avec GKGM.
+La suppression dans la limite approuvée de 12 mois n’est pas automatisée par ce changement. La procédure proposée couvre Netlify (vérifiés et spam), notifications et fils e-mail, exports et copies internes, sauvegardes et preuve minimale de purge. Son propriétaire, le point de départ, le suivi des échéances et sa mise en œuvre restent à confirmer avant activation.
 
 ## Notification à configurer manuellement
 
@@ -47,6 +47,10 @@ Sources officielles consultées : [détection/SSR/AJAX](https://docs.netlify.com
 
 ## Livraison et crédits
 
-Une branche, un commit regroupé et une seule Pull Request pour validation. Aucun merge ni déploiement volontaire de production. Une prévisualisation automatique peut être déclenchée par Netlify lors de l’ouverture de la PR ; aucun déploiement manuel supplémentaire n’est demandé. Prévisualisations locales fournies ci-dessus.
+Une branche et une seule Pull Request (#7) pour validation ; les révisions sont regroupées sur cette même branche. Aucun merge ni déploiement volontaire de production. Une prévisualisation automatique peut être déclenchée par Netlify lors de l’ouverture de la PR ; aucun déploiement manuel supplémentaire n’est demandé. Prévisualisations locales fournies ci-dessus.
 
 Variables runtime : [documentation officielle Netlify](https://docs.netlify.com/build/functions/environment-variables/). NETLIFY et DEPLOY_URL ne sont pas supposés disponibles dans les fonctions.
+
+## Révision confidentialité du 16 octobre 2026
+
+[Notice FR/EN complète](gkgm-privacy-notice.md) et [procédure/inventaire](gkgm-privacy-operations.md). Vérifications relancées après cette révision : lint, build, tests GKGM (12 combinaisons FR/EN, transport simulé, API locale bloquée à 503) et partenariats réussis. Diff nul sur le composant des quatre étapes, les validateurs, le transport, les références Forms et netlify.toml. Aucun changement d’environnement, envoi réel, purge réelle, activation, fusion ou déploiement de production. Les captures historiques ne représentent pas la notice révisée.
