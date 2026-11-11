@@ -57,7 +57,7 @@ export function MobilityPage({ locale }) {
         <div className="mx-auto max-w-7xl border-l-4 border-[#e87512] bg-[#f5f7fa] p-6 sm:p-10">
           <h2 className="text-3xl font-bold text-[#061b46]">{copy.contactTitle}</h2>
           <p className="mt-5 max-w-3xl leading-7 text-slate-600">{copy.contactText}</p>
-          <div className="mt-7 flex flex-wrap gap-4"><Link href={contactHref} className={buttonClass} style={{ color: "#ffffff" }}>{copy.project}</Link><Link href={contactHref} className={buttonClass} style={{ color: "#ffffff" }}>{copy.partner}</Link></div>
+          <div className="mt-7 flex flex-wrap gap-4"><Link href={withLocale("/gkgm-project", locale)} className={buttonClass} style={{ color: "#ffffff" }}>{copy.project}</Link><Link href={contactHref} className={buttonClass} style={{ color: "#ffffff" }}>{copy.partner}</Link></div>
           <address className="mt-7 grid gap-2 text-sm not-italic leading-6 text-slate-600">
             <p>{CONTACT.legalName} · {CONTACT.location}</p>
             <a href={CONTACT.generalEmailHref} className="w-fit underline underline-offset-4">{CONTACT.generalEmail}</a>
