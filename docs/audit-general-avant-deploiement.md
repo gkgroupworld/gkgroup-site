@@ -2,7 +2,7 @@
 
 Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
 
-Mise à jour : ajout local de la section réalisations/partenaires GKGM, détaillé en section 11. Les sections 1 à 10 décrivent l'audit initial ; la section 11 complète cet état sans lever les réserves de publication.
+Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), puis réorganisation des galeries vers GKGT (section 12). Les sections 1 à 10 décrivent l'audit initial ; les compléments décrivent l'état actuel sans lever les réserves de publication.
 
 ## 1. Conclusion et périmètre
 
@@ -309,3 +309,41 @@ La référence historique `verify-heroes` reste à revoir conformément à C2 ; 
 Valider la présentation FR/EN, les libellés de résultats et les quatre noms de partenaires avant publication ; conserver en interne les justificatifs de résultats et les éléments établissant le périmètre des relations B2B et leur communication. La présente instruction autorise leur intégration à la préparation locale, pas une opération de publication.
 
 Les réserves de l'audit général et les droits photographiques restent ouverts. **Branche locale uniquement : aucun push, aucune fusion, aucune PR et aucun déploiement.**
+
+## 12. Réorganisation des galeries — état actuel pour validation
+
+La galerie historique quitte `/about` et rejoint `/gk-global-technology`, après les services existants et avant la méthode de travail, avec le titre **« Nos archives techniques » / « Our Technical Archives »**. Le nouveau texte relie les archives à l'héritage technique de GKGT historiquement exercé sous l'appellation GK Informatique, sans présenter cette activité historique comme une société distincte actuelle.
+
+La section suivante, **« Notre atelier et notre boutique » / « Our Workshop and Store »**, est une structure bilingue d'accueil des futurs visuels récents. Elle ne contient aucune image, aucun appel d'image manquant ni illustration fictive. Un texte d'attente distingue ces futurs visuels des archives historiques. Les véritables photos récentes devront être fournies et validées avant ajout ; aucun local, équipement moderne ou agencement n'a été inventé.
+
+### Périmètre des modifications
+
+- `components/pages/AboutPage.js` : suppression de l'import et de l'insertion de galerie ; contenu revenu à celui de `main`, à conventions de fins de ligne près. Les sections historiques, mission/vision et autres contenus sont conservés.
+- `components/pages/TechnologyPage.js` : insertion des deux sections et ajout des deux liens d'ancre `technical-archives` et `workshop-store` dans le sommaire ; services, méthode, formulaire et contacts existants conservés.
+- `components/pages/TechnicalArchiveGallery.js` : nouveau titre et nouvelle introduction seulement pour le contexte GKGT ; liste, ordre, alternatives et légendes des douze photographies conservés.
+- `components/pages/TechnologyWorkshop.js` et `content/technology-gallery.js` : structure sans image et textes FR/EN des deux sections.
+- Rapports de galerie, texte de PR locale et présent bilan actualisés. Les anciennes mentions d'une galerie sur À propos dans les sections historiques de ce rapport décrivent l'état antérieur ; la présente section les remplace pour l'emplacement actuel.
+
+Les douze fichiers dans `public/archives-techniques/` n'ont été ni supprimés, ni déplacés, ni réencodés ; comparaison directe au commit `72fc075` réussie octet pour octet. Les légendes FR/EN ont été comparées à leur liste précédente et sont identiques. Le logo officiel est identique octet pour octet. Les trois fichiers fonctionnels de la section GKGM (`MobilityPage.js`, `MobilityTrackRecord.js`, `mobility-track-record.js`) sont identiques à `72fc075` hors conventions de fins de ligne. Aucune modification du parcours GKGM ou des autres formulaires.
+
+### Résultats des contrôles après déplacement
+
+| Contrôle | Résultat |
+| --- | --- |
+| Lint et build de production | Réussis ; 17 entrées du build, avertissements Node connus non bloquants. |
+| Tests unitaires Forms | 7 réussis. |
+| Tests navigateur Forms | 12 parcours GKGM FR/EN et deux soumissions de partenariats simulées réussis ; aucun envoi réel. |
+| Sept scripts de contenu/régression/SEO | `verify-home`, `verify-architecture`, `verify-entities`, `verify-institutional-pages`, `verify-partnerships`, `verify-news`, `verify-seo` réussis. |
+| Galerie GKGT FR/EN à 390, 768 et 1440 px | Six combinaisons : 12 images chargées sur 12, aucun débordement horizontal, titres bilingues, sommaire et formulaire existant présents. |
+| Atelier/boutique FR/EN | Titre et texte d'attente présents ; zéro image dans les six combinaisons. |
+| À propos FR/EN | Galerie absente ; histoire et mission/vision présentes. |
+| SEO | Les 38 URL sont conservées ; métadonnées, canonical, hreflang et sitemap inchangés. Aucune nouvelle route, uniquement deux ancres GKGT. |
+| Test historique `verify-heroes` | Réexécuté : il passe désormais À propos puis échoue sur `/gk-global-technology?lang=fr`, dont le contenu sous bannière a volontairement changé. Aucune référence réenregistrée. La réserve C2 demeure pour GKGT et la modification GKGM précédente. |
+
+Ces vérifications utilisent le navigateur et le build locaux ; elles ne constituent pas des essais sur appareils physiques ni sur Netlify. Le retrait de l'ancienne ancre `/about#technical-archives` est volontaire ; aucune redirection de fragment n'a été inventée. Les futures références à la galerie doivent utiliser `/gk-global-technology#technical-archives` (avec `?lang=en` avant le fragment pour l'anglais).
+
+### Livraison et validations encore nécessaires
+
+La présentation est prête pour revue locale. Valider les deux sections FR/EN et fournir les futurs visuels modernes authentiques lorsqu'ils seront disponibles. Les autorisations et vérifications des douze photos restent nécessaires avant toute publication publique ; leur déplacement ne modifie pas leur exposition potentielle depuis le dossier `public`. Les autres réserves de l'audit, notamment les avis de sécurité des dépendances et les réglages Netlify, restent ouvertes.
+
+**Aucun push GitHub, aucune PR, aucune fusion et aucun déploiement Netlify.** Le travail reste sur `feature/galerie-archives-techniques` pour validation utilisateur.

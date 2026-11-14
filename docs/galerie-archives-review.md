@@ -1,6 +1,6 @@
 # Galerie historique et technique — préparation locale
 
-Date de contrôle : 14 novembre 2026. Rapport actualisé pour la galerie locale complète de douze photographies, conformément à l’instruction complémentaire de l’utilisateur.
+Date de contrôle : 14 novembre 2026. Rapport actualisé après déplacement de la galerie complète vers GKGT, conformément à la dernière instruction de l'utilisateur.
 
 Branche : `feature/galerie-archives-techniques`.
 Base : `main`, commit `4ee789fced22f2087cfbcc79e38661285eac31fc`.
@@ -9,7 +9,9 @@ Les deux anciennes copies locales ne contenaient pas de métadonnées Git et ne 
 
 ## Modifications
 
-- `components/pages/AboutPage.js` : import et insertion de la galerie immédiatement entre `our-history` et `mission-vision` ; aucun texte existant modifié.
+- `components/pages/AboutPage.js` : retrait de l'import et de la galerie ; contenu rétabli à la version de `main`, sans suppression des fichiers photo.
+- `components/pages/TechnologyPage.js` : insertion de la galerie après les services et avant la méthode de travail, ajout d'une section atelier/boutique distincte et de deux ancres au sommaire.
+- `content/technology-gallery.js` et `components/pages/TechnologyWorkshop.js` : textes FR/EN et structure d'accueil des futurs visuels récents, sans image fictive ni photo historique réutilisée comme installation actuelle.
 - `components/pages/TechnicalArchiveGallery.js` : adaptation du composant fourni ; titres, introduction, légendes et alternatives FR/EN ; activité GK Informatique explicitement historique ; grille de 1/2/3 colonnes ; images entières, sans recadrage, avec `next/image`, `sizes`, ratio réservé et chargement différé.
 - `public/archives-techniques/` : les douze WebP de l’archive, inchangés, total de 2 107 904 octets (environ 2,01 Mio avant optimisation Next.js). Les sept images précédemment intégrées sont conservées ; les cinq autres sont ajoutées dans l’ordre des fichiers.
 - Ce rapport et `docs/galerie-archives-pull-request.md` : revue et texte de PR prêts.
@@ -53,7 +55,9 @@ L'inspection visuelle ne constitue pas une preuve des droits de publication. Con
 
 Les avertissements Node sur `module.register()` et le type de module des fichiers de contenu existants ne bloquent pas les contrôles. Aucun changement de dépendance ou de configuration n'a été introduit pour les supprimer.
 
-Logo officiel, navigation, contact, changement de langue, pages des entités, actualités, formulaires, métadonnées, sitemap, styles globaux et configuration Netlify restent inchangés. Aucune nouvelle URL publique n'est créée ; seule une ancre est ajoutée à `/about`.
+Logo officiel, navigation globale, contact, changement de langue, pages des entités, actualités, formulaires, métadonnées, sitemap, styles globaux et configuration Netlify restent inchangés. Aucune nouvelle route publique n'est créée ; les ancres `technical-archives` et `workshop-store` se trouvent désormais sur `/gk-global-technology`. L'ancienne ancre de galerie sur `/about` est retirée ; cette page conserve son histoire et sa mission/vision.
+
+Après déplacement, lint, build, 7 tests unitaires, tests navigateur des formulaires simulés et sept scripts de régression/SEO ont été relancés avec succès. La galerie GKGT charge les 12 images dans chacune des six combinaisons FR/EN à 390/768/1440 px, sans débordement ; la section atelier/boutique ne contient aucune image. L'absence de galerie sur `/about` est confirmée dans les deux langues. Le test historique `verify-heroes` échoue désormais sur GKGT car l'empreinte sous sa bannière précède les sections ajoutées ; aucune référence n'a été réenregistrée. Les trois fichiers fonctionnels GKGM de `72fc075`, le logo et les 12 images sont préservés ; les légendes FR/EN sont identiques.
 
 ## Détail du contrôle de chargement
 

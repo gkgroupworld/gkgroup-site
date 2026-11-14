@@ -6,6 +6,9 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { CONTACT, CONTACT_CONTENT, ENTITY_LOGOS } from "@/content/site";
 import { TECHNOLOGY_CONTENT } from "@/content/technology";
+import { TECHNOLOGY_GALLERY_COPY } from "@/content/technology-gallery";
+import { TechnicalArchiveGallery } from "@/components/pages/TechnicalArchiveGallery";
+import { TechnologyWorkshop } from "@/components/pages/TechnologyWorkshop";
 import { ContactForm } from "@/components/pages/ContactForm";
 import { withLocale } from "@/lib/locale";
 
@@ -32,7 +35,7 @@ export function TechnologyPage({ locale }) {
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="font-bold text-[#061b46]">{copy.contents}</p>
-          <ul className="mt-4 flex flex-wrap gap-3">{copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
+          <ul className="mt-4 flex flex-wrap gap-3">{[...copy.sections, { id: "technical-archives", title: TECHNOLOGY_GALLERY_COPY[locale].archivesTitle }, { id: "workshop-store", title: TECHNOLOGY_GALLERY_COPY[locale].workshopTitle }].map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
         </div>
       </nav>
 
@@ -47,6 +50,9 @@ export function TechnologyPage({ locale }) {
           </div>
         </section>)}
       </div>
+
+      <TechnicalArchiveGallery locale={locale} />
+      <TechnologyWorkshop locale={locale} />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
         <div className="mx-auto max-w-7xl">
