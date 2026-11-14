@@ -2,7 +2,7 @@
 
 Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
 
-Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), illustrations et autorisations (section 13), puis confirmation des personnes des photos 23/24 (section 14). Les sections 1 à 10 décrivent l'audit initial ; les derniers compléments prévalent sur les états antérieurs sans autoriser de déploiement.
+Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), illustrations et autorisations (section 13), confirmation des personnes des photos 23/24 (section 14), puis validation photographique définitive et copie 16 approuvée (section 15). Les derniers compléments prévalent sur les états antérieurs sans autoriser de déploiement.
 
 ## 1. Conclusion et périmètre
 
@@ -373,3 +373,17 @@ Les contrôles distincts de confidentialité, des éléments identifiants et des
 Vérification ciblée effectuée : les entrées 23/24 sont confirmées ; seules 16/18/20 restent en attente. Le contrôle local renvoie 0 avec `NETLIFY=false` ; en simulant `NETLIFY=true`, il renvoie toujours 1 et liste uniquement 16/18/20. Aucun build ou déploiement distant n'a été lancé. Les contrôles complets de rendu/build précédents ne sont pas présentés comme réexécutés pour cette mise à jour documentaire et de statut.
 
 Les contenus, photographies, illustrations, logo, fonctionnalités et ajouts GKGM sont inchangés. **Aucune autorisation finale de déploiement n'est donnée : aucun push, aucune PR, aucune fusion et aucun déploiement Netlify.**
+
+## 15. Validation photographique définitive — copie 16 intégrée
+
+Le responsable autorise explicitement la publication de la photo 18 dans son état actuel et de la photo 20, y compris les éléments à l'écran, sur la base de sa confirmation des droits nécessaires. Après examen de la proposition ImageGen, il approuve également la version 16 à arrière-plan professionnel modifié. Les autorisations des personnes des photos 23/24 restent confirmées sur sa déclaration. Les cinq entrées suivies dans `content/gkgt-publication-rights.json` sont désormais `confirmed` ; les décisions sont datées et motivées.
+
+La galerie utilise `public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png`. La légende et l'alternative FR/EN indiquent l'arrière-plan modifié. Le fichier original 16 est conservé, sans retouche et identique octet pour octet, dans `source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp`, hors du dossier public. Les onze autres WebP ne sont pas modifiés. Cette copie approuvée ne prouve pas l'existence des locaux représentés ; elle reste explicitement une image à arrière-plan modifié.
+
+Le registre de référence `docs/gkgt-visuels-autorisations.md` est actualisé, avec les chemins, la traçabilité de la proposition, les confirmations et les vérifications. Les mentions antérieures de trois ou cinq réserves photographiques ouvertes sont remplacées par cette validation. Aucune autre réserve photographique concrète non résolue n'est enregistrée à ce stade pour les fichiers retenus, sur la base des déclarations du responsable et des revues visuelles.
+
+**Blocage photographique levé :** le contrôle existant retourne 0 sous simulation locale `NETLIFY=true`. Il reste en place pour d'éventuelles nouvelles réserves, mais n'empêche plus le build pour les photographies validées. Aucun build Netlify n'a été demandé. Ce résultat ne vaut pas autorisation de mise en production et ne lève pas les autres points de l'audit, notamment les alertes de sécurité des dépendances.
+
+Contrôles refaits : lint, 7 tests unitaires et build local réussis ; galerie chargée 12/12 en FR/EN à 390/768/1440 px, sans débordement, avec source et légende 16 correctes ; deux illustrations conservées ; SEO 38 URL réussi. Vérification HTTP locale : copie 16 en 200, ancienne URL de l'original et chemin `source-assets` en 404, optimisation de l'ancienne URL en 400 après purge du cache local d'images générées. Logo, illustrations, fonctionnalités, métadonnées et ajouts GKGM préservés.
+
+**Aucun push, aucune fusion, aucune PR et aucun déploiement. L'accord final explicite de mise en production est toujours requis.**

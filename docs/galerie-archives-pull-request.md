@@ -4,7 +4,7 @@ Document préparatoire local uniquement. Branche : `feature/galerie-archives-tec
 
 ## Modification
 
-La page `/gk-global-technology` présente douze photographies authentiques dans « Nos archives techniques » / « Our Technical Archives », après les services existants. Leur introduction décrit l'héritage technique de GKGT, historiquement exercé sous l'appellation GK Informatique. La galerie est retirée de `/about` sans suppression ni modification des photographies ou de leurs légendes FR/EN.
+La page `/gk-global-technology` présente douze photographies authentiques dans « Nos archives techniques » / « Our Technical Archives », après les services existants. Leur introduction décrit l'héritage technique de GKGT, historiquement exercé sous l'appellation GK Informatique. La galerie est retirée de `/about` avec conservation des originaux. La photo 16 utilise désormais sa copie à arrière-plan modifié explicitement approuvée ; les onze autres photos sont inchangées.
 
 La section distincte « Notre atelier et notre boutique » / « Our Workshop and Store » présente les deux illustrations modernes fournies et autorisées, avec badge, légendes, alternatives et introduction FR/EN précisant qu'il ne s'agit pas de photographies des installations réelles. Les PNG originaux sont conservés sans retouche.
 
@@ -22,4 +22,6 @@ La branche conserve également la section bilingue des réalisations et partenai
 
 ## Avant publication
 
-L'autorisation générale des douze archives et celle des deux illustrations sont enregistrées. Les autorisations des personnes des photos 23 et 24 sont confirmées sur déclaration du responsable de GK GLOBAL GROUP SARLU, le 14 novembre 2026. Les droits tiers et éléments identifiants des photos 16, 18 et 20 restent à confirmer ; ces trois photos ne doivent pas être rendues publiques dans l’intervalle. Le hook npm `prebuild` bloque les builds avec `NETLIFY=true` tant que les réserves du registre ne sont pas levées. Voir `docs/gkgt-visuels-autorisations.md` pour les limites du mécanisme. Attendre l'accord final explicite avant tout push, fusion ou déploiement. Les autres réserves de l'audit général restent ouvertes.
+Les autorisations des photos 16, 18 et 20 sont enregistrées, ainsi que celles des personnes des photos 23/24 et des deux illustrations. Aucune réserve photographique enregistrée ne reste ouverte. La photo 16 originale est conservée intacte hors de `public` ; seule sa copie approuvée est servie, avec légende d’arrière-plan modifié. Le contrôle des droits Netlify retourne désormais 0, sans autoriser de déploiement. Voir `docs/gkgt-visuels-autorisations.md`.
+
+Attendre l’accord final explicite avant tout push, PR, fusion ou déploiement ; les autres points de l’audit général, notamment la sécurité des dépendances, restent à traiter.

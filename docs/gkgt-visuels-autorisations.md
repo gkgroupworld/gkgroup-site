@@ -1,69 +1,60 @@
 # GKGT — visuels et autorisations de diffusion
 
-État enregistré le 14 novembre 2026 sur `feature/galerie-archives-techniques` ; préparation locale uniquement.
+État actualisé le 14 novembre 2026 sur `feature/galerie-archives-techniques` ; préparation locale uniquement. Ce document remplace les anciens états de réserves photographiques, conservés dans l'historique Git et les sections chronologiques du bilan général.
 
-## Autorisations confirmées par le responsable
+## Autorisations et décisions confirmées
 
-Le responsable de GK GROUP autorise l'utilisation et la publication sur gkgroup.app des douze photographies historiques fournies. Cette déclaration remplace sa réserve générale antérieure concernant leur diffusion. Il autorise également l'utilisation des deux illustrations modernes fournies dans `GKGT_visuels_modernes.zip`, sous réserve d'une mention claire de leur caractère illustratif.
+Le responsable de GK GLOBAL GROUP SARLU autorise l'utilisation des douze photographies historiques et des deux illustrations modernes dans la présentation de GKGT sur gkgroup.app. Les autorisations sont enregistrées sur la base de ses déclarations, sans vérification indépendante de pièces individuelles :
 
-Dans sa dernière déclaration du 14 novembre 2026, le responsable de GK GLOBAL GROUP SARLU confirme que les personnes visibles sur les photos 23 et 24 sont lui-même et des membres de son équipe, et que toutes ont accepté la publication des photographies concernées sur gkgroup.app. Les autorisations relatives aux personnes des photos 23 et 24 sont enregistrées comme **confirmées sur la base de sa déclaration**, sans vérification indépendante de documents individuels. Il réaffirme l’autorisation d’utilisation des douze archives et des deux illustrations.
-
-Les vérifications des informations sensibles et des droits tiers restent distinctes. Les photos **16, 18 et 20** restent en attente et ne doivent pas être rendues publiques avant résolution. Les douze originaux restent dans le projet local, sans suppression ni retouche. L’annotation murale de la photo 23 reste signalée comme élément à examiner dans son contexte ; la confirmation des personnes n’est pas une certification générale d’absence de données sensibles.
-
-Cette autorisation de contenu ne constitue pas une autorisation de push, de fusion, de PR ou de déploiement. Aucun de ces actes n'a été effectué.
-
-## Contrôle visuel et confidentialité des archives
-
-Revue de la planche des douze photos et examen détaillé renouvelé des cinq photos signalées, en complément des inspections individuelles précédentes. Les identifiants potentiels ne sont pas retranscrits dans ce rapport. L'absence de donnée sensible repérée ne constitue pas une garantie exhaustive ni une preuve de droit sur tout élément de l'image.
-
-| Photo | Observations | État distinct de l'autorisation générale |
+| Photo | Décision actuelle | Base de validation |
 | --- | --- | --- |
-| 01 — atelier | Équipements et emballages ; aucun visage reconnaissable ni document sensible repéré. | Autorisation générale du responsable enregistrée ; aucune réserve spécifique identifiée dans la revue. |
-| 02 — équipements | Étagères et imprimantes ; pas de visage ni données d'écran repérés. | Autorisation générale enregistrée ; aucune réserve spécifique identifiée. |
-| 06 — moniteurs | Écrans éteints, claviers et unités centrales. | Autorisation générale enregistrée ; aucune réserve spécifique identifiée. |
-| 11 — composant | Main tenant un composant, sans visage visible. | Autorisation générale enregistrée ; aucune réserve spécifique identifiée. |
-| 12 — carte mère | Étiquettes de pièces et codes-barres visibles ; aucune donnée client directement repérée. | Autorisation générale enregistrée ; vérifier le contexte des étiquettes si elles renvoient à un dossier confidentiel. |
-| 14 — unités centrales | Étiquettes de matériel et codes-barres visibles. | Autorisation générale enregistrée ; même réserve de contexte sur les étiquettes. |
-| 16 — unités extérieures | Personne partiellement visible, rue, véhicules et plaque visible à l'arrière-plan. | **En attente** : examen des éléments identifiants et éventuelles autorisations individuelles, confirmé par l'utilisateur. |
-| 18 — pièces/atelier | Personne partiellement visible, contenu affiché sur un écran et étiquette visible. | **En attente** : confidentialité et éventuelles autorisations individuelles, confirmé par l'utilisateur. |
-| 20 — portable démonté | Personnes et contenu tiers affichés sur l'écran. | **En attente** : droits sur les personnes et contenus affichés, confirmé par l'utilisateur. |
-| 21 — ordinateur | Moniteur principal éteint ; pas de document sensible repéré. | Autorisation générale enregistrée ; aucune réserve spécifique identifiée. |
-| 23 — intervention | Personne reconnaissable ; annotation murale à examiner dans son contexte, sans la reproduire ici. | **Personnes : confirmé sur déclaration du responsable, le 14 novembre 2026** ; la vérification des informations sensibles demeure distincte. |
-| 24 — intervention | Personne reconnaissable ; équipements et emballages autour du poste. | **Personnes : confirmé sur déclaration du responsable, le 14 novembre 2026** ; la vérification des informations sensibles demeure distincte. |
+| 16 | Copie avec arrière-plan modifié approuvée pour utilisation ; original conservé intact hors du dossier public. | Approbation explicite après examen de la version proposée. La réserve sur l'ancien arrière-plan ne s'applique pas à cette copie approuvée. |
+| 18 | Publication autorisée dans son état actuel. | Examen personnel et autorisation explicite du responsable. |
+| 20 | Publication autorisée dans son état actuel, y compris les éléments visibles à l'écran. | Confirmation explicite par le responsable des autorisations nécessaires. |
+| 23 et 24 | Autorisations des personnes confirmées. | Le responsable indique qu'il s'agit de lui-même et de membres de son équipe, et confirme leur accord pour gkgroup.app. |
+| 01, 02, 06, 11, 12, 14 et 21 | Autorisation générale enregistrée ; aucune réserve spécifique non résolue identifiée dans la revue. | Autorisation du responsable et inspections visuelles précédentes. |
+| Deux illustrations modernes | Utilisation autorisée avec mention explicite de leur caractère illustratif. | Confirmation du responsable ; badges, légendes, alternatives et introduction FR/EN présents. |
 
-Lecture des métadonnées via Sharp : aucune donnée EXIF, XMP ou IPTC détectée dans les douze WebP. Cela ne remplace pas l'examen des informations directement visibles dans les pixels. Les photos, leurs légendes et leurs alternatives historiques ne sont pas modifiées ; les fichiers sont identiques octet pour octet à l'état précédent.
+**Aucune réserve photographique enregistrée ne reste ouverte pour les fichiers destinés à la galerie.** Cette conclusion repose sur les confirmations ci-dessus et le remplacement du fichier public 16. Elle ne certifie ni une conformité juridique générale ni la sécurité du reste du site. Aucun accord de déploiement, push, fusion ou PR n'a été donné.
 
-Pour lever les réserves, faire confirmer les autorisations par les personnes concernées et les titulaires des contenus tiers, et vérifier le contexte des éléments identifiants. Si un traitement devient nécessaire, il devra être décidé séparément, avec conservation des originaux ; aucune retouche n'a été exécutée ici.
+## Photo 16 — original et copie approuvée
 
-## Deux illustrations modernes intégrées
+- Original intact : `source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp`.
+- Copie approuvée utilisée par la galerie : `public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png`.
+- Outil employé pour la proposition : ImageGen intégré, remplacement d'arrière-plan ; l'utilisateur a examiné et approuvé l'image générée avant son intégration.
+- Légendes : « Ensemble d'unités centrales — arrière-plan modifié » / « Desktop computer units — edited background ». Les alternatives utilisent également cette mention. L'image n'est pas présentée comme un document établissant les locaux réels de GKGT.
 
-L'archive contient uniquement deux PNG, sans document d'instruction :
+L'original est déplacé, pas retouché ni détruit. Comparaison binaire avec sa version Git antérieure : identique. Il est conservé hors de `public` pour éviter de publier l'ancien arrière-plan par une URL directe. Les onze autres WebP historiques sont conservés au même emplacement et identiques octet pour octet à leur état précédent. Le PNG approuvé est copié sans retouche depuis le résultat ImageGen.
 
-| Fichier | Caractéristiques | Présentation |
-| --- | --- | --- |
-| `GKGT_Atelier_Illustration.png` | 1672 × 941 px ; 2 296 644 octets | « Illustration d'un atelier de maintenance informatique » / « Illustration of an IT maintenance workshop ». |
-| `GKGT_Boutique_Illustration.png` | 1672 × 941 px ; 2 153 607 octets | « Illustration d'une boutique d'équipements informatiques » / « Illustration of a computer equipment store ». |
+L'arrière-plan approuvé ne montre plus les véhicules, plaque et personne partielle de l'ancien environnement. La copie reste un montage à arrière-plan modifié, déclaré comme tel. L'approbation ne repose pas sur une affirmation de conservation pixel par pixel du sujet par le modèle ; l'image entière a été examinée et acceptée par l'utilisateur. Aucun nouveau changement graphique n'a été appliqué après cette approbation.
 
-Les PNG sont copiés sans retouche dans `public/technology-illustrations/`. Les copies ont été comparées aux fichiers extraits : identiques octet pour octet. Ils sont servis via `next/image`, avec dimensions réservées, chargement différé et tailles responsive. Aucun nouveau visuel n'a été généré.
+### Prompt utilisé pour la proposition approuvée
 
-La section « Notre atelier et notre boutique » conserve son titre, affiche un badge **Illustration**, des légendes et alternatives FR/EN et une introduction indiquant expressément que les images ne sont pas des photographies des installations réelles. Les archives authentiques restent dans une section distincte.
+Built-in `image_gen`, image cible : original 16 ; fond non transparent. Prompt transmis :
 
-À l'inspection des illustrations : pas de personne ni plaque de véhicule repérée ; écrans et emballages stylisés, sans donnée personnelle lisible identifiée. Les marques/détails représentés ne sont pas présentés comme des partenariats, agréments, stocks disponibles ou équipements réellement possédés. L'autorisation d'utilisation des deux illustrations a été expressément confirmée par le responsable ; aucune vérification indépendante de leur chaîne de création n'est revendiquée.
+> Edit target: the provided historical portrait photograph, 864 by 1152 pixels. Precise background replacement only. Keep the EXACT foreground stack of ten used desktop computer towers: two on top, four in the middle, four on the bottom. Preserve each computer's appearance, geometry, position, proportions, faceplates, optical drives, ports, stickers, scratches, colors and perspective as faithfully as possible. Do not redesign, add, remove, clean up or modernize the equipment. Keep original framing and foreground equipment scale. Replace the outdoor street background and surroundings with a modest realistic professional IT equipment workshop interior: neutral clean wall, discreet out-of-focus workbench and shelving, natural plausible light. Remove all original background vehicles, motorcycles, license plates, street stalls, chairs, partial people and identifying background elements. No people, no vehicles, no license plates, no legible documents, no new logos, no signage, no GK GROUP logo. Remove the foreground litter and replace outdoor ground with a plain neutral workshop floor while retaining equipment contact and realistic shadows. This is a deliberately edited-background candidate for user approval, not a documentary photograph of actual GKGT premises. Subject computer hardware must remain recognizably identical to the original; change only surroundings. Output one portrait image, same composition.
 
-## Protection de la préparation et limites
+## Confidentialité et contenus de tiers
 
-`content/gkgt-publication-rights.json` distingue l'autorisation générale, celle des illustrations et les cinq dossiers suivis : deux autorisations de personnes confirmées sur déclaration et trois dossiers encore en attente. Un hook npm `prebuild` exécute `scripts/check-gkgt-publication.mjs` :
+La revue précédente signalait les éléments identifiants de la photo 16 et les personnes/écrans/contenus de tiers des photos 18 et 20. Le premier cas est résolu pour la copie approuvée par remplacement de l'arrière-plan ; les deux autres sont validés dans leur état actuel par déclaration explicite du responsable. Les autorisations des personnes des photos 23 et 24 sont enregistrées séparément.
 
-- En local, le build continue et permet de revoir les douze archives et les deux illustrations.
-- Avec `NETLIFY=true`, le contrôle bloque le build avant Next.js et énumère les trois réserves non confirmées (16, 18 et 20). Il vise les builds Netlify, y compris les previews exécutant la commande npm prévue par le dépôt.
-- Ce contrôle ne crée aucun droit, ne remplace pas l'accord final de déploiement et n'est pas un contrôle d'accès aux fichiers. Les douze photos sont encore dans `public` : ne pas téléverser ce dossier ni un build préexistant vers un hébergement. Une autre commande ou un envoi manuel contournant le hook n'est pas protégé par ce mécanisme.
+Les inspections antérieures ont aussi repéré des étiquettes de matériel, codes-barres et une annotation murale ; aucune donnée client ou information confidentielle spécifique non résolue n'a été établie. Les valeurs ne sont pas reproduites dans les rapports. Aucune donnée EXIF/XMP/IPTC n'avait été détectée dans les douze WebP originaux ; ce constat ne remplace pas l'examen des pixels. Aucune pièce d'identité ou autorisation nominative n'est ajoutée au dossier public.
 
-La liste ne doit être mise à jour qu'après confirmation réelle des droits et résolution des données sensibles, puis revue des preuves dans un espace privé approprié. Ne pas ajouter de pièces d'identité ou d'autorisations signées dans le dossier public du site. L'accord final explicite de publication reste nécessaire même après résolution des droits.
+## Illustrations modernes préservées
 
-## Vérification technique de cette mise à jour
+Les fichiers `GKGT_Atelier_Illustration.png` et `GKGT_Boutique_Illustration.png` restent dans `public/technology-illustrations/`, sans modification. Leurs textes FR/EN précisent qu'il s'agit d'illustrations et non de photographies des installations réelles. L'autorisation d'usage est confirmée ; aucun partenariat fabricant, stock ou agrément n'est déduit de ces visuels.
 
-- Lint, 7 tests unitaires et build local réussis.
-- Contrôle de publication testé en processus local : `NETLIFY=false` retourne 0 ; `NETLIFY=true` retourne 1 et liste uniquement les photos 16, 18 et 20 ; les photos 23 et 24, désormais confirmées, ne sont plus signalées comme autorisations de personnes manquantes. Aucun build distant lancé.
-- Deux illustrations chargées et légendées en FR/EN aux largeurs 390, 768 et 1440 px ; aucun débordement horizontal ; douze figures historiques toujours présentes.
-- Tests navigateur Forms et régression SEO : 12 parcours GKGM FR/EN, deux soumissions de partenariats simulées et 38 URL SEO réussis ; aucun envoi réel.
-- Origines historiques, logo et ajouts GKGM préservés. Réserve connue de référence des bannières et alertes de sécurité des dépendances toujours ouvertes, sans nouvelle mise à jour de dépendance.
+## Contrôle Netlify et absence d'autorisation de déploiement
+
+`content/gkgt-publication-rights.json` conserve les cinq dossiers suivis, désormais tous au statut `confirmed`, avec dates et motifs. Pour la photo 16, il précise le fichier publiable et le chemin de l'original privé. La propriété historique `pendingHistoricalPhotos` conserve son nom pour compatibilité avec le contrôle ; elle ne signifie pas que ses entrées confirmées sont encore en attente.
+
+Le hook npm `prebuild` et son script restent présents pour détecter d'éventuelles nouvelles réserves. **Le blocage actuel lié aux photographies est levé** : une exécution locale du script avec `NETLIFY=true` retourne 0. Cela n'a lancé aucun build distant et ne donne aucune autorisation de publier. L'accord final explicite du responsable reste requis pour toute opération distante, et les autres points de l'audit général restent à traiter.
+
+## Contrôles de cette intégration
+
+- Lint, 7 tests unitaires et build local réussis ; avertissements Node connus non bloquants.
+- Galerie : 12 images chargées sur 12 en FR et EN à 390, 768 et 1440 px, sans débordement ; la copie 16 approuvée et sa mention d'arrière-plan modifié sont présentes dans les six cas.
+- Les deux illustrations restent dans leur section distincte.
+- SEO : contrôle des 38 URL réussi ; métadonnées et sitemap inchangés.
+- Contrôles HTTP locaux : nouvelle copie 16 en 200 ; ancienne URL publique de l'original en 404 ; tentative d'accès à `source-assets` en 404 ; optimisation de l'ancien chemin en 400 après purge des seules images de cache local générées.
+- Original 16, onze autres photos, logo, illustrations et ajouts GKGM préservés. Aucun push, aucune PR, aucune fusion ni aucun déploiement.

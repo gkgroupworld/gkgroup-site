@@ -2,7 +2,7 @@
 
 Date de contrôle : 14 novembre 2026. Rapport actualisé après déplacement de la galerie complète vers GKGT, conformément à la dernière instruction de l'utilisateur.
 
-**Actualisation des autorisations :** le responsable autorise désormais la diffusion générale des douze archives et l'usage des deux illustrations modernes, et confirme désormais les autorisations des personnes des photos 23 et 24 sur la base de sa déclaration du 14 novembre 2026. Les droits distincts et informations identifiantes des photos 16, 18 et 20 restent en attente ; ces trois photos ne doivent pas être publiées avant résolution. Les contrôles de confidentialité restent distincts de l’accord des personnes. Le registre actuel, les vérifications et le blocage des builds Netlify sont détaillés dans `docs/gkgt-visuels-autorisations.md`. Ce registre remplace les réserves générales antérieures et les mentions devenues historiques de section atelier/boutique vide.
+**Actualisation définitive :** les photos 16, 18 et 20 sont désormais approuvées, ainsi que les personnes des photos 23 et 24. La galerie utilise la copie 16 à arrière-plan modifié validée par l’utilisateur ; son original intact est conservé hors de `public`. Les onze autres photos et les deux illustrations restent inchangées. Aucune réserve photographique enregistrée ne reste ouverte et le contrôle Netlify des droits retourne 0. Cela ne constitue pas une autorisation de déploiement. Le registre de référence actuel est `docs/gkgt-visuels-autorisations.md` ; les détails ci-dessous décrivent aussi les étapes de préparation antérieures.
 
 Branche : `feature/galerie-archives-techniques`.
 Base : `main`, commit `4ee789fced22f2087cfbcc79e38661285eac31fc`.
@@ -32,9 +32,9 @@ Inspection visuelle de chaque image, en plus d'une planche de contact. Aucun vis
 | `11_IMG-20181112-WA0042.webp` | Retenu | Main tenant un composant électronique ; aucun visage visible. |
 | `12_IMG-20181122-WA0004.webp` | Retenu | Carte mère et outils de diagnostic ; étiquettes de composants visibles, aucune donnée client repérée. |
 | `14_IMG-20190301-WA0000.webp` | Retenu | Unités centrales ; étiquettes de matériel visibles, aucune donnée personnelle repérée. |
-| `16_IMG-20210728-WA0002(1).webp` | Intégré localement — validation avant publication | Personne partiellement visible à gauche, rue et plaque de véhicule à l'arrière-plan : validation de confidentialité nécessaire. |
-| `18_IMG_20180329_095427.webp` | Intégré localement — validation avant publication | Personne partiellement visible ; contenu à l'écran et étiquette à vérifier avant publication. |
-| `20_IMG_20190125_120103_9.webp` | Intégré localement — validation avant publication | Photographie de personnes sur l'écran du portable ; vérifier les droits sur le contenu affiché. |
+| `16_IMG-20210728-WA0002(1).webp` | Copie modifiée approuvée ; original intact hors public | La galerie utilise `16_unites-centrales-arriere-plan-modifie.png`, validée par l’utilisateur après examen du nouvel arrière-plan. |
+| `18_IMG_20180329_095427.webp` | Publication autorisée dans son état actuel | Examen personnel et autorisation explicite du responsable. |
+| `20_IMG_20190125_120103_9.webp` | Publication autorisée, écran inclus | Le responsable confirme les autorisations nécessaires et l’usage dans son état actuel. |
 | `21_IMG_20190214_073458_8.webp` | Retenu | Ordinateur, moniteur éteint et imprimante. |
 | `23_IMG_20190308_092807_2.webp` | Intégré localement — validation avant publication | Personnes : accord de publication confirmé sur déclaration du responsable de GK GLOBAL GROUP SARLU, le 14 novembre 2026 ; contrôle distinct des informations sensibles maintenu. |
 | `24_IMG_20190308_092825_7.webp` | Intégré localement — validation avant publication | Personnes : accord de publication confirmé sur déclaration du responsable de GK GLOBAL GROUP SARLU, le 14 novembre 2026 ; contrôle distinct des informations sensibles maintenu. |
@@ -83,3 +83,11 @@ Branche préparée exclusivement en local. Aucune fusion, aucun push et aucun d�
 Le texte de PR est actualisé dans `docs/galerie-archives-pull-request.md`, uniquement comme document local. Aucun push GitHub, aucune ouverture de PR, aucune fusion dans `main` et aucun déploiement Netlify ne sont autorisés à ce stade. La galerie complète se trouve dans le dossier `public` de cette branche locale : elle serait exposée si cette branche était publiée ; conserver donc ce travail exclusivement en local.
 
 Avant toute publication publique, résoudre les vérifications des photos 16, 18 et 20 ; les autorisations des personnes des photos 23 et 24 sont confirmées sur déclaration du responsable. Maintenir les contrôles distincts de confidentialité et les validations des droits et légendes des douze photographies. Attendre une autorisation explicite de publication de l’utilisateur avant toute opération distante, puis vérifier également les règles de déploiement automatique Netlify.
+
+## Validation définitive et fichier 16
+
+L’utilisateur autorise la photo 18 dans son état actuel, la photo 20 avec ses contenus d’écran sur confirmation des droits nécessaires, et la copie 16 après examen du nouvel arrière-plan. Les autorisations des personnes des photos 23/24 restent confirmées sur sa déclaration. Toutes ces décisions sont enregistrées dans `content/gkgt-publication-rights.json`.
+
+La copie utilisée est `public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png`, avec une mention FR/EN d’arrière-plan modifié. L’original est conservé intact dans `source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp`, hors des fichiers servis. Les comparaisons binaires de cet original et des onze autres WebP réussissent.
+
+Contrôles refaits : lint, 7 tests unitaires, build local, SEO 38 URL et galerie 12/12 chargée dans les six combinaisons FR/EN à 390/768/1440 px. Le script photographique retourne 0 sous simulation locale `NETLIFY=true` ; aucun build distant n’est lancé. Les autres réserves de l’audit restent ouvertes et l’accord final explicite de publication demeure requis.

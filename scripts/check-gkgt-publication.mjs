@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 
-// Local builds retain all 12 original photographs for review. Netlify builds
-// must not expose files from public while the separately recorded rights are pending.
+// Rights validation only: passing this check never authorises deployment.
+// Photo 16 uses the approved publication copy; its original stays outside public.
 if (process.env.NETLIFY === "true") {
   const rights = JSON.parse(await readFile(new URL("../content/gkgt-publication-rights.json", import.meta.url), "utf8"));
   const pending = rights.pendingHistoricalPhotos.filter(photo => photo.status !== "confirmed");

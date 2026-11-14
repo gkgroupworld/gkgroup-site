@@ -2,10 +2,42 @@
   "historicalGeneralAuthorization": "confirmed-by-owner",
   "modernIllustrationsAuthorization": "confirmed-by-owner-with-illustration-label",
   "pendingHistoricalPhotos": [
-    { "file": "16_IMG-20210728-WA0002(1).webp", "status": "pending", "reason": "Identifying background elements, vehicle plate and possible individual permissions" },
-    { "file": "18_IMG_20180329_095427.webp", "status": "pending", "reason": "Partial person, screen content and visible label" },
-    { "file": "20_IMG_20190125_120103_9.webp", "status": "pending", "reason": "Third-party people and content displayed on the laptop screen" },
-    { "file": "23_IMG_20190308_092807_2.webp", "status": "confirmed", "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team", "confirmationDate": "2026-11-14", "confirmationBasis": "User declaration; no independent verification of individual consent documents" },
-    { "file": "24_IMG_20190308_092825_7.webp", "status": "confirmed", "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team", "confirmationDate": "2026-11-14", "confirmationBasis": "User declaration; no independent verification of individual consent documents" }
+    {
+      "file": "16_IMG-20210728-WA0002(1).webp",
+      "status": "confirmed",
+      "reason": "Owner approved the edited-background publication copy; original retained intact outside public",
+      "confirmationDate": "2026-11-14",
+      "confirmationBasis": "Explicit user declaration; no independent verification of third-party consent documents",
+      "publicationFile": "16_unites-centrales-arriere-plan-modifie.png",
+      "originalFile": "source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp"
+    },
+    {
+      "file": "18_IMG_20180329_095427.webp",
+      "status": "confirmed",
+      "reason": "Owner personally reviewed and authorised publication in its current state",
+      "confirmationDate": "2026-11-14",
+      "confirmationBasis": "Explicit user declaration; no independent verification of third-party consent documents"
+    },
+    {
+      "file": "20_IMG_20190125_120103_9.webp",
+      "status": "confirmed",
+      "reason": "Owner personally reviewed and authorised publication, including screen content, confirming the necessary permissions",
+      "confirmationDate": "2026-11-14",
+      "confirmationBasis": "Explicit user declaration; no independent verification of third-party consent documents"
+    },
+    {
+      "file": "23_IMG_20190308_092807_2.webp",
+      "status": "confirmed",
+      "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team",
+      "confirmationDate": "2026-11-14",
+      "confirmationBasis": "User declaration; no independent verification of individual consent documents"
+    },
+    {
+      "file": "24_IMG_20190308_092825_7.webp",
+      "status": "confirmed",
+      "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team",
+      "confirmationDate": "2026-11-14",
+      "confirmationBasis": "User declaration; no independent verification of individual consent documents"
+    }
   ]
 }
