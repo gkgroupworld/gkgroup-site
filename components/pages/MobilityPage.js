@@ -6,6 +6,8 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { CONTACT, ENTITY_LOGOS } from "@/content/site";
 import { MOBILITY_CONTENT } from "@/content/mobility";
+import { MOBILITY_TRACK_RECORD_COPY } from "@/content/mobility-track-record";
+import { MobilityTrackRecord } from "@/components/pages/MobilityTrackRecord";
 import { withLocale } from "@/lib/locale";
 
 const buttonClass = "inline-flex min-h-11 items-center justify-center border border-[#d59b46] bg-[#061b46] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0c3269] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d59b46]";
@@ -30,7 +32,7 @@ export function MobilityPage({ locale }) {
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="font-bold text-[#061b46]">{copy.contents}</p>
-          <ul className="mt-4 flex flex-wrap gap-3">{copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
+          <ul className="mt-4 flex flex-wrap gap-3">{copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}<li><a href="#track-record" className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{MOBILITY_TRACK_RECORD_COPY[locale].title}</a></li></ul>
         </div>
       </nav>
 
@@ -45,6 +47,8 @@ export function MobilityPage({ locale }) {
           </div>
         </section>)}
       </div>
+
+      <MobilityTrackRecord locale={locale} />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
         <div className="mx-auto max-w-7xl">
