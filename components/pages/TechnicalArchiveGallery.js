@@ -7,7 +7,12 @@ const photos = [
   ["11_IMG-20181112-WA0042.webp", "Composant électronique", "Electronic component"],
   ["12_IMG-20181122-WA0004.webp", "Carte électronique en cours d'intervention", "Circuit board during servicing"],
   ["14_IMG-20190301-WA0000.webp", "Matériel informatique en atelier", "IT equipment in a workshop"],
+  ["16_IMG-20210728-WA0002(1).webp", "Ensemble d'unités centrales disposées à l'extérieur", "Desktop computer units arranged outdoors"],
+  ["18_IMG_20180329_095427.webp", "Étagères de composants et d'équipements informatiques", "Shelves of computer components and equipment"],
+  ["20_IMG_20190125_120103_9.webp", "Ordinateur portable ouvert, clavier démonté et outils de réparation", "Open laptop with detached keyboard and repair tools"],
   ["21_IMG_20190214_073458_8.webp", "Ordinateur et périphériques", "Computer and peripherals"],
+  ["23_IMG_20190308_092807_2.webp", "Intervention technique sur un composant à l'établi", "Technical work on a component at a workbench"],
+  ["24_IMG_20190308_092825_7.webp", "Manipulation d'une carte électronique dans un atelier informatique", "Handling a circuit board in a computer workshop"],
 ];
 
 export function TechnicalArchiveGallery({ locale = "fr" }) {
