@@ -9,12 +9,18 @@
     {
       "locale": "fr",
       "simulatedSubmission": true,
-      "nativeFormNamePreserved": true
+      "nativeFormNamePreserved": true,
+      "attempts": 3,
+      "httpAndStaticFalseSuccessRejected": true,
+      "answersPreservedOnFailure": true
     },
     {
       "locale": "en",
       "simulatedSubmission": true,
-      "nativeFormNamePreserved": true
+      "nativeFormNamePreserved": true,
+      "attempts": 3,
+      "httpAndStaticFalseSuccessRejected": true,
+      "answersPreservedOnFailure": true
     }
   ],
   "journeys": [

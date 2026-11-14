@@ -13,7 +13,7 @@ import styles from "./Architecture.module.css";
 export function ArchitecturePage({ locale }) {
   const copy = ARCHITECTURE_COPY[locale];
   const profiles = [...ARCHITECTURE_ENTITIES.filter(entity => entity.platform), ...ARCHITECTURE_ENTITIES.filter(entity => !entity.platform)];
-  return <><Header locale={locale} /><main lang={locale}>
+  return <><Header locale={locale} /><main id="main-content" tabIndex={-1} lang={locale}>
     <InstitutionalBanner eyebrow="GK GROUP · Global Business Without Borders" title={copy.title} description={copy.subtitle} note={copy.brandStatus} />
     <section id="ecosystem" className="px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-7xl"><SectionTitle eyebrow={copy.eyebrow} title={copy.diagramTitle} /><p className="mb-10 max-w-3xl leading-8 text-slate-600">{copy.diagramIntro}</p><InstitutionalDiagram locale={locale} /></div>

@@ -2,11 +2,13 @@
 
 Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
 
-Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), illustrations et autorisations (section 13), confirmation des personnes des photos 23/24 (section 14), puis validation photographique définitive et copie 16 approuvée (section 15). Les derniers compléments prévalent sur les états antérieurs sans autoriser de déploiement.
+**État actuel : voir la section 16, audit technique final et corrections locales.** Les points C1 à C5 de l'audit initial sont corrigés et les tests locaux passent. Les contrôles du compte Netlify, les validations de confidentialité avant ouverture GKGM et l'accord final de publication restent nécessaires. GKGM demeure désactivé pour les envois réels. Aucun push, aucune PR, aucune fusion ni aucun déploiement.
+
+Mises à jour : réalisations/partenaires GKGM (section 11), galeries GKGT (12), illustrations et autorisations (13), personnes 23/24 (14), validation photographique définitive (15), puis corrections techniques et tests finaux (16). Les sections 1 à 15 conservent l'historique ; leurs versions de dépendances, échecs de tests et réserves photographiques ne décrivent plus l'état actuel lorsqu'ils sont remplacés ci-dessous.
 
 ## 1. Conclusion et périmètre
 
-**Le site compile et ses principaux contrôles fonctionnels passent, mais la mise en production ne doit pas encore être considérée comme validée.** Les principaux points à traiter sont les alertes de sécurité des dépendances, les autorisations des photographies, les conditions d'ouverture du formulaire GKGM et les réglages/exigences opérationnelles Netlify. Des corrections d'accessibilité et de maintenance des tests sont également identifiées.
+**Conclusion de l'audit initial, remplacée pour l'état courant par la section 16.** Le site compile et ses principaux contrôles fonctionnels passent, mais la mise en production ne doit pas encore être considérée comme validée. Les points initialement identifiés concernaient la sécurité des dépendances, les autorisations photographiques, l'ouverture du formulaire GKGM, Netlify, l'accessibilité et les tests.
 
 L'audit initial n'a modifié aucune fonctionnalité, aucun contenu publié, aucune dépendance et aucun logo ; son seul livrable était ce rapport. La mise à jour fonctionnelle ultérieure demandée par l'utilisateur est consignée en section 11. Aucun push, aucune PR, aucune fusion et aucun déploiement Netlify n'ont été effectués. Les essais de formulaires sont locaux et simulés, sans message ni soumission fournisseur réelle.
 
@@ -387,3 +389,80 @@ Le registre de référence `docs/gkgt-visuels-autorisations.md` est actualisé, 
 Contrôles refaits : lint, 7 tests unitaires et build local réussis ; galerie chargée 12/12 en FR/EN à 390/768/1440 px, sans débordement, avec source et légende 16 correctes ; deux illustrations conservées ; SEO 38 URL réussi. Vérification HTTP locale : copie 16 en 200, ancienne URL de l'original et chemin `source-assets` en 404, optimisation de l'ancienne URL en 400 après purge du cache local d'images générées. Logo, illustrations, fonctionnalités, métadonnées et ajouts GKGM préservés.
 
 **Aucun push, aucune fusion, aucune PR et aucun déploiement. L'accord final explicite de mise en production est toujours requis.**
+
+## 16. Audit technique final — corrections locales du 14 novembre 2026
+
+### Périmètre et résultat actuel
+
+Reprise du checkout existant `galerie-work`, branche `feature/galerie-archives-techniques`, à partir du commit photographique validé `88253e0`. Aucun travail antérieur n'a été annulé. L'inventaire réel avant le présent rapport comprend 28 fichiers suivis modifiés et cinq nouveaux fichiers de vérification, soit davantage que les dix fichiers évoqués dans la demande de reprise. Le rapport constitue le 34e fichier du lot final. Les modifications concernent les dépendances, les styles accessibles, les messages et protections de formulaires, les tests et leur compte rendu. Aucun autre checkout n'a été substitué au projet.
+
+**Les corrections C1 à C5 sont terminées et les contrôles locaux passent. La publication reste non autorisée.** Les autorisations photographiques de la section 15 restent acquises ; aucun nouvel obstacle photographique n'est identifié. Les conditions opérationnelles Netlify et les validations de confidentialité restent distinctes.
+
+### Corrections terminées
+
+| Point | Correction et preuve |
+| --- | --- |
+| C1 — Dépendances npm | Next.js et `eslint-config-next` épinglés à **16.4.6**, React/React DOM à **19.2.9**, adaptateur Netlify à **5.16.7** ; dépendances transitives actualisées et verrouillage conservé. L'audit npm complet passe de 18 paquets vulnérables (1 critique, 8 élevés, 8 modérés, 1 faible) à **0**, développement inclus ; `npm audit --omit=dev` retourne également 0. |
+| C2 — Tests obsolètes | `verify-heroes` compare toujours les textes/actions approuvés des bannières, leurs logos, métadonnées et schémas. L'ancienne empreinte opaque de tout le contenu sous bannière est remplacée par les assertions de contenu existantes et un contrôle dédié des galeries/GKGM. Le fichier de référence historique n'a pas été réenregistré pour masquer les changements. Les 24 variantes de bannières passent. |
+| C3 — Contraste | Textes orange et boutons concernés utilisent un or brun plus foncé (`#946020`, survol `#805217` pour les boutons), sans modification des fichiers de marque. Les libellés gris sur le panneau Contact sont assombris ; la numérotation EstTrade aussi. Le reset global des liens est placé dans la couche CSS de base afin que les couleurs Tailwind des liens puissent s'appliquer. Les éléments décoratifs orange restent présents. |
+| C4 — ARIA et langues | Le nom accessible du menu mobile est « Navigation mobile » / « Mobile navigation ». Ajout d'un lien d'évitement FR/EN et d'une cible principale focalisable sur les pages. Premier Tab puis Entrée vérifiés : le focus atteint `main-content`. |
+| C5 — Confirmation des partenariats | Messages FR/EN limités à la prise en charge par le service, avec réserve antispam et contacts de récupération ; aucune promesse de réception ou de traitement par l'équipe. Détection renforcée d'un faux succès lorsque le POST renvoie le fichier HTML de référence, y compris avec des apostrophes autour de l'attribut. Erreurs et réponses saisies restent visibles/préservées. |
+| GKGM — Préparation | Les deux indicateurs restent nécessaires et doivent valoir exactement `true`. Les contextes reconnus `deploy-preview`, `branch-deploy` et `dev` refusent désormais l'activation même si les deux indicateurs sont vrais. Tests ajoutés pour ces contextes et les valeurs non valides. Aucune variable de compte n'a été modifiée et aucun collecteur réel n'a été activé. |
+| Préservation | Test SHA-256 de 24 fichiers approuvés : logos, douze visuels historiques publiables, original 16 hors dossier public et deux illustrations. Identité binaire confirmée par rapport à `88253e0`. Les textes/chiffres/partenaires GKGM validés sont conservés. Aucun fichier sous `public` ou `source-assets` n'est modifié. |
+
+La dernière chaîne ESLint/TypeScript disponible conserve une dépendance vulnérable à `minimatch` 10. Un override **limité à `@typescript-eslint/typescript-estree`** impose `minimatch` **11.0.1**, version corrigée de l'avis [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249). Le consommateur utilise l'API nommée `minimatch` avec `dot: true` : six cas de correspondance représentatifs sont testés, et le lint réel passe. Aucun `npm audit fix --force` n'a été utilisé. Réexaminer cet override lorsque l'amont supprimera la dépendance affectée. La mise à jour Next correspond à la [release officielle 16.4.6](https://github.com/vercel/next.js/releases/tag/v16.4.6). Un audit à zéro porte sur les avis connus du registre au moment du contrôle, sans certification de sécurité absolue.
+
+ESLint 9 reste utilisé avec sa configuration compatible. Son avertissement de fin de maintenance appelle une migration coordonnée ultérieure : ne pas forcer ESLint 10 tant que les plages de compatibilité des plugins React/import/accessibilité utilisés ne l'acceptent pas. Cela ne constitue pas une vulnérabilité npm encore ouverte dans le verrouillage vérifié.
+
+### Tests réellement exécutés
+
+| Contrôle | Résultat final et portée |
+| --- | --- |
+| `npm run lint` | Réussi, aucun diagnostic ESLint. |
+| `npm run build` | Réussi avec Next.js 16.4.6 ; génération des 17 entrées, routes dynamiques/robots/sitemap et Proxy conservés. |
+| `npm run test:unit` | **9 tests réussis**, aucun ignoré : transport Forms, champs/consentement/confidentialité, activation GKGM, protection des fichiers approuvés et compatibilité du matcher corrigé. |
+| `npm run test:pages -- http://127.0.0.1:3116` | Les neuf scripts passent : accueil, architecture, entités, institutionnel, partenariats, actualités, SEO, bannières et galeries. Nouvelle commande reproductible ; le serveur local doit être démarré séparément. |
+| SEO et indexabilité dans le code | **38 URL FR/EN**, canonical, hreflang, sitemap, JSON-LD, repli linguistique, exclusions des ressources et formulaires de référence vérifiés. Les métadonnées validées sont conservées. |
+| Galerie et réalisations GKGM | 12 figures historiques FR/EN, deux illustrations signalées, copie 16 correcte, original 16 non servi, absence de galerie sur About ; six visas et huit permis distincts, quatre partenaires conservés. Les douze fichiers publiables répondent en HTTP 200 ; les chemins publics testés de l'original 16 répondent 404. |
+| `npm run test:forms:browser` | **12 parcours GKGM FR/EN**, six catégories et quatre étapes ; réponses conservées, consentement non précoché, champs pertinents, erreurs HTTP/réseau/faux succès et reprise vérifiés. Deux parcours de partenariat FR/EN : chacun refuse un 503 et un faux succès HTML avant l'accusé simulé, avec texte final exact et conservation des réponses. |
+| Isolation des formulaires simulés | Données fictives uniquement ; requêtes externes interceptées. L'activation des deux indicateurs n'existe que dans le processus de test local isolé sur 3115. Aucun envoi vers Netlify, Zoho, WhatsApp ou une boîte réelle. Résultats consignés dans `docs/gkgm-netlify-browser-audit.json`. |
+| Responsive | **104 combinaisons** : 13 pages principales × FR/EN × 390/768/1280/1440 px, sans débordement horizontal ; une cible principale, lien d'évitement et nom mobile localisé contrôlés. Parcours formulaires simulés aussi à 390/768/1440 px ; menu anglais ouvert et vérifié à 390 px. |
+| Accessibilité ciblée | Calcul des contrastes des textes visibles simples sur les 26 variantes des 13 pages, en tenant compte des couleurs CSS `lab`/`oklch` et du fond opaque hérité. Les écarts Contact et EstTrade repérés ont été corrigés et leurs couleurs effectives revérifiées. Contrôle clavier du lien d'évitement réussi. Ce contrôle ciblé n'est pas une certification WCAG exhaustive. |
+| Mesure HTTP locale | Les 38 URL du sitemap retournent 200 ; corps HTML de **40 158 à 136 924 octets**, requêtes de **10 à 29 ms** sur boucle locale. Ces mesures ne représentent ni le chargement complet des images/scripts ni un réseau mobile ou l'hébergement final. |
+| Audit et diff | Audit complet et production : zéro vulnérabilité signalée. `git diff --check` réussi. Aucun changement des fichiers de logo/photos/illustrations, des données de réalisations GKGM, du sitemap ou de `netlify.toml`. |
+
+Un build lancé dans le bac à sable a rencontré une erreur de sous-processus Turbopack ; les vérifications réseau locales/npm ont aussi rencontré les restrictions du bac à sable. Le cache de sortie `.next` a été régénéré, sans toucher aux sources, puis le build et les contrôles HTTP/npm ont été relancés dans l'environnement local autorisé et ont réussi. Le dernier build incrémental a également réussi. L'avertissement Node sur le type de module implicite des imports de tests est non bloquant ; le mode des modules de tout le projet n'a pas été changé uniquement pour le supprimer. Environnement testé : Node **26.9.0** sous Windows.
+
+### Netlify : risque de publication prématurée et contrôles non accessibles
+
+`netlify.toml` reste inchangé : `npm run build`, `.next`, plugin Next.js. Aucun blocage global, règle de branches ou contexte de previews n'y garantit une suspension des déploiements. Le contrôle photographique passe désormais, conformément aux autorisations : **il ne doit plus être pris pour un verrou général de publication**. Un futur push, une PR, un build hook ou une action de compte pourrait déclencher une publication selon les réglages réels. Aucune de ces actions n'a été exécutée.
+
+La recherche d'une intégration Netlify disponible n'en a pas trouvé ; aucune liaison CLI locale au site n'est présente. L'interface Netlify consultée présente un écran de connexion, sans accès aux paramètres du site. **Les réglages effectifs du compte n'ont donc pas été vérifiés ni modifiés.** Il faut contrôler avant toute opération distante : dépôt/base/branche de production, builds automatiques, Deploy Previews, branch deploys, hooks, éventuelles automatisations externes, protection des previews, variables et notifications.
+
+Ne pas se fier à un marqueur de commit ou à une commande `ignore` pour couvrir tous les déclencheurs : la [documentation Netlify sur les builds ignorés](https://docs.netlify.com/build/configure-builds/ignore-builds/) précise notamment que les build hooks peuvent contourner la commande `ignore`. Le maintien du travail exclusivement local est la précaution appliquée pendant cet audit.
+
+La version Node n'est pas fixée dans le dépôt. Il reste à confirmer une version supportée identique pour les builds et fonctions Netlify, puis à refaire les contrôles avec cette version ; la version Windows testée ne prouve pas celle du runtime cloud. Voir la [gestion des dépendances Netlify](https://docs.netlify.com/build/configure-builds/manage-dependencies/). Vérifier aussi domaine principal/HTTPS/redirections, en-têtes réels, absence de noindex en production, protection des previews et dernier déploiement stable disponible pour retour arrière.
+
+### GKGM : maintien fermé et décisions de confidentialité
+
+Le serveur de vérification normal utilise les deux indicateurs à `false` ; la page FR/EN annonce que l'envoi réel reste désactivé. Les variables Netlify réelles n'étant pas accessibles, leur valeur et leur portée restent à confirmer dans le compte. La protection des previews dans le code complète cette vérification mais ne la remplace pas : `CONTEXT` n'est pas supposé disponible dans toutes les exécutions serveur. Les indicateurs doivent rester absents ou faux jusqu'à autorisation explicite.
+
+Les deux indicateurs ferment l'envoi dans l'interface ; **ils ne ferment pas les POST directs au collecteur natif Netlify Forms**, dont le fichier de définition reste présent. Ce comportement est conservé et doit être accepté explicitement, ou remplacé par une admission serveur dédiée dans un travail ultérieur autorisé. Aucune garantie de fermeture technique du collecteur distant n'est affirmée.
+
+La préparation conserve validation et minimisation des champs, aucune pièce jointe/passeport demandé, reconnaissance de lecture non précochée et absence d'autorisation marketing/partenaires. La notice FR/EN reste préparatoire : confirmer l'adresse complète du responsable, base juridique et droit applicable, droits/délais/recours, pays et garanties des transferts Netlify/Zoho, accès/MFA et durées de sauvegarde. La règle de douze mois pour les demandes sans suite et le contrôle hebdomadaire exigent une mise en œuvre effective incluant notifications, exports et copies ; aucune suppression automatique n'est ajoutée. Ces points nécessitent une validation compétente et ne sont pas inventés ou déclarés conformes par cet audit.
+
+### Décisions et validations encore nécessaires avant publication
+
+| Point restant | Action / décision nécessaire |
+| --- | --- |
+| Déclencheurs et environnement Netlify | Faire contrôler les réglages ci-dessus dans une session authentifiée et convenir du mécanisme évitant toute publication anticipée ; fixer et tester le runtime retenu. Aucun changement de compte effectué. |
+| GKGM | Maintenir fermé ; approuver séparément la notice complétée, les procédures d'accès/conservation/transferts et le mode de collecte avant toute activation. |
+| Informations de confidentialité du site | Faire valider les mentions accessibles pour l'ensemble des formulaires ; aucune route autonome de mentions légales/confidentialité n'existe à ce jour. L'absence de cette route n'est pas assimilée à une validation juridique des notices intégrées. |
+| Réception opérationnelle des formulaires | Après autorisation distincte, essai fictif réel : détection des deux définitions, champs, antispam, quotas, notifications Netlify/Zoho et réception par l'équipe. Un HTTP 200 simulé ne suffit pas. Voir le [dépannage officiel Forms](https://docs.netlify.com/manage/forms/troubleshooting-tips/). |
+| Revue finale | Examiner ce rapport et les corrections FR/EN ; confirmer le lot exact et donner l'autorisation explicite avant push/PR/fusion/déploiement. Prévoir contrôles de domaine/SEO et retour arrière lors de l'unique mise en production autorisée. |
+
+**Tests non effectués :** aucun déploiement ou build cloud Netlify ; aucun test réel de réception Forms/email/WhatsApp ; aucun contrôle Search Console/DNS/HTTPS du domaine final ; aucun test sur appareils physiques, Safari/iOS ou lecteur d'écran ; aucun audit WCAG exhaustif, Lighthouse avec réseau mobile ou mesure Core Web Vitals en production. Ces limites restent ouvertes ; les résultats locaux ne les remplacent pas.
+
+**Améliorations recommandées après mesure/validation :** migration coordonnée de l'outillage ESLint, suivi de l'override minimatch, contrôle clavier/zoom/lecteur d'écran approfondi, mesure LCP/CLS/INP sur l'environnement autorisé, politique d'en-têtes compatible et documentation d'exploitation. Aucune réécriture de contenu validé, optimisation destructive d'images ou activation distante n'est engagée pour ces recommandations.
+
+**Livraison : corrections et rapport réunis dans le commit local de cet audit sur la branche de préparation. Aucun push, aucune fusion, aucune PR et aucun déploiement Netlify. L'accord final explicite de publication reste requis.**

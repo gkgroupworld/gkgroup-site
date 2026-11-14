@@ -44,6 +44,12 @@ test("production UI remains closed without explicit frontend and privacy flags",
   assert.equal(projectDeliveryConfig(env).enabled, true);
   for (const flag of ["GKGM_FRONTEND_ENABLED", "GKGM_PRIVACY_APPROVED"]) assert.equal(projectDeliveryConfig({ ...env, [flag]: "false" }).enabled, false);
   assert.equal(projectDeliveryConfig({ ...env, CONTEXT: "deploy-preview", GKGM_FRONTEND_ENABLED: "false" }).enabled, false);
+  for (const CONTEXT of ["deploy-preview", "branch-deploy", "dev"]) {
+    assert.equal(projectDeliveryConfig({ ...env, CONTEXT }).enabled, false, CONTEXT);
+  }
+  for (const value of ["TRUE", "1", "yes", ""]) {
+    assert.equal(projectDeliveryConfig({ ...env, GKGM_FRONTEND_ENABLED: value }).enabled, false);
+  }
 });
 
 test("native acknowledgement, HTTP refusal, static-file false success and network failure", async () => {

@@ -10,7 +10,7 @@ import styles from "@/components/pages/Home.module.css";
 export { styles as institutionalStyles };
 
 export function InstitutionalFrame({ locale, children }) {
-  return <><Header locale={locale} /><main lang={locale}>{children}</main><Footer locale={locale} /></>;
+  return <><Header locale={locale} /><main id="main-content" tabIndex={-1} lang={locale}>{children}</main><Footer locale={locale} /></>;
 }
 
 export function InstitutionalHero(props) {

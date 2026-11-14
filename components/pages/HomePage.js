@@ -19,7 +19,7 @@ function Action({ href, locale, children, variant = "navy" }) {
 export function HomePage({ locale }) {
   const copy = HOME_COPY[locale];
   const entities = ARCHITECTURE_ENTITIES.filter(entity => !entity.branch);
-  return <><Header locale={locale} /><main lang={locale}>
+  return <><Header locale={locale} /><main id="main-content" tabIndex={-1} lang={locale}>
     <section data-home-section="hero" className={`overflow-hidden bg-[#061b46] text-white ${styles.hero}`}>
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[1.35fr_.65fr] lg:gap-16 lg:py-24">
         <div className={styles.reveal}>

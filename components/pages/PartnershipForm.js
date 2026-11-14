@@ -71,7 +71,7 @@ export function PartnershipForm({ copy }) {
       if (!response.ok) throw new Error("Submission rejected");
       // A misconfigured static host may return the reference file for POST requests.
       const body = await response.text();
-      if (body.includes('id="netlify-form-reference"')) throw new Error("Form handler unavailable");
+      if (/netlify-form-reference|gkgm-form-reference/i.test(body)) throw new Error("Form handler unavailable");
       setSubmitted(true);
     } catch {
       setStatus(copy.failed);

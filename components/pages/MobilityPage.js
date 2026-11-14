@@ -19,7 +19,7 @@ export function MobilityPage({ locale }) {
 
   return <>
     <Header locale={locale} />
-    <main lang={locale}>
+    <main id="main-content" tabIndex={-1} lang={locale}>
       <InstitutionalBanner eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} logo={logo} signature="Building Trust. Connecting Opportunities." />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
@@ -53,7 +53,7 @@ export function MobilityPage({ locale }) {
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title={copy.stepsTitle} />
-          <ol className="grid gap-6 md:grid-cols-3">{copy.steps.map((step, index) => <li key={step} className="border-t-2 border-[#e87512] pt-4"><span aria-hidden="true" className="text-sm font-bold text-[#e87512]">0{index + 1}</span><p className="mt-3 leading-7 text-slate-600">{step}</p></li>)}</ol>
+          <ol className="grid gap-6 md:grid-cols-3">{copy.steps.map((step, index) => <li key={step} className="border-t-2 border-[#e87512] pt-4"><span aria-hidden="true" className="text-sm font-bold text-[#946020]">0{index + 1}</span><p className="mt-3 leading-7 text-slate-600">{step}</p></li>)}</ol>
         </div>
       </section>
 

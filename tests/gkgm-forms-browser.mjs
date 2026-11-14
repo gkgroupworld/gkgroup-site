@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { chromium } from "@playwright/test";
 import { sample, PROJECT_TYPES } from "./gkgm-fixtures.mjs";
 import { COMMON_FIELDS, PROJECT_COPY } from "../content/gkgm-project.js";
+import { PARTNERSHIP_CONTENT } from "../content/partnerships.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const base = "http://127.0.0.1:3115";
@@ -96,6 +97,8 @@ try {
         const values = Object.fromEntries(new URLSearchParams(req.postData()));
         assert.equal(values["form-name"], "international-partnerships"); assert.equal(values.locale, locale);
         submissions++;
+        if (submissions === 1) return route.fulfill({ status: 503, contentType: "text/plain", body: "Synthetic refusal" });
+        if (submissions === 2) return route.fulfill({ status: 200, contentType: "text/html", body: "<body id='netlify-form-reference'>Synthetic static file</body>" });
         return route.fulfill({ status: 200, contentType: "text/plain", body: "Synthetic acknowledgement" });
       }
       if (req.url().startsWith(base)) return route.continue();
@@ -107,9 +110,15 @@ try {
     for (const [name, value] of Object.entries({ organisation: "Synthetic organisation", country: "Synthetic country", name: "Synthetic QA", role: "Synthetic role", email: "qa@example.test", phone: "+22890000001", website: "https://example.test", type: "Synthetic partnership", description: "Entirely synthetic partnership description for local regression tests." })) await form.locator(`[name="${name}"]`).fill(value);
     await form.locator('[name="area"]').selectOption({ index: 1 });
     await form.locator('[name="consent"]').check();
+    for (let attempt = 0; attempt < 2; attempt++) {
+      await form.locator('button[type="submit"]').click();
+      await form.getByRole("alert").waitFor();
+      assert.equal(await form.locator('[name="name"]').inputValue(), "Synthetic QA");
+    }
     await form.locator('button[type="submit"]').click();
     await form.getByRole("status").waitFor();
-    assert.equal(submissions, 1); partnerships.push({ locale, simulatedSubmission: true, nativeFormNamePreserved: true });
+    assert.equal(await form.getByRole("status").textContent(), PARTNERSHIP_CONTENT[locale].form.ready);
+    assert.equal(submissions, 3); partnerships.push({ locale, simulatedSubmission: true, nativeFormNamePreserved: true, attempts: 3, httpAndStaticFalseSuccessRejected: true, answersPreservedOnFailure: true });
     await context.close();
   }
   const sitemap = await (await fetch(base + "/sitemap.xml")).text();
