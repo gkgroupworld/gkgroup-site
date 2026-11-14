@@ -2,7 +2,7 @@
 
 Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
 
-Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), puis réorganisation des galeries vers GKGT (section 12). Les sections 1 à 10 décrivent l'audit initial ; les compléments décrivent l'état actuel sans lever les réserves de publication.
+Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), puis illustrations et autorisations (section 13). Les sections 1 à 10 décrivent l'audit initial ; les compléments décrivent l'état actuel sans lever les réserves de publication.
 
 ## 1. Conclusion et périmètre
 
@@ -347,3 +347,17 @@ Ces vérifications utilisent le navigateur et le build locaux ; elles ne constit
 La présentation est prête pour revue locale. Valider les deux sections FR/EN et fournir les futurs visuels modernes authentiques lorsqu'ils seront disponibles. Les autorisations et vérifications des douze photos restent nécessaires avant toute publication publique ; leur déplacement ne modifie pas leur exposition potentielle depuis le dossier `public`. Les autres réserves de l'audit, notamment les avis de sécurité des dépendances et les réglages Netlify, restent ouvertes.
 
 **Aucun push GitHub, aucune PR, aucune fusion et aucun déploiement Netlify.** Le travail reste sur `feature/galerie-archives-techniques` pour validation utilisateur.
+
+## 13. Illustrations modernes et autorisations distinctes — état actuel
+
+Les deux visuels fournis dans `GKGT_visuels_modernes.zip` sont intégrés sans retouche dans « Notre atelier et notre boutique » : atelier et boutique illustratifs, en PNG de 1672 × 941 px. Le badge, les légendes, les alternatives et l'introduction FR/EN les décrivent comme **illustrations**, non comme des photographies des installations réelles. Les douze photos authentiques restent séparées dans « Nos archives techniques », sans modification des originaux ni légendes.
+
+Le responsable de GK GROUP confirme son autorisation générale de diffusion des douze archives et autorise l'usage des deux illustrations sur gkgroup.app. Cette autorisation remplace sa réserve générale antérieure, **mais les autorisations individuelles des photos 23/24, les droits des personnes/contenus affichés sur la photo 20 et les éléments identifiants/autorisations éventuelles des photos 16/18 restent expressément non confirmés**. Aucune autorisation de déploiement n'est donnée. Ces cinq photos restent dans le projet local et ne doivent pas être rendues publiques avant validation ou traitement décidé séparément.
+
+La vérification visuelle retrouve notamment des personnes reconnaissables, une plaque en arrière-plan et du contenu à l'écran sur les photos signalées. Les étiquettes et codes-barres d'équipements sont signalés au registre sans transcription de leurs valeurs. Aucune métadonnée EXIF/XMP/IPTC n'est détectée dans les douze WebP, ce qui ne garantit pas l'absence d'informations visibles dans les pixels. Les illustrations modernes ne montrent pas de personne ou donnée personnelle lisible identifiée lors de la revue.
+
+Le détail photo par photo et la distinction des autorisations acquises/en attente sont enregistrés dans `docs/gkgt-visuels-autorisations.md`, avec un registre technique `content/gkgt-publication-rights.json`. Le hook npm **`prebuild`** appelle `scripts/check-gkgt-publication.mjs` : les builds locaux restent possibles ; les builds exécutant la commande npm avec **`NETLIFY=true` sont bloqués tant que les cinq réserves sont en attente**. Le contrôle a été testé en processus local (code 0 hors Netlify, code 1 sous simulation Netlify, avec les cinq noms attendus). Aucun service distant n'est contacté par ce contrôle. Il ne remplace ni l'accord final ni un contrôle d'accès : ne pas téléverser le dossier public ou un build préexistant en contournant la commande prévue.
+
+Contrôles de la mise à jour : lint, build local et 7 tests unitaires réussis ; 12 parcours GKGM FR/EN, deux soumissions de partenariats simulées et contrôle SEO des 38 URL réussis ; deux illustrations chargées dans chacune des six combinaisons FR/EN à 390/768/1440 px, sans débordement, avec mentions illustratives. Comparaisons binaires réussies pour les douze archives et le logo par rapport à `488f840`, ainsi que pour les nouveaux PNG par rapport aux fichiers fournis. Aucun changement GKGM, de formulaire, de métadonnées ou de sitemap. Les dépendances sont inchangées et leurs alertes de sécurité restent ouvertes ; la référence historique des bannières n'a pas été réenregistrée.
+
+Les mentions de section atelier/boutique vide dans les états précédents sont remplacées par les deux illustrations, désormais autorisées et clairement signalées. Les droits photographiques spécifiques restent une condition préalable distincte de la validation finale de déploiement. **Aucun push, aucune fusion, aucune PR et aucun déploiement : travail local uniquement.**

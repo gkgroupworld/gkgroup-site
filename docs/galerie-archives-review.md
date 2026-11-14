@@ -2,6 +2,8 @@
 
 Date de contrôle : 14 novembre 2026. Rapport actualisé après déplacement de la galerie complète vers GKGT, conformément à la dernière instruction de l'utilisateur.
 
+**Actualisation des autorisations :** le responsable autorise désormais la diffusion générale des douze archives et l'usage des deux illustrations modernes, mais confirme que les droits distincts des photos 16, 18, 20, 23 et 24 restent en attente. Elles sont conservées exclusivement dans la préparation locale et ne doivent pas être publiées avant résolution. Le registre actuel, les vérifications et le blocage des builds Netlify sont détaillés dans `docs/gkgt-visuels-autorisations.md`. Ce registre remplace les réserves générales antérieures et les mentions devenues historiques de section atelier/boutique vide.
+
 Branche : `feature/galerie-archives-techniques`.
 Base : `main`, commit `4ee789fced22f2087cfbcc79e38661285eac31fc`.
 Dépôt de travail : `galerie-work`, cloné depuis `gkgroupworld/gkgroup-site`.
