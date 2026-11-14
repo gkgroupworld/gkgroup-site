@@ -5,7 +5,7 @@
     { "file": "16_IMG-20210728-WA0002(1).webp", "status": "pending", "reason": "Identifying background elements, vehicle plate and possible individual permissions" },
     { "file": "18_IMG_20180329_095427.webp", "status": "pending", "reason": "Partial person, screen content and visible label" },
     { "file": "20_IMG_20190125_120103_9.webp", "status": "pending", "reason": "Third-party people and content displayed on the laptop screen" },
-    { "file": "23_IMG_20190308_092807_2.webp", "status": "pending", "reason": "Individual permission for the recognisable person" },
-    { "file": "24_IMG_20190308_092825_7.webp", "status": "pending", "reason": "Individual permission for the recognisable person" }
+    { "file": "23_IMG_20190308_092807_2.webp", "status": "confirmed", "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team", "confirmationDate": "2026-11-14", "confirmationBasis": "User declaration; no independent verification of individual consent documents" },
+    { "file": "24_IMG_20190308_092825_7.webp", "status": "confirmed", "reason": "Individual publication permission confirmed by the head of GK GLOBAL GROUP SARLU on behalf of himself and his team", "confirmationDate": "2026-11-14", "confirmationBasis": "User declaration; no independent verification of individual consent documents" }
   ]
 }

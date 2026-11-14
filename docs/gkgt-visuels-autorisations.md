@@ -6,7 +6,9 @@
 
 Le responsable de GK GROUP autorise l'utilisation et la publication sur gkgroup.app des douze photographies historiques fournies. Cette déclaration remplace sa réserve générale antérieure concernant leur diffusion. Il autorise également l'utilisation des deux illustrations modernes fournies dans `GKGT_visuels_modernes.zip`, sous réserve d'une mention claire de leur caractère illustratif.
 
-Dans sa réponse complémentaire, il confirme toutefois que les autorisations individuelles et droits tiers des photos 16, 18, 20, 23 et 24 restent à vérifier. **Ces cinq photographies ne doivent pas être rendues publiques tant que leurs points en attente ne sont pas résolus.** Les douze originaux restent dans le projet local, sans suppression ni retouche.
+Dans sa dernière déclaration du 14 novembre 2026, le responsable de GK GLOBAL GROUP SARLU confirme que les personnes visibles sur les photos 23 et 24 sont lui-même et des membres de son équipe, et que toutes ont accepté la publication des photographies concernées sur gkgroup.app. Les autorisations relatives aux personnes des photos 23 et 24 sont enregistrées comme **confirmées sur la base de sa déclaration**, sans vérification indépendante de documents individuels. Il réaffirme l’autorisation d’utilisation des douze archives et des deux illustrations.
+
+Les vérifications des informations sensibles et des droits tiers restent distinctes. Les photos **16, 18 et 20** restent en attente et ne doivent pas être rendues publiques avant résolution. Les douze originaux restent dans le projet local, sans suppression ni retouche. L’annotation murale de la photo 23 reste signalée comme élément à examiner dans son contexte ; la confirmation des personnes n’est pas une certification générale d’absence de données sensibles.
 
 Cette autorisation de contenu ne constitue pas une autorisation de push, de fusion, de PR ou de déploiement. Aucun de ces actes n'a été effectué.
 
@@ -26,8 +28,8 @@ Revue de la planche des douze photos et examen détaillé renouvelé des cinq ph
 | 18 — pièces/atelier | Personne partiellement visible, contenu affiché sur un écran et étiquette visible. | **En attente** : confidentialité et éventuelles autorisations individuelles, confirmé par l'utilisateur. |
 | 20 — portable démonté | Personnes et contenu tiers affichés sur l'écran. | **En attente** : droits sur les personnes et contenus affichés, confirmé par l'utilisateur. |
 | 21 — ordinateur | Moniteur principal éteint ; pas de document sensible repéré. | Autorisation générale enregistrée ; aucune réserve spécifique identifiée. |
-| 23 — intervention | Personne reconnaissable ; annotation murale à examiner dans son contexte, sans la reproduire ici. | **En attente** : autorisation individuelle non confirmée. |
-| 24 — intervention | Personne reconnaissable ; équipements et emballages autour du poste. | **En attente** : autorisation individuelle non confirmée. |
+| 23 — intervention | Personne reconnaissable ; annotation murale à examiner dans son contexte, sans la reproduire ici. | **Personnes : confirmé sur déclaration du responsable, le 14 novembre 2026** ; la vérification des informations sensibles demeure distincte. |
+| 24 — intervention | Personne reconnaissable ; équipements et emballages autour du poste. | **Personnes : confirmé sur déclaration du responsable, le 14 novembre 2026** ; la vérification des informations sensibles demeure distincte. |
 
 Lecture des métadonnées via Sharp : aucune donnée EXIF, XMP ou IPTC détectée dans les douze WebP. Cela ne remplace pas l'examen des informations directement visibles dans les pixels. Les photos, leurs légendes et leurs alternatives historiques ne sont pas modifiées ; les fichiers sont identiques octet pour octet à l'état précédent.
 
@@ -50,10 +52,10 @@ La section « Notre atelier et notre boutique » conserve son titre, affiche un 
 
 ## Protection de la préparation et limites
 
-`content/gkgt-publication-rights.json` distingue l'autorisation générale, celle des illustrations et les cinq dossiers de droits encore en attente. Un hook npm `prebuild` exécute `scripts/check-gkgt-publication.mjs` :
+`content/gkgt-publication-rights.json` distingue l'autorisation générale, celle des illustrations et les cinq dossiers suivis : deux autorisations de personnes confirmées sur déclaration et trois dossiers encore en attente. Un hook npm `prebuild` exécute `scripts/check-gkgt-publication.mjs` :
 
 - En local, le build continue et permet de revoir les douze archives et les deux illustrations.
-- Avec `NETLIFY=true`, le contrôle bloque le build avant Next.js et énumère les cinq réserves non confirmées. Il vise les builds Netlify, y compris les previews exécutant la commande npm prévue par le dépôt.
+- Avec `NETLIFY=true`, le contrôle bloque le build avant Next.js et énumère les trois réserves non confirmées (16, 18 et 20). Il vise les builds Netlify, y compris les previews exécutant la commande npm prévue par le dépôt.
 - Ce contrôle ne crée aucun droit, ne remplace pas l'accord final de déploiement et n'est pas un contrôle d'accès aux fichiers. Les douze photos sont encore dans `public` : ne pas téléverser ce dossier ni un build préexistant vers un hébergement. Une autre commande ou un envoi manuel contournant le hook n'est pas protégé par ce mécanisme.
 
 La liste ne doit être mise à jour qu'après confirmation réelle des droits et résolution des données sensibles, puis revue des preuves dans un espace privé approprié. Ne pas ajouter de pièces d'identité ou d'autorisations signées dans le dossier public du site. L'accord final explicite de publication reste nécessaire même après résolution des droits.
@@ -61,7 +63,7 @@ La liste ne doit être mise à jour qu'après confirmation réelle des droits et
 ## Vérification technique de cette mise à jour
 
 - Lint, 7 tests unitaires et build local réussis.
-- Contrôle de publication testé en processus local : `NETLIFY=false` retourne 0 ; `NETLIFY=true` retourne 1 et liste les photos 16, 18, 20, 23 et 24. Aucun build distant lancé.
+- Contrôle de publication testé en processus local : `NETLIFY=false` retourne 0 ; `NETLIFY=true` retourne 1 et liste uniquement les photos 16, 18 et 20 ; les photos 23 et 24, désormais confirmées, ne sont plus signalées comme autorisations de personnes manquantes. Aucun build distant lancé.
 - Deux illustrations chargées et légendées en FR/EN aux largeurs 390, 768 et 1440 px ; aucun débordement horizontal ; douze figures historiques toujours présentes.
 - Tests navigateur Forms et régression SEO : 12 parcours GKGM FR/EN, deux soumissions de partenariats simulées et 38 URL SEO réussis ; aucun envoi réel.
 - Origines historiques, logo et ajouts GKGM préservés. Réserve connue de référence des bannières et alertes de sécurité des dépendances toujours ouvertes, sans nouvelle mise à jour de dépendance.

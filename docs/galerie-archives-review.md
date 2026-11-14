@@ -2,7 +2,7 @@
 
 Date de contrôle : 14 novembre 2026. Rapport actualisé après déplacement de la galerie complète vers GKGT, conformément à la dernière instruction de l'utilisateur.
 
-**Actualisation des autorisations :** le responsable autorise désormais la diffusion générale des douze archives et l'usage des deux illustrations modernes, mais confirme que les droits distincts des photos 16, 18, 20, 23 et 24 restent en attente. Elles sont conservées exclusivement dans la préparation locale et ne doivent pas être publiées avant résolution. Le registre actuel, les vérifications et le blocage des builds Netlify sont détaillés dans `docs/gkgt-visuels-autorisations.md`. Ce registre remplace les réserves générales antérieures et les mentions devenues historiques de section atelier/boutique vide.
+**Actualisation des autorisations :** le responsable autorise désormais la diffusion générale des douze archives et l'usage des deux illustrations modernes, et confirme désormais les autorisations des personnes des photos 23 et 24 sur la base de sa déclaration du 14 novembre 2026. Les droits distincts et informations identifiantes des photos 16, 18 et 20 restent en attente ; ces trois photos ne doivent pas être publiées avant résolution. Les contrôles de confidentialité restent distincts de l’accord des personnes. Le registre actuel, les vérifications et le blocage des builds Netlify sont détaillés dans `docs/gkgt-visuels-autorisations.md`. Ce registre remplace les réserves générales antérieures et les mentions devenues historiques de section atelier/boutique vide.
 
 Branche : `feature/galerie-archives-techniques`.
 Base : `main`, commit `4ee789fced22f2087cfbcc79e38661285eac31fc`.
@@ -36,8 +36,8 @@ Inspection visuelle de chaque image, en plus d'une planche de contact. Aucun vis
 | `18_IMG_20180329_095427.webp` | Intégré localement — validation avant publication | Personne partiellement visible ; contenu à l'écran et étiquette à vérifier avant publication. |
 | `20_IMG_20190125_120103_9.webp` | Intégré localement — validation avant publication | Photographie de personnes sur l'écran du portable ; vérifier les droits sur le contenu affiché. |
 | `21_IMG_20190214_073458_8.webp` | Retenu | Ordinateur, moniteur éteint et imprimante. |
-| `23_IMG_20190308_092807_2.webp` | Intégré localement — validation avant publication | Technicien reconnaissable ; autorisation de publication non confirmée. |
-| `24_IMG_20190308_092825_7.webp` | Intégré localement — validation avant publication | Technicien reconnaissable ; autorisation de publication non confirmée. |
+| `23_IMG_20190308_092807_2.webp` | Intégré localement — validation avant publication | Personnes : accord de publication confirmé sur déclaration du responsable de GK GLOBAL GROUP SARLU, le 14 novembre 2026 ; contrôle distinct des informations sensibles maintenu. |
+| `24_IMG_20190308_092825_7.webp` | Intégré localement — validation avant publication | Personnes : accord de publication confirmé sur déclaration du responsable de GK GLOBAL GROUP SARLU, le 14 novembre 2026 ; contrôle distinct des informations sensibles maintenu. |
 
 L'inspection visuelle ne constitue pas une preuve des droits de publication. Confirmer les droits sur les douze images et valider leurs légendes avant publication ; vérifier en particulier les autorisations des personnes et les informations potentiellement identifiantes signalées dans le tableau. Dates, lieux, clients, certifications et résultats techniques n'ont pas été déduits des noms de fichiers ni inventés.
 
@@ -82,4 +82,4 @@ Branche préparée exclusivement en local. Aucune fusion, aucun push et aucun d�
 
 Le texte de PR est actualisé dans `docs/galerie-archives-pull-request.md`, uniquement comme document local. Aucun push GitHub, aucune ouverture de PR, aucune fusion dans `main` et aucun déploiement Netlify ne sont autorisés à ce stade. La galerie complète se trouve dans le dossier `public` de cette branche locale : elle serait exposée si cette branche était publiée ; conserver donc ce travail exclusivement en local.
 
-Avant toute publication publique, vérifier les autorisations des personnes et les informations potentiellement sensibles des cinq photos signalées, ainsi que les droits et légendes des douze photographies. Attendre une autorisation explicite de publication de l’utilisateur avant toute opération distante, puis vérifier également les règles de déploiement automatique Netlify.
+Avant toute publication publique, résoudre les vérifications des photos 16, 18 et 20 ; les autorisations des personnes des photos 23 et 24 sont confirmées sur déclaration du responsable. Maintenir les contrôles distincts de confidentialité et les validations des droits et légendes des douze photographies. Attendre une autorisation explicite de publication de l’utilisateur avant toute opération distante, puis vérifier également les règles de déploiement automatique Netlify.

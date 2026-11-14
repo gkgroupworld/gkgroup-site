@@ -2,7 +2,7 @@
 
 Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
 
-Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), puis illustrations et autorisations (section 13). Les sections 1 à 10 décrivent l'audit initial ; les compléments décrivent l'état actuel sans lever les réserves de publication.
+Mises à jour : ajout local de la section réalisations/partenaires GKGM (section 11), réorganisation des galeries vers GKGT (section 12), illustrations et autorisations (section 13), puis confirmation des personnes des photos 23/24 (section 14). Les sections 1 à 10 décrivent l'audit initial ; les derniers compléments prévalent sur les états antérieurs sans autoriser de déploiement.
 
 ## 1. Conclusion et périmètre
 
@@ -361,3 +361,15 @@ Le détail photo par photo et la distinction des autorisations acquises/en atten
 Contrôles de la mise à jour : lint, build local et 7 tests unitaires réussis ; 12 parcours GKGM FR/EN, deux soumissions de partenariats simulées et contrôle SEO des 38 URL réussis ; deux illustrations chargées dans chacune des six combinaisons FR/EN à 390/768/1440 px, sans débordement, avec mentions illustratives. Comparaisons binaires réussies pour les douze archives et le logo par rapport à `488f840`, ainsi que pour les nouveaux PNG par rapport aux fichiers fournis. Aucun changement GKGM, de formulaire, de métadonnées ou de sitemap. Les dépendances sont inchangées et leurs alertes de sécurité restent ouvertes ; la référence historique des bannières n'a pas été réenregistrée.
 
 Les mentions de section atelier/boutique vide dans les états précédents sont remplacées par les deux illustrations, désormais autorisées et clairement signalées. Les droits photographiques spécifiques restent une condition préalable distincte de la validation finale de déploiement. **Aucun push, aucune fusion, aucune PR et aucun déploiement : travail local uniquement.**
+
+## 14. Confirmation des autorisations des personnes — photos 23 et 24
+
+Le 14 novembre 2026, l'utilisateur déclare, en qualité de responsable de GK GLOBAL GROUP SARLU, que les personnes visibles sur les photographies historiques 23 et 24 sont lui-même et des membres de son équipe et que toutes ont donné leur accord pour la publication des photographies concernées sur gkgroup.app. Il réaffirme l'autorisation d'utiliser les douze archives et les deux illustrations modernes dans la présentation de GKGT.
+
+Les autorisations relatives aux personnes des photos **23 et 24 sont donc enregistrées comme confirmées sur la base de cette déclaration**, sans vérification indépendante de pièces individuelles et sans ajout de noms ou de données personnelles. Cette confirmation remplace les mentions d'autorisations de personnes en attente pour ces deux photos dans les états antérieurs du présent rapport. Elle ne vaut pas certification d'absence d'informations sensibles dans les images.
+
+Les contrôles distincts de confidentialité, des éléments identifiants et des contenus de tiers sont maintenus, notamment pour les photos **16, 18 et 20**, toujours en attente. Ces trois photos ne doivent pas être rendues publiques avant résolution ; aucune image n'est supprimée ou retouchée. Le registre détaillé est actualisé dans `docs/gkgt-visuels-autorisations.md` et le registre technique dans `content/gkgt-publication-rights.json`.
+
+Vérification ciblée effectuée : les entrées 23/24 sont confirmées ; seules 16/18/20 restent en attente. Le contrôle local renvoie 0 avec `NETLIFY=false` ; en simulant `NETLIFY=true`, il renvoie toujours 1 et liste uniquement 16/18/20. Aucun build ou déploiement distant n'a été lancé. Les contrôles complets de rendu/build précédents ne sont pas présentés comme réexécutés pour cette mise à jour documentaire et de statut.
+
+Les contenus, photographies, illustrations, logo, fonctionnalités et ajouts GKGM sont inchangés. **Aucune autorisation finale de déploiement n'est donnée : aucun push, aucune PR, aucune fusion et aucun déploiement Netlify.**
