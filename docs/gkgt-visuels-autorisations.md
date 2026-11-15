@@ -1,6 +1,6 @@
 # GKGT — visuels et autorisations de diffusion
 
-État actualisé le 14 novembre 2026 sur `feature/galerie-archives-techniques` ; préparation locale uniquement. Ce document remplace les anciens états de réserves photographiques, conservés dans l'historique Git et les sections chronologiques du bilan général.
+État actualisé le 15 novembre 2026 sur `feature/galerie-archives-techniques` ; préparation locale uniquement. Ce document remplace les anciens états de réserves photographiques, conservés dans l'historique Git et les sections chronologiques du bilan général.
 
 ## Autorisations et décisions confirmées
 
@@ -15,8 +15,7 @@ Le responsable de GK GLOBAL GROUP SARLU autorise l'utilisation des douze photogr
 | 01, 02, 06, 11, 12, 14 et 21 | Autorisation générale enregistrée ; aucune réserve spécifique non résolue identifiée dans la revue. | Autorisation du responsable et inspections visuelles précédentes. |
 | Deux illustrations modernes | Utilisation autorisée avec mention explicite de leur caractère illustratif. | Confirmation du responsable ; badges, légendes, alternatives et introduction FR/EN présents. |
 
-**Aucune réserve photographique enregistrée ne reste ouverte pour les fichiers destinés à la galerie.** Cette conclusion repose sur les confirmations ci-dessus et le remplacement du fichier public 16. Elle ne certifie ni une conformité juridique générale ni la sécurité du reste du site. Aucun accord de déploiement, push, fusion ou PR n'a été donné.
-
+**Aucune réserve de statut d'autorisation photographique ne reste ouverte dans les registres actuels pour les douze archives, les deux illustrations et les neuf nouvelles vues retenues.** Les autorisations des neuf ajouts sont enregistrées comme confirmées dans `content/gkgt-authentic-batch.json`, sur la base de la déclaration explicite du responsable. Les points de confidentialité et de contrôle visuel restent documentés séparément. Cette confirmation ne vaut ni vérification indépendante des consentements individuels ni autorisation de déploiement. Aucun push, fusion ou PR n'est effectué dans cette étape.
 ## Photo 16 — original et copie approuvée
 
 - Original intact : `source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp`.
@@ -48,8 +47,7 @@ Les fichiers `GKGT_Atelier_Illustration.png` et `GKGT_Boutique_Illustration.png`
 
 `content/gkgt-publication-rights.json` conserve les cinq dossiers suivis, désormais tous au statut `confirmed`, avec dates et motifs. Pour la photo 16, il précise le fichier publiable et le chemin de l'original privé. La propriété historique `pendingHistoricalPhotos` conserve son nom pour compatibilité avec le contrôle ; elle ne signifie pas que ses entrées confirmées sont encore en attente.
 
-Le hook npm `prebuild` et son script restent présents pour détecter d'éventuelles nouvelles réserves. **Le blocage actuel lié aux photographies est levé** : une exécution locale du script avec `NETLIFY=true` retourne 0. Cela n'a lancé aucun build distant et ne donne aucune autorisation de publier. L'accord final explicite du responsable reste requis pour toute opération distante, et les autres points de l'audit général restent à traiter.
-
+Le hook npm `prebuild` et son script restent présents. Le contrôle des douze archives approuvées et celui du nouveau lot sont désormais satisfaits par les registres actuels. Le test local exécuté le 15 novembre 2026 avec `NETLIFY=true` s'est terminé avec le code de sortie 0, sans message de blocage. Les neuf nouvelles vues ont leur `publicationStatus` confirmé et l'autorisation générale est enregistrée comme confirmée. Ce contrôle vérifie les statuts déclarés dans les registres ; il ne constitue ni une revue visuelle exhaustive ni un accord final de mise en production. Aucun build distant ni déploiement n'est autorisé par ce résultat. Le garde ne bloque pas nécessairement un téléversement manuel qui le contournerait.
 ## Contrôles de cette intégration
 
 - Lint, 7 tests unitaires et build local réussis ; avertissements Node connus non bloquants.
@@ -58,3 +56,14 @@ Le hook npm `prebuild` et son script restent présents pour détecter d'éventue
 - SEO : contrôle des 38 URL réussi ; métadonnées et sitemap inchangés.
 - Contrôles HTTP locaux : nouvelle copie 16 en 200 ; ancienne URL publique de l'original en 404 ; tentative d'accès à `source-assets` en 404 ; optimisation de l'ancien chemin en 400 après purge des seules images de cache local générées.
 - Original 16, onze autres photos, logo, illustrations et ajouts GKGM préservés. Aucun push, aucune PR, aucune fusion ni aucun déploiement.
+
+## Nouveau ZIP de quinze photographies — traçabilité et contrôles
+
+Les quinze JPG de `GKGT_15_photos_authentiques.zip` sont conservés intacts dans `source-assets/gkgt-authentic-15/originals`. Six reprennent des vues déjà présentes (archives 01, 02, 06, 16, 18 et 21) et ne sont pas réaffichés. La reprise de l'original 16 n'est pas publiée : seule la copie approuvée à arrière-plan modifié demeure dans la galerie. Neuf nouvelles vues, identifiées N03/N04/N05/N06/N08/N09/N10/N13/N15, sont ajoutées à la préparation locale, portant la galerie à 21 vues distinctes.
+
+Le registre séparé `content/gkgt-authentic-batch.json` conserve les empreintes, les doublons, les catégories, les légendes FR/EN et les notes de contrôle. L'autorisation générale de publication et les statuts des neuf nouvelles vues sont désormais enregistrés comme confirmés, sur la base de la déclaration explicite du responsable. Huit vues montrent des personnes reconnaissables : N03/N04/N05/N06/N08/N09/N10/N13. N06 comprend une personne en arrière-plan. Les écrans, feuilles, tableau, livres, étiquettes, marques, emballage et reflet partiel de N15 restent des points de vigilance pour la revue visuelle. Aucune identité ni valeur sensible n'est transcrite dans ce document. Les statuts confirmés ne constituent pas une vérification indépendante des consentements individuels ni une certification de l'absence d'informations sensibles visibles.
+Les originaux de N10 contiennent EXIF/IPTC/XMP et celui de N11 EXIF ; ils restent intacts hors public. Les neuf copies WebP retenues et leurs miniatures ne contiennent pas ces métadonnées. Aucun masquage, décor généré ou retouche de personne n'est effectué. Toutes les réserves et légendes ainsi que les tests sont détaillés dans `docs/gkgt-galerie-authentique-validation.md` ; cette mise à jour remplace les décomptes précédents pour la galerie complète, sans révoquer les confirmations historiques.
+
+**Autorisations enregistrées et validation visuelle locale des copies V2 avant diffusion publique. Aucun push, fusion, PR ou déploiement.**
+
+À la demande du responsable, les neuf fiches individuelles sont préparées dans `docs/gkgt-neuf-photos-autorisations.md` : noms des JPG et copies, repères visuels des personnes sans identification nominative, confidentialité distincte et autres droits/provenance. Une planche des neuf vues accompagne la revue. Les statuts d'autorisation sont désormais confirmés dans les registres et le garde Netlify a réussi son test local du 15 novembre 2026 (code 0). Les points de confidentialité restent à examiner lors de la revue visuelle des copies V2. Les quatre tests ciblés de conservation, d'optimisation et de garde ont été réexécutés et réussis. Aucune photographie originale ni configuration applicative n'est modifiée pour cette étape documentaire.

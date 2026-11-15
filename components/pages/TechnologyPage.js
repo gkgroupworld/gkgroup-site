@@ -1,4 +1,5 @@
 import { InstitutionalBanner } from "@/components/ui/InstitutionalBanner";
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
@@ -8,6 +9,7 @@ import { CONTACT, CONTACT_CONTENT, ENTITY_LOGOS } from "@/content/site";
 import { TECHNOLOGY_CONTENT } from "@/content/technology";
 import { TECHNOLOGY_GALLERY_COPY } from "@/content/technology-gallery";
 import { TechnicalArchiveGallery } from "@/components/pages/TechnicalArchiveGallery";
+import { GkgtPhotoProvider, GkgtPhotoStory } from "@/components/pages/GkgtPhotoGallery";
 import { TechnologyWorkshop } from "@/components/pages/TechnologyWorkshop";
 import { ContactForm } from "@/components/pages/ContactForm";
 import { withLocale } from "@/lib/locale";
@@ -22,6 +24,7 @@ export function TechnologyPage({ locale }) {
 
   return <>
     <Header locale={locale} />
+    <GkgtPhotoProvider locale={locale}>
     <main id="main-content" tabIndex={-1} lang={locale}>
       <InstitutionalBanner eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} logo={logo} signature="Building Trust. Connecting Opportunities." />
 
@@ -32,6 +35,8 @@ export function TechnologyPage({ locale }) {
         </div>
       </section>
 
+      <GkgtPhotoStory story="expertise" locale={locale} />
+
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="font-bold text-[#061b46]">{copy.contents}</p>
@@ -40,7 +45,7 @@ export function TechnologyPage({ locale }) {
       </nav>
 
       <div className="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2">
-        {copy.sections.map((section) => <section key={section.id} id={section.id} aria-labelledby={`${section.id}-title`} className="scroll-mt-6 border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8">
+        {copy.sections.map((section) => <Fragment key={section.id}><section id={section.id} aria-labelledby={`${section.id}-title`} className={`scroll-mt-6 border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8 ${["maintenance", "equipment"].includes(section.id) ? "lg:col-span-2" : ""}`}>
           <h2 id={`${section.id}-title`} className="text-2xl font-bold tracking-tight text-[#061b46]">{section.title}</h2>
           <p className="mt-4 leading-7 text-slate-600">{section.description}</p>
           <ul className="mt-6 grid gap-4">{section.items.map((item) => <li key={item} className="border-l-2 border-[#e87512] pl-3 text-sm leading-6 text-slate-600">{item}</li>)}</ul>
@@ -48,9 +53,10 @@ export function TechnologyPage({ locale }) {
             <h3 className="text-sm font-bold text-[#061b46]">{copy.boundary}</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">{section.limit}</p>
           </div>
-        </section>)}
+        </section>{section.id === "maintenance" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="maintenance" locale={locale} /></div>}{section.id === "equipment" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="equipment" locale={locale} /></div>}</Fragment>)}
       </div>
 
+      <GkgtPhotoStory story="workshop" locale={locale} />
       <TechnicalArchiveGallery locale={locale} />
       <TechnologyWorkshop locale={locale} />
 
@@ -76,6 +82,7 @@ export function TechnologyPage({ locale }) {
         </div>
       </section>
     </main>
+    </GkgtPhotoProvider>
     <Footer locale={locale} />
   </>;
 }

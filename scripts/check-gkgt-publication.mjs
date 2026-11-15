@@ -12,4 +12,12 @@ if (process.env.NETLIFY === "true") {
     for (const photo of pending) console.error(`- ${photo.file}: ${photo.reason}`);
     process.exitCode = 1;
   }
+  const batch = JSON.parse(await readFile(new URL("../content/gkgt-authentic-batch.json", import.meta.url), "utf8"));
+  const additions = batch.photos.filter(photo => photo.disposition === "included-local-preview");
+  const pendingAdditions = additions.filter(photo => photo.publicationStatus !== "confirmed");
+  if (batch.generalPublicationAuthorization !== "confirmed-by-owner" || pendingAdditions.length) {
+    console.error("GKGT publication blocked: new authentic photographs require separate approval.");
+    for (const photo of pendingAdditions) console.error(`- ${photo.id}: ${photo.confidentialityReview}`);
+    process.exitCode = 1;
+  }
 }

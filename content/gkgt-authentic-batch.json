@@ -1,0 +1,397 @@
+{
+  "archive": "GKGT_15_photos_authentiques.zip",
+  "receivedDate": "2026-11-14",
+  "generalPublicationAuthorization": "confirmed-by-owner",
+  "sourceCount": 15,
+  "visualDuplicates": 6,
+  "newUniqueViews": 9,
+  "photos": [
+    {
+      "id": "N01",
+      "original": "source-assets/gkgt-authentic-15/originals/20181030_170129(1).jpg",
+      "sourceName": "20181030_170129(1).jpg",
+      "originalSha256": "4271cadcc558f3aaa65e697e81b32824f672c88eb6d58e32a8e3248b68ade6ec",
+      "originalWidth": 1152,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "01_20181030_170129.webp",
+      "duplicateReason": "Même prise de vue que l’archive existante, dans un autre encodage ; pas de vignette répétée.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/01_20181030_170129.webp",
+        "meanAbsoluteDifference": 10.028076171875
+      }
+    },
+    {
+      "id": "N02",
+      "original": "source-assets/gkgt-authentic-15/originals/20181030_170143(1).jpg",
+      "sourceName": "20181030_170143(1).jpg",
+      "originalSha256": "2320b44f23cc13ac391cdd2d1c3cf34b91055c67c6b697f4f4cc92a83ee32457",
+      "originalWidth": 2048,
+      "originalHeight": 1152,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "02_20181030_170143.webp",
+      "duplicateReason": "Même prise de vue que l’archive existante, dans un autre encodage ; pas de vignette répétée.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/02_20181030_170143.webp",
+        "meanAbsoluteDifference": 9.034261067708334
+      }
+    },
+    {
+      "id": "N03",
+      "original": "source-assets/gkgt-authentic-15/originals/20181129_082000(1).jpg",
+      "sourceName": "20181129_082000(1).jpg",
+      "originalSha256": "752d343f1d7f20052841dbce59a994e85b8327c8ce482f91188d18749484d5e1",
+      "originalWidth": 2048,
+      "originalHeight": 1152,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "interventions",
+      "caption": {
+        "fr": "Examen d’un ordinateur portable à un poste de travail",
+        "en": "Examining a laptop at a workstation"
+      },
+      "publicationFile": "/gkgt-activities/n03.webp",
+      "thumbnailFile": "/gkgt-activities/n03-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; écran et contenu affiché à confirmer.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png",
+        "meanAbsoluteDifference": 69.23527018229167
+      }
+    },
+    {
+      "id": "N04",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_092705(1).jpg",
+      "sourceName": "20211013_092705(1).jpg",
+      "originalSha256": "7211aa2cca5653d24c9a5c61e6b07c21e9c5c196462a018a24fb3f445c5b617e",
+      "originalWidth": 1153,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "interventions",
+      "caption": {
+        "fr": "Nettoyage de l’intérieur d’une unité centrale ouverte",
+        "en": "Cleaning the inside of an open desktop computer"
+      },
+      "publicationFile": "/gkgt-activities/n04.webp",
+      "thumbnailFile": "/gkgt-activities/n04-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; étiquettes d’équipements à vérifier.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/12_IMG-20181122-WA0004.webp",
+        "meanAbsoluteDifference": 58.624755859375
+      }
+    },
+    {
+      "id": "N05",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_092710(1).jpg",
+      "sourceName": "20211013_092710(1).jpg",
+      "originalSha256": "35e8ceee787ba95089a2e2b6863fc825ee1ec2874ae66a772f4b4640cb61a96f",
+      "originalWidth": 1153,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "interventions",
+      "caption": {
+        "fr": "Entretien d’une unité centrale à l’aide d’un souffleur",
+        "en": "Servicing a desktop computer using an air blower"
+      },
+      "publicationFile": "/gkgt-activities/n05.webp",
+      "thumbnailFile": "/gkgt-activities/n05-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; étiquettes d’équipements à vérifier.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/21_IMG_20190214_073458_8.webp",
+        "meanAbsoluteDifference": 58.364664713541664
+      }
+    },
+    {
+      "id": "N06",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_092719(1).jpg",
+      "sourceName": "20211013_092719(1).jpg",
+      "originalSha256": "f7d4a464792851b70fd2ef43f66c9da5a07f0e7fd2a0fa5bf3c50188a91409db",
+      "originalWidth": 1153,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "equipment",
+      "caption": {
+        "fr": "Manipulation d’un écran parmi plusieurs équipements informatiques",
+        "en": "Handling a monitor alongside other computer equipment"
+      },
+      "publicationFile": "/gkgt-activities/n06.webp",
+      "thumbnailFile": "/gkgt-activities/n06-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Deux personnes reconnaissables, dont une en arrière-plan ; étiquettes à vérifier.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/01_20181030_170129.webp",
+        "meanAbsoluteDifference": 50.790364583333336
+      }
+    },
+    {
+      "id": "N07",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_095534(1).jpg",
+      "sourceName": "20211013_095534(1).jpg",
+      "originalSha256": "0c3c3034ba4c849075c10e97f2553350d81b12f50d8e371d6a39cbf56b26ee16",
+      "originalWidth": 2048,
+      "originalHeight": 1153,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "06_20211013_095534.webp",
+      "duplicateReason": "Même prise de vue que l’archive existante, dans un autre encodage ; pas de vignette répétée.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/06_20211013_095534.webp",
+        "meanAbsoluteDifference": 7.823160807291667
+      }
+    },
+    {
+      "id": "N08",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_100026(1).jpg",
+      "sourceName": "20211013_100026(1).jpg",
+      "originalSha256": "ff9ca7a2408dfd8cf4f3416fb166d38869686ab38143863a26935def1bdecf52",
+      "originalWidth": 1153,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "equipment",
+      "caption": {
+        "fr": "Présentation d’un ensemble de moniteurs informatiques",
+        "en": "Presenting a collection of computer monitors"
+      },
+      "publicationFile": "/gkgt-activities/n08.webp",
+      "thumbnailFile": "/gkgt-activities/n08-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; aucun lieu ni date n’est déduit.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/06_20211013_095534.webp",
+        "meanAbsoluteDifference": 59.151611328125
+      }
+    },
+    {
+      "id": "N09",
+      "original": "source-assets/gkgt-authentic-15/originals/20211013_113451(1).jpg",
+      "sourceName": "20211013_113451(1).jpg",
+      "originalSha256": "abe45d712b3e6452f98e4e8f11708252823fa9db52f282808fb08c148137dbb6",
+      "originalWidth": 1153,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "workshop",
+      "caption": {
+        "fr": "Plusieurs postes informatiques installés sur une table de travail",
+        "en": "Several computer workstations arranged on a work table"
+      },
+      "publicationFile": "/gkgt-activities/n09.webp",
+      "thumbnailFile": "/gkgt-activities/n09-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; écrans, tableau, livres et documents en arrière-plan à vérifier.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp",
+        "meanAbsoluteDifference": 50.690185546875
+      }
+    },
+    {
+      "id": "N10",
+      "original": "source-assets/gkgt-authentic-15/originals/FB_IMG_1550419220319(1).jpg",
+      "sourceName": "FB_IMG_1550419220319(1).jpg",
+      "originalSha256": "b5093a8e106e06a49b10b240ffa5504d7a5cde6f9267c3b9186342bb61f3dd8b",
+      "originalWidth": 720,
+      "originalHeight": 720,
+      "metadataPresent": {
+        "exif": true,
+        "iptc": true,
+        "xmp": true
+      },
+      "disposition": "included-local-preview",
+      "category": "interventions",
+      "caption": {
+        "fr": "Intervention sur un écran ouvert et des composants électroniques",
+        "en": "Working on an open monitor and electronic components"
+      },
+      "publicationFile": "/gkgt-activities/n10.webp",
+      "thumbnailFile": "/gkgt-activities/n10-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; feuille en arrière-plan, étiquettes et provenance du fichier issu d’un export de réseau social à confirmer.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png",
+        "meanAbsoluteDifference": 67.22908528645833
+      }
+    },
+    {
+      "id": "N11",
+      "original": "source-assets/gkgt-authentic-15/originals/IMG-20210728-WA0002(2).jpg",
+      "sourceName": "IMG-20210728-WA0002(2).jpg",
+      "originalSha256": "b62c5878eca4aa1a9cc539e7fc031a438ad454533b36d0405aac51d9397ef2d5",
+      "originalWidth": 864,
+      "originalHeight": 1152,
+      "metadataPresent": {
+        "exif": true,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "16_unites-centrales-arriere-plan-modifie.png",
+      "duplicateReason": "Même prise de vue que l’original historique 16 ; conserver uniquement la copie à arrière-plan modifié déjà validée dans la galerie.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "source-assets/archives-techniques/originals/16_IMG-20210728-WA0002(1).webp",
+        "meanAbsoluteDifference": 8.753255208333334
+      }
+    },
+    {
+      "id": "N12",
+      "original": "source-assets/gkgt-authentic-15/originals/IMG_20180329_095427(1).jpg",
+      "sourceName": "IMG_20180329_095427(1).jpg",
+      "originalSha256": "9069cf1533dd443f91112a81efeeff35307ba3c19497990ea43d90f5ce740b1c",
+      "originalWidth": 1536,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "18_IMG_20180329_095427.webp",
+      "duplicateReason": "Même prise de vue que l’archive existante, dans un autre encodage ; pas de vignette répétée.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/18_IMG_20180329_095427.webp",
+        "meanAbsoluteDifference": 7.691813151041667
+      }
+    },
+    {
+      "id": "N13",
+      "original": "source-assets/gkgt-authentic-15/originals/IMG_20180627_080541(1).jpg",
+      "sourceName": "IMG_20180627_080541(1).jpg",
+      "originalSha256": "5f6f758a6caace6c64a78d14fe9c639fbeb8483fb8377d76d9f00bd572a668ab",
+      "originalWidth": 1536,
+      "originalHeight": 2048,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "interventions",
+      "caption": {
+        "fr": "Intervention à l’établi sur un ordinateur portable ouvert",
+        "en": "Working at a bench on an open laptop"
+      },
+      "publicationFile": "/gkgt-activities/n13.webp",
+      "thumbnailFile": "/gkgt-activities/n13-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Personne reconnaissable ; composants, étiquettes et matériel visibles à vérifier.",
+      "recognisablePeople": true,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/18_IMG_20180329_095427.webp",
+        "meanAbsoluteDifference": 60.024983723958336
+      }
+    },
+    {
+      "id": "N14",
+      "original": "source-assets/gkgt-authentic-15/originals/IMG_20190214_073458_8(1).jpg",
+      "sourceName": "IMG_20190214_073458_8(1).jpg",
+      "originalSha256": "6b312b2871130799bf5c13d9aad411b9d1af2cdb5c6d86eb54f9d4c7f38c5e59",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "visual-duplicate",
+      "duplicateOf": "21_IMG_20190214_073458_8.webp",
+      "duplicateReason": "Même prise de vue que l’archive existante, dans un autre encodage ; pas de vignette répétée.",
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/21_IMG_20190214_073458_8.webp",
+        "meanAbsoluteDifference": 7.044108072916667
+      }
+    },
+    {
+      "id": "N15",
+      "original": "source-assets/gkgt-authentic-15/originals/IMG_20190214_073528_2(1).jpg",
+      "sourceName": "IMG_20190214_073528_2(1).jpg",
+      "originalSha256": "d04f8eaba7dbbf197f9c7764da720da3435c5ba125fca9938794b159ff33a20d",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "metadataPresent": {
+        "exif": false,
+        "iptc": false,
+        "xmp": false
+      },
+      "disposition": "included-local-preview",
+      "category": "equipment",
+      "caption": {
+        "fr": "Imprimante multifonction, moniteur, unités centrales et boîte d’onduleur",
+        "en": "Multifunction printer, monitor, desktop computers and a UPS box"
+      },
+      "publicationFile": "/gkgt-activities/n15.webp",
+      "thumbnailFile": "/gkgt-activities/n15-thumb.webp",
+      "publicationStatus": "confirmed",
+      "confidentialityReview": "Marques et emballage commercial visibles, écran en arrière-plan et reflet partiel d’une personne à vérifier ; aucune affiliation constructeur revendiquée.",
+      "recognisablePeople": false,
+      "comparison": {
+        "method": "Revue visuelle + comparaison RGB redimensionnée 64x64, pas une égalité binaire",
+        "nearestOriginal": "public/archives-techniques/21_IMG_20190214_073458_8.webp",
+        "meanAbsoluteDifference": 48.223795572916664
+      }
+    }
+  ]
+}

@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Private original GKGT photos - do not publish
+/source-assets/gkgt-authentic-15/originals/

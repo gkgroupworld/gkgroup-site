@@ -1,10 +1,22 @@
+Les statuts de réserves et les résultats de garde mentionnés dans les sections chronologiques décrivent la situation au moment de chaque étape. Pour l'état actuel des autorisations, se reporter à la section 25 et au document docs/gkgt-visuels-autorisations.md.
+
 # Audit général GK GROUP — avant déploiement
 
-Date : 14 novembre 2026, fuseau Atlantic/Reykjavik.
+Date : 15 novembre 2026, fuseau Atlantic/Reykjavik.
 
-**État actuel : voir la section 16, audit technique final et corrections locales.** Les points C1 à C5 de l'audit initial sont corrigés et les tests locaux passent. Les contrôles du compte Netlify, les validations de confidentialité avant ouverture GKGM et l'accord final de publication restent nécessaires. GKGM demeure désactivé pour les envois réels. Aucun push, aucune PR, aucune fusion ni aucun déploiement.
+**État de référence GKGM : section 18, confirmation de la configuration GKGM déjà validée.** Les points techniques C1 à C5 sont corrigés. Le responsable confirme que GKGM doit rester accessible et opérationnel, avec réception prévue à `gk.contactus@gkgroup.app`, conservation de 12 mois et maintien des règles d'accès/confidentialité validées. L'activation publique observée en FR/EN est donc conforme à cette consigne et ne constitue plus un écart à corriger. Les destinataires réels, les accès et l'application de la conservation dans Netlify/Zoho restent non vérifiés faute d'accès authentifié. Aucun push, aucune PR, aucune fusion ni aucun déploiement effectué.
 
-Mises à jour : réalisations/partenaires GKGM (section 11), galeries GKGT (12), illustrations et autorisations (13), personnes 23/24 (14), validation photographique définitive (15), puis corrections techniques et tests finaux (16). Les sections 1 à 15 conservent l'historique ; leurs versions de dépendances, échecs de tests et réserves photographiques ne décrivent plus l'état actuel lorsqu'ils sont remplacés ci-dessous.
+Mises à jour : réalisations/partenaires GKGM (section 11), galeries GKGT (12), illustrations et autorisations (13), personnes 23/24 (14), validation photographique définitive (15), corrections techniques (16), vérification Netlify (17), puis confirmation de la configuration GKGM existante (18). Les sections précédentes conservent l'historique ; leurs consignes de fermeture remplacées ne doivent plus être appliquées.
+
+La section 19 consigne ensuite la proposition de direction visuelle internationale, **sans modification du site ni remplacement d'image**.
+
+**Dernière mise à jour — section 25 :** intégration locale des copies photographiques GKGT V2 sans IA. Galerie de 21 photographies réparties dans cinq séquences éditoriales, avec douze archives, neuf nouvelles vues et deux illustrations préservées. Les autorisations des neuf nouvelles vues sont désormais enregistrées comme confirmées dans `content/gkgt-authentic-batch.json`. Les cinq dossiers historiques du registre `content/gkgt-publication-rights.json` sont également confirmés. Le contrôle local du garde avec `NETLIFY=true` a réussi le 15 novembre 2026 (code de sortie 0). La revue visuelle finale des 122 variantes WebP reste à effectuer. Préparation locale uniquement : aucun push, aucune PR, aucune fusion ni aucun déploiement. Les consignes GKGM des sections antérieures restent inchangées.
+
+**État de présentation le plus récent : sections 21 et 22.** Les 21 vues GKGT sont désormais réparties dans cinq séquences éditoriales, sans répétition ni changement d'autorisation. GKGM présente les résultats historiques complémentaires déclarés pour le Canada, l'Albanie et quatre destinations de visite, avec clarification canadienne et anciens résultats/partenaires préservés. Les deux pages restent en préparation locale pour validation.
+
+La section 23 consigne ensuite l'accentuation technique légère des copies GKGT, explicitement choisie sans IA, sans modification des originaux ni levée d'autorisation.
+
+**Dernière revue — section 24 :** disposition des cinq séquences validée ; audit de définition et de diffusion photo par photo. Cinq meilleurs JPG retrouvés, limites de source et seconde compression Next q75 documentées. Vingt et une variantes sont proposées dans un support séparé, sans remplacer les images actuellement sélectionnées et sans reconstruction IA.
 
 ## 1. Conclusion et périmètre
 
@@ -466,3 +478,257 @@ La préparation conserve validation et minimisation des champs, aucune pièce jo
 **Améliorations recommandées après mesure/validation :** migration coordonnée de l'outillage ESLint, suivi de l'override minimatch, contrôle clavier/zoom/lecteur d'écran approfondi, mesure LCP/CLS/INP sur l'environnement autorisé, politique d'en-têtes compatible et documentation d'exploitation. Aucune réécriture de contenu validé, optimisation destructive d'images ou activation distante n'est engagée pour ces recommandations.
 
 **Livraison : corrections et rapport réunis dans le commit local de cet audit sur la branche de préparation. Aucun push, aucune fusion, aucune PR et aucun déploiement Netlify. L'accord final explicite de publication reste requis.**
+
+## 17. Vérification préproduction Netlify — 14 novembre 2026
+
+**Actualisation : la section 18 remplace les demandes de fermeture ou de nouvelle autorisation d'activation de cette section.** Le constat technique `enabled: true` reste exact ; le responsable confirme ensuite que l'accessibilité et le fonctionnement du formulaire sont voulus et déjà validés. Aucun plan de fermeture n'est désormais demandé.
+
+### Conclusion et limites d'accès
+
+Revue en lecture seule du dépôt au commit local **`b3b2521`**, de la documentation officielle Netlify et de quatre URL publiques déjà déployées. Aucun fichier applicatif, paramètre Netlify, formulaire distant ou déclencheur n'a été modifié. La recherche d'une intégration Netlify n'en trouve pas ; pas de CLI Netlify installée ni de `.netlify/state.json` local. Le tableau de bord affiche **Log in** : aucune session authentifiée n'est disponible. Les valeurs confidentielles des variables et les soumissions des utilisateurs n'ont pas été consultées.
+
+**Point prioritaire : l'affirmation de fermeture GKGM des sections antérieures concerne le checkout local, pas une observation de production.** Le GET de `https://gkgroup.app/gkgm-project?lang=fr`, confirmé à **13:57:38 UTC**, retourne 200 avec une action de formulaire `/__gkgm-forms.html`, un paramètre public de composant **`enabled: true`**, et sans le message d'envoi désactivé. Cela établit que l'interface servie est configurée pour autoriser l'envoi. Ce n'est ni un test de réception, ni une lecture des variables secrètes, ni une identification du commit déployé. Aucun POST n'a été fait. **La fermeture de la version publique n'est donc pas confirmée et exige une intervention autorisée du responsable.**
+
+### Configuration et branche : confirmé / à vérifier
+
+| Élément | Confirmé dans le dépôt | Encore à vérifier dans Netlify |
+| --- | --- | --- |
+| Dépôt Git | `origin` désigne `gkgroupworld/gkgroup-site`. | Le site qui sert gkgroup.app est-il effectivement relié à ce dépôt et à la bonne équipe ? |
+| Branche de préparation | `feature/galerie-archives-techniques`, commit `b3b2521` au début de cette revue. | Son inclusion éventuelle dans les branch deploys ; aucune branche locale n'est présumée privée une fois poussée. |
+| Branche principale | `main` local suit `origin/main`, référence locale `4ee789f`. Aucun rafraîchissement distant effectué pendant cette revue. | **Branche de production inconnue** : la présence de `main` ne prouve pas le réglage « Production branch ». Relever aussi le SHA du déploiement réellement publié. |
+| Build | `netlify.toml` : `command = "npm run build"`, `publish = ".next"`, plugin `@netlify/plugin-nextjs` ; version verrouillée 5.16.7. Next.js 16.4.6, React 19.2.9, verrouillage npm présent. | Base directory, package directory, chemin du fichier de configuration, commande et dossier effectifs du dernier build. Le nom local `galerie-work` ne doit pas être copié automatiquement comme base du dépôt distant. |
+| Installation / runtime | Aucune version Node fixée par `engines`, `.nvmrc` ou `.node-version`. Environnement local déjà testé : Node 26.9.0. | Versions Node/npm réellement utilisées pour build et fonctions, politique d'installation, cache et version de l'adaptateur effectivement déployée. |
+| Contrôles automatiques | Le build npm lance le contrôle des droits photographiques puis Next. Lint et suites de tests ne sont pas inclus dans cette commande. Aucun workflow sous `.github/workflows` dans ce checkout. | Autres automatisations externes, contrôles GitHub, règles de déploiement et résultats du dernier build. |
+| Arrêt de publication | Aucun verrou global ni restriction de branches/previews dans `netlify.toml`. Le contrôle des photos validées passe désormais. | État réel des builds, auto-publication, previews, branches et build hooks. Le contrôle photo ne vaut pas verrou de publication. |
+
+### Risque lors d'un futur push et mesures manuelles possibles
+
+Un push sur la branche de production peut lancer un build puis une publication ; un push sur la branche de préparation peut créer un branch deploy selon les réglages. Une PR peut créer une Deploy Preview. Hooks, API et actions manuelles sont d'autres voies. Ces possibilités sont à vérifier dans le compte ; aucune n'a été déclenchée ici.
+
+Deux réglages distincts peuvent être proposés **à validation avant modification** :
+
+- **Stopped builds**, dans `Project configuration > Developer settings > Continuous deployment > Build settings` : empêche les builds Netlify déclenchés par Git, previews, branches, hooks, API de build et interface, selon la [documentation officielle](https://docs.netlify.com/build/configure-builds/stop-or-activate-builds/). À vérifier avant tout futur push si l'objectif est de suspendre les builds. Ne pas l'assimiler à un blocage universel de tout téléversement manuel.
+- **Lock to stop auto publishing**, depuis la liste Deploys : conserve le déploiement publié mais ne supprime pas les autres builds ni leurs URL de prévisualisation. Voir [gestion des déploiements](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/). Ce verrou ne ferme pas un formulaire déjà actif sur le déploiement conservé.
+
+Ni un marqueur `[skip netlify]`, ni le simple fait de pousser hors `main`, ni le fait de verrouiller l'auto-publication ne doit être pris pour une garantie d'absence de prévisualisation publique. Aucun de ces réglages n'a été changé.
+
+### Variables nécessaires — noms et portées, sans valeurs confidentielles
+
+| Variable / famille | Usage et consigne |
+| --- | --- |
+| `GKGM_FRONTEND_ENABLED` | Interrupteur serveur de l'envoi GKGM ; **doit rester absent ou à `false` avant autorisation**. Valeur réelle Netlify non consultée. |
+| `GKGM_PRIVACY_APPROVED` | Deuxième interrupteur indépendant ; même consigne de fermeture. Ne passer à `true` qu'après validation juridique/opérationnelle et autorisation explicite. |
+| Portées des deux interrupteurs | Le rendu Next lit `process.env` côté serveur : contrôler la disponibilité dans **Functions**, et Builds si nécessaire à l'adaptateur. La portée Netlify appelée « Runtime » concerne notamment Forms et ne remplace pas Functions pour Next SSR. Contrôler les variables partagées d'équipe, leurs surcharges par site et par contexte. |
+| `CONTEXT` | Contexte Netlify utilisé pour refuser les previews reconnues ; ne pas supposer sa présence au runtime des fonctions. Les deux interrupteurs doivent aussi être fermés dans les contextes de prévisualisation. Ne pas créer une fausse valeur de contexte pour contourner ce refus. |
+| `NETLIFY` | Indicateur de build fourni par la plateforme et lu par le contrôle photographique. Ne pas le falsifier pour contourner le contrôle. |
+| `NODE_ENV` / `GK_NEWS_LOCAL_PREVIEW` | La preview éditoriale exige le mode développement et l'option locale ; ne pas activer cette option en production. Laisser Netlify/Next gérer le mode de production. |
+| Version Node | Paramètre de build tel que `NODE_VERSION`, et runtime fonctions à contrôler séparément. Aucune valeur cloud n'est confirmée ou choisie par ce rapport. |
+| Secrets SMTP/Zoho, API Forms, base de données | **Aucun n'est requis par le code actuel** des deux collecteurs natifs et des liens email/WhatsApp. Ne pas ajouter de jeton Netlify, mot de passe SMTP ou secret `NEXT_PUBLIC_*` pour faire fonctionner ces formulaires. Les notifications natives se règlent dans le compte. |
+
+Sources : [portées et contextes des variables](https://docs.netlify.com/build/environment-variables/overview/) ; [variables des fonctions](https://docs.netlify.com/build/functions/environment-variables/). Pour les fonctions, les variables sont attachées au déploiement : modifier une valeur dans le tableau de bord ne garantit pas la désactivation immédiate du déploiement existant ; la documentation prévoit un nouveau déploiement pour appliquer les mises à jour. **Aucun redéploiement, même de l'ancienne version, n'est autorisé par cette demande.** Le responsable devra décider d'un plan de fermeture compatible avec cette contrainte, avant toute intervention.
+
+### Formulaires et destinations
+
+| Parcours | Définition et destination technique locale | Destination humaine / statut distant |
+| --- | --- | --- |
+| Partenariats | `international-partnerships`, définition `public/__forms.html`, POST URL-encodé vers `/__forms.html`, honeypot `fax`, champs et consentement FR/EN. | Les pages existantes `/partnerships?lang=fr` et `/__forms.html` répondent 200. La définition servie conserve le bon nom. Le destinataire réel des notifications reste inconnu. `gk.contactus@gkgroup.app` est un contact prévu, pas une preuve du réglage Netlify. |
+| Projet GKGM | `gkgm-project-inquiry`, définition `public/__gkgm-forms.html`, POST vers `/__gkgm-forms.html` seulement si l'interface est activée ; honeypot `fax`, version de notice, champs conditionnels et consentement. | La définition publique répond 200 et porte le bon nom. **L'interface publique observée transmet `enabled: true`**, contrairement au défaut local fermé. La notice prévoit des notifications à `gk.contactus@gkgroup.app` via Zoho ; configuration et réception réelles non vérifiées. |
+| Contact / demandes techniques | `ContactForm` prépare un lien WhatsApp vers le numéro professionnel +228 90 55 98 88 ou un `mailto:` vers `gk.contactus@gkgroup.app`. | Ce n'est pas un collecteur Netlify : aucun enregistrement ou email n'est prouvé par l'ouverture d'un lien. `info@gkgroup.app` est l'adresse générale affichée, distincte de ces envois. |
+
+Les deux ressources de définition publiques portent leurs marqueurs de référence et le nom de formulaire attendu ; cela ne prouve ni leur présence effective dans Forms, ni l'acceptation des POST, ni la destination des notifications. Les chemins statiques sont exclus du Proxy local. Vérifier dans le compte la détection, les champs, quotas, filtres, listes Verified/Spam et les notifications propres à chaque formulaire. Les [notifications Forms](https://docs.netlify.com/manage/forms/notifications/) peuvent viser un formulaire précis ou tous ; contrôler les destinataires, webhooks et intégrations. Selon le mécanisme disponible pour l'équipe, une adresse externe doit être confirmée ou correspondre à un membre actif ; l'adresse de réponse de l'expéditeur ne définit pas le destinataire des notifications.
+
+**État local confirmé :** `projectDeliveryConfig({})`, la configuration avec les deux indicateurs faux et l'environnement local hérité retournent tous `enabled: false`. Les sept tests unitaires Forms ont été réexécutés et passent, y compris le refus en preview. Les interrupteurs ne ferment pas les POST directs à Netlify Forms. L'état public n'a pas été modifié pour essayer de le faire correspondre au local.
+
+### Test réel possible sans publier le lot local — procédure proposée, non exécutée
+
+La [détection Forms](https://docs.netlify.com/manage/forms/setup/) repose sur le HTML déployé. Les deux définitions existent déjà publiquement : **un test sur le formulaire de partenariat déjà publié peut donc être envisagé sans publier `b3b2521`**, sous réserve de confirmer sa présence dans Forms. Il vérifierait la chaîne existante, pas l'exécution du nouveau code local.
+
+1. Dans le bon projet Netlify, relever le déploiement publié et vérifier que `international-partnerships` est détecté, avec les champs attendus et un destinataire autorisé/confirmé. Ne rien enregistrer si un réglage manque : rapporter l'écart avant changement.
+2. Obtenir l'accord pour **une soumission réelle identifiée comme test**, avec données d'organisation fictives, aucun dossier personnel ni pièce, et une adresse de test détenue/contrôlée par GK GROUP. Convenir du destinataire et du créneau. Ne pas utiliser l'adresse d'un tiers inventé.
+3. Après cet accord seulement, soumettre via le formulaire **déjà en ligne**, avec un marqueur unique tel que `TEST-RECEPTION-GK-AAAAMMJJ-01`, honeypot vide et message indiquant qu'aucun traitement commercial n'est demandé. Pas de push, pas de preview nouvelle, pas de déploiement.
+4. Corréler la soumission dans Verified ou Spam avec le marqueur et l'heure ; vérifier la notification dans la boîte prévue, y compris les indésirables, et contrôler les champs FR/EN nécessaires. Une page de succès ou un HTTP 200 ne prouve pas la réception en boîte.
+5. Consigner le résultat sans recopier de données personnelles ni de secrets ; gérer ensuite la conservation du test selon une décision autorisée. Aucune suppression distante n'est effectuée par cet audit.
+
+**GKGM est exclu de cette proposition immédiate** : un test réel de son collecteur exige une autorisation spécifique distincte de la validation de ses photographies et une résolution préalable de la fermeture demandée. Sa présence active observée n'est pas une autorisation d'utilisation. Si un formulaire n'est pas enregistré ou si ses notifications doivent être modifiées, le test complet reste en attente ; aucune création de site, de preview, de nouveau collecteur ou de déploiement n'est autorisée implicitement. Les tests locaux simulés restent disponibles mais ne prouvent pas la réception Netlify/Zoho.
+
+### Opérations manuelles à prévoir, sans les exécuter automatiquement
+
+| Priorité | Écran / vérification | Intervention nécessitant décision |
+| --- | --- | --- |
+| Prioritaire — GKGM déjà public | Déploiement publié : SHA, date, code/configuration effective ; variables des fonctions et contextes. | Déterminer pourquoi `enabled: true` est servi et approuver un plan de fermeture. Changer des variables seules peut nécessiter un nouveau déploiement ; ne pas cliquer sur Trigger deploy/Retry sans accord. Fermer l'interface ne fermerait pas nécessairement le collecteur natif. |
+| Avant futur push | Continuous deployment : Production branch, repository/base/package directories, Build status, branches/previews et hooks ; Deploys : auto-publication. | Décider d'arrêter les builds et/ou de verrouiller l'auto-publication. Ces deux opérations seraient des changements distants et ne sont pas réalisés ici. |
+| Avant publication | Build settings et logs du déploiement existant, versions Node/npm/adaptateur, domaine principal et protections de previews. | Retenir et valider l'environnement cohérent, sans rejouer un build automatiquement. |
+| Avant test réel | Forms : formulaires détectés, quotas, antispam, accès ; Submission notifications : destinataires et confirmations. | Approuver la soumission fictive réelle et toute modification de notification éventuellement nécessaire. Aucun test expédié ici. |
+| Avant ouverture GKGM | Notice, transferts, conservation/sauvegardes, accès Zoho/Netlify et MFA, traitement des notifications/copies. | Valider les éléments encore ouverts de la section 16, puis donner une autorisation spécifique d'activation. |
+
+### Bilan de cette vérification
+
+**Confirmés :** configuration du dépôt, branche de travail, dépendances épinglées, deux définitions et endpoints, destinations de contact codées, défaut local GKGM fermé, sept tests Forms réussis ; quatre GET publics en 200, avec interface GKGM publiée configurée `enabled: true`. **Non confirmés :** branche de production réelle, SHA publié, réglages d'automatisation, valeurs/portées des variables de compte, détection Forms, destinataires et réception effective. L'accès à ces paramètres nécessite une session Netlify authentifiée du responsable ; aucun secret n'est demandé dans le rapport.
+
+Seul le présent rapport est modifié localement. Lint/build, audit npm complet, parcours navigateur et responsive du lot `b3b2521` ne sont pas présentés comme réexécutés pour cette revue documentaire : leurs résultats restent ceux de la section 16. **Aucun POST distant, aucune modification distante, aucun push, aucune PR, aucune fusion et aucun déploiement.**
+
+## 18. GKGM — configuration existante confirmée par le responsable
+
+Le 14 novembre 2026, le responsable confirme que le formulaire **doit rester accessible et opérationnel sur gkgroup.app**, que l'adresse de réception prévue est **gk.contactus@gkgroup.app**, que la durée retenue est de **12 mois**, et que les règles d'accès et de confidentialité précédemment validées doivent être conservées. Cette confirmation remplace la consigne antérieure de maintenir GKGM désactivé ; elle n'autorise aucun push, PR, fusion ou déploiement. Aucun formulaire n'est recréé et aucune configuration applicative ou distante n'est modifiée.
+
+### Vérification ciblée et résultat
+
+| Paramètre | Projet local | Configuration publique / compte |
+| --- | --- | --- |
+| Accessibilité et envoi | `projectDeliveryConfig` autorise l'interface de production lorsque `GKGM_FRONTEND_ENABLED` et `GKGM_PRIVACY_APPROVED` valent exactement `true`. Défaut fermé hors configuration explicite et refus des previews reconnus conservés ; ce mécanisme ne nécessite pas de réécriture. | Deux GET FR/EN du 14 novembre à **14:04 UTC** retournent 200, le paramètre public `enabled: true` et l'action `/__gkgm-forms.html`. L'interface publique est configurée pour l'envoi, conformément à la consigne. Aucune soumission réelle n'est faite pour prouver la réception. |
+| Adresse prévue | Les notices FR/EN et le contact du formulaire utilisent `gk.contactus@gkgroup.app` ; les notifications via Zoho Mail sont décrites. Le code utilise Netlify Forms, sans serveur SMTP applicatif. | Adresse présente dans les pages publiques. Le destinataire effectif des notifications ne peut pas être déduit de ce texte ; il reste à contrôler dans `Forms > Submission notifications`, sans modification automatique. |
+| Conservation de 12 mois | FR/EN : demandes sans suite conservées **12 mois maximum depuis réception initiale**, puis supprimées ; contrôle hebdomadaire sous la responsabilité d'Edem Yawo Awutey. Netlify, Zoho et copies sont couverts. La politique distincte des dossiers devenus clients, déjà prévue, reste inchangée. | Aucun accès aux soumissions, copies de notifications ou journaux de suppression : application effective non vérifiée. Aucun mécanisme automatique de purge n'est défini dans le dépôt ; le respect de la règle repose sur l'exécution de la procédure prévue, non sur le texte seul. |
+| Accès et confidentialité | Edem Yawo Awutey est indiqué comme seul accès interne autorisé ; finalités limitées à l'étude/réponse, pas de démarchage ni de transmission automatique aux partenaires. Reconnaissance de lecture non précochée et minimisation des champs conservées. | Permissions réelles des membres Netlify/Zoho, MFA et accès aux copies non consultés. Aucune autorisation ni donnée confidentielle n'est exposée ou changée. |
+
+Les vérifications ciblées des deux contenus FR/EN confirment adresse, durée, responsable d'accès, absence de marketing et prise en compte des copies Zoho. Les **sept tests unitaires Forms passent** après cette confirmation. Les pages publiques initiales ne contiennent pas tout le texte de confidentialité du parcours client à plusieurs étapes ; cette absence dans le premier HTML n'est pas présentée comme une absence de notice dans le parcours. Aucun test du dernier écran public ou de réception réelle n'est revendiqué.
+
+### Écarts constatés et corrections indispensables
+
+1. **Documentation d'audit contradictoire : corrigée.** L'en-tête et le présent complément retirent la demande de fermeture du formulaire existant. Les anciennes mentions « avant ouverture », « activation non autorisée » ou équivalentes dans les états historiques décrivent les instructions antérieures ; elles ne doivent pas entraîner une désactivation ni une nouvelle demande de validation des paramètres que le responsable vient de confirmer. Les notices locales contiennent encore des réserves explicites sur certains détails juridiques/opérationnels non documentés ; aucun de ces détails n'est inventé ou effacé au titre de cette confirmation générale.
+2. **Pas d'écart de fonctionnement démontré nécessitant une correction de code.** Le défaut local fermé reste un garde-fou de configuration ; pour un futur déploiement autorisé qui doit conserver GKGM opérationnel, vérifier que les deux indicateurs de production sont effectivement activés dans la portée serveur appropriée. Ne pas les remplacer par un défaut ouvert ni les activer dans les previews.
+3. **Contrôles de compte non établis, sans présumer d'une non-conformité.** Vérifier le destinataire réel `gk.contactus@gkgroup.app`, les permissions effectives et la preuve du suivi/suppression à 12 mois dans Netlify et Zoho. Corriger uniquement si une divergence est constatée, après accord pour toute modification distante. Aucune purge automatique ou réorganisation d'accès n'est ajoutée sans constat justifiant ce changement.
+
+**Bilan :** maintien du formulaire existant et de ses règles validées. Seul le rapport d'audit est actualisé ; aucun changement de code, de variables, de destinataires, de conservation ou de permissions. Aucun POST, aucun push, aucune PR, aucune fusion et aucun déploiement.
+
+## 19. Direction visuelle internationale — dossier de proposition uniquement
+
+Le responsable valide une orientation premium, institutionnelle et internationale, marine/or, avec photographies réalistes et logo officiel strictement inchangé. Il exige un inventaire et un plan page par page avant remplacement. Cette demande n'autorise pas l'intégration définitive de nouveaux visuels.
+
+### Livrables locaux pour revue
+
+- `docs/inventaire-visuels-actuels.md` : catalogue des 31 ressources existantes examinées, emplacements communs et propres à chacune des 19 pages, fonction, fichier source, composant et classement proposé conserver/remplacer/déplacer. Carte sociale, favicon, fichiers non affichés et original 16 privé distingués.
+- `docs/inventaire-visuels-actuels.json` : relevé des 38 URL locales FR/EN, 208 occurrences d'images, alternatives, sources, classes et empreintes SHA-256 ; complément `productionSnapshot` séparé pour les 38 HTML publics lus sans téléchargement de média.
+- `docs/proposition-visuelle-internationale.md` : palette et langage photographique, plan des 13 pages principales et six articles, onze briefs de sélection, règles de qualification FR/EN et preuves de droits nécessaires avant intégration.
+- `docs/planche-direction-visuelle.html` : support autonome de revue, sélecteur des 19 pages, compositions et briefs FR/EN, catalogue des 24 ressources de diffusion actuelles (22 images de pages, carte sociale et favicon). Les zones photographiques proposées sont explicitement vides/en attente, sans photo fictive.
+
+Prévisualisation locale de ce dossier : `http://127.0.0.1:3118/docs/planche-direction-visuelle.html`, distincte du site de développement sur le port 3000. Le serveur de revue est limité à 127.0.0.1, en lecture seule, aux documents de proposition et aux images publiques locales ; il ne sert pas `source-assets`, ne prend pas de POST et n'effectue aucun déploiement.
+
+### Constats et recommandations à valider
+
+La version locale complète affiche **22 fichiers d'images de contenu distincts**, 104 occurrences par langue. Les bannières utilisent des logos ; les autres images sont le portrait du fondateur, les douze archives et les deux illustrations. Le public déjà déployé affiche **huit chemins d'images distincts**, 90 occurrences par langue : sept identités graphiques et le portrait. Les quatorze visuels de préparation GKGT ne sont pas affichés dans les HTML publics observés. Une même URL ne prouve pas l'identité binaire d'un fichier distant ; aucun média distant n'a été téléchargé.
+
+Proposition : architecture d'affaires contemporaine pour l'accueil, maintenance réelle pour GKGT, conseil humain pour GKGM ; schémas/identités privilégiés pour architecture et entités, sobriété pour formulaires/contact. Conserver strictement les logos et les douze archives. Prévoir le remplacement futur des deux illustrations par des photographies récentes authentifiées de l'atelier/boutique, et du portrait mis en scène par une nouvelle prise de vue naturelle autorisée. Aucun jugement sur la méthode de création du portrait n'est présenté comme un fait vérifié. Les cartouches de logos peuvent être proposés à un autre emplacement dans les futures compositions, sans altération de leurs fichiers.
+
+Les onze briefs ne sont pas onze fichiers nouveaux acquis : **aucun candidat photographique n'est téléchargé, acheté, généré ou intégré**. Les labels existants des illustrations restent en place. Toute future photo de stock sera qualifiée d'illustrative quant à son lien avec GK GROUP ; elle ne sera pas décrite comme installation, équipe ou partenaire authentique. Le choix final exige source, licence et droits appropriés, revue des éléments sensibles, légendes FR/EN et validation fichier par fichier.
+
+### Vérification et protection du projet
+
+Les 38 URL locales et les 38 URL publiques du sitemap répondent 200 lors du relevé. Concordance des fichiers locaux entre FR/EN et classement des 208 occurrences vérifiés. Les 31 fichiers inventoriés sont identiques à leurs empreintes relevées avant la production du dossier ; le test `approved-assets.test.mjs` confirme aussi l'identité des 24 ressources protégées par le manifeste approuvé. Les douze archives restent dans leur rubrique, la copie 16 reste signalée, son original reste intact hors public. Aucun fichier applicatif, logo, photographie, illustration, formulaire, contenu validé, SEO ou configuration Netlify n'est modifié.
+
+Le support de revue a été testé à 390, 768 et 1440 px, sans débordement ; sélecteur de pages et changement de langue des compositions vérifiés. Lint/build et suites fonctionnelles du site ne sont pas réexécutés pour ces ajouts documentaires sans changement applicatif ; leurs résultats restent ceux de la section 16. La future refonte intégrée devra repasser tous ces contrôles après validation.
+
+**En attente : validation des compositions, des remplacements proposés et des sources à privilégier, puis présélection des fichiers avec droits avant toute intégration. Aucune modification du fonctionnement GKGM validé en section 18. Aucun push, aucune PR, aucune fusion, aucun déploiement.**
+
+## 20. Photographies authentiques GKGT — galerie locale après dédoublonnage
+
+Le ZIP `GKGT_15_photos_authentiques.zip` contient quinze JPG. Tous sont extraits sans modification dans `source-assets/gkgt-authentic-15/originals`, avec comparaison SHA-256 directe des quinze fichiers aux entrées ZIP. Les douze archives existantes et leurs légendes FR/EN restent conservées. Six JPG sont des reprises visuelles des archives 01/02/06/16/18/21 ; ils restent archivés hors public, sans vignette supplémentaire. La reprise de l'ancienne photo 16 n'est pas réintroduite dans la galerie : sa copie à arrière-plan modifié approuvée reste utilisée.
+
+**Résultat : 12 + 15 − 6 = 21 vues distinctes**, conformément à la réserve de vérification des doublons. Les nouvelles vues N03/N04/N05/N06/N08/N09/N10/N13/N15 sont réparties en cinq interventions techniques, trois équipements et une vue d'espace de travail ; les douze précédentes forment la rubrique Archives historiques. Les deux illustrations modernes sont maintenues sans changement dans leur section séparée, avec leurs mentions illustratives ; elles ne sont pas ajoutées au compte de photographies authentiques.
+
+La galerie ajoute un titre propre, une grille responsive marine/or et quatre catégories navigables par ancres. L'ancre `technical-archives`, le titre et l'introduction historique GK Informatique restent présents. Chaque photographie possède une légende/alternative bilingue. Agrandissement sur demande, précédente/suivante, flèches, Échap, Tab/Maj+Tab et retour du focus sont disponibles, sans ajout de dépendance ni modification des formulaires. Les images ne sont ni étirées ni recadrées.
+
+Les neuf copies agrandies WebP totalisent 1 205 500 octets contre 4 677 380 octets pour leurs sources, soit environ 74 % de moins ; leurs neuf miniatures totalisent 255 230 octets. Limites de grand côté : 1600/640 px, sans agrandissement des petites sources. Seuls orientation, redimensionnement proportionnel et compression sont appliqués ; métadonnées retirées des copies, originaux intacts. Le script reproductible `scripts/prepare-gkgt-authentic.mjs` vérifie les empreintes avant traitement.
+
+### Autorisations non étendues automatiquement
+
+Le registre historique `content/gkgt-publication-rights.json` reste inchangé. Le registre distinct `content/gkgt-authentic-batch.json` contient les quinze fichiers, les six doublons, neuf légendes FR/EN et les réserves. Huit vues nouvelles montrent des personnes reconnaissables : **N03/N04/N05/N06/N08/N09/N10/N13**. Les contenus d'écran, documents/tableau, étiquettes, marques, emballage et reflet partiel de N15 sont signalés sans transcription de valeurs. L'origine et les droits de N10, dont le nom suggère un export de réseau social, sont à confirmer. Aucun accord sur les nouvelles vues n'est déduit d'une ressemblance ou d'une autorisation antérieure.
+
+Le responsable doit valider les ajouts, les droits du photographe, les accords de personnes et les éventuels contenus de tiers avant publication. L'interface locale affiche une réserve sur les neuf ajouts. Le garde `prebuild` est étendu à ce lot : code 0 en local, code 1 sous simulation `NETLIFY=true`, avec les neuf réserves ; aucune réserve historique déjà résolue n'est rouverte. Aucun réglage de compte Netlify ni de confidentialité GKGM n'est modifié. Ce garde couvre la commande npm prévue, pas un téléversement manuel qui le contournerait.
+
+### Validation technique et livrables
+
+- Lint et build local réussis ; 17 entrées du build.
+- **12 tests unitaires réussis**, incluant identité des ressources approuvées, quinze originaux, copies proportionnelles sans métadonnées et garde des neuf permissions en attente.
+- Les neuf scripts de régression des pages passent, avec `verify-galleries` adapté au résultat dédoublonné ; les 38 URL SEO FR/EN, bannières et contenus validés sont conservés.
+- 12 parcours GKGM et deux parcours partenariats simulés passent, sans trafic fournisseur ni envoi réel ; les formulaires et leurs réglages sont inchangés.
+- Six combinaisons FR/EN × 390/768/1440 px : 21 figures, quatre catégories, douze archives, deux illustrations, aucune alternative vide ni débordement, images contenues.
+- Les 21 agrandissements sont examinés et chargés sur ordinateur et sur téléphone ; commandes, bouclage, focus, Échap et restauration du défilement contrôlés. Quatre chargements desktop initialement en cours ont été revérifiés après disponibilité ; aucune image cassée ne reste identifiée.
+
+Rapport détaillé : `docs/gkgt-galerie-authentique-validation.md` ; mesures : `docs/gkgt-authentic-optimisation.json` ; autorisations : `docs/gkgt-visuels-autorisations.md`. Les inventaires et propositions de section 19 décrivent l'état antérieur à cet ajout et ne sont pas des inventaires actualisés de la galerie de 21 vues.
+
+Prévisualisation : `http://127.0.0.1:3000/gk-global-technology?lang=fr#gkgt-gallery` et variante `?lang=en#gkgt-gallery`. Le logo, les fichiers historiques, les illustrations, les contenus institutionnels, le SEO et les fonctionnalités hors galerie sont préservés. Aucun test d'appareil physique, Safari/iOS, lecteur d'écran, Lighthouse mobile, mesure de production ou réception réelle n'est revendiqué. La validation photographique demandée reste distincte de l'accord final de mise en production.
+
+**Aucun push GitHub, aucune fusion, aucune PR, aucun déploiement. Revue et autorisations du nouveau lot en attente.**
+
+Complément de revue préalable : `docs/gkgt-neuf-photos-autorisations.md` et sa planche `docs/gkgt-neuf-photos-revue.jpg` présentent les neuf ajouts avec noms de fichiers, personnes visibles, confidentialité et autres droits séparés. Les neuf statuts et l'autorisation générale restent en attente ; aucun nom de personne ou consentement n'est déduit des images. Quatre tests ciblés passent, dont la garde Netlify qui reste en refus pour ce lot. Organisation des 21 vues et six doublons privés inchangée ; aucun code, statut d'autorisation, original ou réglage distant modifié pour cette étape.
+
+## 21. GKGT — photographie intégrée à la présentation de l'activité
+
+À la demande du responsable, la galerie uniforme est remplacée par cinq séquences éditoriales réparties dans la page : expertise (3 vues), maintenance (4), équipements/reconditionnement (6), atelier/espaces de travail (4), parcours historique (4). **21 identifiants et 21 emplacements distincts** : aucune photographie répétée. Le grand portrait d'activité précède les détails de composants dans l'ordre mobile ; les autres séquences alternent grandes vues, duos/trios et texte/image. La frise est explicitement un ordre de lecture documentaire sans dates, pas une chronologie vérifiée de l'entreprise.
+
+Les douze archives sont toutes conservées et identifiées comme archives dans les séquences pertinentes ; quatre forment la frise à l'ancre `technical-archives`, dont le titre et l'explication GK Informatique sont conservés. Les quinze JPG originaux, les six doublons exclus, les deux illustrations modernes, le logo et les fichiers photographiques ne sont pas modifiés. Les services et limites institutionnels restent présents. La modale commune conserve agrandissement, précédente/suivante, clavier, Échap et restauration du focus. Les nouvelles vues gardent leurs mentions de réserve ; le registre et le refus de build Netlify restent inchangés.
+
+Rapport et répartition par identifiant : `docs/gkgt-presentation-editoriale-validation.md`. Prévisualisation : `http://127.0.0.1:3000/gk-global-technology?lang=fr#gkgt-gallery`, et variante anglaise. Les anciens passages décrivant une grille unique ou douze images toutes regroupées dans la rubrique historique décrivent l'état antérieur à cette nouvelle instruction.
+
+## 22. GKGM — enrichissement des réalisations historiques déclarées
+
+La section FR/EN porte désormais les titres demandés « Nos réalisations en mobilité internationale » / « Our International Mobility Track Record ». Deux cartes mettent en avant **plus de 50** pour le Canada et **environ 10** pour l'Albanie. Quatre destinations présentent des accompagnements ayant abouti à des visas de visite, **sans nombre inventé** : Équateur, Singapour, Malaisie et Chine. La source des résultats est clairement la déclaration de GKGM ; aucun résultat futur ni affiliation à une autorité n'est promis.
+
+Une clarification du responsable précise que les dossiers canadiens comprennent visa d'entrée et permis d'études/approbation. La formulation « visas d'entrée pour études » est accompagnée d'une note sur ces documents, **sans les compter comme des résultats supplémentaires**. La distinction visa/permis a été vérifiée dans la documentation IRCC, référencée au rapport ; les pièces individuelles ne sont pas auditées. Les autres types restent génériques et conformes aux déclarations, sans ajout de sous-catégorie administrative.
+
+Portugal (3 visas D Job Seeker), Royaume-Uni (2 visas visiteurs, 2025), Indonésie (1 visa C2, 2026) et Pologne (8 permis de travail, 2025–2026) sont conservés. Le sous-total de six concerne uniquement les trois anciens résultats de visas ; aucun total mondial ne mélange comptes exacts, approximations et nombres non fournis. Les permis polonais restent distincts. La période « depuis 2023 » est limitée à l'ancienne série ; aucune période nouvelle n'est inventée. Les quatre partenaires B2B et leurs précautions d'affiliation restent inchangés. Aucun formulaire ni réglage de confidentialité ou d'activation n'est modifié.
+
+Rapport : `docs/gkgm-realisations-internationales-validation.md`. Données actualisables : `content/mobility-track-record.js`. Prévisualisation FR/EN : `http://127.0.0.1:3000/gk-global-mobility?lang=fr#track-record` et variante `?lang=en#track-record`.
+
+### Contrôles communs aux deux présentations
+
+Lint et build local réussis, **14 tests unitaires réussis**, neuf scripts de pages/régression réussis, 38 URL SEO FR/EN préservées. Douze parcours GKGM et deux parcours partenariats simulés passent sans trafic fournisseur réel. Sur chaque page, FR/EN × 390/768/1440 px : aucun débordement ; GKGT affiche 21 vues uniques dans cinq séquences, GKGM deux résultats complémentaires, quatre destinations non chiffrées et quatre partenaires. Les 21 agrandissements après redistribution chargent correctement ; clavier et focus sont vérifiés. Après le dernier ajustement d'ordre de lecture GKGT, nouveau build/lint/tests unitaires réussis et contrôle des trois largeurs avec N13 en première image et 21 identifiants uniques.
+
+Les tests d'identité des ressources de marque/photos/illustrations et des quinze originaux passent. Les statuts photographiques restent en attente et la simulation `NETLIFY=true` reste en refus. Aucun test physique, lecteur d'écran, Lighthouse mobile, réception réelle de formulaire ou vérification indépendante de dossiers de visa n'est revendiqué. Les avertissements Node connus des tests restent non bloquants.
+
+**Revue locale des présentations et autorisations distinctes encore nécessaires avant publication. Aucun push, aucune fusion, aucune PR, aucun déploiement.**
+
+## 23. GKGT — netteté technique non générative
+
+Le responsable choisit une accentuation légère sans IA. Vingt et une copies de diffusion et leurs miniatures sont créées dans `public/gkgt-sharpness-v1/`, sans écraser les fichiers précédents ni les originaux. Traitement Sharp/libvips limité à l'orientation, au redimensionnement proportionnel, à la netteté douce de luminance et à la compression WebP ; aucune reconstruction de détail, retouche de visage, modification de décor ou recadrage. La photo 16 repart exclusivement de la copie à arrière-plan modifié déjà approuvée.
+
+Les copies agrandies utilisent la résolution disponible jusqu'à 2048 px, les miniatures jusqu'à 960 px, sans agrandissement artificiel. Le manifeste `content/gkgt-sharpness.json` conserve sources, empreintes, paramètres, dimensions et poids ; le script `scripts/prepare-gkgt-sharpness.mjs` permet de reproduire le traitement. La sélection de diffusion est appliquée aux mêmes 21 identifiants, avec les mêmes légendes, séquences et statuts. Le gain reste volontairement modéré et ne prétend pas restaurer une information absente.
+
+Rapport : `docs/gkgt-nettete-validation.md` ; comparaison de trois vues : `docs/gkgt-nettete-comparaison.jpg`. Lint, build, **15 tests unitaires** et contrôle HTTP GKGT/GKGM FR/EN réussis. Les 21 sources, les quinze originaux et les ressources protégées restent intacts ; copies proportionnelles et sans EXIF/IPTC/XMP. Aucun test de formulaire ou campagne responsive complète supplémentaire n'est revendiqué pour cette opération sans changement des formulaires/styles.
+
+Les neuf vues restent en attente de publication ; le refus de build Netlify est préservé. Aucun logo, illustration, formulaire, paramètre de confidentialité ou configuration distante n'est modifié. **Aucun push, fusion, PR ni déploiement.**
+
+## 24. GKGT — analyse approfondie de qualité et variantes avant validation
+
+Le responsable valide la disposition des 21 photographies dans les cinq séquences, mais demande une analyse de netteté et des comparaisons avant tout nouveau remplacement. **La sélection active et les images du site restent inchangées pendant cette revue.** Aucun traitement ou envoi à une IA n'est effectué ; l'autorisation précédente d'accentuation non générative n'est pas étendue à une reconstruction.
+
+Rapport complet : `docs/quality-review/audit-qualite.md`. Inventaire des sources, recettes individuelles, poids, dimensions réelles des réponses Next et empreintes : `docs/quality-review/analysis.json`. Mesures navigateur : `docs/quality-review/browser-measurements.json`. Support interactif local en lecture seule : **http://127.0.0.1:3119/**, distinct du site conservé sur le port 3000.
+
+### Causes identifiées
+
+- Les archives fournies sont des WebP déjà préparés, pas des RAW ou des fichiers d'appareil attestés. Cinq vues disposent d'un JPG plus défini parmi les quinze sources reçues : archives 01/02/06/18/21. Le traitement uniforme précédent repartait de leurs WebP réduits ; les nouveaux candidats repartent de ces JPG. Le doublon 16 avec son ancien arrière-plan reste exclu : seule la copie PNG approuvée sert de référence.
+- N10 est limitée à **720 × 720 pixels** ; archive-11 à 1080 × 809 et archive-14 à 1080 × 710. Les petites définitions, le grain, la compression antérieure et une netteté non uniforme existent déjà dans certaines sources. Une accentuation plus forte ne rétablit pas l'information absente.
+- Les copies v1 qualité 88/84 sont recompressées par Next à **q75**, mesuré dans les requêtes et réponses décodées. La configuration ne permet pas q90 : la requête testée retourne HTTP 400. Les `sizes` génériques et miniatures limitées en grand côté plutôt qu'en largeur nécessitent une adaptation avant une éventuelle intégration.
+- Les 21 agrandissements sont contrôlés après chargement de la ressource identifiée. À 1440 × 1000 et DPR 1, les proportions et la couverture de pixels sont correctes dans les mesures ; pas de déformation ou d'agrandissement excessif global démontré. La couverture 2× calculée révèle toutefois plusieurs limites, notamment N10 affichée autour de 525px de large avec seulement 720 pixels disponibles. Aucun appareil Retina physique n'est revendiqué.
+
+### Variantes et comparaison
+
+Les 21 fichiers sont traités individuellement dans le dossier documentaire de revue, sans écraser les sources ou les copies actives. Les réglages de netteté sont réduits et différenciés ; **aucune accentuation supplémentaire pour archive-11/14/16/23, N03 et N10**, afin de ne pas renforcer bruit ou halos. Les dimensions natives sont conservées, sans agrandissement ni recadrage ; métadonnées privées exclues des copies.
+
+La comparaison affiche : meilleure source disponible décodée sans accentuation, réponse actuellement servie dans la page ou la modale, variante technique proposée. Référence sans perte et variante q94 sont sélectionnables ; le zoom est identique dans les trois colonnes. Les 21 variantes sans perte représentent environ 33,3 Mo ; la version q94 environ 8,1 Mo. Ce poids de référence ne constitue pas une recommandation de diffusion de toutes les images à pleine résolution. Une stratégie responsive à un encodage principal, qualité autorisée explicite et tailles correctes reste à valider ; aucun paramètre Next ou composant actif n'est modifié ici.
+
+Les cas particulièrement limités sont N10, archive-11, archive-14, archive-23 et N03 ; N13/archive-20 conservent aussi une douceur initiale ou une profondeur de champ variable. La revue ne promet pas de gain significatif sur les plus faibles sources. Pour N10 notamment, une meilleure source ou un affichage plus contenu est préférable à un fichier plus lourd ou à des détails inventés.
+
+### Étude IA, préservation et tests
+
+Le rapport étudie le risque d'une amélioration d'apparence sans fidélité garantie, avec référence à la recherche sur le compromis perception/distorsion. Visages, inscriptions, écrans et composants ne doivent pas être réinventés sous couvert de netteté. Un essai IA éventuel exige un accord distinct par identifiant/périmètre et une identification FR/EN comme restauration IA ; **aucun essai n'est réalisé**.
+
+Les **89 empreintes de fichiers actifs et sources protégés** correspondent à l'état avant analyse : images sélectionnées, sources, quinze JPG, ressources historiques, logos/illustrations, composants/styles, cinq séquences/légendes, configuration Next et registres d'autorisation restent intacts. Les neuf autorisations restent en attente et le garde Netlify reste en refus. Le support de comparaison est limité au dossier de revue et à 127.0.0.1, en lecture seule ; il ne remplace pas le site.
+
+Lint et **16 tests unitaires** réussis, dont intégrité des 89 fichiers et des 21 variantes, proportions natives et absence de métadonnées privées. Sélecteurs, trois colonnes, zoom commun et chargement de cas représentatifs vérifiés ; support responsive à 390/768/1440 px sans débordement après ajustement de ses contrôles. Les neuf régressions de pages/SEO réussissent sur le site local conservé ; aucun build cloud, soumission réelle, essai physique ou mesure de production n'est revendiqué. Le build applicatif n'est pas relancé pour ces seuls scripts/documents et variantes non intégrées.
+
+**À valider : choix des variantes et de la future correction de diffusion. Aucun remplacement définitif, aucune reconstruction IA, aucun push, fusion, PR ni déploiement.**
+
+## 25. GKGT — copies V2 à encodage unique, en attente de revue visuelle
+
+À la suite de l’autorisation explicite d’amélioration non générative, les copies de diffusion V2 déjà préparées sont maintenant activées uniquement pour les 21 photographies GKGT. Les originaux, les archives historiques, les versions V1, les deux illustrations, le logo, les légendes FR/EN, les cinq séquences et les droits enregistrés restent inchangés. Les archives 01/02/06/18/21 repartent des cinq JPG de meilleure définition ; la photo 16 repart exclusivement de la copie approuvée à arrière-plan modifié.
+
+La diffusion utilise des variantes WebP responsives préparées une seule fois, avec `picture/srcset` et fallback `next/image` sans optimisation. Le contrôle du build local confirme 21 photos, 21 `srcset` et aucune requête `/_next/image` portant sur `gkgt-quality-v2` : la recompression q75 identifiée dans la revue précédente est donc évitée pour cette galerie. Les variantes, de 320 px à la largeur native, laissent le navigateur télécharger une seule taille adaptée ; le chargement différé est maintenu. Les modales plafonnent l’affichage à la définition disponible selon la densité afin de ne pas agrandir artificiellement N10 ou toute autre source limitée.
+
+Les copies V2 emploient Sharp/libvips seulement : orientation, redimensionnement proportionnel, compression WebP qualité 90 (92 pour les sources limitées) et accentuation individuelle légère lorsque l’audit l’autorisait. Aucune IA, reconstruction, ajout de détail, recadrage ou retouche d’information visible n’est appliqué. N10, archive-11, archive-14, archive-16, archive-23 et N03 restent sans accentuation, car une accentuation plus forte risquerait de renforcer bruit ou halos.
+
+Lint, build local, **17 tests unitaires**, tests de pages/SEO FR/EN, contrôle HTTP galerie et formulaires simulés passent. Les tests d’identité continuent de vérifier les originaux, les ressources de marque, les illustrations et V1 ; un test V2 vérifie sources, empreintes, réglages, proportions, métadonnées et variantes. Le poids de stockage V2 est de 16 064 214 octets pour 122 copies (contre 6 822 444 octets pour V1), mais ce total n’est pas transféré à chaque visite : le navigateur sélectionne une variante. Les pleines définitions V2 totalisent 5 982 966 octets, contre 5 298 420 en V1, en raison des cinq sources plus définies et de la qualité retenue.
+
+Rapport et tableaux : `docs/gkgt-qualite-v2-validation.md`. Prévisualisation du build local : http://localhost:3116/gk-global-technology?lang=fr#gkgt-gallery et variante anglaise. Aucun test physique Retina/Safari/iOS, Lighthouse de production ou mesure de production n’est revendiqué. Les autorisations des neuf nouvelles vues sont enregistrées comme confirmées. Le garde Netlify a réussi le test local du 15 novembre 2026 avec `NETLIFY=true` (code de sortie 0). La revue visuelle finale des copies V2 reste à effectuer avant toute diffusion publique.
+
+**À valider : revue visuelle des copies V2 dans la prévisualisation locale. Aucun push, fusion, PR ni déploiement.**
