@@ -1,0 +1,74 @@
+[
+  {
+    "id": "N03",
+    "originalBytes": 380022,
+    "fullBytes": 82222,
+    "thumbnailBytes": 19492,
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "id": "N04",
+    "originalBytes": 632678,
+    "fullBytes": 181642,
+    "thumbnailBytes": 33606,
+    "width": 901,
+    "height": 1600
+  },
+  {
+    "id": "N05",
+    "originalBytes": 668015,
+    "fullBytes": 196876,
+    "thumbnailBytes": 36492,
+    "width": 901,
+    "height": 1600
+  },
+  {
+    "id": "N06",
+    "originalBytes": 566812,
+    "fullBytes": 138616,
+    "thumbnailBytes": 26770,
+    "width": 901,
+    "height": 1600
+  },
+  {
+    "id": "N08",
+    "originalBytes": 720157,
+    "fullBytes": 237876,
+    "thumbnailBytes": 36650,
+    "width": 901,
+    "height": 1600
+  },
+  {
+    "id": "N09",
+    "originalBytes": 479038,
+    "fullBytes": 124720,
+    "thumbnailBytes": 28506,
+    "width": 901,
+    "height": 1600
+  },
+  {
+    "id": "N10",
+    "originalBytes": 55041,
+    "fullBytes": 37248,
+    "thumbnailBytes": 27718,
+    "width": 720,
+    "height": 720
+  },
+  {
+    "id": "N13",
+    "originalBytes": 668822,
+    "fullBytes": 121110,
+    "thumbnailBytes": 25566,
+    "width": 1200,
+    "height": 1600
+  },
+  {
+    "id": "N15",
+    "originalBytes": 506795,
+    "fullBytes": 85190,
+    "thumbnailBytes": 20430,
+    "width": 1600,
+    "height": 1200
+  }
+]

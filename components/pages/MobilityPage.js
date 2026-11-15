@@ -6,6 +6,8 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { CONTACT, ENTITY_LOGOS } from "@/content/site";
 import { MOBILITY_CONTENT } from "@/content/mobility";
+import { MOBILITY_TRACK_RECORD_COPY } from "@/content/mobility-track-record";
+import { MobilityTrackRecord } from "@/components/pages/MobilityTrackRecord";
 import { withLocale } from "@/lib/locale";
 
 const buttonClass = "inline-flex min-h-11 items-center justify-center border border-[#d59b46] bg-[#061b46] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#0c3269] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d59b46]";
@@ -13,11 +15,10 @@ const buttonClass = "inline-flex min-h-11 items-center justify-center border bor
 export function MobilityPage({ locale }) {
   const copy = MOBILITY_CONTENT[locale];
   const logo = ENTITY_LOGOS.gkgm;
-  const contactHref = withLocale("/contact", locale);
 
   return <>
     <Header locale={locale} />
-    <main lang={locale}>
+    <main id="main-content" tabIndex={-1} lang={locale}>
       <InstitutionalBanner eyebrow={copy.eyebrow} title={copy.title} description={copy.intro} logo={logo} signature="Building Trust. Connecting Opportunities." />
 
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
@@ -30,7 +31,7 @@ export function MobilityPage({ locale }) {
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="font-bold text-[#061b46]">{copy.contents}</p>
-          <ul className="mt-4 flex flex-wrap gap-3">{copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
+          <ul className="mt-4 flex flex-wrap gap-3">{copy.sections.map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}<li><a href="#track-record" className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{MOBILITY_TRACK_RECORD_COPY[locale].title}</a></li></ul>
         </div>
       </nav>
 
@@ -46,10 +47,12 @@ export function MobilityPage({ locale }) {
         </section>)}
       </div>
 
+      <MobilityTrackRecord locale={locale} />
+
       <section className="bg-[#f5f7fa] px-5 py-12 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title={copy.stepsTitle} />
-          <ol className="grid gap-6 md:grid-cols-3">{copy.steps.map((step, index) => <li key={step} className="border-t-2 border-[#e87512] pt-4"><span aria-hidden="true" className="text-sm font-bold text-[#e87512]">0{index + 1}</span><p className="mt-3 leading-7 text-slate-600">{step}</p></li>)}</ol>
+          <ol className="grid gap-6 md:grid-cols-3">{copy.steps.map((step, index) => <li key={step} className="border-t-2 border-[#e87512] pt-4"><span aria-hidden="true" className="text-sm font-bold text-[#946020]">0{index + 1}</span><p className="mt-3 leading-7 text-slate-600">{step}</p></li>)}</ol>
         </div>
       </section>
 
@@ -57,7 +60,7 @@ export function MobilityPage({ locale }) {
         <div className="mx-auto max-w-7xl border-l-4 border-[#e87512] bg-[#f5f7fa] p-6 sm:p-10">
           <h2 className="text-3xl font-bold text-[#061b46]">{copy.contactTitle}</h2>
           <p className="mt-5 max-w-3xl leading-7 text-slate-600">{copy.contactText}</p>
-          <div className="mt-7 flex flex-wrap gap-4"><Link href={withLocale("/gkgm-project", locale)} className={buttonClass} style={{ color: "#ffffff" }}>{copy.project}</Link><Link href={contactHref} className={buttonClass} style={{ color: "#ffffff" }}>{copy.partner}</Link></div>
+          <div className="mt-7 flex flex-wrap gap-4"><Link href={withLocale("/gkgm-project", locale)} className={buttonClass} style={{ color: "#ffffff" }}>{copy.project}</Link><Link href={withLocale("/partnerships#proposal", locale)} className={buttonClass} style={{ color: "#ffffff" }}>{copy.partner}</Link></div>
           <address className="mt-7 grid gap-2 text-sm not-italic leading-6 text-slate-600">
             <p>{CONTACT.legalName} · {CONTACT.location}</p>
             <a href={CONTACT.generalEmailHref} className="w-fit underline underline-offset-4">{CONTACT.generalEmail}</a>

@@ -1,0 +1,223 @@
+{
+  "method": "Non-generative mild technical sharpening; no reconstruction, denoising, crop or creative retouching",
+  "settings": {
+    "sigma": 0.55,
+    "m1": 0.45,
+    "m2": 1.1,
+    "x1": 2,
+    "y2": 5,
+    "y3": 8
+  },
+  "photos": {
+    "archive-01": {
+      "src": "/gkgt-sharpness-v1/archive-01.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-01-thumb.webp",
+      "width": 1012,
+      "height": 1800,
+      "fullBytes": 162024,
+      "thumbnailBytes": 58132,
+      "source": "public/archives-techniques/01_20181030_170129.webp",
+      "sourceSha256": "96a3828035edd83f28dac153cafbee85a9982674e83f9f1abb8a830ee3e1a557"
+    },
+    "archive-02": {
+      "src": "/gkgt-sharpness-v1/archive-02.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-02-thumb.webp",
+      "width": 1800,
+      "height": 1013,
+      "fullBytes": 151906,
+      "thumbnailBytes": 58662,
+      "source": "public/archives-techniques/02_20181030_170143.webp",
+      "sourceSha256": "0b5419b00108c1cd4d8d9a8f832c139805460dde622809708161437589dc6371"
+    },
+    "archive-06": {
+      "src": "/gkgt-sharpness-v1/archive-06.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-06-thumb.webp",
+      "width": 1800,
+      "height": 1013,
+      "fullBytes": 312308,
+      "thumbnailBytes": 99074,
+      "source": "public/archives-techniques/06_20211013_095534.webp",
+      "sourceSha256": "8732ae87d8c4e2644966dbbc32ae6338af84ee3af4bff866244a8f6ef0d34ab0"
+    },
+    "archive-11": {
+      "src": "/gkgt-sharpness-v1/archive-11.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-11-thumb.webp",
+      "width": 1080,
+      "height": 809,
+      "fullBytes": 57728,
+      "thumbnailBytes": 40956,
+      "source": "public/archives-techniques/11_IMG-20181112-WA0042.webp",
+      "sourceSha256": "84cee12473eacc5008dd1549d97e8ffb67b2687684d1535b5cc3afcfef657c23"
+    },
+    "archive-12": {
+      "src": "/gkgt-sharpness-v1/archive-12.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-12-thumb.webp",
+      "width": 1800,
+      "height": 1013,
+      "fullBytes": 333088,
+      "thumbnailBytes": 106350,
+      "source": "public/archives-techniques/12_IMG-20181122-WA0004.webp",
+      "sourceSha256": "28d40e1f97c1bddbcb5bce31c7cf268d0778abb3c0dd57cfe01238f0d631cebc"
+    },
+    "archive-14": {
+      "src": "/gkgt-sharpness-v1/archive-14.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-14-thumb.webp",
+      "width": 1080,
+      "height": 710,
+      "fullBytes": 83014,
+      "thumbnailBytes": 55528,
+      "source": "public/archives-techniques/14_IMG-20190301-WA0000.webp",
+      "sourceSha256": "9d429ee2ca312ce24e9172b325a5199d26bf2cb04d6540ee825816d0bc7eca41"
+    },
+    "archive-16": {
+      "src": "/gkgt-sharpness-v1/archive-16.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-16-thumb.webp",
+      "width": 1086,
+      "height": 1448,
+      "fullBytes": 216260,
+      "thumbnailBytes": 77880,
+      "source": "public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png",
+      "sourceSha256": "366a2a97155a399bd723016625c69272d6d347f2d949979c427ce5d702ec75ed"
+    },
+    "archive-18": {
+      "src": "/gkgt-sharpness-v1/archive-18.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-18-thumb.webp",
+      "width": 1350,
+      "height": 1800,
+      "fullBytes": 236352,
+      "thumbnailBytes": 69018,
+      "source": "public/archives-techniques/18_IMG_20180329_095427.webp",
+      "sourceSha256": "62baace7904068baeade654c17ab47430a8148d7368f4e3293e5e1628ae8c396"
+    },
+    "archive-20": {
+      "src": "/gkgt-sharpness-v1/archive-20.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-20-thumb.webp",
+      "width": 1800,
+      "height": 1350,
+      "fullBytes": 216378,
+      "thumbnailBytes": 77144,
+      "source": "public/archives-techniques/20_IMG_20190125_120103_9.webp",
+      "sourceSha256": "02bc68d1c0b21c9860eff57c58f80bd55688f776fac569d74c934948495fb299"
+    },
+    "archive-21": {
+      "src": "/gkgt-sharpness-v1/archive-21.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-21-thumb.webp",
+      "width": 1800,
+      "height": 1350,
+      "fullBytes": 167968,
+      "thumbnailBytes": 54716,
+      "source": "public/archives-techniques/21_IMG_20190214_073458_8.webp",
+      "sourceSha256": "1cf336631e1484bbe06643c820ef6b7edfad5d11d68dc85ccd60aedeb415ef48"
+    },
+    "archive-23": {
+      "src": "/gkgt-sharpness-v1/archive-23.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-23-thumb.webp",
+      "width": 1350,
+      "height": 1800,
+      "fullBytes": 154936,
+      "thumbnailBytes": 53932,
+      "source": "public/archives-techniques/23_IMG_20190308_092807_2.webp",
+      "sourceSha256": "c124355cccb0aea99834e0729eb8fe7efb170d1b8b3945f4c10f0f44525c6266"
+    },
+    "archive-24": {
+      "src": "/gkgt-sharpness-v1/archive-24.webp",
+      "thumbnail": "/gkgt-sharpness-v1/archive-24-thumb.webp",
+      "width": 1350,
+      "height": 1800,
+      "fullBytes": 222312,
+      "thumbnailBytes": 75566,
+      "source": "public/archives-techniques/24_IMG_20190308_092825_7.webp",
+      "sourceSha256": "4e74ff2282d0cfa3ffd8925075981d51053c269d506f21c96ee071064c028fc5"
+    },
+    "N03": {
+      "src": "/gkgt-sharpness-v1/n03.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n03-thumb.webp",
+      "width": 2048,
+      "height": 1152,
+      "fullBytes": 181224,
+      "thumbnailBytes": 50348,
+      "source": "source-assets/gkgt-authentic-15/originals/20181129_082000(1).jpg",
+      "sourceSha256": "752d343f1d7f20052841dbce59a994e85b8327c8ce482f91188d18749484d5e1"
+    },
+    "N04": {
+      "src": "/gkgt-sharpness-v1/n04.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n04-thumb.webp",
+      "width": 1153,
+      "height": 2048,
+      "fullBytes": 444342,
+      "thumbnailBytes": 100632,
+      "source": "source-assets/gkgt-authentic-15/originals/20211013_092705(1).jpg",
+      "sourceSha256": "7211aa2cca5653d24c9a5c61e6b07c21e9c5c196462a018a24fb3f445c5b617e"
+    },
+    "N05": {
+      "src": "/gkgt-sharpness-v1/n05.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n05-thumb.webp",
+      "width": 1153,
+      "height": 2048,
+      "fullBytes": 481482,
+      "thumbnailBytes": 109080,
+      "source": "source-assets/gkgt-authentic-15/originals/20211013_092710(1).jpg",
+      "sourceSha256": "35e8ceee787ba95089a2e2b6863fc825ee1ec2874ae66a772f4b4640cb61a96f"
+    },
+    "N06": {
+      "src": "/gkgt-sharpness-v1/n06.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n06-thumb.webp",
+      "width": 1153,
+      "height": 2048,
+      "fullBytes": 359790,
+      "thumbnailBytes": 78682,
+      "source": "source-assets/gkgt-authentic-15/originals/20211013_092719(1).jpg",
+      "sourceSha256": "f7d4a464792851b70fd2ef43f66c9da5a07f0e7fd2a0fa5bf3c50188a91409db"
+    },
+    "N08": {
+      "src": "/gkgt-sharpness-v1/n08.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n08-thumb.webp",
+      "width": 1153,
+      "height": 2048,
+      "fullBytes": 552408,
+      "thumbnailBytes": 121126,
+      "source": "source-assets/gkgt-authentic-15/originals/20211013_100026(1).jpg",
+      "sourceSha256": "ff9ca7a2408dfd8cf4f3416fb166d38869686ab38143863a26935def1bdecf52"
+    },
+    "N09": {
+      "src": "/gkgt-sharpness-v1/n09.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n09-thumb.webp",
+      "width": 1153,
+      "height": 2048,
+      "fullBytes": 263886,
+      "thumbnailBytes": 77102,
+      "source": "source-assets/gkgt-authentic-15/originals/20211013_113451(1).jpg",
+      "sourceSha256": "abe45d712b3e6452f98e4e8f11708252823fa9db52f282808fb08c148137dbb6"
+    },
+    "N10": {
+      "src": "/gkgt-sharpness-v1/n10.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n10-thumb.webp",
+      "width": 720,
+      "height": 720,
+      "fullBytes": 52244,
+      "thumbnailBytes": 43492,
+      "source": "source-assets/gkgt-authentic-15/originals/FB_IMG_1550419220319(1).jpg",
+      "sourceSha256": "b5093a8e106e06a49b10b240ffa5504d7a5cde6f9267c3b9186342bb61f3dd8b"
+    },
+    "N13": {
+      "src": "/gkgt-sharpness-v1/n13.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n13-thumb.webp",
+      "width": 1536,
+      "height": 2048,
+      "fullBytes": 418732,
+      "thumbnailBytes": 66064,
+      "source": "source-assets/gkgt-authentic-15/originals/IMG_20180627_080541(1).jpg",
+      "sourceSha256": "5f6f758a6caace6c64a78d14fe9c639fbeb8483fb8377d76d9f00bd572a668ab"
+    },
+    "N15": {
+      "src": "/gkgt-sharpness-v1/n15.webp",
+      "thumbnail": "/gkgt-sharpness-v1/n15-thumb.webp",
+      "width": 2048,
+      "height": 1536,
+      "fullBytes": 230038,
+      "thumbnailBytes": 50540,
+      "source": "source-assets/gkgt-authentic-15/originals/IMG_20190214_073528_2(1).jpg",
+      "sourceSha256": "d04f8eaba7dbbf197f9c7764da720da3435c5ba125fca9938794b159ff33a20d"
+    }
+  }
+}

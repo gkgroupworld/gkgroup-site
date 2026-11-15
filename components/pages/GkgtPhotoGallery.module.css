@@ -1,0 +1,20 @@
+.dialog {
+  width: min(96vw, 1440px);
+  max-height: 94dvh;
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid #d59b46;
+  background: #03102c;
+  color: white;
+}
+.dialog::backdrop { background: rgb(3 16 44 / 88%); }
+.dialog:focus { outline: none; }
+.modalImage {
+  --gkgt-density: 1;
+  max-width: min(100%, calc(var(--gkgt-native-width) / var(--gkgt-density)));
+  max-height: min(65dvh, calc(var(--gkgt-native-height) / var(--gkgt-density)));
+}
+@media (min-resolution: 2dppx) { .modalImage { --gkgt-density: 2; } }
+@media (min-resolution: 3dppx) { .modalImage { --gkgt-density: 3; } }
+@media (min-resolution: 4dppx) { .modalImage { --gkgt-density: 4; } }

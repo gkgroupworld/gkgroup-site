@@ -1,0 +1,488 @@
+{
+  "method": "Read-only browser DOM measurements, settled modal source checked by id; page currentSrc measured separately; DPR 2 coverage below is calculated, not emulated.",
+  "rows": [
+    {
+      "id": "N13",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 636,
+        "boxHeight": 796,
+        "paintedWidth": 597,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 488,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-11",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 277,
+        "boxHeight": 207,
+        "paintedWidth": 277,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 787,
+        "paintedHeight": 589,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-12",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 277,
+        "boxHeight": 207,
+        "paintedWidth": 277,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 1155,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N03",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 670,
+        "boxHeight": 418,
+        "paintedWidth": 670,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 1155,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N10",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 670,
+        "boxHeight": 502,
+        "paintedWidth": 502,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 525,
+        "paintedHeight": 525,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N04",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 494,
+        "boxHeight": 619,
+        "paintedWidth": 347,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 366,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N05",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 494,
+        "boxHeight": 619,
+        "paintedWidth": 347,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 366,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N15",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 658,
+        "boxHeight": 411,
+        "paintedWidth": 549,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 866,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N06",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 242,
+        "boxHeight": 303,
+        "paintedWidth": 170,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 366,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N08",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 242,
+        "boxHeight": 303,
+        "paintedWidth": 170,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 366,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-06",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 385,
+        "boxHeight": 288,
+        "paintedWidth": 385,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 1155,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-16",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 385,
+        "boxHeight": 288,
+        "paintedWidth": 216,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 487,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-21",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 385,
+        "boxHeight": 288,
+        "paintedWidth": 384,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 867,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-02",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 697,
+        "boxHeight": 435,
+        "paintedWidth": 697,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 1155,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "N09",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 406,
+        "boxHeight": 508,
+        "paintedWidth": 285,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 366,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-01",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 406,
+        "boxHeight": 508,
+        "paintedWidth": 285,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 365,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-18",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 406,
+        "boxHeight": 508,
+        "paintedWidth": 381,
+        "requestedWidth": 640,
+        "quality": 75,
+        "thumbnail": true
+      },
+      "modal": {
+        "paintedWidth": 488,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-14",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 586,
+        "boxHeight": 365,
+        "paintedWidth": 556,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 787,
+        "paintedHeight": 517,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-20",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 586,
+        "boxHeight": 365,
+        "paintedWidth": 488,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 867,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-23",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 586,
+        "boxHeight": 365,
+        "paintedWidth": 274,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 488,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    },
+    {
+      "id": "archive-24",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "page": {
+        "boxWidth": 586,
+        "boxHeight": 365,
+        "paintedWidth": 274,
+        "requestedWidth": 750,
+        "quality": 75,
+        "thumbnail": false
+      },
+      "modal": {
+        "paintedWidth": 488,
+        "paintedHeight": 650,
+        "requestedWidth": 1920,
+        "quality": 75,
+        "loaded": true
+      }
+    }
+  ]
+}

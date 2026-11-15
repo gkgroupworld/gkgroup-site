@@ -16,7 +16,7 @@ export function NewsPage({ locale, category }) {
   const items = filterNewsByCategory(published, selected);
   const filters = [{ id: "all", label: { [locale]: copy.filters.all } }, ...NEWS_CATEGORIES];
   const selectedCategory = NEWS_CATEGORIES.find(item => item.id === selected);
-  return <><Header locale={locale} /><main lang={locale}>
+  return <><Header locale={locale} /><main id="main-content" tabIndex={-1} lang={locale}>
     <InstitutionalBanner eyebrow="GK GROUP" title={copy.hero.title} description={copy.hero.description} signature={copy.hero.signature} />
     <section id="publications" className="scroll-mt-6 px-5 py-16 sm:px-8 sm:py-20"><div className="mx-auto max-w-7xl">
       <p className="mb-10 max-w-4xl text-lg leading-8 text-slate-600">{copy.intro}</p>

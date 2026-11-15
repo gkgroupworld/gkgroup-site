@@ -1,0 +1,481 @@
+[
+  {
+    "id": "archive-01",
+    "source": "source-assets/gkgt-authentic-15/originals/20181030_170129(1).jpg",
+    "sourceSha256": "4271cadcc558f3aaa65e697e81b32824f672c88eb6d58e32a8e3248b68ade6ec",
+    "betterJpeg": true,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1152
+    ],
+    "fullBytes": 226976,
+    "allVariantsBytes": 589258
+  },
+  {
+    "id": "archive-02",
+    "source": "source-assets/gkgt-authentic-15/originals/20181030_170143(1).jpg",
+    "sourceSha256": "2320b44f23cc13ac391cdd2d1c3cf34b91055c67c6b697f4f4cc92a83ee32457",
+    "betterJpeg": true,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      2048
+    ],
+    "fullBytes": 211162,
+    "allVariantsBytes": 626630
+  },
+  {
+    "id": "archive-06",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_095534(1).jpg",
+    "sourceSha256": "0c3c3034ba4c849075c10e97f2553350d81b12f50d8e371d6a39cbf56b26ee16",
+    "betterJpeg": true,
+    "settings": {
+      "sigma": 0.5,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      2048
+    ],
+    "fullBytes": 389916,
+    "allVariantsBytes": 1104836
+  },
+  {
+    "id": "archive-11",
+    "source": "public/archives-techniques/11_IMG-20181112-WA0042.webp",
+    "sourceSha256": "84cee12473eacc5008dd1549d97e8ffb67b2687684d1535b5cc3afcfef657c23",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 92,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1080
+    ],
+    "fullBytes": 71082,
+    "allVariantsBytes": 229556
+  },
+  {
+    "id": "archive-12",
+    "source": "public/archives-techniques/12_IMG-20181122-WA0004.webp",
+    "sourceSha256": "28d40e1f97c1bddbcb5bce31c7cf268d0778abb3c0dd57cfe01238f0d631cebc",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      1800
+    ],
+    "fullBytes": 333460,
+    "allVariantsBytes": 1052648
+  },
+  {
+    "id": "archive-14",
+    "source": "public/archives-techniques/14_IMG-20190301-WA0000.webp",
+    "sourceSha256": "9d429ee2ca312ce24e9172b325a5199d26bf2cb04d6540ee825816d0bc7eca41",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 92,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1080
+    ],
+    "fullBytes": 95170,
+    "allVariantsBytes": 280880
+  },
+  {
+    "id": "archive-16",
+    "source": "public/archives-techniques/16_unites-centrales-arriere-plan-modifie.png",
+    "sourceSha256": "366a2a97155a399bd723016625c69272d6d347f2d949979c427ce5d702ec75ed",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1086
+    ],
+    "fullBytes": 212564,
+    "allVariantsBytes": 527216
+  },
+  {
+    "id": "archive-18",
+    "source": "source-assets/gkgt-authentic-15/originals/IMG_20180329_095427(1).jpg",
+    "sourceSha256": "9069cf1533dd443f91112a81efeeff35307ba3c19497990ea43d90f5ce740b1c",
+    "betterJpeg": true,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "fullBytes": 382190,
+    "allVariantsBytes": 909094
+  },
+  {
+    "id": "archive-20",
+    "source": "public/archives-techniques/20_IMG_20190125_120103_9.webp",
+    "sourceSha256": "02bc68d1c0b21c9860eff57c58f80bd55688f776fac569d74c934948495fb299",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      1800
+    ],
+    "fullBytes": 230676,
+    "allVariantsBytes": 809428
+  },
+  {
+    "id": "archive-21",
+    "source": "source-assets/gkgt-authentic-15/originals/IMG_20190214_073458_8(1).jpg",
+    "sourceSha256": "6b312b2871130799bf5c13d9aad411b9d1af2cdb5c6d86eb54f9d4c7f38c5e59",
+    "betterJpeg": true,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      2048
+    ],
+    "fullBytes": 287710,
+    "allVariantsBytes": 744044
+  },
+  {
+    "id": "archive-23",
+    "source": "public/archives-techniques/23_IMG_20190308_092807_2.webp",
+    "sourceSha256": "c124355cccb0aea99834e0729eb8fe7efb170d1b8b3945f4c10f0f44525c6266",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 92,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1350
+    ],
+    "fullBytes": 198326,
+    "allVariantsBytes": 689216
+  },
+  {
+    "id": "archive-24",
+    "source": "public/archives-techniques/24_IMG_20190308_092825_7.webp",
+    "sourceSha256": "4e74ff2282d0cfa3ffd8925075981d51053c269d506f21c96ee071064c028fc5",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1350
+    ],
+    "fullBytes": 231732,
+    "allVariantsBytes": 759304
+  },
+  {
+    "id": "N03",
+    "source": "source-assets/gkgt-authentic-15/originals/20181129_082000(1).jpg",
+    "sourceSha256": "752d343f1d7f20052841dbce59a994e85b8327c8ce482f91188d18749484d5e1",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 92,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      2048
+    ],
+    "fullBytes": 250376,
+    "allVariantsBytes": 713178
+  },
+  {
+    "id": "N04",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_092705(1).jpg",
+    "sourceSha256": "7211aa2cca5653d24c9a5c61e6b07c21e9c5c196462a018a24fb3f445c5b617e",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.45,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1153
+    ],
+    "fullBytes": 441668,
+    "allVariantsBytes": 1068848
+  },
+  {
+    "id": "N05",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_092710(1).jpg",
+    "sourceSha256": "35e8ceee787ba95089a2e2b6863fc825ee1ec2874ae66a772f4b4640cb61a96f",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.45,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1153
+    ],
+    "fullBytes": 482848,
+    "allVariantsBytes": 1157806
+  },
+  {
+    "id": "N06",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_092719(1).jpg",
+    "sourceSha256": "f7d4a464792851b70fd2ef43f66c9da5a07f0e7fd2a0fa5bf3c50188a91409db",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.35,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1153
+    ],
+    "fullBytes": 366068,
+    "allVariantsBytes": 867672
+  },
+  {
+    "id": "N08",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_100026(1).jpg",
+    "sourceSha256": "ff9ca7a2408dfd8cf4f3416fb166d38869686ab38143863a26935def1bdecf52",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1153
+    ],
+    "fullBytes": 543298,
+    "allVariantsBytes": 1299720
+  },
+  {
+    "id": "N09",
+    "source": "source-assets/gkgt-authentic-15/originals/20211013_113451(1).jpg",
+    "sourceSha256": "abe45d712b3e6452f98e4e8f11708252823fa9db52f282808fb08c148137dbb6",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.35,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1153
+    ],
+    "fullBytes": 278328,
+    "allVariantsBytes": 741480
+  },
+  {
+    "id": "N10",
+    "source": "source-assets/gkgt-authentic-15/originals/FB_IMG_1550419220319(1).jpg",
+    "sourceSha256": "b5093a8e106e06a49b10b240ffa5504d7a5cde6f9267c3b9186342bb61f3dd8b",
+    "betterJpeg": false,
+    "settings": null,
+    "quality": 92,
+    "widths": [
+      320,
+      480,
+      640,
+      720
+    ],
+    "fullBytes": 60282,
+    "allVariantsBytes": 187528
+  },
+  {
+    "id": "N13",
+    "source": "source-assets/gkgt-authentic-15/originals/IMG_20180627_080541(1).jpg",
+    "sourceSha256": "5f6f758a6caace6c64a78d14fe9c639fbeb8483fb8377d76d9f00bd572a668ab",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.35,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1536
+    ],
+    "fullBytes": 434476,
+    "allVariantsBytes": 1031258
+  },
+  {
+    "id": "N15",
+    "source": "source-assets/gkgt-authentic-15/originals/IMG_20190214_073528_2(1).jpg",
+    "sourceSha256": "d04f8eaba7dbbf197f9c7764da720da3435c5ba125fca9938794b159ff33a20d",
+    "betterJpeg": false,
+    "settings": {
+      "sigma": 0.4,
+      "m1": 0.1,
+      "m2": 0.6,
+      "x1": 2,
+      "y2": 3,
+      "y3": 5
+    },
+    "quality": 90,
+    "widths": [
+      320,
+      480,
+      640,
+      960,
+      1280,
+      1600,
+      2048
+    ],
+    "fullBytes": 254658,
+    "allVariantsBytes": 674614
+  }
+]
