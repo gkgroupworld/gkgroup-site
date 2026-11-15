@@ -1,7 +1,6 @@
 // Update counts, periods and partner names here after editorial validation.
 // Historical figures are owner-declared and are not aggregated across categories.
 export const MOBILITY_TRACK_RECORD = {
-  since: 2023,
   historicalHighlights: [
     {
       id: "canada",
@@ -73,8 +72,6 @@ export const MOBILITY_TRACK_RECORD_COPY = {
     studentsTitle: "Accompagnement des étudiants",
     companiesTitle: "Créations d’entreprises accompagnées",
     eResidencyTitle: "E-résidence estonienne",
-    existingTitle: "Résultats déjà enregistrés",
-    since: "Réalisations depuis",
     visasTitle: "Visas obtenus",
     visasSummary: "visas obtenus dans le cadre de dossiers directement accompagnés par GKGM.",
     permitsTitle: "Permis de travail obtenus",
@@ -95,8 +92,6 @@ export const MOBILITY_TRACK_RECORD_COPY = {
     studentsTitle: "Student support",
     companiesTitle: "Business incorporations supported",
     eResidencyTitle: "Estonian e-Residency",
-    existingTitle: "Previously recorded results",
-    since: "Track record since",
     visasTitle: "Visas obtained",
     visasSummary: "visas obtained through applications directly supported by GKGM.",
     permitsTitle: "Work permits obtained",

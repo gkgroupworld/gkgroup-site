@@ -3,7 +3,6 @@ import { MOBILITY_TRACK_RECORD, MOBILITY_TRACK_RECORD_COPY } from "@/content/mob
 export function MobilityTrackRecord({ locale }) {
   const copy = MOBILITY_TRACK_RECORD_COPY[locale];
   const {
-    since,
     historicalHighlights,
     historicalVisitDestinations,
     studentSupport,
@@ -70,12 +69,7 @@ export function MobilityTrackRecord({ locale }) {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-slate-200 pt-8">
-        <h3 className="text-2xl font-bold text-[#061b46]">{copy.existingTitle}</h3>
-        <p className="mt-3 text-sm font-bold text-[#946020]">{copy.since} {since}</p>
-      </div>
-
-      <div className="mt-8 grid gap-6 lg:grid-cols-[2fr_1fr]">
+      <div className="mt-10 grid gap-6 lg:grid-cols-[2fr_1fr]">
         <div className="min-w-0 border border-slate-200 border-t-2 border-t-[#d59b46] bg-[#f5f7fa] p-6 sm:p-8">
           <h3 className="text-2xl font-bold text-[#061b46]">{copy.visasTitle}</h3>
           <p className="mt-4 max-w-2xl leading-7 text-slate-600"><strong className="text-[#061b46]">{visaTotal}</strong> {copy.visasSummary}</p>
