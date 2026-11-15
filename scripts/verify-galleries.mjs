@@ -49,12 +49,20 @@ for (const lang of ["fr", "en"]) {
   const record = mobility.match(/<section\b[^>]*id="track-record"[^>]*>(.*?)<\/section>/s)?.[1];
   assert.equal((record?.match(/data-visa-result=/g) || []).length, 3);
   assert.equal((record.match(/data-historical-result=/g) || []).length, 2);
-  assert.equal((record.match(/data-historical-visit=/g) || []).length, 4);
+  assert.equal((record.match(/data-historical-visit=/g) || []).length, 5);
   for (const destination of ["canada", "albania"]) assert.equal((record.match(new RegExp(`data-historical-result="${destination}"`, "g")) || []).length, 1);
-  assert.ok(record.includes(lang === "fr" ? "Plus de" : "More than"));
-  assert.ok(record.includes(lang === "fr" ? "Environ" : "Approximately"));
+  for (const destination of ["china", "singapore", "malaysia", "ecuador", "barbados"]) assert.equal((record.match(new RegExp(`data-historical-visit="${destination}"`, "g")) || []).length, 1);
+  for (const phrase of (lang === "fr"
+    ? ["Plus de 50", "Environ 10", "Plusieurs dizaines", "Plus de 15", "Campus France", "Lituanie", "Barbade"]
+    : ["More than 50", "Approximately 10", "Several dozen", "More than 15", "Campus France", "Lithuania", "Barbados"])) assert.ok(record.includes(phrase), phrase);
   assert.ok(record.includes(lang === "fr" ? "déclarés par GKGM" : "reported by GKGM"));
   assert.ok(record.includes(lang === "fr" ? "pas comptabilisés comme des résultats supplémentaires" : "not counted as additional results"));
+  assert.ok(record.includes(lang === "fr" ? "Étudiants accompagnés dans leurs démarches Campus France" : "Students supported through the Campus France process"));
+  assert.ok(record.includes(lang === "fr" ? "Créations d’entreprises accompagnées" : "Business incorporations supported"));
+  assert.ok(record.includes(lang === "fr" ? "carte d’e-résidence estonienne" : "Estonian e-Residency card"));
+  assert.equal((record.match(/data-student-support/g) || []).length, 1);
+  assert.equal((record.match(/data-company-formation=/g) || []).length, 2);
+  assert.equal((record.match(/data-eresidency-result/g) || []).length, 1);
   assert.deepEqual([...record.matchAll(/<dd\b[^>]*>(\d+)<\/dd>/g)].map(m => Number(m[1])), [3, 2, 1, 8]);
   for (const partner of ["Dalimit Global", "ApplyBoard", "Elec Work Agency", "Live &amp; Study in Europe"]) assert.ok(record.includes(partner));
 }
@@ -63,4 +71,4 @@ assert.equal((await fetch(`${base}/archives-techniques/${original}`)).status, 40
 assert.equal((await fetch(`${base}/source-assets/archives-techniques/originals/${original}`)).status, 404);
 const rights = JSON.parse(await readFile(new URL("../content/gkgt-publication-rights.json", import.meta.url), "utf8"));
 assert.ok(rights.pendingHistoricalPhotos.every(photo => photo.status === "confirmed"));
-console.log("PASS GKGT/GKGM FR/EN: 21 unique views across 5 editorial sequences, pending rights preserved, historical captions/private original and illustrations retained; qualified Canada/Albania results, four unquantified destinations, previous results and partners retained.");
+console.log("PASS GKGT/GKGM FR/EN: 21 unique views across 5 editorial sequences, pending rights preserved, historical captions/private original and illustrations retained; qualified historical visa results, five quantified visitor destinations, student/company/e-Residency achievements, previous results and partners retained.");

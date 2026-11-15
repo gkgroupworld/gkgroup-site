@@ -1,19 +1,56 @@
 // Update counts, periods and partner names here after editorial validation.
-// Work permits are deliberately separate from visas and excluded from their total.
+// Historical figures are owner-declared and are not aggregated across categories.
 export const MOBILITY_TRACK_RECORD = {
   since: 2023,
-  // Owner-declared historical results. No period supplied; do not apply `since`
-  // or aggregate approximate/unquantified results into the exact series below.
   historicalHighlights: [
-    { id: "canada", quantity: { qualifier: "more-than", value: 50 }, country: { fr: "Canada", en: "Canada" }, label: { fr: "Visas d’entrée pour études obtenus dans le cadre de nos accompagnements", en: "Entry visas for study obtained through our support" }, note: { fr: "Ces dossiers comprennent également un permis d’études ou une approbation. Ces documents ne sont pas comptabilisés comme des résultats supplémentaires.", en: "These applications also include a study permit or an approval. These documents are not counted as additional results." } },
-    { id: "albania", quantity: { qualifier: "approximately", value: 10 }, country: { fr: "Albanie", en: "Albania" }, label: { fr: "Visas de travail obtenus dans le cadre de nos accompagnements", en: "Work visas obtained through our support" } },
+    {
+      id: "canada",
+      quantity: { fr: "Plus de 50", en: "More than 50" },
+      country: { fr: "Canada", en: "Canada" },
+      label: {
+        fr: "Visas d’entrée pour études obtenus dans le cadre de nos accompagnements",
+        en: "Entry visas for study obtained through our support",
+      },
+      note: {
+        fr: "Ces dossiers comprennent également un permis d’études ou une approbation. Ces documents ne sont pas comptabilisés comme des résultats supplémentaires.",
+        en: "These applications also include a study permit or an approval. These documents are not counted as additional results.",
+      },
+    },
+    {
+      id: "albania",
+      quantity: { fr: "Environ 10", en: "Approximately 10" },
+      country: { fr: "Albanie", en: "Albania" },
+      label: {
+        fr: "Visas de travail obtenus dans le cadre de nos accompagnements",
+        en: "Work visas obtained through our support",
+      },
+    },
   ],
   historicalVisitDestinations: [
-    { id: "ecuador", country: { fr: "Équateur", en: "Ecuador" } },
-    { id: "singapore", country: { fr: "Singapour", en: "Singapore" } },
-    { id: "malaysia", country: { fr: "Malaisie", en: "Malaysia" } },
-    { id: "china", country: { fr: "Chine", en: "China" } },
+    { id: "china", quantity: { fr: "Plusieurs dizaines", en: "Several dozen" }, country: { fr: "Chine", en: "China" } },
+    { id: "singapore", quantity: { fr: "Plus de 15", en: "More than 15" }, country: { fr: "Singapour", en: "Singapore" } },
+    { id: "malaysia", quantity: { fr: "10", en: "10" }, country: { fr: "Malaisie", en: "Malaysia" } },
+    { id: "ecuador", quantity: { fr: "12", en: "12" }, country: { fr: "Équateur", en: "Ecuador" } },
+    { id: "barbados", quantity: { fr: "7", en: "7" }, country: { fr: "Barbade", en: "Barbados" } },
   ],
+  studentSupport: {
+    count: 13,
+    label: {
+      fr: "Étudiants accompagnés dans leurs démarches Campus France",
+      en: "Students supported through the Campus France process",
+    },
+  },
+  companyFormations: [
+    { id: "lithuania", count: 2, country: { fr: "Lituanie", en: "Lithuania" } },
+    { id: "albania", count: 2, country: { fr: "Albanie", en: "Albania" } },
+  ],
+  eResidency: {
+    count: 1,
+    label: {
+      fr: "Client accompagné dans l’obtention d’une carte d’e-résidence estonienne",
+      en: "Client supported in obtaining an Estonian e-Residency card",
+    },
+  },
   visas: [
     { id: "portugal", count: 3, label: { fr: "Visas D Job Seeker — Portugal", en: "D Job Seeker visas — Portugal" } },
     { id: "uk", count: 2, period: "2025", label: { fr: "Visas visiteurs — Royaume-Uni", en: "Visitor visas — United Kingdom" } },
@@ -28,12 +65,14 @@ export const MOBILITY_TRACK_RECORD_COPY = {
     title: "Nos réalisations en mobilité internationale",
     eyebrow: "Expérience et accompagnements internationaux",
     intro: "Les résultats historiques présentés ci-dessous sont déclarés par GKGM et concernent des dossiers accompagnés. Ils sont distingués des partenariats B2B et ne préjugent d’aucun résultat futur.",
-    historicalTitle: "Des accompagnements vers plusieurs destinations",
-    moreThan: "Plus de",
-    approximately: "Environ",
+    historicalTitle: "Visas obtenus dans le cadre de nos accompagnements",
     declared: "Résultats historiques déclarés par GKGM",
-    visitsTitle: "Autres destinations accompagnées",
-    visitsOutcome: "Accompagnements ayant abouti à des visas de visite.",
+    visitsTitle: "Visas de visite et de tourisme",
+    visitsOutcome: "Visas de visite/tourisme obtenus dans le cadre de nos accompagnements.",
+    achievementsTitle: "Autres accompagnements et réalisations",
+    studentsTitle: "Accompagnement des étudiants",
+    companiesTitle: "Créations d’entreprises accompagnées",
+    eResidencyTitle: "E-résidence estonienne",
     existingTitle: "Résultats déjà enregistrés",
     since: "Réalisations depuis",
     visasTitle: "Visas obtenus",
@@ -48,12 +87,14 @@ export const MOBILITY_TRACK_RECORD_COPY = {
     title: "Our International Mobility Track Record",
     eyebrow: "Experience and international application support",
     intro: "The historical results below are reported by GKGM and relate to supported applications. They are distinguished from B2B partnerships and do not indicate any future outcome.",
-    historicalTitle: "Supporting applications across several destinations",
-    moreThan: "More than",
-    approximately: "Approximately",
+    historicalTitle: "Visas obtained through our support",
     declared: "Historical results reported by GKGM",
-    visitsTitle: "Other destinations supported",
-    visitsOutcome: "Supported applications resulting in visitor visas.",
+    visitsTitle: "Visitor and tourism visas",
+    visitsOutcome: "Visitor/tourism visas obtained through our support.",
+    achievementsTitle: "Other support and achievements",
+    studentsTitle: "Student support",
+    companiesTitle: "Business incorporations supported",
+    eResidencyTitle: "Estonian e-Residency",
     existingTitle: "Previously recorded results",
     since: "Track record since",
     visasTitle: "Visas obtained",
