@@ -26,7 +26,7 @@ export const HOME_COPY = {
       technology: { title: "Technologies et solutions numériques", description: "Des équipements fiables, des infrastructures adaptées et un accompagnement technique au service des organisations.", items: ["Maintenance informatique", "Réseaux et infrastructures", "Équipements et solutions informatiques", "Assistance technique aux organisations"], note: "GKGT est une branche opérationnelle de GK GLOBAL GROUP SARL U au Togo." },
       mobility: { title: "Mobilité internationale", description: "Un accompagnement pour préparer les parcours d’études, les perspectives professionnelles et les projets internationaux.", items: ["Conseil pour les études à l’étranger", "Orientation vers les opportunités professionnelles", "Accompagnement administratif des candidats", "Mobilité entrepreneuriale et projets internationaux"], note: "GKGM est une branche de la société togolaise. Les décisions de visa, d’admission et de recrutement relèvent des autorités et organismes compétents ; aucun résultat n’est garanti." },
       trade: { title: "Commerce international", description: "Relier les besoins d’approvisionnement, les fournisseurs et les marchés grâce à des échanges commerciaux structurés.", items: ["Import-export", "Sourcing international", "Négoce et relations commerciales B2B", "Distribution d’équipements informatiques"], note: "UAB GK EstTrade est une société distincte établie en Lituanie. Les opérations sont soumises à l’étude du besoin et à la confirmation des conditions commerciales." },
-      coordination: { title: "Coordination et développement des affaires", description: "Organiser les échanges entre les entités et accompagner la préparation des projets et des partenariats internationaux.", items: ["Coordination internationale", "Gestion et suivi des projets", "Développement des partenariats", "Appui aux activités des entités"], note: "Ces fonctions définissent le rôle de la plateforme GK Nexus, sans affirmer qu’elles sont toutes déjà opérationnelles. La société albanaise porteuse reste un projet dont l’immatriculation n’est pas confirmée par justificatif." },
+      coordination: { title: "Coordination et développement des affaires", description: "Organiser les échanges entre les entités et accompagner la préparation des projets et des partenariats internationaux.", items: ["Coordination internationale", "Gestion et suivi des projets", "Développement des partenariats", "Appui aux activités des entités"], note: "Ces fonctions constituent les attributions futures de GK NEXUS. Elles seront exercées par GK Nexus Sh.p.k. après son immatriculation en Albanie." },
     },
     ecosystem: {
       eyebrow: "Notre écosystème international", title: "Des identités distinctes. Une ambition partagée.",
@@ -35,15 +35,15 @@ export const HOME_COPY = {
       entities: {
         "gk-global-group-sarlu": { status: "Société légalement constituée", description: "Établie au Togo, GK GLOBAL GROUP SARL U comprend les branches GKGT et GKGM." },
         "uab-gk-esttrade": { status: "Société lituanienne distincte", description: "Commerce international, sourcing, import-export et distribution d’équipements informatiques." },
-        "gk-nexus": { status: "Plateforme · Société porteuse en projet", description: "Plateforme internationale de gestion et de coordination. GK Nexus Sh.p.k. est le projet albanais destiné à la porter ; son immatriculation reste en cours selon les informations du projet, sans achèvement confirmé par justificatif." },
+        "gk-nexus": { status: "Projet de plateforme · Société porteuse en cours d’immatriculation", description: "Projet de plateforme internationale de gestion, de coordination et de développement stratégique. GK Nexus Sh.p.k. est le projet de société albanaise destiné à porter ces fonctions après son immatriculation." },
         "gk-danube-trading": { status: "En constitution", description: "Projet de société en Serbie, avec des activités envisagées de commerce, sourcing, distribution et développement commercial." },
       },
     },
     nexus: {
-      eyebrow: "Gestion · Coordination · Développement", title: "GK Nexus — Notre plateforme internationale de coordination.",
-      intro: "La plateforme GK Nexus donne un cadre fonctionnel aux échanges et à la coordination de l’écosystème international GK GROUP.",
+      eyebrow: "Fonctions prévues après immatriculation", title: "GK Nexus — Projet de plateforme internationale.",
+      intro: "GK NEXUS est un projet de plateforme internationale de gestion, de coordination et de développement stratégique de l’écosystème GK GROUP. Ces fonctions seront exercées après l’immatriculation de GK Nexus Sh.p.k. en Albanie.",
       functions: ["Coordination des activités internationales", "Gestion et suivi des projets", "Développement des partenariats", "Organisation des échanges entre les entités", "Appui au développement commercial"],
-      scope: "Ces fonctions décrivent les missions de la plateforme, sans affirmer qu’elles sont toutes déjà opérationnelles. Ce rôle fonctionnel n’implique ni propriété juridique des autres sociétés ni participation au capital. GK Nexus Sh.p.k. est le projet de société albanaise destiné à porter cette plateforme ; son immatriculation demeure à confirmer par justificatif.",
+      scope: "Ces fonctions constituent les attributions futures de GK NEXUS et ne commenceront qu’après l’immatriculation de GK Nexus Sh.p.k. en Albanie. Elles seront exercées dans le respect de l’autonomie juridique et opérationnelle de chaque entité. GK NEXUS ne détient aucune propriété ni participation au capital des autres sociétés.",
       link: "Découvrir GK Nexus",
     },
     partnerships: {
@@ -84,7 +84,7 @@ export const HOME_COPY = {
       technology: { title: "Technology and digital solutions", description: "Reliable equipment, suitable infrastructure and technical support for organisations.", items: ["IT maintenance", "Networks and infrastructure", "IT equipment and solutions", "Technical support for organisations"], note: "GKGT is an operational division of GK GLOBAL GROUP SARL U in Togo." },
       mobility: { title: "International mobility", description: "Support to prepare study pathways, professional prospects and international projects.", items: ["Advice on studying abroad", "Guidance towards international career opportunities", "Administrative support for applicants", "Entrepreneurial mobility and international projects"], note: "GKGM is a division of the Togolese company. Visa, admission and recruitment decisions rest with the relevant authorities and organisations; no outcome is guaranteed." },
       trade: { title: "International trade", description: "Connecting procurement needs, suppliers and markets through structured commercial exchanges.", items: ["Import-export", "International sourcing", "Trading and B2B commercial relationships", "IT equipment distribution"], note: "UAB GK EstTrade is a distinct company established in Lithuania. Operations are subject to an assessment of requirements and confirmation of commercial terms." },
-      coordination: { title: "Coordination and business development", description: "Organising exchanges between entities and supporting the preparation of international projects and partnerships.", items: ["International coordination", "Project management and monitoring", "Partnership development", "Support for entity activities"], note: "These functions define the GK Nexus platform’s role without asserting that all are already operational. The intended Albanian company remains a project whose registration has not been confirmed by a supporting document." },
+      coordination: { title: "Coordination and business development", description: "Organising exchanges between entities and supporting the preparation of international projects and partnerships.", items: ["International coordination", "Project management and monitoring", "Partnership development", "Support for entity activities"], note: "These functions are the future responsibilities of GK NEXUS. They will be carried out by GK Nexus Sh.p.k. following its registration in Albania." },
     },
     ecosystem: {
       eyebrow: "Our international ecosystem", title: "Distinct identities. A shared ambition.",
@@ -93,15 +93,15 @@ export const HOME_COPY = {
       entities: {
         "gk-global-group-sarlu": { status: "Legally established company", description: "Established in Togo, GK GLOBAL GROUP SARL U includes the GKGT and GKGM divisions." },
         "uab-gk-esttrade": { status: "Distinct Lithuanian company", description: "International trade, sourcing, import-export and IT equipment distribution." },
-        "gk-nexus": { status: "Platform · Proposed operating company", description: "International management and coordination platform. GK Nexus Sh.p.k. is the proposed Albanian company intended to carry it; registration remains in progress according to project information, without documented confirmation of completion." },
+        "gk-nexus": { status: "Proposed platform · Company registration in progress", description: "Proposed international management, coordination and strategic development platform. GK Nexus Sh.p.k. is the proposed Albanian company intended to carry out these functions following its registration." },
         "gk-danube-trading": { status: "In formation", description: "A company formation project in Serbia, with planned trade, sourcing, distribution and business development activities." },
       },
     },
     nexus: {
-      eyebrow: "Management · Coordination · Development", title: "GK Nexus — Our International Coordination Platform.",
-      intro: "The GK Nexus platform provides a functional framework for exchanges and coordination within the international GK GROUP ecosystem.",
+      eyebrow: "Functions planned following registration", title: "GK Nexus — Proposed International Platform.",
+      intro: "GK NEXUS is a proposed international management, coordination and strategic development platform for the GK GROUP ecosystem. These functions will be carried out following the registration of GK Nexus Sh.p.k. in Albania.",
       functions: ["International activity coordination", "Project management and monitoring", "Partnership development", "Organising exchanges between entities", "Business development support"],
-      scope: "These functions describe the platform’s missions without asserting that all are already operational. This functional role implies neither legal ownership of other companies nor equity interests. GK Nexus Sh.p.k. is the proposed Albanian company intended to carry this platform; its registration remains subject to documentary confirmation.",
+      scope: "These functions are the future responsibilities of GK NEXUS and will begin only after GK Nexus Sh.p.k. is registered in Albania. They will be carried out while respecting each entity’s legal and operational autonomy. GK NEXUS does not own or hold equity in the other companies.",
       link: "Discover GK Nexus",
     },
     partnerships: {
