@@ -11,8 +11,8 @@ export const MOBILITY_TRACK_RECORD = {
         en: "Entry visas for study obtained through our support",
       },
       note: {
-        fr: "Ces dossiers comprennent également un permis d’études ou une approbation. Ces documents ne sont pas comptabilisés comme des résultats supplémentaires.",
-        en: "These applications also include a study permit or an approval. These documents are not counted as additional results.",
+        fr: "Les éventuels permis d’études ou documents d’approbation associés ne sont pas comptabilisés comme des résultats supplémentaires.",
+        en: "Any associated study permits or approval documents are not counted as additional results.",
       },
     },
     {
