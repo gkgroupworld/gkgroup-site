@@ -31,7 +31,17 @@ test("GKGM historical mobility results and achievements are accurate", () => {
   assert.equal(data.eResidency.count, 1);
   assert.ok(data.eResidency.label.fr.includes("e-résidence estonienne"));
 
-  assert.deepEqual(data.visas.map(r => r.count), [3, 2, 1]);
+  assert.deepEqual(data.visas.map(r => [
+    r.id,
+    r.count,
+    r.period ?? null,
+    r.label.fr,
+    r.label.en,
+  ]), [
+    ["portugal", 3, null, "Visas D Job Seeker — Portugal", "D Job Seeker visas — Portugal"],
+    ["uk", 2, "2025", "Visas visiteurs — Royaume-Uni", "Visitor visas — United Kingdom"],
+    ["indonesia", 1, "2026", "Visa C2 — Indonésie", "C2 visa — Indonesia"],
+  ]);
   assert.equal(data.workPermits.count, 8);
   assert.equal(data.workPermits.period, "2025–2026");
 
@@ -42,8 +52,8 @@ test("GKGM historical mobility results and achievements are accurate", () => {
     "Live & Study in Europe",
   ]);
 
-  assert.equal(copy.fr.title, "Nos réalisations en mobilité internationale");
-  assert.equal(copy.en.title, "Our International Mobility Track Record");
+  assert.equal(copy.fr.title, "Nos résultats en mobilité internationale");
+  assert.equal(copy.en.title, "Our International Mobility Results");
   assert.ok(copy.fr.intro.includes("déclarés par GKGM"));
   assert.ok(copy.en.intro.includes("reported by GKGM"));
 });

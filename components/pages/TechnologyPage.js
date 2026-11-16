@@ -35,25 +35,55 @@ export function TechnologyPage({ locale }) {
         </div>
       </section>
 
+      <section className="px-5 py-14 sm:px-8 sm:py-16">
+        <div className="mx-auto max-w-7xl">
+          <SectionTitle title={copy.pillarsTitle} />
+          <p className="mt-4 max-w-3xl leading-7 text-slate-600">{copy.pillarsIntro}</p>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {copy.pillars.map((pillar, index) => (
+              <a key={pillar.id} href={`#${pillar.id}`} className="group border border-slate-200 border-t-4 border-t-[#d59b46] bg-white p-6 transition hover:border-[#e87512] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">
+                <span className="text-sm font-bold text-[#946020]">0{index + 1}</span>
+                <h3 className="mt-3 text-xl font-bold text-[#061b46]">{pillar.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{pillar.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <GkgtPhotoStory story="expertise" locale={locale} />
 
       <nav aria-label={copy.contents} className="border-b border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="font-bold text-[#061b46]">{copy.contents}</p>
-          <ul className="mt-4 flex flex-wrap gap-3">{[...copy.sections, { id: "technical-archives", title: TECHNOLOGY_GALLERY_COPY[locale].archivesTitle }, { id: "workshop-store", title: TECHNOLOGY_GALLERY_COPY[locale].workshopTitle }].map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
+          <ul className="mt-4 flex flex-wrap gap-3">{[...copy.pillars, { id: "technical-archives", title: TECHNOLOGY_GALLERY_COPY[locale].archivesTitle }, { id: "workshop-store", title: TECHNOLOGY_GALLERY_COPY[locale].workshopTitle }].map((section) => <li key={section.id}><a href={`#${section.id}`} className="inline-flex min-h-11 items-center border border-slate-300 px-4 py-2 text-sm font-bold text-[#061b46] hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#061b46]">{section.title}</a></li>)}</ul>
         </div>
       </nav>
 
-      <div className="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2">
-        {copy.sections.map((section) => <Fragment key={section.id}><section id={section.id} aria-labelledby={`${section.id}-title`} className={`scroll-mt-6 border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8 ${["maintenance", "equipment"].includes(section.id) ? "lg:col-span-2" : ""}`}>
-          <h2 id={`${section.id}-title`} className="text-2xl font-bold tracking-tight text-[#061b46]">{section.title}</h2>
-          <p className="mt-4 leading-7 text-slate-600">{section.description}</p>
-          <ul className="mt-6 grid gap-4">{section.items.map((item) => <li key={item} className="border-l-2 border-[#e87512] pl-3 text-sm leading-6 text-slate-600">{item}</li>)}</ul>
-          <div className="mt-7 border-t border-slate-200 pt-5">
-            <h3 className="text-sm font-bold text-[#061b46]">{copy.boundary}</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-600">{section.limit}</p>
-          </div>
-        </section>{section.id === "maintenance" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="maintenance" locale={locale} /></div>}{section.id === "equipment" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="equipment" locale={locale} /></div>}</Fragment>)}
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+        {copy.pillars.map((pillar) => (
+          <section key={pillar.id} id={pillar.id} aria-labelledby={`${pillar.id}-title`} className="scroll-mt-6">
+            <div className="mb-6 border-l-4 border-[#e87512] pl-5">
+              <h2 id={`${pillar.id}-title`} className="text-2xl font-bold tracking-tight text-[#061b46]">{pillar.title}</h2>
+              <p className="mt-2 max-w-3xl leading-7 text-slate-600">{pillar.description}</p>
+            </div>
+            <div className="grid gap-6 lg:grid-cols-2">
+              {copy.sections.filter((section) => pillar.sectionIds.includes(section.id)).map((section) => <Fragment key={section.id}>
+                <section id={section.id} aria-labelledby={`${section.id}-title`} className={`scroll-mt-6 border border-slate-200 border-t-2 border-t-[#d59b46] bg-white p-6 sm:p-8 ${["maintenance", "equipment"].includes(section.id) ? "lg:col-span-2" : ""}`}>
+                  <h2 id={`${section.id}-title`} className="text-2xl font-bold tracking-tight text-[#061b46]">{section.title}</h2>
+                  <p className="mt-4 leading-7 text-slate-600">{section.description}</p>
+                  <ul className="mt-6 grid gap-4">{section.items.map((item) => <li key={item} className="border-l-2 border-[#e87512] pl-3 text-sm leading-6 text-slate-600">{item}</li>)}</ul>
+                  <div className="mt-7 border-t border-slate-200 pt-5">
+                    <h3 className="text-sm font-bold text-[#061b46]">{copy.boundary}</h3>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">{section.limit}</p>
+                  </div>
+                </section>
+                {section.id === "maintenance" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="maintenance" locale={locale} /></div>}
+                {section.id === "equipment" && <div className="-mx-5 lg:col-span-2 sm:-mx-8"><GkgtPhotoStory story="equipment" locale={locale} /></div>}
+              </Fragment>)}
+            </div>
+          </section>
+        ))}
       </div>
 
       <GkgtPhotoStory story="workshop" locale={locale} />
