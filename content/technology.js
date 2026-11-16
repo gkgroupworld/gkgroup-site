@@ -2,14 +2,36 @@ export const TECHNOLOGY_CONTENT = {
   "fr": {
     "eyebrow": "Technologies et solutions numériques · Division opérationnelle",
     "title": "GK GLOBAL TECHNOLOGY — GKGT",
-    "intro": "Des services informatiques pour maintenir vos équipements, connecter vos équipes et accompagner vos usages numériques. GKGT intervient auprès des particuliers, entreprises, établissements scolaires, institutions et organisations selon leurs besoins.",
+    "intro": "GK GLOBAL TECHNOLOGY accompagne les particuliers, entreprises et organisations à travers trois domaines complémentaires : les services informatiques et infrastructures, la fourniture et le commerce international d’équipements technologiques, ainsi que les solutions numériques et le développement technologique. En associant expertise technique, équipements et technologies, GKGT répond aux besoins informatiques actuels tout en développant progressivement de nouvelles opportunités dans le secteur technologique.",
     "identityTitle": "Une division opérationnelle, un cadre juridique clair",
     "identity": [
       "GK GROUP est la marque et l’écosystème international, sans personnalité juridique propre.",
       "GK GLOBAL GROUP SARL U est la société légalement constituée au Togo qui porte les activités de GKGT.",
       "GK GLOBAL TECHNOLOGY (GKGT) est une division opérationnelle de cette société dédiée aux technologies et aux services informatiques. Elle ne constitue pas une société indépendante."
     ],
-    "contents": "Explorer nos services",
+    "contents": "Découvrir nos trois domaines",
+    "pillarsTitle": "Trois domaines complémentaires",
+    "pillarsIntro": "Une approche intégrée qui associe expertise informatique, équipements technologiques et solutions numériques.",
+    "pillars": [
+      {
+        "id": "it-services",
+        "title": "Services informatiques et infrastructures",
+        "description": "Maintenance, réparation, réseaux et accompagnement technique des particuliers, entreprises et organisations.",
+        "sectionIds": ["maintenance", "networks", "organisations", "support"]
+      },
+      {
+        "id": "technology-trade",
+        "title": "Équipements technologiques et commerce international",
+        "description": "Fourniture, vente, reconditionnement et approvisionnement d’équipements informatiques et électroniques, avec une ouverture sur le commerce international.",
+        "sectionIds": ["equipment", "sourcing"]
+      },
+      {
+        "id": "digital-solutions",
+        "title": "Solutions numériques et développement technologique",
+        "description": "Installation et configuration de logiciels et de solutions numériques, avec le développement progressif de nouvelles activités technologiques.",
+        "sectionIds": ["software"]
+      }
+    ],
     "boundary": "Modalités à préciser",
     "sections": [
       {
@@ -110,19 +132,41 @@ export const TECHNOLOGY_CONTENT = {
     "partner": "Nous contacter",
     "formIntro": "Décrivez votre besoin technique pour préparer l’étude de votre demande. Les champs marqués d’un astérisque sont obligatoires.",
     "formPrivacy": "Les informations transmises servent à traiter votre demande. Ne communiquez pas de mot de passe, de code d’accès ni de document confidentiel dans ce formulaire.",
-    "seoDescription": "GKGT : maintenance et réparation informatique, réseaux, équipements, logiciels, assistance aux organisations et sourcing technologique au Togo."
+    "seoDescription": "GKGT : services informatiques, infrastructures, distribution et commerce international d’équipements technologiques, solutions numériques et développement technologique au Togo."
   },
   "en": {
     "eyebrow": "Technology and digital solutions · Operational division",
     "title": "GK GLOBAL TECHNOLOGY — GKGT",
-    "intro": "IT services to maintain your equipment, connect your teams and support your digital tools. GKGT supports individuals, businesses, schools, institutions and organisations according to their needs.",
+    "intro": "GK GLOBAL TECHNOLOGY supports individuals, businesses and organisations through three complementary areas: IT services and infrastructure, the supply and international trade of technology equipment, and digital solutions and technology development. By combining technical expertise, equipment and technology, GKGT addresses current IT needs while progressively developing new opportunities in the technology sector.",
     "identityTitle": "An operational division with a clear legal framework",
     "identity": [
       "GK GROUP is the international brand and ecosystem, without legal personality of its own.",
       "GK GLOBAL GROUP SARL U is the legally constituted company in Togo through which GKGT operates.",
       "GK GLOBAL TECHNOLOGY (GKGT) is an operational division of this company dedicated to technology and IT services. It is not a separate company."
     ],
-    "contents": "Explore our services",
+    "contents": "Explore our three areas",
+    "pillarsTitle": "Three complementary areas",
+    "pillarsIntro": "An integrated approach combining IT expertise, technology equipment and digital solutions.",
+    "pillars": [
+      {
+        "id": "it-services",
+        "title": "IT services and infrastructure",
+        "description": "Maintenance, repair, networking and technical support for individuals, businesses and organisations.",
+        "sectionIds": ["maintenance", "networks", "organisations", "support"]
+      },
+      {
+        "id": "technology-trade",
+        "title": "Technology equipment and international trade",
+        "description": "Supply, sales, refurbishment and sourcing of IT and electronic equipment, with an international trade focus.",
+        "sectionIds": ["equipment", "sourcing"]
+      },
+      {
+        "id": "digital-solutions",
+        "title": "Digital solutions and technology development",
+        "description": "Installation and configuration of software and digital solutions, alongside the gradual development of new technology activities.",
+        "sectionIds": ["software"]
+      }
+    ],
     "boundary": "Terms to be agreed",
     "sections": [
       {
@@ -223,6 +267,6 @@ export const TECHNOLOGY_CONTENT = {
     "partner": "Contact us",
     "formIntro": "Describe your technical needs so we can review your request. Fields marked with an asterisk are required.",
     "formPrivacy": "Information submitted is used to process your request. Do not include passwords, access codes or confidential documents in this form.",
-    "seoDescription": "GKGT: IT maintenance and repair, networks, equipment, software, support for organisations and technology sourcing in Togo."
+    "seoDescription": "GKGT: IT services, infrastructure, technology equipment distribution and international trade, digital solutions and technology development in Togo."
   }
 };
